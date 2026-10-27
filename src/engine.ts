@@ -45,3 +45,11 @@ export function advance(t:Task,date:string,hours:number,prints:number):{task:Tas
  return {task:next,skippedCycles};
 }
 export function compliance(logs:Log[]){const completed=logs.filter(l=>l.outcome==='Completed');const eligible=logs.filter(l=>l.outcome!=='Postponed');return eligible.length?Math.round(100*completed.filter(l=>l.onTime).length/eligible.length):null;}
+export function rebaseTaskEdit(value:Task,old?:Task):Task{
+ const next={...value,originalInterval:old?.originalInterval??value.interval};
+ if(old&&(JSON.stringify(old.interval)!==JSON.stringify(value.interval)||old.base!==value.base||old.anchorDate!==value.anchorDate)){
+  if(old.base==='scheduled'&&old.anchorDate===value.anchorDate&&(old.cycleOffset||0)>0)next.anchorDate=addInterval(old.anchorDate,old.interval.days,old.interval.months,old.cycleOffset||0);
+  next.cycleOffset=0;
+ }
+ return next;
+}
