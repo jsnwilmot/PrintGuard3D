@@ -1,3 +1,5 @@
+> Historical Phase 3 evidence retained. Phase 3 is accepted and merged; see the [Phase 4 successor matrix](../remediation-phase4/MATRIX.md) for the current review.
+
 # PrintGuard 3D — Phase 3 acceptance matrix
 
 2026-10-27 UTC. All **86 rows / 29 sections** retained in their original order. Section counts: **{'PARTIAL': 20, 'PASS': 6, 'FAIL': 3}**. **Release 1 remains NOT approved. Phase 3 awaits Architect acceptance.** Passing 45 assertions does not establish full-spec readiness.

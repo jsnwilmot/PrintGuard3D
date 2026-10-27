@@ -1,0 +1,8 @@
+ID,Requirement,Status,Evidence,Limits
+D01,Original disclaimer/version retained,PASS,L10; approved baseline hash,Technical identity only; no legal opinion.
+D02,Explicit first-use/current-version acknowledgment,PASS,L01/L03; C01,Synthetic automated acknowledgment is not a real user legal acceptance.
+D03,Pre-ack record/search/route/notification/print/export nondisclosure,PASS,L02; C01/C07,"UI disclosure gate, not authentication, encryption or protection against browser DevTools."
+D04,Restored records/preferences preserved and imported consent reset,PASS,L03; C07; preserved N01/P3B01,Recovery/export through Settings after current acknowledgment.
+D05,Task/profile full disclaimer and source/applicability warnings,PASS,L08/L09/L11; C03/C06,No reconstructed or cached manufacturer instructions; app-reviewed status is not endorsement.
+D06,ICS/CSV/printed schedule safety copy and format checks,PASS,L04/L05; C02,Third-party calendar/spreadsheet clients and physical printer output NOT VERIFIED.
+D07,Qualified independent Canadian legal review,NOT VERIFIED,No counsel opinion/approval supplied,PENDING independent Canadian counsel; technical implementation does not establish enforceability or remove non-waivable rights.

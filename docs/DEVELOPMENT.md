@@ -6,7 +6,7 @@ Repository: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D).
 
 The genuine original application is commit `c938bd8bdf1e9089f1473d3fb1c2e74597066b58`. Its 36 tracked files match the original acceptance hash inventory, allowing for Git's LF/CRLF normalization. The original commit, author metadata and history were retained; no historical commit was reconstructed or backdated. The existing repository was reused, not nested or reinitialized. There were no previous remotes to replace.
 
-`origin` is `https://github.com/jsnwilmot/PrintGuard3D.git`. `main` contains the approved Phase 1 and Phase 2 merges. Current work is on `remediation/phase3-profiles` and must remain separate until Architect review. Do not rewrite history, force-push, discard uncommitted work, self-approve or self-merge.
+`origin` is `https://github.com/jsnwilmot/PrintGuard3D.git`. `main` contains the approved Phase 1 and Phase 2 merges. Current work is on `remediation/phase4-safety-accessibility` and must remain separate until Architect review. Do not rewrite history, force-push, discard uncommitted work, self-approve or self-merge.
 
 Use a dedicated branch per phase or descriptive feature:
 
@@ -71,6 +71,10 @@ Stop UI automation if the browser/security policy cannot validate the target. Do
 
 Generate/update locks without relying on a pre-existing platform-specific `node_modules` tree. The integration repair retained all existing versions and restored missing optional-platform entries; static validation checks required Linux build binaries. Never delete the working dependency tree or silently upgrade versions to work around a CI startup failure. Inspect and document dependency/lock diffs and run a clean CI install.
 
-## Current Phase 3 review
+## Historical Phase 3 review
 
 Phase 1 and Phase 2 are accepted and merged; approved Phase 2 main is `bfd4cdd8bbb8a9c3f6a14d7730ebb4441d291458`. The earlier Phase 1 setup narrative above is historical. Phase 3 uses `remediation/phase3-profiles`, references Issue #6 and requires a draft PR for Architect review, without merge or deployment. All 45 acceptance assertions now pass unchanged; there are three independent CI jobs including native Chromium. The current suite contains 114 standard tests and 13 native journeys. See [Phase 3 report](../remediation-phase3/REPORT.md), [matrix](../remediation-phase3/MATRIX.md), and [reviewed profile policy](PROFILE-AUTHORING.md). Repository validation now also checks the data-library manifest and immutable content digests. Manufacturer coverage remains partial; Release 1 is not approved.
+
+## Current Phase 4 review
+
+Phases 1-3 are accepted and merged; approved Phase 3 main is `e8cd43314d158229e55698b59c0d43f56d1423db`. Work on `remediation/phase4-safety-accessibility` references Issue #8 and requires a draft PR for Architect review, without merge/deploy or Phase 5 work. See [report](../remediation-phase4/REPORT.md), [all 86 rows](../remediation-phase4/MATRIX.md) and [legal/accessibility evidence](../remediation-phase4/EVIDENCE.md). Current results: 125 standard tests, 45 unchanged acceptance assertions and 20 native Chromium cases. Existing runner/workflow/artifact names are retained. The added pinned axe package is test-only; Node 22.12+ is required. No rules are disabled and raw incomplete audit checks remain available. Counsel, human screen-reader/keyboard, actual browser zoom and cross-browser acceptance remain separate. Release 1 is NOT approved.

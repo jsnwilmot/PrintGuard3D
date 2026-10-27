@@ -6,6 +6,8 @@ import {localDate,addInterval,status,due} from './engine';
 import {download,postponeTask} from './db';
 import {Button,PageHeading,Empty,Badge} from './components';
 import {TaskForm} from './forms';
+import {scheduleICS} from './safety';
+import {reviewTask} from './profiles';
 import {validCalendarDate,usageDue,historyMatches,calendarOccurrences} from './scheduleView';
 
 export function Calendar({onTask}:{onTask:(t:Task)=>void}){
@@ -44,16 +46,10 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
   if(!t||!p||date<today())return;
   await run(()=>postponeTask(id,date,'Moved in the calendar; interval preserved.'),'Next occurrence moved. The maintenance interval is unchanged.');
  }
- const icsEscape=(s:string)=>s.replaceAll('\\','\\\\').replaceAll('\n','\\n').replaceAll(',','\\,').replaceAll(';','\\;');
  function exportICS(){
-  const rows=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Rose and Paw//PrintGuard3D//EN','CALSCALE:GREGORIAN',
-   ...events.flatMap(e=>['BEGIN:VEVENT',`UID:${e.key}@printguard3d`,
-    `DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')}`,
-    `DTSTART;VALUE=DATE:${e.date.replaceAll('-','')}`,`DTEND;VALUE=DATE:${addInterval(e.date,1).replaceAll('-','')}`,
-    `SUMMARY:${icsEscape(e.task.title)}`,
-    `DESCRIPTION:${icsEscape(`${printers.find(p=>p.id===e.task.printerId)?.name}. ${e.projected?'Projected recurrence; actual next date may change after completion. ':''}${e.task.sourceUrl}`)}`,
-    'END:VEVENT']),'END:VCALENDAR'];
-  download(`printguard-schedule-${start}.ics`,rows.join('\r\n'),'text/calendar');
+  const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  const rows=events.map(e=>{const p=printers.find(p=>p.id===e.task.printerId)!;return {id:e.key,date:e.date,title:e.task.title,description:`${p.name}. ${e.projected?'Projected recurrence; actual next date may change after completion. ':''}Source: ${reviewTask(e.task,p).source}; profile ${e.task.profileVersion||'not verified'}. ${e.task.sourceUrl}`};});
+  download(`printguard-schedule-${start}.ics`,scheduleICS(rows,stamp),'text/calendar');
  }
  function completedEvents(day?:string){return history.filter(l=>!day||l.date===day).map(l=><div key={l.id} className="calendar-event complete">
   ✓ {l.title}<small>Completed · {formatDate(l.date)} · {printers.find(p=>p.id===l.printerId)?.name}
@@ -68,7 +64,7 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
    <button className="icon-button" onClick={()=>move(1)} aria-label="Next period"><ChevronRight size={20}/></button>
    <h2>{view==='Day'?formatDate(cursor):view==='Week'?`${formatDate(start)} – ${formatDate(end)}`:date.toLocaleDateString(undefined,{month:'long',year:'numeric'})}</h2>
    <Button variant="secondary small" onClick={()=>goTo(today())}>Today</Button>
-  </div><div className="segmented">{['Month','Week','Day','Agenda'].map(x=><button key={x} onClick={()=>setView(x)} className={view===x?'selected':''}>{x}</button>)}</div></div>
+  </div><div className="segmented">{['Month','Week','Day','Agenda'].map(x=><button key={x} onClick={()=>setView(x)} className={view===x?'selected':''} aria-pressed={view===x}>{x}</button>)}</div></div>
   <div className="toolbar wrap">
    <select aria-label="Calendar printer" value={printer} onChange={e=>setPrinter(e.target.value)}><option value="">All printers</option>{printers.map(p=><option key={p.id} value={p.id}>{p.name}</option>)}</select>
    <select aria-label="Calendar category" value={category} onChange={e=>setCategory(e.target.value)}><option value="">All categories</option>{[...new Set([...tasks.map(t=>t.category),...logs.flatMap(l=>l.category?[l.category]:[])])].map(x=><option key={x}>{x}</option>)}</select>

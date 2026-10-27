@@ -1,0 +1,25 @@
+Audit,Browser,URL,Violations,Incomplete,IncompleteRules,Status
+renewal-onboarding-axe,156.0.8078.4,http://127.0.0.1:4357/#Reports,0,0,,PASS for automated scan only
+full-disclaimer-axe,156.0.8078.4,http://127.0.0.1:4357/#Inventory,0,1,color-contrast,PASS for automated scan only
+nested-disclaimer-axe,156.0.8078.4,http://127.0.0.1:4357/#Maintenance,0,1,color-contrast,PASS for automated scan only
+completion-axe,156.0.8078.4,http://127.0.0.1:4357/#Maintenance,0,0,,PASS for automated scan only
+async-error-axe,156.0.8078.4,http://127.0.0.1:4357/#Maintenance,0,0,,PASS for automated scan only
+profile-review-axe,156.0.8078.4,http://127.0.0.1:4357/#Settings,0,0,,PASS for automated scan only
+restore-warning-axe,156.0.8078.4,http://127.0.0.1:4357/#Settings,0,0,,PASS for automated scan only
+Light-Dashboard,156.0.8078.4,http://127.0.0.1:4357/#Dashboard,0,1,color-contrast,PASS for automated scan only
+Light-My-Printers,156.0.8078.4,http://127.0.0.1:4357/#My%20Printers,0,1,color-contrast,PASS for automated scan only
+Light-Maintenance,156.0.8078.4,http://127.0.0.1:4357/#Maintenance,0,1,color-contrast,PASS for automated scan only
+Light-Calendar,156.0.8078.4,http://127.0.0.1:4357/#Calendar,0,1,color-contrast,PASS for automated scan only
+Light-Reports,156.0.8078.4,http://127.0.0.1:4357/#Reports,0,1,color-contrast,PASS for automated scan only
+Light-Inventory,156.0.8078.4,http://127.0.0.1:4357/#Inventory,0,1,color-contrast,PASS for automated scan only
+Light-Settings,156.0.8078.4,http://127.0.0.1:4357/#Settings,0,1,color-contrast,PASS for automated scan only
+Light-Help-&-documentation,156.0.8078.4,http://127.0.0.1:4357/#Help%20&%20Documentation,0,1,color-contrast,PASS for automated scan only
+Dark-Dashboard,156.0.8078.4,http://127.0.0.1:4357/#Dashboard,0,1,color-contrast,PASS for automated scan only
+Dark-My-Printers,156.0.8078.4,http://127.0.0.1:4357/#My%20Printers,0,1,color-contrast,PASS for automated scan only
+Dark-Maintenance,156.0.8078.4,http://127.0.0.1:4357/#Maintenance,0,1,color-contrast,PASS for automated scan only
+Dark-Calendar,156.0.8078.4,http://127.0.0.1:4357/#Calendar,0,1,color-contrast,PASS for automated scan only
+Dark-Reports,156.0.8078.4,http://127.0.0.1:4357/#Reports,0,1,color-contrast,PASS for automated scan only
+Dark-Inventory,156.0.8078.4,http://127.0.0.1:4357/#Inventory,0,1,color-contrast,PASS for automated scan only
+Dark-Settings,156.0.8078.4,http://127.0.0.1:4357/#Settings,0,1,color-contrast,PASS for automated scan only
+Dark-Help-&-documentation,156.0.8078.4,http://127.0.0.1:4357/#Help%20&%20Documentation,0,1,color-contrast,PASS for automated scan only
+mobile-navigation-axe,156.0.8078.4,http://127.0.0.1:4357/#Settings,0,0,,PASS for automated scan only

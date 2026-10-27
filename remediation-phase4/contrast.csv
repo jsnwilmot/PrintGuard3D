@@ -1,0 +1,11 @@
+Theme,Selector,Foreground,Background,TextRatio,ControlBorder,BorderRatio,Focus,FocusBackground,FocusRatio
+Light,.page-heading p,"rgb(83, 100, 123)","rgb(245, 247, 251)",5.632,"rgb(83, 100, 123)",not a boundary assertion,#005fcc,"rgb(245, 247, 251)",5.58
+Light,.nav-item:not(.active),"rgb(83, 100, 123)","rgb(255, 255, 255)",6.04,"rgb(83, 100, 123)",not a boundary assertion,#005fcc,"rgb(255, 255, 255)",5.985
+Light,.button:not(.secondary),"rgb(255, 255, 255)","rgb(7, 88, 191)",6.651,"rgb(7, 88, 191)",not a boundary assertion,#005fcc,"rgb(237, 244, 255)",5.411
+Light,.field>span,"rgb(83, 100, 123)","rgb(255, 255, 255)",6.04,"rgb(83, 100, 123)",not a boundary assertion,#005fcc,"rgb(255, 255, 255)",5.985
+Light,.field input,"rgb(38, 52, 73)","rgb(255, 255, 255)",12.576,"rgb(109, 123, 142)",4.309,#005fcc,"rgb(255, 255, 255)",5.985
+Dark,.page-heading p,"rgb(149, 167, 189)","rgb(17, 27, 41)",7.043,"rgb(149, 167, 189)",not a boundary assertion,#b7dcff,"rgb(17, 27, 41)",12.118
+Dark,.nav-item:not(.active),"rgb(149, 167, 189)","rgb(25, 38, 55)",6.217,"rgb(149, 167, 189)",not a boundary assertion,#b7dcff,"rgb(25, 38, 55)",10.697
+Dark,.button:not(.secondary),"rgb(16, 34, 56)","rgb(140, 196, 255)",8.758,"rgb(140, 196, 255)",not a boundary assertion,#b7dcff,"rgb(32, 57, 83)",8.295
+Dark,.field>span,"rgb(149, 167, 189)","rgb(25, 38, 55)",6.217,"rgb(149, 167, 189)",not a boundary assertion,#b7dcff,"rgb(25, 38, 55)",10.697
+Dark,.field input,"rgb(197, 211, 228)","rgb(25, 38, 55)",10.054,"rgb(131, 148, 173)",4.953,#b7dcff,"rgb(25, 38, 55)",10.697
