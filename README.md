@@ -64,7 +64,7 @@ node node_modules/vitest/vitest.mjs run --config remediation-phase1/vitest.revie
 npm run build
 ```
 
-The acceptance command intentionally remains nonzero while out-of-phase calendar/reporting contracts fail. Those failures are not skipped or converted to expected success. Tests use isolated fake IndexedDB and labelled fixtures. Native file-chooser restoration could not be reverified in this phase; the prior native evidence is retained separately. **The application is not Release 1 ready. Phase 2 requires separate authorization.**
+The acceptance command intentionally remains nonzero while out-of-phase calendar/reporting contracts fail. Those failures are not skipped or converted to expected success. Tests use isolated fake IndexedDB and labelled fixtures. Six additional native Chromium cases now pass through the actual React file input and import handlers, including exact full restoration, safe/repeated merges, invalid input rejection, persistence and post-restore recurrence. See [native verification and reproduction](remediation-phase1/NATIVE-VERIFICATION.md). Phase 1 is recommended for Architect acceptance review and remains unaccepted until that decision. **The application is not Release 1 ready. Phase 2 requires separate authorization.**
 
 ## Release scope and limits
 

@@ -50,12 +50,25 @@ for id,(implementation,tests) in checks.items():
 update('18.1','NOT VERIFIED','Prior native export/restore evidence is retained. This phase opened and seeded a fresh labelled localhost database, but file chooser automation returned without an import preview.','Prior browser-export/browser-after-restore artifacts; P16/P45 prove domain roundtrip, not a fresh native end-to-end restore.','No current native import/restore success is claimed.','Recheck the final build with the actual native chooser and exports after tooling is available.')
 update('18.5','PARTIAL','Schema 1 and IndexedDB version/store layout retained; optional fields preserve legacy input support and immutable versions without a migration.','A12/P31/P41/P45.','Original strict readers may reject enriched schema-1 exports; no general migration registry exists.','Use the updated reader; introduce explicit format evolution/migrations before a future incompatible schema.')
 update('29.7','PARTIAL','Engine/lifecycle/backup checks and edit/chronology repairs pass. Native segmented year input remains failing.','A01-A08/A18/A19; R05/R08; U18 FAIL.','Whole perpetual requirement cannot pass while the calendar UI is corruptible.','Retain U18 and fix it in the next authorized phase.')
+# A native PASS must come from a complete actual browser run, never unit results.
+native_path=root/'test-results/native-results.json'
+native=json.loads(native_path.read_text(encoding='utf-8')) if native_path.exists() else {}
+native_specs=[spec for suite in native.get('suites',[]) for spec in suite.get('specs',[])]
+native_pass=(len(native_specs)==6 and native.get('stats',{}).get('expected')==6
+ and native['stats'].get('unexpected')==0 and native['stats'].get('skipped')==0
+ and native['stats'].get('flaky')==0
+ and all(spec['tests'][0]['results'][0]['status']=='passed' for spec in native_specs))
+if native_pass:
+ update('18.1','PASS','Actual React Settings export and file-input replacement restore every supported collection; acknowledgment renews through the UI and results persist after reload.','N01/N05; test-results/native-results.json and NATIVE-VERIFICATION.md.','Limited to the documented Chromium synthetic schema-1 workflow; no cross-browser or large-file certification.','Retain native evidence and submit for Architect review; no automatic acceptance.')
+ update('18','PARTIAL','Native full replacement, safe/repeated merge, invalid-import rejection and commit-time destination checks pass.','N01-N06; P01-P16/P35/P41/P45/P46.','No general migration registry; original strict readers may reject enriched schema-1 files.','Keep compatibility limits and plan future format evolution separately.')
+ update('25','PARTIAL','78/78 standard tests plus 6/6 native Chromium cases pass; TypeScript/build pass; acceptance remains 39/45.','N01-N06; all standard and acceptance assertions.','Six known failures and broader cross-browser/accessibility coverage gaps remain.','Retain all failing contracts; Release 1 remains not ready.')
 for row in rows:
  if row['ID'] in updates:row.update(updates[row['ID']])
 with (out/'acceptance-matrix.csv').open('w',encoding='utf-8-sig',newline='') as f:
  w=csv.DictWriter(f,fields);w.writeheader();w.writerows(rows)
 (out/'acceptance-matrix.json').write_text(json.dumps(rows,indent=2,ensure_ascii=False),encoding='utf-8')
-md=['# PrintGuard 3D — Phase 1 updated acceptance matrix','', 'This is the current development assessment, not release approval. All 29 sections and 57 granular entries are retained. Unchanged evidence is explicitly carried forward from the original review. Current native restore is NOT VERIFIED.','', '| '+' | '.join(fields)+' |','|'+'|'.join('---' for _ in fields)+'|']
+native_verdict='Native Chromium N01-N06 PASS; see NATIVE-VERIFICATION.md.' if native_pass else 'Current native restore is NOT VERIFIED by this run.'
+md=['# PrintGuard 3D — Phase 1 updated acceptance matrix','', 'This is the current development assessment, not release approval. All 29 sections and 57 granular entries are retained. Unchanged evidence is explicitly carried forward from the original review. '+native_verdict,'', '| '+' | '.join(fields)+' |','|'+'|'.join('---' for _ in fields)+'|']
 for row in rows:md.append('| '+' | '.join(str(row[k]).replace('|','/').replace('\n',' ') for k in fields)+' |')
 (out/'MATRIX.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
 findings=list(csv.DictReader((base/'findings.csv').read_text(encoding='utf-8-sig').splitlines()))

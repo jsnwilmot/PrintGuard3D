@@ -1,3 +1,26 @@
+# PrintGuard 3D — Phase 1 readiness after native verification
+
+Date: 2026-10-27 UTC. **Native verification: 6/6 PASS. Recommend Architect review for Phase 1 acceptance. Phase 1 has not been accepted; Release 1 remains NOT ready.** [Draft PR #3](https://github.com/jsnwilmot/PrintGuard3D/pull/3) and [Issue #2](https://github.com/jsnwilmot/PrintGuard3D/issues/2) remain open. No merge, deployment, access-setting change, production-data operation or Phase 2 implementation.
+
+The actual Chromium/React/IndexedDB workflow now verifies full export and replacement, all supported data and relationships, safe/repeated merge, invalid-file/ownership rejection, incompatible-verification quarantine, commit-time destination revalidation, UI acknowledgment renewal, reload persistence and post-restore completion/weekly recurrence. See [complete native evidence and reproduction](NATIVE-VERIFICATION.md) and the [updated matrix](MATRIX.md), especially row 18.1. The earlier file-upload automation blocker was resolved by an isolated Playwright browser without changing security settings.
+
+| Current check | Result |
+| --- | --- |
+| Original tests | 29/29 PASS, unchanged |
+| Phase 1 regressions | 49/49 PASS |
+| Native Chromium | N01–N06, 6/6 PASS; zero skipped/retried/flaky cases |
+| Full acceptance | 39/45 PASS; U07/U08/U10/U11/U12/U18 remain FAIL |
+| TypeScript / production build | PASS |
+| Application source change in this continuation | None (`git diff -- src` empty) |
+| Dependencies | Only three new pinned development packages; zero existing version changes; npm audit zero advisories |
+| 29-section assessment | 4 PASS, 22 PARTIAL, 3 FAIL; native row 18.1 upgraded to PASS |
+
+The native gate is complete for the documented scope. The next decision belongs to the Architect: review the code, native evidence and compatibility limits, then explicitly decide Phase 1 acceptance. Keep the PR draft and issues open until that decision. Release 1 and Phase 2 remain separate decisions. The six known acceptance failures and other documented manufacturer, history/currency, safety/legal, accessibility and integration gaps have not been corrected by this verification task.
+
+## Historical Phase 1 implementation and integration assessment
+
+The following narrative is retained as the earlier assessment, including the browser restriction at that time. Its NOT VERIFIED statements about the native restore gate are superseded by the current results above; other implementation limitations remain applicable. It is not the current verification verdict.
+
 > GitHub integration update — 2026-10-27: the original baseline is preserved on `main`; Phase 1 remains a separate, unaccepted development branch. See [current integration and verification status](../docs/GITHUB-INTEGRATION.md) and [workflow rules](../docs/DEVELOPMENT.md). Raw captures/results are retained locally and excluded from the public repository. Original document copies were archived locally before portable-link edits. Native export is now verified; native restore remains NOT VERIFIED due to browser/Windows automation policy limits. No application deployment or access change occurred.
 
 # PrintGuard 3D — Phase 1 remediation review

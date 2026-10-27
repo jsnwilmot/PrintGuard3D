@@ -1,3 +1,5 @@
+> Current native verification — 2026-10-27 UTC: **6/6 PASS**, including actual full replacement and invalid/repeated imports. See [complete evidence](../remediation-phase1/NATIVE-VERIFICATION.md). Phase 1 awaits Architect acceptance; Release 1 is not ready; PR #3 stays draft and #2 stays open. The integration narrative below is historical and its native NOT VERIFIED result has been superseded. No source under `src/` changed in this continuation.
+
 # GitHub integration and Phase 1 final verification
 
 Date: 2026-10-27 UTC. Related: [Issue #1](https://github.com/jsnwilmot/PrintGuard3D/issues/1), [Issue #2](https://github.com/jsnwilmot/PrintGuard3D/issues/2).
