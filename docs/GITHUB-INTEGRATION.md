@@ -2,6 +2,8 @@
 
 Date: 2026-10-27 UTC. Related: [Issue #1](https://github.com/jsnwilmot/PrintGuard3D/issues/1), [Issue #2](https://github.com/jsnwilmot/PrintGuard3D/issues/2).
 
+Draft pull request: [#3 — Phase 1: Data Integrity, Maintenance Safety and Backup Verification](https://github.com/jsnwilmot/PrintGuard3D/pull/3), from `remediation/phase1-integrity-safety` to `main`. The implementation/integration commit is `10902da8932f34477c420d9d45487b8d36bda2cf`; subsequent documentation commits do not change the verified application source. The current PR head is the authoritative final branch SHA.
+
 **Phase 1 is not accepted. Native restoration remains NOT VERIFIED. Release 1 is not ready.** The GitHub branch and draft PR are for review, not permission to merge or deploy. See the issues/PR and [Actions](https://github.com/jsnwilmot/PrintGuard3D/actions) for the final remote head and CI results.
 
 ## Repository and preservation

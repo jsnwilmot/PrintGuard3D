@@ -2,6 +2,8 @@
 
 # PrintGuard 3D — Phase 1 remediation review
 
+GitHub draft review: [PR #3](https://github.com/jsnwilmot/PrintGuard3D/pull/3), related to [Issue #1](https://github.com/jsnwilmot/PrintGuard3D/issues/1) and [Issue #2](https://github.com/jsnwilmot/PrintGuard3D/issues/2). Source synchronization is verified against remote refs; no merge or application deployment occurred. Native restoration remains unverified, as explained in the integration addendum.
+
 **Decision: Phase 1 corrections are implemented locally and ready for review. The application is NOT Release 1 ready.** Phase 2 has not begun. The current native file-chooser restore remains **NOT VERIFIED**.
 
 Development branch: `remediation/phase1-integrity-safety`. Baseline commit: `c938bd8bdf1e9089f1473d3fb1c2e74597066b58`. The Phase 1 application changes remain unmerged. GitHub source publication is separately authorized in the integration request; current synchronization/PR details are recorded in the integration report. No application deployment, hosting/access-setting operation, production database access, external database or authentication change was performed.
