@@ -1,3 +1,5 @@
+> Historical accepted Phase 1 matrix. Phase 1 merged as e5565f0. See the [current Phase 2 successor](../remediation-phase2/MATRIX.md) and [remediation report](../remediation-phase2/REPORT.md). Earlier verdicts below are retained as historical evidence.
+
 > Native verification update — 2026-10-27 UTC: N01–N06 PASS. The native restore gate is supported by actual Chromium evidence. Phase 1 awaits Architect acceptance; PR #3 remains draft. Release 1 remains not ready. See [native verification](NATIVE-VERIFICATION.md).
 
 # PrintGuard 3D — Phase 1 updated acceptance matrix

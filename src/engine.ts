@@ -4,7 +4,7 @@ export function addInterval(date:string,days=0,months=0,cycles=1){
  if(months){const day=d.getDate();d.setDate(1);d.setMonth(d.getMonth()+months*cycles);const end=new Date(d.getFullYear(),d.getMonth()+1,0).getDate();d.setDate(Math.min(day,end));}
  d.setDate(d.getDate()+days*cycles);return localDate(d);
 }
-export function localDate(d:Date){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+export function localDate(d:Date){return `${String(d.getFullYear()).padStart(4,'0')}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
 export const dayDiff=(a:string,b:string)=>Math.round((Date.parse(a+'T12:00:00Z')-Date.parse(b+'T12:00:00Z'))/86400000);
 export function due(t:Task){const i=t.interval;return {date:i.mode==='once'?t.anchorDate:((i.mode==='calendar'||i.mode==='combined')?addInterval(t.anchorDate,i.days,i.months,(t.cycleOffset||0)+1):''),hours:(i.mode==='hours'||i.mode==='combined')?t.anchorHours+(i.hours||0):null,prints:i.mode==='prints'?t.anchorPrints+(i.prints||0):i.mode==='afterPrint'?t.anchorPrints+1:null};}
 export type Status='Overdue'|'Due Today'|'Due Soon'|'Upcoming'|'Postponed'|'Not Yet Due'|'Completed'|'Paused';
