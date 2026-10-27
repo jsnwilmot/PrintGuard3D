@@ -17,7 +17,8 @@ Production preview: `npx vite preview --host 127.0.0.1`. Open the production sit
 
 ## Core modules
 
-- `domain.ts`: strict schemas, versioned domain types, preferences and validation.
+- `domain.ts`: strict schemas, versioned domain types, preferences and validation. New attribution fields are optional so legacy records can be read without a database migration.
+- `integrity.ts`: shared ownership, cumulative usage, chronology, duplicate activity and profile-version relationship checks.
 - `profiles.ts`: independently versioned, model-specific data definitions and manufacturer catalogue.
 - `engine.ts`: perpetual daily/monthly, operating-hour, print-count, every-print, combined, condition and one-time rules. Fixed cadence retains the original month-end anchor using a cycle offset. Future occurrences are generated per viewport; outstanding rules are never duplicated into an infinite overdue backlog.
 - `db.ts`: versioned database, atomic completion/inventory transactions, full/printer backup, import validation, safe merge and confirmed replacement.
@@ -31,7 +32,9 @@ The bundled **FlashForge Creator 5**, profile `1.0.0`, includes one procedure ve
 
 Official source: https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls
 
-Other listed manufacturers/models support registration and user-defined rules. Imported profiles are strict JSON data, never executable code. Their source classifications are assertions by the profile author, presented for review before acceptance. Installation never overwrites history or existing task customizations; applying to a printer adds only missing template titles. For a changed existing template, review the source and explicitly edit its rule.
+Other listed manufacturers/models support registration and user-defined rules. Installed profiles extend the manufacturer/model selectors. Imported profiles are strict JSON data, never executable code. Their verification claims remain **Pending Verification** unless they match an application-reviewed definition for the exact model, technology, version and procedure. A source URL or acknowledgment alone does not establish verification. The bundled procedure is the only reviewed allowlist entry; this phase adds no manufacturer intervals.
+
+Installation never overwrites history or existing task customizations. Earlier profile definitions remain stored under reserved version keys in the existing profiles store, and applied documentation resolves the exact retained version. Same-version redefinitions are rejected. A stable `templateId` identifies a template across updates; legacy packages without it fall back to their existing title and cannot reliably identify renames. Applying new defaults is explicit; pending procedures remain pending. Changed existing tasks require an explicit edit. Preview displays current/incoming definitions and intervals; comprehensive field-level diff and coverage research remain outstanding.
 
 Generic printer illustrations are original code-native assets, clearly identified as generic. The supplied original logo is used without redesign. Custom photographs are resized locally and included in backups.
 
@@ -43,10 +46,32 @@ On-time compliance = on-time completed records / (completed + explicitly skipped
 
 ## Data protection
 
-Backups use schema 1 and include all tables, embedded custom images, profile references and preferences. Unsupported future schemas, invalid types, unsafe image data, duplicate IDs and orphaned references are rejected. Merge keeps current rows on an ID conflict; replacement requires explicit acknowledgment and runs in one transaction. Imported legal acknowledgment is never treated as consent on another device. Imported text is rendered through React escaping. Destructive printer deletion is confirmed and explains cascading record deletion; inventory is retained and unassigned.
+Backups use schema 1 and include all tables, embedded custom images, retained profile versions and preferences. The updated reader accepts the original schema-1 exports; newer optional attribution/profile fields require this updated reader and may be rejected by the original strict application. The IndexedDB store layout/version remains unchanged; existing records are not migrated or rewritten on startup.
+
+Unsupported future schemas, invalid types, unsafe image data, duplicate identifiers/activity, orphaned references, cross-printer ownership and contradictory usage/date relationships are rejected. Preview identifies retained rows and conflicts per record. Merge keeps existing mutable rows and rejects conflicting identities or historical values, then validates the complete destination graph again inside the write transaction. It does not remap IDs or silently choose an owner. Valid disjoint imports and identical repeated imports remain supported. Replacement requires explicit acknowledgment and runs in one transaction; failure rolls back clearing and all writes. Imported legal acknowledgment is never treated as consent on another device; replacement deliberately renews acknowledgment.
+
+Rules with history cannot be reassigned. Reassignment without history becomes user defined and clears the active verification/version claim while retaining the documentation URL. Editing intervals preserves the original recommendation and rebases fixed cadence on the last processed scheduled boundary, with a next-due preview. Completion rejects dates before latest recorded work/usage and decreasing or fractional print readings. New completion, skip and postponement records snapshot category, priority, model, source version and currency. Legacy history is preserved as recorded; unknown fields are not inferred from current rules. Consumed inventory cannot be deleted or reassigned while referenced by history. Imported text is rendered through React escaping. Destructive printer deletion remains confirmed and explains cascading record deletion; inventory is retained and unassigned.
+
+If an older database already contains contradictions, export it intact and investigate separately. These guards reject unsafe imports/operations; they do not automatically repair, delete or reassign existing records. There is no ordinary history correction/overwrite workflow.
+
+## Phase 1 verification
+
+Local remediation is on `remediation/phase1-integrity-safety`; no deployment, access change or production-data operation is part of this phase. See `remediation-phase1/READINESS.md`, the updated 86-row matrix and raw test reports. The original acceptance evidence remains in `acceptance-review/`.
+
+```sh
+npm test
+node node_modules/vitest/vitest.mjs run --config remediation-phase1/vitest.review.config.mts
+npm run build
+```
+
+The acceptance command intentionally remains nonzero while out-of-phase calendar/reporting contracts fail. Those failures are not skipped or converted to expected success. Tests use isolated fake IndexedDB and labelled fixtures. Six additional native Chromium cases now pass through the actual React file input and import handlers, including exact full restoration, safe/repeated merges, invalid input rejection, persistence and post-restore recurrence. See [native verification and reproduction](remediation-phase1/NATIVE-VERIFICATION.md). Phase 1 is recommended for Architect acceptance review and remains unaccepted until that decision. **The application is not Release 1 ready. Phase 2 requires separate authorization.**
 
 ## Release scope and limits
 
 This implements the Release 1 local maintenance workflow and some enhanced management: repairs, parts consumption, costs and local photos. Additional verified profiles require source research. Guided procedures link to original instructions and require safety acknowledgment before recording work; there is no invented step-by-step guide. Advanced forecasting, standalone PDF composition, PNG schedule exports, every requested historical trend chart, and profile-by-profile field-diff merging are not implemented. Browser print-to-PDF is supported. Reliable closed-app push notifications, printer connectivity and cloud sync are outside the core release. No claim of WCAG certification or exhaustive Safari/Firefox/device testing is made. Seek legal review before a public launch.
 
 Contact: design@roseandpaw.ca
+
+## GitHub review workflow
+
+Official source: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D). See [development rules](docs/DEVELOPMENT.md) and [GitHub integration status](docs/GITHUB-INTEGRATION.md). The original `main` baseline is retained; Phase 1 belongs in a draft PR and must not be self-approved or merged by Codex. The CI quality job and full acceptance job report independently; known acceptance failures stay red. No CI deployment exists. Raw local backups, browser captures and generated test reports are excluded from source control; only reviewed synthetic test fixtures are included.

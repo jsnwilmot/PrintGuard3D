@@ -1,0 +1,446 @@
+{
+  "application": "PrintGuard3D",
+  "schemaVersion": 1,
+  "exportedAt": "2026-10-26T22:01:13.450Z",
+  "scope": "full",
+  "printers": [
+    {
+      "id": "p1",
+      "name": "Review printer p1",
+      "manufacturer": "FlashForge",
+      "model": "Creator 5",
+      "technology": "FDM/FFF",
+      "serial": "SN-p1",
+      "location": "ISOLATED TEST FIXTURE",
+      "purchaseDate": "2025-12-01",
+      "installed": "2026-01-01",
+      "hours": 600,
+      "prints": 20,
+      "firmware": "test",
+      "notes": "Not a live user record",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "profileId": "flashforge-creator-5",
+      "profileVersion": "1.0.0",
+      "archived": false,
+      "created": "2026-01-01"
+    },
+    {
+      "id": "p2",
+      "name": "Review printer p2",
+      "manufacturer": "FlashForge",
+      "model": "Creator 5",
+      "technology": "FDM/FFF",
+      "serial": "SN-p2",
+      "location": "ISOLATED TEST FIXTURE",
+      "purchaseDate": "2025-12-01",
+      "installed": "2026-01-01",
+      "hours": 650,
+      "prints": 22,
+      "firmware": "test",
+      "notes": "Not a live user record",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "profileId": "flashforge-creator-5",
+      "profileVersion": "1.0.0",
+      "archived": false,
+      "created": "2026-01-01"
+    },
+    {
+      "id": "p3",
+      "name": "Review printer p3",
+      "manufacturer": "Custom",
+      "model": "Custom Resin",
+      "technology": "Resin",
+      "serial": "SN-p3",
+      "location": "ISOLATED TEST FIXTURE",
+      "purchaseDate": "2025-12-01",
+      "installed": "2026-01-01",
+      "hours": 5,
+      "prints": 3,
+      "firmware": "test",
+      "notes": "Not a live user record",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "profileId": "custom-resin",
+      "profileVersion": "2.0.0",
+      "archived": false,
+      "created": "2026-01-01"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "condition",
+      "printerId": "p3",
+      "title": "Observed condition",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "anchorDate": "2026-01-01",
+      "anchorHours": 5,
+      "anchorPrints": 3,
+      "base": "completion",
+      "source": "User Defined",
+      "sourceUrl": "",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0"
+    },
+    {
+      "id": "prints",
+      "printerId": "p3",
+      "title": "Resin user inspection",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "prints",
+        "prints": 5
+      },
+      "originalInterval": {
+        "mode": "prints",
+        "prints": 5
+      },
+      "anchorDate": "2026-01-01",
+      "anchorHours": 5,
+      "anchorPrints": 3,
+      "base": "completion",
+      "source": "User Defined",
+      "sourceUrl": "",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0"
+    },
+    {
+      "id": "t1",
+      "printerId": "p1",
+      "title": "Service positioning balls & needle rollers",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "anchorDate": "2026-02-01",
+      "anchorHours": 600,
+      "anchorPrints": 20,
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0",
+      "cycleOffset": 0
+    },
+    {
+      "id": "t2",
+      "printerId": "p2",
+      "title": "Service positioning balls & needle rollers",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "anchorDate": "2026-03-01",
+      "anchorHours": 650,
+      "anchorPrints": 22,
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0",
+      "cycleOffset": 0
+    },
+    {
+      "id": "weekly",
+      "printerId": "p1",
+      "title": "Custom weekly inspection",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "calendar",
+        "days": 7
+      },
+      "originalInterval": {
+        "mode": "calendar",
+        "days": 7
+      },
+      "anchorDate": "2026-03-05",
+      "anchorHours": 600,
+      "anchorPrints": 20,
+      "base": "completion",
+      "source": "User Defined",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0",
+      "cycleOffset": 0
+    }
+  ],
+  "logs": [
+    {
+      "id": "49a06590-cf16-4d5e-a99a-82078c343985",
+      "printerId": "p2",
+      "taskId": "t2",
+      "title": "Service positioning balls & needle rollers",
+      "date": "2026-03-01",
+      "hours": 650,
+      "prints": 22,
+      "notes": "Reviewed isolated completion",
+      "cost": 12.5,
+      "minutes": 15,
+      "materials": "Grease",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "inventoryId": "",
+      "quantity": 0,
+      "outcome": "Completed",
+      "onTime": false,
+      "dueDate": "",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "source": "Manufacturer Verified",
+      "skippedCycles": 0
+    },
+    {
+      "id": "c7ab5439-782a-40e3-84de-58d3076a7684",
+      "printerId": "p1",
+      "taskId": "weekly",
+      "title": "Custom weekly inspection",
+      "date": "2026-03-05",
+      "hours": 600,
+      "prints": 20,
+      "notes": "Reviewed isolated completion",
+      "cost": 4,
+      "minutes": 15,
+      "materials": "Grease",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "inventoryId": "",
+      "quantity": 0,
+      "outcome": "Completed",
+      "onTime": false,
+      "dueDate": "2026-01-08",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "source": "User Defined",
+      "skippedCycles": 0
+    },
+    {
+      "id": "fb11dc47-02fc-4f9f-8851-73be594481ea",
+      "printerId": "p1",
+      "taskId": "t1",
+      "title": "Service positioning balls & needle rollers",
+      "date": "2026-02-01",
+      "hours": 600,
+      "prints": 20,
+      "notes": "Reviewed isolated completion",
+      "cost": 12.5,
+      "minutes": 15,
+      "materials": "Grease",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII=",
+      "inventoryId": "common",
+      "quantity": 2,
+      "outcome": "Completed",
+      "onTime": true,
+      "dueDate": "",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "source": "Manufacturer Verified",
+      "skippedCycles": 0
+    }
+  ],
+  "readings": [
+    {
+      "id": "1bcf42c6-99be-4c8b-9098-37d8a6e8bd5e",
+      "printerId": "p1",
+      "date": "2026-03-05",
+      "hours": 600,
+      "prints": 20
+    },
+    {
+      "id": "38fc8839-5c50-4cf2-9f2d-7076085a633d",
+      "printerId": "p2",
+      "date": "2026-03-01",
+      "hours": 650,
+      "prints": 22
+    },
+    {
+      "id": "f8c49775-4c02-4f5a-9df8-4087aba25ada",
+      "printerId": "p1",
+      "date": "2026-02-01",
+      "hours": 600,
+      "prints": 20
+    }
+  ],
+  "inventory": [
+    {
+      "id": "common",
+      "name": "Common supply",
+      "partNumber": "GEN",
+      "manufacturer": "Custom",
+      "printerId": "",
+      "quantity": 7,
+      "minimum": 2,
+      "unitCost": 1.5,
+      "supplier": "Test",
+      "notes": "Shared"
+    },
+    {
+      "id": "part",
+      "name": "Printer-specific part",
+      "partNumber": "P2",
+      "manufacturer": "Custom",
+      "printerId": "p2",
+      "quantity": 3,
+      "minimum": 1,
+      "unitCost": 5,
+      "supplier": "Test",
+      "notes": "Specific"
+    }
+  ],
+  "repairs": [
+    {
+      "id": "repair",
+      "printerId": "p2",
+      "title": "Test repair",
+      "date": "2026-01-10",
+      "description": "Isolated fixture",
+      "component": "Test component",
+      "severity": "High",
+      "status": "Awaiting Parts",
+      "notes": "Test diagnosis",
+      "parts": "P2",
+      "cost": 23.4,
+      "resolved": "",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aRZkAAAAASUVORK5CYII="
+    }
+  ],
+  "profiles": [
+    {
+      "id": "custom-resin",
+      "manufacturer": "Custom",
+      "model": "Custom Resin",
+      "family": "Creator 5 series",
+      "technology": "Resin",
+      "image": "/printer.svg",
+      "imageSource": "PrintGuard 3D generic illustration",
+      "imageRights": "Original application asset; generic fallback, not a product photograph.",
+      "documentation": "https://wiki.flashforge.com/en/creator-series/creator-5-series",
+      "status": "Pending Verification",
+      "version": "2.0.0",
+      "verified": "2026-10-26",
+      "revisions": [
+        "2.0.0 isolated fixture"
+      ],
+      "templates": []
+    },
+    {
+      "id": "flashforge-creator-5",
+      "manufacturer": "FlashForge",
+      "model": "Creator 5",
+      "family": "Creator 5 series",
+      "technology": "FDM/FFF",
+      "image": "/printer.svg",
+      "imageSource": "PrintGuard 3D generic illustration",
+      "imageRights": "Original application asset; generic fallback, not a product photograph.",
+      "documentation": "https://wiki.flashforge.com/en/creator-series/creator-5-series",
+      "status": "Manufacturer Verified",
+      "version": "1.0.0",
+      "verified": "2026-10-26",
+      "revisions": [
+        "1.0.0: Verified positioning-ball and needle-roller maintenance at 500 operating hours. Other procedures require further verification."
+      ],
+      "templates": [
+        {
+          "title": "Service positioning balls & needle rollers",
+          "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+          "category": "Lubrication",
+          "priority": "Normal",
+          "interval": {
+            "mode": "hours",
+            "hours": 500
+          },
+          "originalInterval": {
+            "mode": "hours",
+            "hours": 500
+          },
+          "base": "completion",
+          "source": "Manufacturer Verified",
+          "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+          "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+          "verified": "2026-10-26",
+          "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+          "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+          "minutes": 0,
+          "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+          "enabled": true,
+          "postponedUntil": "",
+          "condition": false,
+          "profileVersion": "1.0.0"
+        }
+      ]
+    }
+  ],
+  "preferences": {
+    "id": "preferences",
+    "theme": "dark",
+    "reminderDays": 7,
+    "notifications": false,
+    "target": 95,
+    "achievements": true,
+    "lastBackup": "2026-01-01",
+    "acknowledgment": {
+      "version": "1.0",
+      "date": "2026-01-01"
+    },
+    "readNotices": [],
+    "currency": "USD"
+  }
+}

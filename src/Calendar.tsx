@@ -1,9 +1,9 @@
 import {useMemo,useState} from 'react';
-import {Plus,ChevronLeft,ChevronRight,Download,CalendarDays,Printer as PrinterIcon} from 'lucide-react';
+import {Plus,ChevronLeft,ChevronRight,Download,CalendarDays} from 'lucide-react';
 import {useData} from './context';
-import {type Task,today,formatDate,uid} from './domain';
-import {occurrences,localDate,addInterval,dayDiff,status,due} from './engine';
-import {download,db} from './db';
+import {type Task,today,formatDate} from './domain';
+import {occurrences,localDate,addInterval,status,due} from './engine';
+import {download,postponeTask} from './db';
 import {Button,PageHeading,Empty,Badge} from './components';
 import {TaskForm} from './forms';
 export function Calendar({onTask}:{onTask:(t:Task)=>void}){
@@ -16,7 +16,7 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
  function move(n:number){setCursor(view==='Month'||view==='Agenda'?addInterval(cursor,0,n):addInterval(cursor,n*(view==='Week'?7:1)));}
  async function reschedule(id:string,date:string){
   const t=visible.find(t=>t.id===id);const p=t&&printers.find(p=>p.id===t.printerId);if(!t||!p||date<today())return;
-  await run(()=>db.transaction('rw',[db.tasks,db.logs],async()=>{await db.tasks.update(id,{postponedUntil:date});await db.logs.add({id:uid(),printerId:p.id,taskId:id,title:t.title,date:today(),hours:p.hours,prints:p.prints,outcome:'Postponed',notes:`Next occurrence moved to ${date} in the calendar. Interval preserved.`,cost:0,minutes:0,materials:'',image:'',onTime:false,dueDate:due(t).date,sourceUrl:t.sourceUrl,source:t.source,skippedCycles:0,inventoryId:'',quantity:0});}),'Next occurrence moved. The maintenance interval is unchanged.');
+  await run(()=>postponeTask(id,date,'Moved in the calendar; interval preserved.'),'Next occurrence moved. The maintenance interval is unchanged.');
  }
  const icsEscape=(s:string)=>s.replaceAll('\\','\\\\').replaceAll('\n','\\n').replaceAll(',','\\,').replaceAll(';','\\;');
  function exportICS(){const rows=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Rose and Paw//PrintGuard3D//EN','CALSCALE:GREGORIAN',...events.flatMap(e=>['BEGIN:VEVENT',`UID:${e.key}@printguard3d`,`DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')}`,`DTSTART;VALUE=DATE:${e.date.replaceAll('-','')}`,`DTEND;VALUE=DATE:${addInterval(e.date,1).replaceAll('-','')}`,`SUMMARY:${icsEscape(e.task.title)}`,`DESCRIPTION:${icsEscape(`${printers.find(p=>p.id===e.task.printerId)?.name}. ${e.projected?'Projected recurrence; actual next date may change after completion. ':''}${e.task.sourceUrl}`)}`,'END:VEVENT']),'END:VCALENDAR'];download(`printguard-schedule-${start}.ics`,rows.join('\r\n'),'text/calendar');}
