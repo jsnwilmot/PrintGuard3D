@@ -20,3 +20,9 @@
 .usage-due-panel .agenda-row{color:var(--text);flex-wrap:wrap;gap:12px}
 .usage-due-panel .agenda-row>span:first-child{flex:1 1 220px;min-width:0}
 .usage-due-panel .agenda-row>.badge{flex:0 1 auto;white-space:normal}
+
+.profile-comparison{max-height:300px;overflow:auto;padding:12px;border:1px solid var(--line)}
+.profile-comparison pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;color:var(--text)}
+.profile-procedure{padding:12px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.source-reference{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:10px 0;color:var(--text)}
+.source-flag{color:var(--amber)}

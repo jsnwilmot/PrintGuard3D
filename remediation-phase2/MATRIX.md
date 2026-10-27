@@ -1,3 +1,5 @@
+> Historical Phase 2 evidence retained. Phase 2 is accepted and merged; see the [Phase 3 successor matrix](../remediation-phase3/MATRIX.md) for the current review.
+
 # PrintGuard 3D — Phase 2 current acceptance matrix
 
 2026-10-27 UTC. All 86 requirements and 29 sections preserved. Section assessment: {'PARTIAL': 21, 'PASS': 5, 'FAIL': 3}. **45/45 test assertions pass; Release 1 remains NOT ready. Phase 2 awaits Architect acceptance.**

@@ -1,0 +1,46 @@
+{
+  "id": "flashforge-creator-5",
+  "manufacturer": "FlashForge",
+  "model": "Creator 5",
+  "family": "Creator 5 series",
+  "technology": "FDM/FFF",
+  "image": "/printer.svg",
+  "imageSource": "PrintGuard 3D generic illustration",
+  "imageRights": "Original application asset; generic fallback, not a product photograph.",
+  "documentation": "https://wiki.flashforge.com/en/creator-series/creator-5-series",
+  "status": "Manufacturer Verified",
+  "version": "1.0.0",
+  "verified": "2026-10-26",
+  "revisions": [
+    "1.0.0: Verified positioning-ball and needle-roller maintenance at 500 operating hours. Other procedures require further verification."
+  ],
+  "templates": [
+    {
+      "title": "Service positioning balls & needle rollers",
+      "description": "Maintain the extruder mount positioning balls and extruder positioning plate needle rollers. Follow the model-specific manufacturer procedure.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-26",
+      "materials": "WD-40, lint-free cloth or wipes, and grease (as specified in the official procedure).",
+      "safety": "Read the complete official procedure before starting. The manufacturer instructs removal of the PEI plate before this procedure to prevent contamination.",
+      "minutes": 0,
+      "notes": "500 hours is the documented interval. Initial tracking begins at your registration reading; adjust the task baseline if you have a previous service reading.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.0.0"
+    }
+  ]
+}

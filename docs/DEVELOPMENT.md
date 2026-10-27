@@ -6,7 +6,7 @@ Repository: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D).
 
 The genuine original application is commit `c938bd8bdf1e9089f1473d3fb1c2e74597066b58`. Its 36 tracked files match the original acceptance hash inventory, allowing for Git's LF/CRLF normalization. The original commit, author metadata and history were retained; no historical commit was reconstructed or backdated. The existing repository was reused, not nested or reinitialized. There were no previous remotes to replace.
 
-`origin` is `https://github.com/jsnwilmot/PrintGuard3D.git`. `main` holds the original baseline until reviewed changes are accepted. Current work is on `remediation/phase1-integrity-safety` and must remain separate until Architect review. Do not rewrite history, force-push, discard uncommitted work, self-approve or self-merge.
+`origin` is `https://github.com/jsnwilmot/PrintGuard3D.git`. `main` contains the approved Phase 1 and Phase 2 merges. Current work is on `remediation/phase3-profiles` and must remain separate until Architect review. Do not rewrite history, force-push, discard uncommitted work, self-approve or self-merge.
 
 Use a dedicated branch per phase or descriptive feature:
 
@@ -24,16 +24,17 @@ These names are workflow guidance, not authorization to begin later phases. Keep
 
 Open significant changes as draft PRs against `main`. Include purpose, associated issue, root causes, summary, modified files, test results, acceptance evidence, known limitations, risks and next action. Architect review and explicit human approval are required before merging. Codex must never approve or merge its own implementation. Repository access settings and branch protection were not changed; these documented rules do not claim enforced GitHub protection.
 
-Phase 1 implementation and verification are not equivalent to Phase 1 acceptance. A native verification gap keeps Issue #2 open. Release 1 remains blocked by its remaining acceptance failures even if the Phase 1 code later receives approval.
+Phase 1 and Phase 2 have been accepted. Phase 3 implementation and test success require separate Architect acceptance. Release 1 remains blocked by the documented broader requirements.
 
 ## Continuous integration
 
 `.github/workflows/validate.yml` runs for PRs targeting `main` and supports manual dispatch. It has read-only repository permissions, pins official Actions to immutable revisions, does not persist checkout credentials, and contains no deployment step or deployment secret.
 
-Two independent jobs report their actual outcome:
+Three independent jobs report their actual outcome:
 
 1. **Quality:** `npm ci`, tracked-file/static validation, TypeScript, all original/new regression tests and a production build for validation only.
-2. **Full Release 1 acceptance:** all 45 current acceptance assertions. Six known calendar/reporting assertions fail. The job stays red; there is no `continue-on-error`, skipped failure or expected-failure conversion.
+2. **Full Release 1 acceptance:** all 45 unchanged acceptance assertions. There is no `continue-on-error`, skipped failure or expected-failure conversion.
+3. **Native Chromium:** production build, nine preserved and four new isolated browser journeys, with synthetic evidence artifacts.
 
 JSON test output is retained as CI artifacts for 14 days, including when acceptance fails. It is not committed to Git. The workflow does not publish application builds. See [Actions runs](https://github.com/jsnwilmot/PrintGuard3D/actions) for results tied to the PR revision.
 
@@ -48,7 +49,7 @@ npx vitest run --config remediation-phase1/vitest.review.config.mts
 npm run build
 ```
 
-The acceptance command is intentionally nonzero while U07, U08, U10, U11, U12 and U18 remain unresolved. Original audit contracts remain historical baseline evidence; the current rerun's R08 exercises the guarded save path and U02 checks both proposed interval labels, as documented in the Phase 1 review.
+The six Phase 2 corrections are accepted and all 45 assertions pass. Actual future failures must still fail CI. Original audit contracts remain historical baseline evidence; the current rerun's R08 exercises the guarded save path and U02 checks both proposed interval labels, as documented in the Phase 1 review.
 
 ## Public-source and data policy
 
@@ -69,3 +70,7 @@ Stop UI automation if the browser/security policy cannot validate the target. Do
 ## Lockfile portability
 
 Generate/update locks without relying on a pre-existing platform-specific `node_modules` tree. The integration repair retained all existing versions and restored missing optional-platform entries; static validation checks required Linux build binaries. Never delete the working dependency tree or silently upgrade versions to work around a CI startup failure. Inspect and document dependency/lock diffs and run a clean CI install.
+
+## Current Phase 3 review
+
+Phase 1 and Phase 2 are accepted and merged; approved Phase 2 main is `bfd4cdd8bbb8a9c3f6a14d7730ebb4441d291458`. The earlier Phase 1 setup narrative above is historical. Phase 3 uses `remediation/phase3-profiles`, references Issue #6 and requires a draft PR for Architect review, without merge or deployment. All 45 acceptance assertions now pass unchanged; there are three independent CI jobs including native Chromium. The current suite contains 114 standard tests and 13 native journeys. See [Phase 3 report](../remediation-phase3/REPORT.md), [matrix](../remediation-phase3/MATRIX.md), and [reviewed profile policy](PROFILE-AUTHORING.md). Repository validation now also checks the data-library manifest and immutable content digests. Manufacturer coverage remains partial; Release 1 is not approved.

@@ -1,0 +1,1797 @@
+{
+  "id": "flashforge-creator-5",
+  "manufacturer": "FlashForge",
+  "model": "Creator 5",
+  "family": "Creator 5 series",
+  "technology": "FDM/FFF",
+  "image": "/printer.svg",
+  "imageSource": "PrintGuard 3D generic illustration",
+  "imageRights": "Original application asset; generic fallback, not a product photograph.",
+  "documentation": "https://wiki.flashforge.com/en/creator-series/creator-5-series",
+  "status": "Manufacturer Verified",
+  "version": "1.1.0",
+  "verified": "2026-10-27",
+  "revisions": [
+    "1.1.0: Reviewed fixed intervals, explicit usage-band options, stable procedure IDs, exact sources and coverage register. Existing rules remain pinned until owner review."
+  ],
+  "templates": [
+    {
+      "title": "Service positioning balls & needle rollers",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 500
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls",
+      "sourceTitle": "How to Maintain the Creator 5 Extruder Positioning Plate Needle Rollers and Extruder Mount Positioning Balls",
+      "verified": "2026-10-27",
+      "materials": "WD-40; lint-free cloth or wipes; grease.",
+      "safety": "Remove the PEI plate before the procedure to prevent contamination. Apply solvent to a cloth as the source instructs; avoid excess lubricant. Read all official steps and safety precautions.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "extruder-mount-positioning-balls",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring",
+      "legacyTitles": [
+        "Service positioning balls & needle rollers"
+      ]
+    },
+    {
+      "title": "Clean and Lubricate the X-Axis Linear Shaft",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/clean-and-lubricate-the-x-axis-linear-shaft",
+      "sourceTitle": "Clean and Lubricate the X-Axis Linear Shaft",
+      "verified": "2026-10-27",
+      "materials": "WD-40 High-Efficiency Silicone Lubricant; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "clean-and-lubricate-the-x-axis-linear-shaft",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 1 hour/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        },
+        {
+          "id": "regular",
+          "label": "T 1–5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 2
+          }
+        },
+        {
+          "id": "high",
+          "label": "T >= 5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Clean and Lubricate the Y-Axis Linear Guide Rail",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Lubrication",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/clean-and-lubricate-the-y-axis-linear-guide-rail",
+      "sourceTitle": "Clean and Lubricate the Y-Axis Linear Guide Rail",
+      "verified": "2026-10-27",
+      "materials": "Grease; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "clean-and-lubricate-the-y-axis-linear-guide-rail",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 1 hour/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        },
+        {
+          "id": "regular",
+          "label": "T 1–5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 2
+          }
+        },
+        {
+          "id": "high",
+          "label": "T >= 5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Cooling Fan Dust Cleaning",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+      "sourceTitle": "Cooling Fan Dust Cleaning",
+      "verified": "2026-10-27",
+      "materials": "Air gun or brush.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "cooling-fan-dust-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 5 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 9
+          }
+        },
+        {
+          "id": "regular",
+          "label": "5 < T < 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 6
+          }
+        },
+        {
+          "id": "high",
+          "label": "T > 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Feed Motor Gear Debris Cleaning",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/feed-motor-gear-debris-cleaning",
+      "sourceTitle": "Feed Motor Gear Debris Cleaning",
+      "verified": "2026-10-27",
+      "materials": "Brush.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "feed-motor-gear-debris-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "Heatsink Fan Dust Cleaning",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/heatsink-fan-dust-cleaning",
+      "sourceTitle": "Heatsink Fan Dust Cleaning",
+      "verified": "2026-10-27",
+      "materials": "Air gun or brush.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "heatsink-fan-dust-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 5 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 9
+          }
+        },
+        {
+          "id": "regular",
+          "label": "5 < T < 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 6
+          }
+        },
+        {
+          "id": "high",
+          "label": "T > 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mainboard Cooling Fan Dust Cleaning",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/mainboard-cooling-fan-dust-cleaning",
+      "sourceTitle": "Mainboard Cooling Fan Dust Cleaning",
+      "verified": "2026-10-27",
+      "materials": "Air gun or brush.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "mainboard-cooling-fan-dust-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 5 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 9
+          }
+        },
+        {
+          "id": "regular",
+          "label": "5 < T < 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 6
+          }
+        },
+        {
+          "id": "high",
+          "label": "T > 10 hours/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Nozzle cold pull cleaning",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 400
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 400
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/nozzle-cold-pull-cleaning",
+      "sourceTitle": "Nozzle cold pull cleaning",
+      "verified": "2026-10-27",
+      "materials": "Filament appropriate to the source material table; manufacturer cold-pull tool (STEP linked in source).",
+      "safety": "This procedure intentionally heats the nozzle. Avoid hot surfaces and moving parts. Use the filament-specific source temperature table; the PLA example is not universal. Read the complete official safety notice.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated. Source also specifies a reduced extrudate-diameter condition; that condition is not generalized to optional nozzle sizes.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "nozzle-cold-pull-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "XY Axis Belt Tension Adjustment",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Calibration",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/xy-axis-belt-tension-adjustment",
+      "sourceTitle": "XY Axis Belt Tension Adjustment",
+      "verified": "2026-10-27",
+      "materials": "2.5 mm hex key.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "xy-axis-belt-tension-adjustment",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "XY Axis Pulley Cleaning & Lubrication",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 1500
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 1500
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/xy-axis-pulley-cleaning-and-lubrication",
+      "sourceTitle": "XY Axis Pulley Cleaning & Lubrication",
+      "verified": "2026-10-27",
+      "materials": "WD-40 High-Efficiency Silicone Lubricant; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "xy-axis-pulley-cleaning-and-lubrication",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "Z-axis Belt Tension Adjustment",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Calibration",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/z-axis-belt-tension-adjustment",
+      "sourceTitle": "Z-axis Belt Tension Adjustment",
+      "verified": "2026-10-27",
+      "materials": "2.0 mm and 2.5 mm hex keys.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "z-axis-belt-tension-adjustment",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "Z-axis Lead Screw Bearing Cleaning & Lubrication",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/z-axis-lead-screw-bearing-cleaning-and-lubrication",
+      "sourceTitle": "Z-axis Lead Screw Bearing Cleaning & Lubrication",
+      "verified": "2026-10-27",
+      "materials": "WD-40 High-Efficiency Silicone Lubricant; grease; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "z-axis-lead-screw-bearing-cleaning-and-lubrication",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 1 hour/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 5
+          }
+        },
+        {
+          "id": "regular",
+          "label": "T 1–5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 4
+          }
+        },
+        {
+          "id": "high",
+          "label": "T >= 5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Z-axis Lead Screw Cleaning & Lubrication",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/z-axis-lead-screw-cleaning-and-lubrication",
+      "sourceTitle": "Z-axis Lead Screw Cleaning & Lubrication",
+      "verified": "2026-10-27",
+      "materials": "Grease; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "z-axis-lead-screw-cleaning-and-lubrication",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 1 hour/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 5
+          }
+        },
+        {
+          "id": "regular",
+          "label": "T 1–5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 4
+          }
+        },
+        {
+          "id": "high",
+          "label": "T >= 5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Z-axis Linear Bearing Cleaning & Lubrication",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "condition"
+      },
+      "originalInterval": {
+        "mode": "condition"
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/z-axis-linear-bearing-cleaning-and-lubrication",
+      "sourceTitle": "Z-axis Linear Bearing Cleaning & Lubrication",
+      "verified": "2026-10-27",
+      "materials": "WD-40 High-Efficiency Silicone Lubricant; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Owner must review and choose an applicable published usage band. No average usage is inferred. Exactly 5 or 10 hours/day may be ambiguous in the source; seek manufacturer clarification rather than inventing a boundary.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "z-axis-linear-bearing-cleaning-and-lubrication",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "usage-dependent",
+      "intervalOptions": [
+        {
+          "id": "low",
+          "label": "T < 1 hour/day",
+          "interval": {
+            "mode": "calendar",
+            "months": 5
+          }
+        },
+        {
+          "id": "regular",
+          "label": "T 1–5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 4
+          }
+        },
+        {
+          "id": "high",
+          "label": "T >= 5 hours/day (source overlaps at 5)",
+          "interval": {
+            "mode": "calendar",
+            "months": 3
+          }
+        }
+      ]
+    },
+    {
+      "title": "Z-axis Pulley Cleaning & Lubrication",
+      "description": "Follow the linked manufacturer procedure for this exact model. This entry records the documented trigger, not a substitute for servicing instructions.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 3000
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/z-axis-pulley-cleaning-and-lubrication",
+      "sourceTitle": "Z-axis Pulley Cleaning & Lubrication",
+      "verified": "2026-10-27",
+      "materials": "WD-40 High-Efficiency Silicone Lubricant; cleanroom paper or cloth.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "z-axis-pulley-cleaning-and-lubrication",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    },
+    {
+      "title": "Clean X/Y/Z linear shafts (user guide)",
+      "description": "Wipe the X, Y and Z linear shafts at the manufacturer’s 1,000-hour printing interval. Consult the exact-model guide for the separate lubrication and condition-based advice.",
+      "category": "Cleaning",
+      "priority": "Normal",
+      "interval": {
+        "mode": "hours",
+        "hours": 1000
+      },
+      "originalInterval": {
+        "mode": "hours",
+        "hours": 1000
+      },
+      "base": "completion",
+      "source": "Manufacturer Verified",
+      "sourceUrl": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "sourceTitle": "Creator 5 User Guide EN/CN-A04 §6.3",
+      "verified": "2026-10-27",
+      "materials": "Lint-free cloth or paper.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "minutes": 0,
+      "notes": "Printer cumulative usage is the tracking baseline; individual component use is not estimated.",
+      "enabled": true,
+      "postponedUntil": "",
+      "condition": false,
+      "profileVersion": "1.1.0",
+      "templateId": "general-linear-shaft-cleaning",
+      "profileId": "flashforge-creator-5",
+      "scheduleKind": "recurring"
+    }
+  ],
+  "references": [
+    {
+      "id": "exhaust-fan-dust-cleaning",
+      "title": "Exhaust Fan Dust Cleaning",
+      "url": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/exhaust-fan-dust-cleaning",
+      "kind": "uncertain",
+      "status": "Not Applicable",
+      "models": [
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "T < 5 hours/day: 9 months; 5 < T < 10 hours/day: 6 months; T > 10 hours/day: 3 months",
+      "materials": "Air gun or brush.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Text and direct URL reviewed. Linked servicing videos not independently reviewed. Published usage bands have gaps/overlaps; no automatic boundary selection. Not scheduled for stock Creator 5: filtration/chamber applicability is not established for that variant.",
+      "sourceVersion": "Wiki text checked 2026-10-27"
+    },
+    {
+      "id": "filter-cartridge-replacement",
+      "title": "Filter Cartridge Replacement",
+      "url": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/filter-cartridge-replacement",
+      "kind": "uncertain",
+      "status": "Not Applicable",
+      "models": [
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "T < 5 hours/day: 9 months; 5 < T < 10 hours/day: 6 months; T > 10 hours/day: 3 months",
+      "materials": "Replacement filter cartridge; source does not specify additional tools.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Text and direct URL reviewed. Linked servicing videos not independently reviewed. Published usage bands have gaps/overlaps; no automatic boundary selection. Not scheduled for stock Creator 5: filtration/chamber applicability is not established for that variant.",
+      "sourceVersion": "Wiki text checked 2026-10-27"
+    },
+    {
+      "id": "clean-remain-filament-on-nozzle",
+      "title": "Creator 5 Nozzle Residue Cleaning",
+      "url": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/clean-remain-filament-on-nozzle",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "On residue affecting calibration/leveling or substantial buildup; no periodic cadence.",
+      "materials": "Wipe tower or unused printed model appropriate to the source material table.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Text and direct URL reviewed. Linked servicing videos not independently reviewed.",
+      "sourceVersion": "Wiki text checked 2026-10-27"
+    },
+    {
+      "id": "c5-plate",
+      "title": "Build plate care",
+      "url": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "After adhesive use or oil contamination; replace if significantly warped.",
+      "materials": "Water after adhesive; dish soap for oil contamination.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Reference only. Not auto-scheduled.",
+      "sourceVersion": "EN/CN-A04 §6"
+    },
+    {
+      "id": "c5-nozzle",
+      "title": "Nozzle care and post-replacement calibration",
+      "url": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "Residue/clog condition or nozzle replacement; no calendar interval.",
+      "materials": "Source-specific filament or unclogging pin; see guide.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Reference only. Not auto-scheduled.",
+      "sourceVersion": "EN/CN-A04 §6"
+    },
+    {
+      "id": "c5-storage",
+      "title": "Filament storage before extended idle",
+      "url": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "When idle for more than two days; no calendar schedule.",
+      "materials": "Sealed moisture-proof container.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Reference only. Not auto-scheduled.",
+      "sourceVersion": "EN/CN-A04 §6"
+    },
+    {
+      "id": "c5-tangles",
+      "title": "Remove lead-screw debris",
+      "url": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "Promptly when foreign material is tangled; no recurring interval.",
+      "materials": "See exact-model guide.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Reference only. Not auto-scheduled.",
+      "sourceVersion": "EN/CN-A04 §6"
+    },
+    {
+      "id": "c5-replace",
+      "title": "Nozzle replacement",
+      "url": "https://wiki.flashforge.com/resource/pictures/creator5_en/quick_start_guide/260819-user_guide_for_c5-standard_version-fx.pdf#page=30",
+      "kind": "corrective",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "Only when replacement is needed; calibrate afterward.",
+      "materials": "See exact-model guide; cut filament before replacement.",
+      "safety": "Read the complete official procedure and safety notice. Avoid hot surfaces and moving parts; maintain ventilation and proper grounding. Video-specific precautions have not been independently reviewed.",
+      "notes": "Reference only. Not auto-scheduled.",
+      "sourceVersion": "EN/CN-A04 §6"
+    },
+    {
+      "id": "video-both-1",
+      "title": "Load and Change Filament",
+      "url": "https://youtu.be/6Q6-QdW4Q9s",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-2",
+      "title": "Extruder Offset Calibration",
+      "url": "https://youtu.be/ZBMPNLeccyI",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-3",
+      "title": "Leveling",
+      "url": "https://youtu.be/57WelFK9DLg",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-4",
+      "title": "Vibration Compensation",
+      "url": "https://youtu.be/AeePpAtLLik",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-5",
+      "title": "Copy Logs",
+      "url": "https://youtu.be/IaYVdfEm7TM",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-6",
+      "title": "Update Firmware via USB",
+      "url": "https://youtu.be/F8--FQOZyMs",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-7",
+      "title": "Replace the Extruder Mount Assembly",
+      "url": "https://youtu.be/eiXGD6ieeXM",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-8",
+      "title": "Disassemble and Assemble the Extruder Mount Assembly",
+      "url": "https://youtu.be/WVKbHFexBk8",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-9",
+      "title": "Replace the Extruder Mount Feed Motor Assembly",
+      "url": "https://youtu.be/2pyYbgiN6gM",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-10",
+      "title": "Replace the Small Motor Optical Sensor Board Assembly",
+      "url": "https://youtu.be/L4k8J4bZp-U",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-11",
+      "title": "Replace the Geared Stepper Motor Assembly",
+      "url": "https://youtu.be/ajFOfBhX0B0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-12",
+      "title": "Replace the Iron-Embedded Gear Ring Assembly",
+      "url": "https://youtu.be/ieuU-YL5lT0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-13",
+      "title": "Replace the Extruder Mount Board",
+      "url": "https://youtu.be/vISGslgU0ts",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-14",
+      "title": "Replace the Y-Axis Sensor Board and Cable",
+      "url": "https://youtu.be/ZNhihuPMUP8",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-15",
+      "title": "Replace the Extruder Mount Eddy Current Sensor",
+      "url": "https://youtu.be/ZCzku-kmwmc",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-16",
+      "title": "Replace the Model Cooling Fan Assembly",
+      "url": "https://youtu.be/K2kvBpXmFlg",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-17",
+      "title": "Replace the Extruder Mount Bus Cable",
+      "url": "https://youtu.be/unH7J5mL52s",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-18",
+      "title": "Replace the Extruder Assembly",
+      "url": "https://youtu.be/HFgyY8JdpP0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-19",
+      "title": "Replace the Nozzle Assembly",
+      "url": "https://youtu.be/nkc2kDmhRug",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-20",
+      "title": "Disassemble and Assemble the Extruder Assembly",
+      "url": "https://youtu.be/mTt1qKqIumE",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-21",
+      "title": "Replace the Extruder Feed Gear Assembly",
+      "url": "https://youtu.be/7-i_urgCrew",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-22",
+      "title": "Replace the Extruder Front Cover Cooling Fan Assembly",
+      "url": "https://youtu.be/5yujnyJH-PQ",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-23",
+      "title": "Replace the Extruder Cutter",
+      "url": "https://youtu.be/FIMrXB4EIv0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-24",
+      "title": "Replace the Hotend Board (Extruder Board) Assembly",
+      "url": "https://youtu.be/wq-56Kpbg08",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-25",
+      "title": "Replace the Extruder Bus Cable and Filament Guide Tube ",
+      "url": "https://youtu.be/LNfVSGeD1Qs",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-26",
+      "title": "Replace the Filament Detection Assembly",
+      "url": "https://youtu.be/kewvXETM_ow",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-27",
+      "title": "Replace the Extruder Dock Board",
+      "url": "https://youtu.be/z-HmYaQ8e8o",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-28",
+      "title": "Replace the Extruder Dock Adapter Board and Cable",
+      "url": "https://youtu.be/Wl1kRRPcnFA",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-29",
+      "title": "Replace the Screen Assembly",
+      "url": "https://youtu.be/NCBsWsrpBy0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-30",
+      "title": "Replace the Screen Adapter Board and Screen Cable",
+      "url": "https://youtu.be/_SoYrMj1fao",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-31",
+      "title": "Replace the Camera Assembly and Cable",
+      "url": "https://youtu.be/yjoxzG2ofbs",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-32",
+      "title": "Replace the LED Light Assembly and Cable",
+      "url": "https://youtu.be/qwxwSK17OCQ",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-33",
+      "title": "Replace the USB Port and Cable",
+      "url": "https://youtu.be/9dDnBt_iXPE",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-34",
+      "title": "Replace the Leveling PCB and Eddy Current Sensor",
+      "url": "https://youtu.be/ERPD2HnHuUw",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-35",
+      "title": "Replace the Bed Bus Cable",
+      "url": "https://youtu.be/ckspUDRa4RE",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-36",
+      "title": "Replace the Bed Heater Plate",
+      "url": "https://youtu.be/BpRQseiC9oc",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-37",
+      "title": "Replace the X-axis Sensor and Sensor Cable",
+      "url": "https://youtu.be/mczT4n4smK8",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-38",
+      "title": "Replace the Wi-Fi Antenna",
+      "url": "https://youtu.be/6d-K4tv2xJU",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-39",
+      "title": "Replace the Motherboard",
+      "url": "https://youtu.be/l8J8JjLC_b4",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-40",
+      "title": "Replace the AC Control Board",
+      "url": "https://youtu.be/sj02iYF0c04",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-41",
+      "title": "Replace the Motherboard Cooling Fan",
+      "url": "https://youtu.be/EdZo_sBV8uI",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-42",
+      "title": "Replace the Switching Power Supply",
+      "url": "https://youtu.be/k29pfubszyo",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-43",
+      "title": "Adjust the XY Axis Timing Belts",
+      "url": "https://youtu.be/R4Zy0wp-9GY",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-44",
+      "title": "Replace the XY Axis Timing Belts",
+      "url": "https://youtu.be/WMsT_gihOjk",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-45",
+      "title": "Adjust the Z-Axis Timing Belt",
+      "url": "https://youtu.be/HnTJWg9qI9Y",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-46",
+      "title": "Replace the Z-Axis Timing Belt",
+      "url": "https://youtu.be/EhLb_Y1tZI0",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-47",
+      "title": "Replace the XY Axis Motors",
+      "url": "https://youtu.be/8I8vcOKnNkI",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-48",
+      "title": "Replace the Z-Axis Motor",
+      "url": "https://youtu.be/tKtXz-g8fLs",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-49",
+      "title": "Replacing the XY Axis Pulleys",
+      "url": "https://youtu.be/3617NXaC2kk",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-50",
+      "title": "Replace the Z-Axis Lead Screw Guide Rods and Bearings",
+      "url": "https://youtu.be/_fVAB0cau_o",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-51",
+      "title": "Replace the X-Axis Linear Shaft (Guide Rail)",
+      "url": "https://youtu.be/HeaxssNIbN8",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-52",
+      "title": "Replace the Y-Axis Linear Guide Rail",
+      "url": "https://youtu.be/lD_ilEwI2cU",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-53",
+      "title": "Replace the Power Supply Cooling Fan",
+      "url": "https://youtu.be/CTW6nNiKxMk",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-54",
+      "title": "Replace the Chamber Exhaust Fan",
+      "url": "https://youtu.be/VSdbR6PgFFw",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-55",
+      "title": "Unclog the Nozzle",
+      "url": "https://youtu.be/hKNBETWPpa4",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "video-both-56",
+      "title": "Clean the Nozzle with a Cold PullColdpullout procedure",
+      "url": "https://youtu.be/dQ1V2ACSoYQ",
+      "kind": "corrective",
+      "status": "Pending Verification",
+      "models": [
+        "Creator 5",
+        "Creator 5 Pro"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "No recurring cadence established.",
+      "materials": "Not independently verified.",
+      "safety": "Video-specific servicing precautions not independently verified. Read manufacturer safety notice; seek qualified support for repairs.",
+      "notes": "Listed by the official maintenance index; video contents not independently audited. Reference only, never auto-scheduled.",
+      "sourceVersion": "Official maintenance index checked 2026-10-27"
+    },
+    {
+      "id": "nozzle-restricted-extrusion-condition",
+      "title": "Nozzle restricted-extrusion condition",
+      "url": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/nozzle-cold-pull-cleaning",
+      "kind": "condition",
+      "status": "Verified Reference",
+      "models": [
+        "Creator 5"
+      ],
+      "checked": "2026-10-27",
+      "intervalText": "Restricted extrusion; source example gives extruded diameter below 0.45 mm for its nominal 0.5 mm extrusion example. Do not generalize this threshold to other nozzle sizes.",
+      "materials": "Filament appropriate to the source material table; manufacturer cold-pull tool (STEP linked in source).",
+      "safety": "This procedure intentionally heats the nozzle. Avoid hot surfaces and moving parts. Use the filament-specific source temperature table; the PLA example is not universal. Read the complete official safety notice.",
+      "notes": "Additional condition in the cold-pull article, alongside its separate 400-hour recurrence. No second recurring rule is created.",
+      "sourceVersion": "Wiki text checked 2026-10-27"
+    }
+  ],
+  "coverage": {
+    "reviewed": 18,
+    "indexTotal": 18,
+    "notes": "Partial overall coverage: all 18 maintenance text articles reviewed; stock Creator 5 excludes unconfirmed filtration/chamber equipment. Eight fixed-interval tasks include the separate 1000-hour user-guide task; eight further procedures need explicit usage-band selection. Condition/corrective references are not scheduled. Indexed videos and band-boundary ambiguities remain unresolved."
+  }
+}

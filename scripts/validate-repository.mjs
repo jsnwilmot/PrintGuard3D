@@ -21,4 +21,5 @@ for(const [parent,binary] of [['rollup','@rollup/rollup-linux-x64-gnu'],['esbuil
  if(!entry?.optional||entry.version!==lock[`node_modules/${parent}`]?.optionalDependencies?.[binary])problems.push(`${binary}: platform-optional lock entry is missing or does not match its parent`);
 }
 if(problems.length){console.error(problems.join('\n'));process.exit(1);}
+execFileSync(process.execPath,['scripts/validate-profiles.mjs'],{stdio:'inherit'});
 console.log(`Validated ${files.length} tracked files: no prohibited output paths, obvious credential patterns or invalid .mjs syntax. Synthetic fixture identity confirmed. This is a targeted guard, not an exhaustive security audit.`);
