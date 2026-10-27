@@ -65,3 +65,7 @@ Use `node remediation-phase1/server.mjs 4347` after a local build. It binds only
 The fixture includes same-model FDM printers, resin, custom rules, completed work, readings, embedded test images, stock, repairs, a pending registry update and an archived applied profile version. Native verification must export via Settings, change only fixture state, import via the actual browser interface, compare every record/relationship, test invalid/conflicting inputs, and record actual outcomes. Do not infer native success from unit tests or a file-picker invocation.
 
 Stop UI automation if the browser/security policy cannot validate the target. Do not enable extension file-URL access, change hosting/access settings, or bypass security controls to complete a test. Record NOT VERIFIED and leave Issue #2 open when a native path remains blocked. Fault-injection regressions still run independently in isolated fake IndexedDB.
+
+## Lockfile portability
+
+Generate/update locks without relying on a pre-existing platform-specific `node_modules` tree. The integration repair retained all existing versions and restored missing optional-platform entries; static validation checks required Linux build binaries. Never delete the working dependency tree or silently upgrade versions to work around a CI startup failure. Inspect and document dependency/lock diffs and run a clean CI install.

@@ -76,7 +76,15 @@ prior=json.loads((base/'before-sha256.json').read_text(encoding='utf-8'))
 protected=['.openai/hosting.json','package.json','package-lock.json','public/logo.png','src/legal.ts','src/styles.css','vite.config.ts','tests/core.test.ts','tests/ui.test.tsx']
 protected_rows={p:{'before':prior.get(p),'after':hashlib.sha256((root/p).read_bytes()).hexdigest()} for p in protected if (root/p).exists()}
 for v in protected_rows.values():v['unchanged']=v['before']==v['after']
-assert all(v['unchanged'] for v in protected_rows.values())
+if not protected_rows['package-lock.json']['unchanged']:
+ old_lock=json.loads(subprocess.check_output(['git','show','c938bd8bdf1e9089f1473d3fb1c2e74597066b58:package-lock.json'],text=True))['packages'];new_lock=json.loads((root/'package-lock.json').read_text(encoding='utf-8'))['packages']
+ assert set(old_lock)<=set(new_lock)
+ for key,value in old_lock.items():
+  assert value.get('version')==new_lock[key].get('version')
+  assert all(value.get(field)==new_lock[key].get(field) or (field in ['resolved','integrity'] and field not in value) for field in set(value)|set(new_lock[key]))
+ assert all(new_lock[key].get('optional') for key in set(new_lock)-set(old_lock))
+ protected_rows['package-lock.json']['allowedChange']='Same-version CI portability metadata and missing optional platform entries; no removals or version changes.'
+assert all(v['unchanged'] or v.get('allowedChange') for v in protected_rows.values())
 (out/'protected-files.json').write_text(json.dumps(protected_rows,indent=2),encoding='utf-8')
 status=subprocess.check_output(['git','status','--short'],text=True)
 (out/'git-status.txt').write_text(status,encoding='utf-8')

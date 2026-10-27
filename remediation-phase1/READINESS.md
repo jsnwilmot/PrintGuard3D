@@ -21,7 +21,7 @@ The React/TypeScript architecture, Dexie IndexedDB store layout/version, perpetu
 | Previously passing acceptance checks | **All 25 remain passing** | A01–A19, U03, U13–U17 |
 | TypeScript | **PASS** | `tsc -p tsconfig.json --noEmit --incremental false`; also checked by build |
 | Local production build | **PASS** | `build.log` |
-| Protected files | **Unchanged** | `protected-files.json`: hosting manifest, dependencies/lockfile, logo, legal module, styles, build configuration and original tests |
+| Protected application assets, legal text, direct dependency declarations and original tests | **Unchanged**; lock metadata exception below | `protected-files.json`: hosting manifest, direct dependency declarations, logo, legal module, styles, build configuration and original tests; see the documented lockfile portability exception |
 | Current native backup/restore journey | **NOT VERIFIED** | Local fixture opened and seeded; file-chooser automation returned without an import preview. No restore success is inferred. |
 
 The updated matrix retains **86 entries across all 29 sections**: **4 PASS, 22 PARTIAL, 3 FAIL** at section level. Granular rows include NOT VERIFIED where appropriate. These are implementation assessments with stated evidence, not a release approval. Unchanged browser, offline, printing and external-source evidence is explicitly carried forward from the original review, rather than represented as freshly repeated.
@@ -134,3 +134,7 @@ The original 29 tests and all 49 Phase 1 regressions pass again (78/78); the ful
 Native Chrome exported the complete three-printer dataset through Settings. All seven exported data arrays and the preferences at export match the labelled native IndexedDB inspection, including images, repairs, stock and three profile definitions. The export SHA-256 is `8b34dc3cb1e53dba81d9416e717515a969225b07960c4054e67b15c0d27f1061`. A synthetic printer was then archived as a reversible replacement-test marker. The upload API required disabled extension file-URL access; settings were left untouched. The native Windows fallback was stopped because the browser URL could not be validated confidently. No restore or native invalid-import success is claimed. Automated import/rollback/safety coverage stays passing, but it does not replace this native gate.
 
 Application source under `src/` is byte-identical to the previously verified Phase 1 source manifest. GitHub workflow/documentation and test-fixture packaging were added; Phase 2 and production changes were not started. Native restore, conflict/repeated imports, native post-restore completion and native classification checks remain outstanding in Issue #2. Do not accept or merge Phase 1 until they are evidenced and an Architect approves.
+
+### CI lockfile portability exception
+
+The integration CI found omitted Linux optional build binaries before any tests could start. The lockfile correction adds 77 missing optional entries and registry URL/integrity metadata for four same-version bundler packages. No existing package version or direct dependency declaration changed, and no existing package entry was removed. This is a documented exception to the initial lockfile-unchanged preservation check; the original remains in Git history. Native restoration is still unverified.

@@ -64,3 +64,9 @@ Keep the PR in draft and Issue #2 open. Review the Phase 1 code and passing auto
 After native verification, compare every supported table and ownership relationship, check historical source snapshots, test incompatible FDM/resin attribution and immutable profile references, then verify another completion advances only its printer's recurrence. Preserve the original 29 tests, all 49 Phase 1 regressions and future-year coverage. Later calendar/reporting/profile/accessibility work requires separate phase authorization. No deployment, self-approval, merge or issue closure is part of this integration.
 
 See [development workflow](DEVELOPMENT.md), [Phase 1 readiness](../remediation-phase1/READINESS.md), [current matrix](../remediation-phase1/MATRIX.md) and [finding register](../remediation-phase1/findings.csv).
+
+## Linux CI portability correction
+
+The first remote run installed dependencies but could not start Vitest because the original Windows-generated lockfile omitted platform-optional binaries, beginning with `@rollup/rollup-linux-x64-gnu`. No test assertions executed in that failed startup; it is not reported as the six known application failures. Missing test artifacts also failed honestly.
+
+An isolated lockfile copy refreshed only the same pinned Rollup, esbuild, Tailwind oxide and Lightning CSS versions. The resulting repair adds 77 already-declared optional platform/transitive entries and missing registry URL/integrity metadata for four existing packages. Every previously locked version and all direct dependency declarations are unchanged; no existing entry was removed. The original lockfile remains in Git history and the local archive. Static validation now checks the four Linux binary entries against their parents. Current CI results must be read from the latest PR revision; the initial failure remains visible in run history.

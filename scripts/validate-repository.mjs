@@ -15,5 +15,10 @@ for(const file of files){
 }
 const legacy=JSON.parse(readFileSync('tests/fixtures/legacy-schema1.synthetic.json','utf8'));
 if(legacy.printers.length!==3||legacy.printers.some(p=>!['p1','p2','p3'].includes(p.id)||!p.name.startsWith('Review printer ')||p.location!=='ISOLATED TEST FIXTURE'))problems.push('Legacy fixture is not the labelled synthetic dataset');
+const lock=JSON.parse(readFileSync('package-lock.json','utf8')).packages;
+for(const [parent,binary] of [['rollup','@rollup/rollup-linux-x64-gnu'],['esbuild','@esbuild/linux-x64'],['@tailwindcss/oxide','@tailwindcss/oxide-linux-x64-gnu'],['lightningcss','lightningcss-linux-x64-gnu']]){
+ const entry=lock[`node_modules/${binary}`];
+ if(!entry?.optional||entry.version!==lock[`node_modules/${parent}`]?.optionalDependencies?.[binary])problems.push(`${binary}: platform-optional lock entry is missing or does not match its parent`);
+}
 if(problems.length){console.error(problems.join('\n'));process.exit(1);}
 console.log(`Validated ${files.length} tracked files: no prohibited output paths, obvious credential patterns or invalid .mjs syntax. Synthetic fixture identity confirmed. This is a targeted guard, not an exhaustive security audit.`);
