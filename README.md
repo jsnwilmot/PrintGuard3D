@@ -54,7 +54,7 @@ Rules with history cannot be reassigned. Reassignment without history becomes us
 
 If an older database already contains contradictions, export it intact and investigate separately. These guards reject unsafe imports/operations; they do not automatically repair, delete or reassign existing records. There is no ordinary history correction/overwrite workflow.
 
-## Phase 1 verification
+## Verification
 
 Local remediation is on `remediation/phase1-integrity-safety`; no deployment, access change or production-data operation is part of this phase. See `remediation-phase1/READINESS.md`, the updated 86-row matrix and raw test reports. The original acceptance evidence remains in `acceptance-review/`.
 
@@ -64,7 +64,7 @@ node node_modules/vitest/vitest.mjs run --config remediation-phase1/vitest.revie
 npm run build
 ```
 
-The acceptance command intentionally remains nonzero while out-of-phase calendar/reporting contracts fail. Those failures are not skipped or converted to expected success. Tests use isolated fake IndexedDB and labelled fixtures. Six additional native Chromium cases now pass through the actual React file input and import handlers, including exact full restoration, safe/repeated merges, invalid input rejection, persistence and post-restore recurrence. See [native verification and reproduction](remediation-phase1/NATIVE-VERIFICATION.md). Phase 1 is recommended for Architect acceptance review and remains unaccepted until that decision. **The application is not Release 1 ready. Phase 2 requires separate authorization.**
+Phase 1 was accepted and merged at `e5565f02f4fe9edb28598380db58ea280663e2b1`. The Phase 2 branch now passes all **45/45 acceptance assertions**, **90/90 standard tests** (78 preserved + 12 new), and **9/9 native browser cases** (6 preserved + 3 new). See the [Phase 2 report](remediation-phase2/REPORT.md) and [current acceptance matrix](remediation-phase2/MATRIX.md). No assertion is skipped or reclassified. **Release 1 remains not ready; Phase 2 awaits Architect acceptance.** No merge, deployment or Phase 3 work is part of this branch.
 
 ## Release scope and limits
 
