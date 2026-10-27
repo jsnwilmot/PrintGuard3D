@@ -1,9 +1,10 @@
 import Dexie,{type Table} from 'dexie';
 import { z } from 'zod';
-import {printerSchema,taskSchema,logSchema,readingSchema,inventorySchema,repairSchema,profileSchema,preferencesSchema,dateSchema,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile,type Preferences,defaults,today,uid} from './domain';
+import {printerSchema,taskSchema,logSchema,readingSchema,inventorySchema,repairSchema,profileSchema,preferencesSchema,dateSchema,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile,type Preferences,defaults,today,uid,safeUrl} from './domain';
 import {advance,status,due,rebaseTaskEdit} from './engine';
 import {assertGraph,graphIssues,recordTables,sameRecord,activityIdentity,type RecordGraph} from './integrity';
-import {reviewTask,reviewProfile,assessProfile,profileArchiveId,bundled,isVerifiedTask} from './profiles';
+import {matchingTask} from './profileChanges';
+import {reviewTask,reviewProfile,assessProfile,profileArchiveId,bundled,isVerifiedTask,reviewedProfiles,defaultProfiles,automaticTemplate,compareVersions,selectTemplate} from './profiles';
 export class PrintGuardDB extends Dexie{
  printers!:Table<Printer,string>;tasks!:Table<Task,string>;logs!:Table<Log,string>;readings!:Table<Reading,string>;inventory!:Table<Inventory,string>;repairs!:Table<Repair,string>;profiles!:Table<Profile,string>;preferences!:Table<Preferences,string>;
  constructor(name='PrintGuard3D'){super(name);this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});}
@@ -101,9 +102,11 @@ export async function savePrinter(value:Printer,expected?:Printer,templates:Task
   if(old&&(p.hours<old.hours||p.prints<old.prints))throw Error('Cumulative usage cannot decrease.');
   if(old&&templates.length)throw Error('Existing schedules must be updated explicitly.');
   const additions=templates.map(t=>taskSchema.parse(t));
-  if(additions.some(t=>t.printerId!==p.id||!isVerifiedTask(t,p)))throw Error('Automatic schedules require reviewed procedures for this exact printer.');
+  if(additions.some(t=>t.printerId!==p.id||!automaticTemplate(t,p)))throw Error('Automatic schedules require reviewed procedures for this exact printer.');
   const reading=readingSchema.parse({id:uid(),printerId:p.id,date:today(),hours:p.hours,prints:p.prints});
   const g=await readGraph();g.printers=[...g.printers.filter(x=>x.id!==p.id),p];g.tasks.push(...additions);g.readings.push(reading);assertGraph(g);
+  const definition=reviewedProfiles.find(d=>d.id===p.profileId&&d.version===p.profileVersion);
+  if(definition){const id=profileArchiveId(definition.id,definition.version);const oldDefinition=await db.profiles.get(id);if(oldDefinition&&!sameRecord({...oldDefinition,id:definition.id,profileId:undefined},definition))throw Error('Conflicting immutable profile definition.');if(!oldDefinition)await db.profiles.add({...definition,id,profileId:definition.id});}
   await db.printers.put(p);await db.tasks.bulkAdd(additions);await db.readings.add(reading);
  });
 }
@@ -141,25 +144,54 @@ export async function saveTask(value:Task,expected?:Task){
   await db.tasks.put(t);return t;
  });
 }
-export async function installProfile(value:Profile,printerId=''){
- const incoming=reviewProfile(value);if(incoming.profileId||incoming.id.startsWith('version:'))throw Error('Install a profile package, not an archived or reserved definition.');
- return db.transaction('rw',[db.profiles,db.printers,db.tasks],async()=>{
-  const current=await db.profiles.get(incoming.id)||bundled.find(p=>p.id===incoming.id);
-  const archiveId=profileArchiveId(incoming.id,incoming.version);const archived=await db.profiles.get(archiveId);
+export interface ProfileInstallOptions {templates?:string[];selections?:Record<string,string>;expected?:Profile;}
+export async function installProfile(value:Profile,printerId='',options:ProfileInstallOptions={}){
+ const incoming=reviewProfile(value);
+ if(incoming.profileId||incoming.id.startsWith('version:'))throw Error('Install a profile package, not an archived or reserved definition.');
+ compareVersions(incoming.version,incoming.version);
+ const released=reviewedProfiles.find(p=>p.id===incoming.id&&p.version===incoming.version);
+ if(released&&!sameRecord(released,incoming))throw Error('This reviewed profile version has a different immutable definition. Use a new version.');
+ return db.transaction('rw',[db.profiles,db.printers,db.tasks,db.logs],async()=>{
+  const current=await db.profiles.get(incoming.id)||defaultProfiles.find(p=>p.id===incoming.id);
+  if(options.expected&&(!current||!sameRecord(assessProfile(current),options.expected)))throw Error('Profile changed after preview. Review the update again.');
+  if(current&&(current.manufacturer!==incoming.manufacturer||current.model!==incoming.model||current.technology!==incoming.technology))throw Error('A stable profile identity cannot change model or technology. Use a separate profile.');
+  if(current&&incoming.version!==current.version&&compareVersions(incoming.version,current.version)<=0)throw Error('Profile downgrade or equal-precedence version rejected.');
+  const retain=async(definition:Profile)=>{const id=profileArchiveId(incoming.id,definition.version);const old=await db.profiles.get(id);const normalized={...definition,id:incoming.id,profileId:undefined};if(old&&!sameRecord({...old,id:incoming.id,profileId:undefined},normalized))throw Error('This profile version already has a different immutable definition. Use a new version.');if(!old)await db.profiles.add({...definition,id,profileId:incoming.id});};
+  const archived=await db.profiles.get(profileArchiveId(incoming.id,incoming.version));
   if(archived&&!sameRecord({...archived,id:incoming.id,profileId:undefined},incoming))throw Error('This profile version already has a different immutable definition. Use a new version.');
   if(current&&current.version===incoming.version&&!sameRecord(assessProfile(current),incoming))throw Error('A profile version cannot be overwritten with different content. Use a new version.');
-  if(current&&current.version!==incoming.version){const id=profileArchiveId(incoming.id,current.version);if(!await db.profiles.get(id))await db.profiles.add({...current,id,profileId:incoming.id});}
+  if(current)await retain(current);
+  // Keep every app-reviewed applied definition with backups, even after a registry-only update.
+  const used=[...await db.printers.toArray(),...await db.tasks.toArray(),...await db.logs.toArray()];
+  for(const definition of reviewedProfiles.filter(d=>d.id===incoming.id&&used.some(row=>row.profileId===d.id&&row.profileVersion===d.version)))await retain(definition);
   if(printerId){
-   const p=await db.printers.get(printerId);if(!p||p.archived||p.manufacturer!==incoming.manufacturer||p.model!==incoming.model||p.technology!==incoming.technology)throw Error('This profile does not support the selected printer model and technology.');
+   const p=await db.printers.get(printerId);
+   if(!p||p.archived||p.manufacturer!==incoming.manufacturer||p.model!==incoming.model||p.technology!==incoming.technology)throw Error('This profile does not support the selected printer model and technology.');
    const existing=await db.tasks.where('printerId').equals(p.id).toArray();
-   for(const template of incoming.templates){const templateId=template.templateId||template.title;
-    if(!existing.some(t=>t.templateId===templateId||(!t.templateId&&t.title===template.title)))await db.tasks.add({...template,id:uid(),printerId:p.id,profileId:incoming.id,profileVersion:incoming.version,templateId,anchorDate:today(),anchorHours:p.hours,anchorPrints:p.prints});
+   const ids=new Set(incoming.templates.map(t=>t.templateId||t.title));
+   if(options.templates?.some(id=>!ids.has(id))||Object.keys(options.selections||{}).some(id=>!ids.has(id)))throw Error('Unknown template selection.');
+   for(const template of incoming.templates){
+    const templateId=template.templateId||template.title;
+    if(options.templates&&!options.templates.includes(templateId))continue;
+    if(matchingTask(template,existing,incoming.id))continue;
+    const selection=options.selections?.[templateId]||'';
+    if(template.scheduleKind==='usage-dependent'&&!selection)continue;
+    const selected=selectTemplate(template,selection);
+    const addition=taskSchema.parse({...selected,id:uid(),printerId:p.id,profileId:incoming.id,profileVersion:incoming.version,templateId,anchorDate:today(),anchorHours:p.hours,anchorPrints:p.prints});
+    if(addition.source==='Manufacturer Verified'&&!automaticTemplate(addition,p))throw Error('Only reviewed compatible intervals can be activated.');
+    await db.tasks.add(addition);existing.push(addition);
    }
    await db.printers.update(p.id,{profileId:incoming.id,profileVersion:incoming.version});
   }
+  await retain(incoming);
   await db.profiles.put(incoming);
  });
 }
 export async function deleteInventory(id:string){return db.transaction('rw',[db.inventory,db.logs],async()=>{if(await db.logs.filter(l=>l.inventoryId===id).count())throw Error('This item is referenced by maintenance history and must be retained. Set available quantity to zero instead.');await db.inventory.delete(id);});}
 export function download(name:string,content:string,type='application/json'){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 export function csv(rows:(string|number)[][]){return '\ufeff'+rows.map(r=>r.map(x=>'"'+String(x).replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"').join(',')).join('\r\n');}
+
+export async function flagSource(url:string){
+ if(!safeUrl(url))throw Error('Source must use HTTP or HTTPS.');
+ return db.transaction('rw',db.preferences,async()=>{const prefs=await db.preferences.get('preferences')??defaults;const flags=prefs.sourceFlags||[];if(!flags.some(f=>f.url===url))await db.preferences.put({...prefs,sourceFlags:[...flags,{url,date:today(),reason:'Owner reports unavailable or changed source; review required.'}]});});
+}

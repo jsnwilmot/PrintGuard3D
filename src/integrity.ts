@@ -1,16 +1,11 @@
 import {today,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile} from './domain';
-import {profileArchiveId,profileIdentity,bundled} from './profiles';
+import {profileArchiveId,profileIdentity,reviewedProfiles} from './profiles';
 
 export const recordTables=['printers','tasks','logs','readings','inventory','repairs','profiles'] as const;
 export type RecordTable=typeof recordTables[number];
 export interface RecordGraph {printers:Printer[];tasks:Task[];logs:Log[];readings:Reading[];inventory:Inventory[];repairs:Repair[];profiles:Profile[];}
-export const sameRecord=(a:unknown,b:unknown):boolean=>{
- if(a===b)return true;
- if(!a||!b||typeof a!=='object'||typeof b!=='object')return false;
- const left=a as Record<string,unknown>,right=b as Record<string,unknown>;
- const keys=Object.keys(left).filter(k=>left[k]!==undefined).sort();
- return keys.join('\0')===Object.keys(right).filter(k=>right[k]!==undefined).sort().join('\0')&&keys.every(k=>sameRecord(left[k],right[k]));
-};
+import {sameRecord} from './comparison';
+export {sameRecord} from './comparison';
 function stableJson(value:unknown):string{
  if(Array.isArray(value))return '['+value.map(stableJson).join(',')+']';
  if(value&&typeof value==='object')return '{'+Object.entries(value).filter(([,v])=>v!==undefined).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>JSON.stringify(k)+':'+stableJson(v)).join(',')+'}';
@@ -30,7 +25,7 @@ export function graphIssues(g:RecordGraph):string[]{
   else if(l.quantity!==0)issue('History',l.id,'Consumption requires an inventory reference.');
  }
  const taskLogs=new Map<string,Log[]>();for(const l of g.logs){const logs=taskLogs.get(l.taskId)||[];logs.push(l);taskLogs.set(l.taskId,logs);}
- const definitionsAvailable=new Set([...g.profiles,...bundled].map(p=>profileArchiveId(profileIdentity(p),p.version)));
+ const definitionsAvailable=new Set([...g.profiles,...reviewedProfiles].map(p=>profileArchiveId(profileIdentity(p),p.version)));
  for(const l of g.logs)if(l.profileId&&!definitionsAvailable.has(profileArchiveId(l.profileId,l.profileVersion||'')))issue('History',l.id,'References a profile version that is missing.');
  for(const p of g.printers)if(p.profileId&&!definitionsAvailable.has(profileArchiveId(p.profileId,p.profileVersion)))issue('Printer',p.id,'References a profile version that is missing.');
  for(const t of g.tasks){const p=ps.get(t.printerId);if(!p)continue;

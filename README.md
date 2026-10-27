@@ -28,13 +28,13 @@ Production preview: `npx vite preview --host 127.0.0.1`. Open the production sit
 
 ## Verified profile scope
 
-The bundled **FlashForge Creator 5**, profile `1.0.0`, includes one procedure verified on 2026-10-26: positioning-ball and needle-roller maintenance at **500 operating hours**. Summary and materials are drawn from the official source below; the original procedure remains authoritative. No additional model-specific intervals have been invented. Creator 5 Pro is a distinct, pending-verification catalogue entry.
+The accepted Creator 5 v1.0.0 definition remains unchanged and is still the initial registration default. Owners can explicitly select **Creator 5 v1.1.0** or review it in Settings: eight confirmed fixed-interval procedures and eight procedures requiring an explicit published daily-use band. Condition and corrective references are retained without invented recurrence. **Creator 5 Pro v1.0.0** is separate and includes only the 1,000-hour cleaning interval verified in its own guide. Broader Pro applicability is pending.
 
-Official source: https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/extruder-mount-positioning-balls
+All 18 official maintenance text articles, both exact-model guides, hardware/safety context and 63 indexed video links are inventoried in the [manufacturer documentation register](remediation-phase3/DOCUMENTATION-REGISTER.md). Video contents and ambiguous band boundaries remain unresolved. Coverage is partial; Manufacturer Verified identifies reviewed procedure evidence, not endorsement or complete-model certification. External instructions are authoritative and require internet access. Links can be flagged locally when unavailable/changed; tasks and complete-schedule reports show the flags. No continuous remote checking is claimed.
 
-Other listed manufacturers/models support registration and user-defined rules. Installed profiles extend the manufacturer/model selectors. Imported profiles are strict JSON data, never executable code. Their verification claims remain **Pending Verification** unless they match an application-reviewed definition for the exact model, technology, version and procedure. A source URL or acknowledgment alone does not establish verification. The bundled procedure is the only reviewed allowlist entry; this phase adds no manufacturer intervals.
+Additional manufacturers/models support registration and user-defined rules. New reviewed JSON definitions and manifest entries extend the library without changing the scheduling engine. Imported verification labels stay pending unless the complete profile/task definition matches the application-reviewed exact model, technology and version. Source URLs and acknowledgment alone do not establish verification.
 
-Installation never overwrites history or existing task customizations. Earlier profile definitions remain stored under reserved version keys in the existing profiles store, and applied documentation resolves the exact retained version. Same-version redefinitions are rejected. A stable `templateId` identifies a template across updates; legacy packages without it fall back to their existing title and cannot reliably identify renames. Applying new defaults is explicit; pending procedures remain pending. Changed existing tasks require an explicit edit. Preview displays current/incoming definitions and intervals; comprehensive field-level diff and coverage research remain outstanding.
+The review modal exposes every changed field, additions/removals, applicability and ordering. Acceptance is explicit; deferring writes nothing. Updates reject downgrades, redefinitions, stale registry previews and ambiguous task identities. Selected new procedures append using current readings. Existing rules, custom intervals, baselines, history and other printers remain unchanged and pinned to immutable historical definitions. Removed templates do not delete active rules. Changed existing rules require separate owner edits, not automatic merging. See [profile authoring and update policy](docs/PROFILE-AUTHORING.md).
 
 Generic printer illustrations are original code-native assets, clearly identified as generic. The supplied original logo is used without redesign. Custom photographs are resized locally and included in backups.
 
@@ -56,22 +56,25 @@ If an older database already contains contradictions, export it intact and inves
 
 ## Verification
 
-Local remediation is on `remediation/phase1-integrity-safety`; no deployment, access change or production-data operation is part of this phase. See `remediation-phase1/READINESS.md`, the updated 86-row matrix and raw test reports. The original acceptance evidence remains in `acceptance-review/`.
+Phase 1 was accepted and merged at `e5565f02f4fe9edb28598380db58ea280663e2b1`; Phase 2 was accepted and merged at `bfd4cdd8bbb8a9c3f6a14d7730ebb4441d291458`. Phase 3 work is on `remediation/phase3-profiles` for [Issue #6](https://github.com/jsnwilmot/PrintGuard3D/issues/6), submitted for Architect review only. See the [Phase 3 report](remediation-phase3/REPORT.md), [current 86-row matrix](remediation-phase3/MATRIX.md) and retained [Phase 2 evidence](remediation-phase2/REPORT.md).
 
 ```sh
-npm test
-node node_modules/vitest/vitest.mjs run --config remediation-phase1/vitest.review.config.mts
+node scripts/validate-repository.mjs
+npx tsc -p tsconfig.json --noEmit --incremental false
+npx vitest run tests
+npx vitest run --config remediation-phase1/vitest.review.config.mts
 npm run build
+npm run test:native
 ```
 
-Phase 1 was accepted and merged at `e5565f02f4fe9edb28598380db58ea280663e2b1`. The Phase 2 branch now passes all **45/45 acceptance assertions**, **90/90 standard tests** (78 preserved + 12 new), and **9/9 native browser cases** (6 preserved + 3 new). See the [Phase 2 report](remediation-phase2/REPORT.md) and [current acceptance matrix](remediation-phase2/MATRIX.md). No assertion is skipped or reclassified. **Release 1 remains not ready; Phase 2 awaits Architect acceptance.** No merge, deployment or Phase 3 work is part of this branch.
+Phase 3 local verification: **114/114 standard tests** (90 preserved + 24 new), **45/45 unchanged acceptance assertions**, **13/13 native Chromium cases** (9 preserved + 4 new), TypeScript, static checks and production build. Native tests need the pinned Playwright Chromium installed and use fresh localhost contexts; see the report. No assertion is bypassed or weakened. **Release 1 remains NOT approved.** No merge, deployment, access change or production-data operation is authorized by this phase.
 
 ## Release scope and limits
 
-This implements the Release 1 local maintenance workflow and some enhanced management: repairs, parts consumption, costs and local photos. Additional verified profiles require source research. Guided procedures link to original instructions and require safety acknowledgment before recording work; there is no invented step-by-step guide. Advanced forecasting, standalone PDF composition, PNG schedule exports, every requested historical trend chart, and profile-by-profile field-diff merging are not implemented. Browser print-to-PDF is supported. Reliable closed-app push notifications, printer connectivity and cloud sync are outside the core release. No claim of WCAG certification or exhaustive Safari/Firefox/device testing is made. Seek legal review before a public launch.
+This implements the Release 1 local maintenance workflow and some enhanced management: repairs, parts consumption, costs and local photos. Additional verified profiles require source research. Guided procedures link to original instructions and require safety acknowledgment before recording work; there is no invented step-by-step guide. Advanced forecasting, standalone PDF composition, PNG schedule exports, every requested historical trend chart, and automatic merging of changed existing profile rules are not implemented. Browser print-to-PDF is supported. Reliable closed-app push notifications, printer connectivity and cloud sync are outside the core release. No claim of WCAG certification or exhaustive Safari/Firefox/device testing is made. Seek legal review before a public launch.
 
 Contact: design@roseandpaw.ca
 
 ## GitHub review workflow
 
-Official source: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D). See [development rules](docs/DEVELOPMENT.md) and [GitHub integration status](docs/GITHUB-INTEGRATION.md). The original `main` baseline is retained; Phase 1 belongs in a draft PR and must not be self-approved or merged by Codex. The CI quality job and full acceptance job report independently; known acceptance failures stay red. No CI deployment exists. Raw local backups, browser captures and generated test reports are excluded from source control; only reviewed synthetic test fixtures are included.
+Official source: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D). See [development rules](docs/DEVELOPMENT.md) and [GitHub integration status](docs/GITHUB-INTEGRATION.md). Approved Phase 1/2 history remains on main. Phase 3 belongs in a draft PR and must not be self-approved or merged by Codex. CI reports quality, all acceptance assertions and native Chromium independently; actual failures stay red. No CI deployment exists. Raw local backups, browser captures and generated test reports are excluded from source control; only reviewed synthetic test fixtures are included.

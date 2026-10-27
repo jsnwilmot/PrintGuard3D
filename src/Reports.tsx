@@ -6,6 +6,7 @@ import {status,due,compliance,addInterval} from './engine';
 import {download,csv} from './db';
 import {PageHeading,Button,Empty,External,PrinterArt} from './components';
 import {upcomingOccurrences,usageDue,validCalendarDate} from './scheduleView';
+import {reviewTask} from './profiles';
 import {shortDisclaimer} from './legal';
 import {BarChart,Bar,CartesianGrid,XAxis,YAxis,Tooltip,ResponsiveContainer} from 'recharts';
 const types=['Complete Maintenance History','Complete Maintenance Schedule','Upcoming Maintenance','Overdue Maintenance','Maintenance Compliance','Printer Maintenance Performance','Recorded Operating Hours','Maintenance Expenses','Parts Replacement History','Open Repairs','Annual Maintenance Summary'];
@@ -14,12 +15,12 @@ export function Reports(){
  const ps=printers.filter(p=>(!printer||printer===p.id)&&(!manufacturer||manufacturer===p.manufacturer));const ids=new Set(ps.map(p=>p.id));const ts=tasks.filter(t=>ids.has(t.printerId)&&(!category||category===t.category)&&(!priority||priority===t.priority)&&(!state||status(t,printers.find(p=>p.id===t.printerId)!)===state));const ls=logs.filter(l=>ids.has(l.printerId)&&(!category||l.category===category)&&(!priority||l.priority===priority)&&l.date>=start&&l.date<=end&&(!state||l.outcome===state));const complete=ls.filter(l=>l.outcome==='Completed');const cost=complete.reduce((s,l)=>s+l.cost,0)+repairs.filter(r=>ids.has(r.printerId)&&r.date>=start&&r.date<=end).reduce((s,r)=>s+r.cost,0);const score=compliance(ls);
  const historyRows=ls.map(l=>[l.title,printers.find(p=>p.id===l.printerId)!.name,formatDate(l.date),l.outcome,`${l.hours} h / ${l.prints} prints`,`${l.cost.toFixed(2)} ${l.currency||prefs.currency}`,l.sourceUrl,l.notes]);
  let headers=['Task','Printer','Date','Status','Usage','Cost','Documentation','Notes'];let rows:(string|number)[][]=historyRows;
- if(type==='Complete Maintenance Schedule'){headers=['Task','Printer','Next date','Usage threshold','Interval','Status','Documentation'];rows=ts.map(t=>{const d=due(t);return [t.title,printers.find(p=>p.id===t.printerId)!.name,t.postponedUntil||d.date,[d.hours!==null?`${d.hours} h`:'',d.prints!==null?`${d.prints} prints`:''].filter(Boolean).join(' or '),intervalLabel(t.interval),status(t,printers.find(p=>p.id===t.printerId)!),t.sourceUrl];});}
+ if(type==='Complete Maintenance Schedule'){headers=['Task','Printer','Next date','Usage threshold','Interval','Status','Documentation','Source','Profile version','Documentation checked','Safety','Source review'];rows=ts.map(t=>{const d=due(t);return [t.title,printers.find(p=>p.id===t.printerId)!.name,t.postponedUntil||d.date,[d.hours!==null?`${d.hours} h`:'',d.prints!==null?`${d.prints} prints`:''].filter(Boolean).join(' or '),intervalLabel(t.interval),status(t,printers.find(p=>p.id===t.printerId)!),t.sourceUrl,reviewTask(t,printers.find(p=>p.id===t.printerId)!).source,t.profileVersion,t.verified,t.safety,prefs.sourceFlags?.some(f=>f.url===t.sourceUrl)?'Flagged for review':'Check current source before servicing'];});}
  else if(type==='Upcoming Maintenance'){
   headers=['Task','Printer','Date','Occurrence / current status','Interval / usage threshold','Source','Documentation'];
   rows=ts.flatMap(t=>{const p=printers.find(p=>p.id===t.printerId)!;
    const dated=upcomingOccurrences(t,p,start,end).map(e=>[t.title,p.name,e.date,e.projected?'Projected recurrence':'Next due',intervalLabel(t.interval),t.source,t.sourceUrl]);
-   const current=validCalendarDate(start)&&validCalendarDate(end)&&start<=today()&&end>=today()&&usageDue(t,p)?[[t.title,p.name,'',`${status(t,p)} · current usage; calendar date unknown`,intervalLabel(t.interval),t.source,t.sourceUrl]]:[];
+   const current=validCalendarDate(start)&&validCalendarDate(end)&&start<=today()&&end>=today()&&usageDue(t,p)?[[t.title,p.name,'',`${status(t,p)} Â· current usage; calendar date unknown`,intervalLabel(t.interval),t.source,t.sourceUrl]]:[];
    return [...current,...dated];
   });
  }

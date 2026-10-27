@@ -1,0 +1,38 @@
+[
+  {
+    "file": "src/profile-library/flashforge/creator-5-1.0.0.json",
+    "id": "flashforge-creator-5",
+    "version": "1.0.0",
+    "model": "Creator 5",
+    "sha256": "3657e434e94b70ac5e918a242c9ff84fd3505f0d7298d362f11852241bb462a8",
+    "reviewed": "2026-10-26",
+    "sourceHosts": [
+      "wiki.flashforge.com"
+    ],
+    "legacy": true
+  },
+  {
+    "file": "src/profile-library/flashforge/creator-5-1.1.0.json",
+    "id": "flashforge-creator-5",
+    "version": "1.1.0",
+    "model": "Creator 5",
+    "sha256": "d546a87a7aa39729320364b595ed478ebe0515b5aac6e025dfa4122e1eb154d6",
+    "reviewed": "2026-10-27",
+    "sourceHosts": [
+      "wiki.flashforge.com"
+    ],
+    "legacy": false
+  },
+  {
+    "file": "src/profile-library/flashforge/creator-5-pro-1.0.0.json",
+    "id": "flashforge-creator-5-pro",
+    "version": "1.0.0",
+    "model": "Creator 5 Pro",
+    "sha256": "7b65dd51e3b9a42ab71d811a70cbabc64d9283f2e20f87a66f21358b7f120ece",
+    "reviewed": "2026-10-27",
+    "sourceHosts": [
+      "wiki.flashforge.com"
+    ],
+    "legacy": false
+  }
+]
