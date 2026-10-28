@@ -1,4 +1,5 @@
 import {type Task,type Printer,type Log,today} from './domain';
+import {historicalMetadataMatches} from './reporting';
 import {due,status,occurrences,localDate} from './engine';
 
 // Presentation selectors never update rules, readings or historical records.
@@ -36,7 +37,6 @@ export function calendarOccurrences(task:Task,start:string,end:string){
 }
 export function historyMatches(log:Log,filters:{printer:string;category:string;priority:string;state:string}){
  return log.outcome==='Completed'&&(!filters.printer||log.printerId===filters.printer)
-  &&(!filters.category||!log.category||log.category===filters.category)
-  &&(!filters.priority||!log.priority||log.priority===filters.priority)
+  &&historicalMetadataMatches(log,filters.category,filters.priority)
   &&(!filters.state||filters.state==='Completed');
 }
