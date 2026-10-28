@@ -121,10 +121,11 @@ export async function saveInventory(value:Inventory){
 }
 export async function saveRepair(value:Repair){
  const r=repairSchema.parse(value);
- return db.transaction('rw',[db.repairs,db.printers],async()=>{
+ return db.transaction('rw',[db.repairs,db.printers,db.preferences],async()=>{
   if(!await db.printers.get(r.printerId))throw Error('Repair references a missing printer.');
   const old=await db.repairs.get(r.id);if(old&&old.printerId!==r.printerId)throw Error('An existing repair must retain its printer. Create a separate repair record.');
-  await db.repairs.put(r);
+  const currency=old?old.currency:(await db.preferences.get('preferences'))?.currency||defaults.currency;
+  const record={...r};delete record.currency;if(currency)record.currency=currency;await db.repairs.put(record);
  });
 }
 export async function saveTask(value:Task,expected?:Task){

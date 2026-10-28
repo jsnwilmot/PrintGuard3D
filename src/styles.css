@@ -113,3 +113,41 @@
  .report-sheet{overflow:visible!important}.report-disclaimer{break-inside:avoid}
  .report-disclaimer p{font-size:9pt!important}
 }
+
+/* Phase 5: readable record summaries and paginated schedule details. */
+.schedule-print{display:none}
+.metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px;margin:24px 0}
+.metric-button{padding:20px;text-align:left;display:flex;flex-direction:column;gap:10px;color:var(--text);min-width:0;overflow-wrap:anywhere}
+.metric-button strong{font-size:22px;color:var(--heading)}.metric-button small{color:var(--muted);line-height:1.5}
+.calendar-event.complete{width:100%;text-align:left}
+@media print{
+ .schedule-sheet>.table-wrap,.schedule-sheet>.print-printers{display:none!important}
+ .schedule-print{display:block!important;font:10pt/1.45 Arial,sans-serif;color:#111}
+ .schedule-printer{break-before:page}.schedule-printer:first-child{break-before:auto}
+ .schedule-printer>header{display:flex;align-items:center;gap:16px;border-bottom:2px solid #333;padding-bottom:10px;break-inside:avoid;break-after:avoid}
+ .schedule-printer>header .printer-art{width:100px!important;height:85px!important;display:block!important;flex:none;mix-blend-mode:normal!important}
+ .schedule-printer img{display:block!important;max-width:100px!important;max-height:85px!important;object-fit:contain;mix-blend-mode:normal!important}
+ .schedule-printer h3{font-size:15pt}.schedule-printer p{font-size:10pt;line-height:1.5;margin:6px 0;overflow-wrap:anywhere}
+ .schedule-task{border-bottom:1px solid #aaa;padding:12px 0;break-inside:auto;overflow:visible}
+ .schedule-task h4{font-size:12pt;margin:0 0 8px;break-after:avoid;overflow-wrap:anywhere}
+ .schedule-task dl{margin:8px 0;display:block}.schedule-task dl>div{margin:6px 0;break-inside:avoid;overflow-wrap:anywhere}
+ .schedule-task dt{font-weight:bold;font-size:10pt}.schedule-task dd{margin:0;font-size:10pt;line-height:1.5;white-space:normal}
+ .schedule-task a{color:#111;text-decoration:underline;overflow-wrap:anywhere;word-break:break-word}
+ .schedule-task p{orphans:3;widows:3}.report-disclaimer{break-inside:auto}.report-sheet{padding:0!important;border:0!important}
+}
+
+@media screen{
+ .local-storage-card,.help-intro{background:var(--panel);background-image:none}
+ .welcome-panel{background:#173c70;background-image:none}
+ .hero-corner{background:#173c70;color:#fff}
+ .workspace-avatar{color:var(--blue);background:var(--panel);border:1px solid var(--control)}
+ .legal-copy{background:var(--panel);color:var(--text)}
+ .recharts-cartesian-axis-tick text,.recharts-cartesian-axis-tick tspan{fill:var(--muted)}
+}
+
+@media print{.schedule-sheet .historical-calculation,.schedule-sheet .unclassified-history{display:none!important}}
+
+@media print{
+ .schedule-sheet .report-disclaimer{margin-top:4mm;padding-top:2mm;break-inside:avoid}
+ .schedule-sheet .report-disclaimer p{margin:0 0 2mm;font-size:9pt!important;line-height:1.35!important}
+}

@@ -1,0 +1,2080 @@
+[
+  {
+    "scan": "full-disclaimer-axe",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".legal-copy > p:nth-child(1)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".legal-copy > p:nth-child(2)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".legal-copy > p:nth-child(4)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "p:nth-child(6)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "nested-disclaimer-axe",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".legal-copy > p:nth-child(1)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".legal-copy > p:nth-child(2)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".legal-copy > p:nth-child(3)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Dashboard",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".welcome-copy > h2"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "23.3pt (31px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".welcome-copy > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero-footnote"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero-corner"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"74.4\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"143.8\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"213.20000000000002\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"282.6\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"348.4453125\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-My-Printers",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Maintenance",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Calendar",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Reports",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"234.33333333333334\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"573\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"911.6666666666667\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"185\"][text-anchor=\"end\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"140\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"95\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"50\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"10.5\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Inventory",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Settings",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Light-Help-&-documentation",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".workspace-avatar"
+            ],
+            "checks": [
+              {
+                "fgColor": "#4f77ad",
+                "bgColor": "#eaf1fc",
+                "contrastRatio": 4.04,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > h2"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > p:nth-child(2)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > .muted"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "a[href=\"mailto:design@roseandpaw.ca\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Dashboard",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".welcome-copy > h2"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "23.3pt (31px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".welcome-copy > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero-footnote"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".hero-corner"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"74.4\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"143.8\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"213.20000000000002\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"282.6\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"348.4453125\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-My-Printers",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Maintenance",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Calendar",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Reports",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"234.33333333333334\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"573\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "tspan[x=\"911.6666666666667\"][dy=\"0.71em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"185\"][text-anchor=\"end\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"140\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"95\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"50\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"10.5\"] > tspan[dy=\"0.355em\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Inventory",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Settings",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scan": "Dark-Help-&-documentation",
+    "rules": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".local-storage-card > span"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > h3"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > p"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              ".local-storage-card > button"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "kbd"
+            ],
+            "checks": [
+              {
+                "messageKey": "nonBmp"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > h2"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > p:nth-child(2)"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "div > .muted"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          },
+          {
+            "target": [
+              "a[href=\"mailto:design@roseandpaw.ca\"]"
+            ],
+            "checks": [
+              {
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
