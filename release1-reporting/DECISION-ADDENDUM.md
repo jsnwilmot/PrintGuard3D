@@ -1,0 +1,13 @@
+# Approved Release 1 scope addendum
+
+Authority: [owner-approved decision #13](https://github.com/jsnwilmot/PrintGuard3D/issues/13#issuecomment-6471768461), [implementation contract #18](https://github.com/jsnwilmot/PrintGuard3D/issues/18), [final acceptance #17](https://github.com/jsnwilmot/PrintGuard3D/issues/17). This records the approved engineering scope; it does not approve the implementation, legal wording, merge or Release 1.
+
+| Original section | Approved Release 1 interpretation | Implementation / boundary |
+| --- | --- | --- |
+| §9 scheduling / forecasting | Retain basic estimates from actual usage readings, visibly conditional and separate from due states. Enhanced forecasting is R2. | Existing engine unchanged. Workload shows non-due estimates separately and never gives reached hour/print work an invented calendar date. |
+| §11 dashboard | All seven named chart subjects and meaningful pointer/keyboard drilldowns are R1. Monthly completion trend and completed-per-month may share a chart. | Six visualizations cover seven subjects. Monthly completion counts, recorded compliance, per-printer activity, labelled workload, separate-currency expenses and actual observed overdue points. Exact selected records back drilldowns. |
+| §11 overdue history | Prospective actual observations only; no retrospective reconstruction. | Explicit recording start after acknowledgment, optional open-app collection, immutable captured identity/status, gaps unknown. Historical outstanding-overdue measurements before capture cannot be supplied truthfully. |
+| §15 reports | Retain ten named report families, filters, CSV and browser print/PDF; add selected standalone offline safe HTML and versioned JSON for tabular reports. | All 18 tabular choices share typed selectors/serialization. Unclassified attribution requires deliberately separate exports. JSON reports have a distinct envelope and are not full backups. Advanced PDF composition/PNG is R2. |
+| §26 release boundary | Complete only authorized reporting/chart/history gaps. Preserve the full-spec accounting and external release gates. | Full-spec guided-workflow row 12.2 stays FAIL and R2, not an automatic R1 blocker. No manufacturer expansion, connectivity, hosted service, deployment, next phase or Release 1 approval. |
+
+The sampling, additive store and backup-extension decisions are engineering decisions in [DESIGN.md](DESIGN.md), requiring Architect integrity review. Qualified counsel #10, official manufacturer coverage #14, human/device accessibility and physical print #15, and actual hosting/security #16 remain separate open gates. No technical PASS in this submission closes those gates.

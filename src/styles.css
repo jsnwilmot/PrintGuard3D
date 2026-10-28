@@ -154,3 +154,16 @@
 
 /* Apply theme foreground/background colours together; cross-fading them can reduce text contrast. */
 @media screen{button,a{transition-property:box-shadow,transform}}
+
+/* Release 1 reporting: shared charts, keyboard record controls and safe print surfaces. */
+.record-chart,.observation-controls,.workload-controls{padding:22px;margin:20px 0;min-width:0}
+.record-chart>p,.dashboard-chart-section>p{color:var(--muted);line-height:1.6}.record-chart-plot{min-width:0;width:100%;margin-top:16px}
+.record-chart table caption{text-align:left;padding:10px;font-weight:600}.record-chart td small{display:block;max-width:28em;white-space:normal;line-height:1.5}
+.record-chart th,.record-chart td{white-space:normal;overflow-wrap:anywhere}.record-chart td .button{white-space:normal}.record-chart .table-wrap{max-width:100%}
+.report-stat{text-align:left;color:var(--text)}.report-stat strong{overflow-wrap:anywhere}.report-stat{min-width:0}
+@media screen and (max-width:720px){.record-chart,.observation-controls,.workload-controls{padding:14px}.record-chart table{min-width:540px}.record-chart-plot{overflow:hidden}}
+@media print{.dashboard-chart-section{display:none}.report-controls,.report-stats{display:none!important}.report-sheet .button{display:none!important}}
+
+.record-chart h2,.record-chart caption,.observation-controls p{overflow-wrap:anywhere}
+
+.record-chart-values{list-style:none;margin:12px 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:12px}.record-chart-values li{border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0;overflow-wrap:anywhere}.record-chart-values small{color:var(--muted)}.record-chart-values .button{align-self:flex-start;white-space:normal}

@@ -1,13 +1,14 @@
 import Dexie,{type Table} from 'dexie';
 import { z } from 'zod';
+import {overdueHistorySchema,observationIssues,type Observation} from './observations';
 import {printerSchema,taskSchema,logSchema,readingSchema,inventorySchema,repairSchema,profileSchema,preferencesSchema,dateSchema,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile,type Preferences,defaults,today,uid,safeUrl} from './domain';
 import {advance,status,due,rebaseTaskEdit} from './engine';
 import {assertGraph,graphIssues,recordTables,sameRecord,activityIdentity,type RecordGraph} from './integrity';
 import {matchingTask} from './profileChanges';
 import {reviewTask,reviewProfile,assessProfile,profileArchiveId,bundled,isVerifiedTask,reviewedProfiles,defaultProfiles,automaticTemplate,compareVersions,selectTemplate} from './profiles';
 export class PrintGuardDB extends Dexie{
- printers!:Table<Printer,string>;tasks!:Table<Task,string>;logs!:Table<Log,string>;readings!:Table<Reading,string>;inventory!:Table<Inventory,string>;repairs!:Table<Repair,string>;profiles!:Table<Profile,string>;preferences!:Table<Preferences,string>;
- constructor(name='PrintGuard3D'){super(name);this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});}
+ printers!:Table<Printer,string>;tasks!:Table<Task,string>;logs!:Table<Log,string>;readings!:Table<Reading,string>;inventory!:Table<Inventory,string>;repairs!:Table<Repair,string>;profiles!:Table<Profile,string>;preferences!:Table<Preferences,string>;observations!:Table<Observation,string>;
+ constructor(name='PrintGuard3D'){super(name);this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});this.version(2).stores({observations:'id,printerId,observedAt,[printerId+observedAt]'});this.observations.hook('updating',()=>{throw Error('Recorded observations are immutable. Import conflicts require review.');});}
 }
 export const db=new PrintGuardDB();
 export async function completeTask(id:string,input:Pick<Log,'date'|'hours'|'prints'|'notes'|'cost'|'minutes'|'materials'|'image'|'inventoryId'|'quantity'>,outcome:'Completed'|'Skipped'='Completed'){
@@ -31,16 +32,20 @@ export async function completeTask(id:string,input:Pick<Log,'date'|'hours'|'prin
  await db.tasks.put(next.task);await db.printers.update(p.id,{hours:input.hours,prints:input.prints});await db.readings.add({id:uid(),printerId:p.id,date:input.date,hours:input.hours,prints:input.prints});
  });
 }
-export const backupSchema=z.object({application:z.literal('PrintGuard3D'),schemaVersion:z.literal(1),exportedAt:z.string(),scope:z.enum(['full','printer']),printers:z.array(printerSchema),tasks:z.array(taskSchema),logs:z.array(logSchema),readings:z.array(readingSchema),inventory:z.array(inventorySchema),repairs:z.array(repairSchema),profiles:z.array(profileSchema),preferences:preferencesSchema.optional()}).strict();
+export const backupSchema=z.object({application:z.literal('PrintGuard3D'),schemaVersion:z.literal(1),exportedAt:z.string(),scope:z.enum(['full','printer']),printers:z.array(printerSchema),tasks:z.array(taskSchema),logs:z.array(logSchema),readings:z.array(readingSchema),inventory:z.array(inventorySchema),repairs:z.array(repairSchema),profiles:z.array(profileSchema),preferences:preferencesSchema.optional(),overdueHistory:overdueHistorySchema.optional()}).strict();
 export type Backup=z.infer<typeof backupSchema>;
 export async function makeBackup(printerId?:string):Promise<Backup>{
  const byPrinter=<T extends {printerId:string}>(rows:T[])=>printerId?rows.filter(x=>x.printerId===printerId):rows;
- return db.transaction('r',db.tables,async()=>({application:'PrintGuard3D',schemaVersion:1,exportedAt:new Date().toISOString(),scope:printerId?'printer':'full',printers:(await db.printers.toArray()).filter(x=>!printerId||x.id===printerId),tasks:byPrinter(await db.tasks.toArray()),logs:byPrinter(await db.logs.toArray()),readings:byPrinter(await db.readings.toArray()),inventory:(await db.inventory.toArray()).filter(x=>!printerId||!x.printerId||x.printerId===printerId),repairs:byPrinter(await db.repairs.toArray()),profiles:await db.profiles.toArray(),preferences:await db.preferences.get('preferences')??defaults}));
+ return db.transaction('r',db.tables,async()=>({application:'PrintGuard3D',schemaVersion:1,exportedAt:new Date().toISOString(),scope:printerId?'printer':'full',printers:(await db.printers.toArray()).filter(x=>!printerId||x.id===printerId),tasks:byPrinter(await db.tasks.toArray()),logs:byPrinter(await db.logs.toArray()),readings:byPrinter(await db.readings.toArray()),inventory:(await db.inventory.toArray()).filter(x=>!printerId||!x.printerId||x.printerId===printerId),repairs:byPrinter(await db.repairs.toArray()),profiles:await db.profiles.toArray(),preferences:await db.preferences.get('preferences')??defaults,...await observationBackup(printerId)}));
 }
+async function observationBackup(printerId?:string){const records=(await db.observations.toArray()).filter(row=>!printerId||row.printerId===printerId);return records.length?{overdueHistory:{version:1 as const,records}}:{};}
 export function validateBackup(value:unknown):Backup{
  if(value&&typeof value==='object'&&'schemaVersion' in value&&value.schemaVersion!==1)throw Error('This backup uses an unsupported schema. Version 1 is supported; newer versions require an application update.');
  const b=backupSchema.parse(value);
  assertGraph(b);
+ if(b.overdueHistory&&(!Number.isFinite(Date.parse(b.exportedAt))||new Date(b.exportedAt).toISOString()!==b.exportedAt))throw Error('Observation exports require an exact UTC export instant.');
+ if(b.overdueHistory?.records.some(row=>row.observedAt>b.exportedAt||Date.parse(row.observedAt)>Date.now()+300000))throw Error('Observation time cannot follow its export or be in the future. Check the device clock before importing.');
+ const observationProblems=observationIssues(b.overdueHistory?.records||[]);if(observationProblems.length)throw Error(observationProblems.join('\n'));
  b.tasks=b.tasks.map(t=>reviewTask(t,b.printers.find(p=>p.id===t.printerId)!));
  b.profiles=b.profiles.map(reviewProfile);
  return b;
@@ -66,13 +71,20 @@ function importPlan(b:Backup,current:RecordGraph,replace:boolean){
  preview.conflicts.push(...graphIssues(merged));
  return {preview,merged};
 }
-export async function previewBackup(value:unknown,replace=false):Promise<ImportPreview>{const b=validateBackup(value);return db.transaction('r',db.tables,async()=>importPlan(b,await readGraph(),replace).preview);}
+async function observationPlan(b:Backup){
+ const incoming=b.overdueHistory?.records||[],existing=await db.observations.toArray(),conflicts:string[]=[],additions:Observation[]=[];
+ for(const row of incoming){const old=existing.find(value=>value.id===row.id);if(old){if(!sameRecord(old,row))conflicts.push(`Observation ${row.id}: immutable history conflicts; import blocked.`);}else additions.push(row);}
+ conflicts.push(...observationIssues([...existing,...additions]));return {additions,conflicts};
+}
+export async function previewBackup(value:unknown,replace=false):Promise<ImportPreview>{const b=validateBackup(value);return db.transaction('r',db.tables,async()=>{const preview=importPlan(b,await readGraph(),replace).preview;preview.conflicts.push(...(await observationPlan(b)).conflicts);return preview;});}
 export async function restoreBackup(value:Backup,replace:boolean){
  const b=validateBackup(value);await db.transaction('rw',db.tables,async()=>{
  const {preview}=importPlan(b,await readGraph(),replace);
+ const observations=await observationPlan(b);preview.conflicts.push(...observations.conflicts);
  if(preview.conflicts.length)throw Error(`Import rejected. No records changed.\n${preview.conflicts.join('\n')}`);
- if(replace)for(const t of db.tables)await t.clear();
+ if(replace)for(const t of db.tables)if(t.name!=='observations')await t.clear();
  for(const key of recordTables){const table=db.table(key);for(const row of b[key])if(replace||!await table.get(row.id))await table.add(row);}
+ await db.observations.bulkAdd(observations.additions);
  // Imported legal acknowledgments never replace acknowledgment on this device.
  const current=await db.preferences.get('preferences');await db.preferences.put({...defaults,...(replace?b.preferences:current),acknowledgment:current?.acknowledgment??null,id:'preferences'});
  });
