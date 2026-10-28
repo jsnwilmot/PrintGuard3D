@@ -1,4 +1,4 @@
-import {beforeEach,it,expect} from 'vitest';
+import {beforeEach,it,expect,vi} from 'vitest';
 import {readFileSync} from 'node:fs';
 import {empty,seed,printer,task,input} from '../acceptance-review/fixtures';
 import {db,installProfile,makeBackup,completeTask,restoreBackup,validateBackup,savePrinter,flagSource} from '../src/db';
@@ -78,7 +78,11 @@ it('V17: a new registration archives the exact applied definition and only activ
  const definition=current(),device=printer('new',{profileVersion:'1.1.0'});const fixed=definition.templates.filter(t=>automaticTemplate(t,device)).map((t,n)=>({...t,id:'new-'+n,printerId:device.id,anchorDate:device.installed,anchorHours:device.hours,anchorPrints:device.prints}));await savePrinter(device,undefined,fixed);expect(await db.tasks.count()).toBe(8);expect(await db.profiles.get(profileArchiveId(definition.id,definition.version))).toBeTruthy();
 });
 it('V18: applying new profiles preserves indefinite completion and projections through 2400',async()=>{
+ // This case has a fixed completion date; control Date so installation has the same baseline on later CI runs.
+ vi.setSystemTime(new Date('2026-10-27T12:00:00'));
+ try{
  await seed();await installProfile(current(),'p1',{templates:['clean-and-lubricate-the-y-axis-linear-guide-rail'],selections:{'clean-and-lubricate-the-y-axis-linear-guide-rail':'regular'}});const rule=(await db.tasks.toArray()).find(t=>t.selectionId==='regular')!;expect(occurrences(rule,'2400-01-01','2400-12-31').length).toBe(6);await completeTask(rule.id,input({date:'2026-10-27',hours:600,prints:20}));const saved=(await db.tasks.get(rule.id))!;expect(due(saved).date).toBe('2026-12-27');expect(saved.enabled).toBe(true);expect('endDate' in saved).toBe(false);
+ }finally{vi.useRealTimers();}
 });
 it('V19: local source flags preserve records, are idempotent, and survive backup',async()=>{
  await seed();const before=await makeBackup(),url=current().templates[0].sourceUrl;await flagSource(url);await flagSource(url);expect((await db.preferences.get('preferences'))!.sourceFlags).toHaveLength(1);const after=await makeBackup();for(const key of ['printers','tasks','logs','readings','inventory','repairs','profiles'] as const)expect(after[key]).toEqual(before[key]);await restoreBackup(after,true);expect((await db.preferences.get('preferences'))!.sourceFlags).toEqual(after.preferences!.sourceFlags);await expect(flagSource('javascript:bad')).rejects.toThrow();

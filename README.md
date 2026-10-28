@@ -56,7 +56,11 @@ If an older database already contains contradictions, export it intact and inves
 
 ## Verification
 
-Phase 1 was accepted and merged at `e5565f02f4fe9edb28598380db58ea280663e2b1`; Phase 2 was accepted and merged at `bfd4cdd8bbb8a9c3f6a14d7730ebb4441d291458`. Phase 3 work is on `remediation/phase3-profiles` for [Issue #6](https://github.com/jsnwilmot/PrintGuard3D/issues/6), submitted for Architect review only. See the [Phase 3 report](remediation-phase3/REPORT.md), [current 86-row matrix](remediation-phase3/MATRIX.md) and retained [Phase 2 evidence](remediation-phase2/REPORT.md).
+Phases 1, 2 and 3 are accepted and merged. Approved Phase 3 main is `e8cd43314d158229e55698b59c0d43f56d1423db`. Phase 4 work is on `remediation/phase4-safety-accessibility` for [Issue #8](https://github.com/jsnwilmot/PrintGuard3D/issues/8), submitted for Architect review only. See the [Phase 4 report](remediation-phase4/REPORT.md), [current 86-row matrix](remediation-phase4/MATRIX.md), [legal/accessibility evidence and manual plan](remediation-phase4/EVIDENCE.md) and retained [Phase 3 evidence](remediation-phase3/REPORT.md).
+
+The original disclaimer wording/version remains unchanged. Current acknowledgment is required before record tables are read or workshop data/search/notifications/exports are rendered, including after restoration. Blank exploration and public help remain available. Explicit acknowledgment preserves stored preferences and records. This is a local UI disclosure gate, not authentication or encryption; independent Canadian counsel review remains **PENDING / NOT VERIFIED**.
+
+Maintenance/profile views link the full disclaimer and expose exact-model/source, missing/flagged/offline warnings. CSVs append a safety field without changing leading columns; ICS carries notices in calendar metadata and every event description with UTF-8 folding/escaping. Print uses a light scheme and readable safety copy. Shared modal focus/inert layers, mobile navigation, control labels/states, paired theme contrast and reflow are corrected. [Criterion-level evidence](remediation-phase4/accessibility-register.csv) identifies what is tested and what remains manual; no WCAG conformance claim is made.
 
 ```sh
 node scripts/validate-repository.mjs
@@ -67,7 +71,7 @@ npm run build
 npm run test:native
 ```
 
-Phase 3 local verification: **114/114 standard tests** (90 preserved + 24 new), **45/45 unchanged acceptance assertions**, **13/13 native Chromium cases** (9 preserved + 4 new), TypeScript, static checks and production build. Native tests need the pinned Playwright Chromium installed and use fresh localhost contexts; see the report. No assertion is bypassed or weakened. **Release 1 remains NOT approved.** No merge, deployment, access change or production-data operation is authorized by this phase.
+Phase 4 local verification: **125/125 standard tests** (114 preserved +11 new), **45/45 unchanged acceptance assertions**, **20/20 native Chromium cases** (13 preserved +seven new), TypeScript, static checks and production build. Twenty-four axe scans detect zero violations; incomplete checks and manual screen-reader/zoom/cross-browser acceptance remain outstanding. The audit dependency is test-only and requires Node 22.12+. Native tests need pinned Playwright Chromium and use isolated localhost contexts. No assertion is bypassed or weakened. **Release 1 remains NOT approved.** No merge, deployment, access change, production-data operation or Phase 5 work is authorized by this phase.
 
 ## Release scope and limits
 
@@ -77,4 +81,4 @@ Contact: design@roseandpaw.ca
 
 ## GitHub review workflow
 
-Official source: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D). See [development rules](docs/DEVELOPMENT.md) and [GitHub integration status](docs/GITHUB-INTEGRATION.md). Approved Phase 1/2 history remains on main. Phase 3 belongs in a draft PR and must not be self-approved or merged by Codex. CI reports quality, all acceptance assertions and native Chromium independently; actual failures stay red. No CI deployment exists. Raw local backups, browser captures and generated test reports are excluded from source control; only reviewed synthetic test fixtures are included.
+Official source: [jsnwilmot/PrintGuard3D](https://github.com/jsnwilmot/PrintGuard3D). See [development rules](docs/DEVELOPMENT.md) and [GitHub integration status](docs/GITHUB-INTEGRATION.md). Approved Phase 1/2 history remains on main. Phase 4 belongs in a draft PR and must not be self-approved or merged by Codex. CI reports quality, all acceptance assertions and native Chromium independently; actual failures stay red. No CI deployment exists. Raw local backups, browser captures and generated test reports are excluded from source control; only reviewed synthetic test fixtures are included.
