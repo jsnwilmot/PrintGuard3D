@@ -24,3 +24,7 @@ One exploratory Firefox `setOffline(true)` new-tab reopening failed with `NS_ERR
 No failures are converted to expected failures or suppressed. Early harness mistakes and the final print correction are described in the report. The 45 original acceptance assertions remain unchanged. CI additionally runs these tests on Linux with pinned browser builds; OS-specific results must be reviewed on the exact PR head.
 
 **Not certified:** actual macOS/iOS Safari, physical Android/iOS/touch, qualified screen readers, actual 200/400% zoom/text-only resize, OS notification prompts/delivery, configured mail/calendar/spreadsheet clients, physical printer drivers and production hosting. Passing automated WebKit is not Safari certification. Complete the [manual release pack](MANUAL-RELEASE-PACK.md) before those gates can pass.
+
+## CI-specific contrast correction
+
+The first Linux run on head `215f1cb84c3acb46e41304fcb81946ead036fc23` passed 44/45 new cases and failed WebKit D06 on immediate post-toggle navigation contrast ([retained run](https://github.com/jsnwilmot/PrintGuard3D/actions/runs/40695920045)). Theme colour cross-fades were corrected so foreground/background update together. D06 now also measures immediate navigation contrast and waits for finite presentation animations before full scans, matching original C04, without removing any rule/target/assertion. A separate three-engine D06 rerun verifies the correction; complete final-head CI results are linked in the PR. Historical local full-suite evidence and the failed CI run remain distinct and visible.

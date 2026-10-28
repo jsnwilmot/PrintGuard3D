@@ -151,3 +151,6 @@
  .schedule-sheet .report-disclaimer{margin-top:4mm;padding-top:2mm;break-inside:avoid}
  .schedule-sheet .report-disclaimer p{margin:0 0 2mm;font-size:9pt!important;line-height:1.35!important}
 }
+
+/* Apply theme foreground/background colours together; cross-fading them can reduce text contrast. */
+@media screen{button,a{transition-property:box-shadow,transform}}

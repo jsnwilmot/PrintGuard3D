@@ -153,6 +153,8 @@ summary = {
     'browserVersions': browser_versions, 'finalPrintNative': final_print['stats'] if final_print else None, 'pdfs': len(pdf_rows),
     'pdfResults': dict(Counter(row['result'] for row in pdf_rows)),
     'incompleteNodesBySource': dict(Counter(row['source'] for row in incomplete)),
+    'finalThemeContrastNative': read('test-results/phase5-theme-final.json')['stats'] if Path('test-results/phase5-theme-final.json').exists() else None,
+    'historicalFailedLinuxRun': {'id': 40695920045, 'head': '215f1cb84c3acb46e41304fcb81946ead036fc23', 'nativePassed': 44, 'nativeFailed': 1, 'finding': 'WebKit immediate theme contrast; corrected atomically, assertions retained'},
     'manualAccessibility': 'NOT VERIFIED', 'independentLegalReview': 'NOT VERIFIED',
     'productionHosting': 'NOT VERIFIED', 'release1': 'NOT APPROVED',
 }

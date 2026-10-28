@@ -68,5 +68,52 @@
     "productionBuild": "PASS: npm run build; existing bundle/Zod warnings retained",
     "dependencyAudit": "PASS: zero known advisories on 2026-10-28",
     "protectedSourceFiles": "25 unchanged engine/legal/profile/original test definitions"
+  },
+  "finalThemeContrastNative": {
+    "startTime": "2026-10-28T13:35:48.740Z",
+    "duration": 51236.589,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "immediateNavigationContrast": [
+    {
+      "engine": "chromium",
+      "theme": "Light",
+      "minimumRatio": 6.013217624525091
+    },
+    {
+      "engine": "chromium",
+      "theme": "Dark",
+      "minimumRatio": 6.216736662015766
+    },
+    {
+      "engine": "firefox",
+      "theme": "Light",
+      "minimumRatio": 6.013217624525091
+    },
+    {
+      "engine": "firefox",
+      "theme": "Dark",
+      "minimumRatio": 6.216736662015766
+    },
+    {
+      "engine": "webkit",
+      "theme": "Light",
+      "minimumRatio": 6.013217624525091
+    },
+    {
+      "engine": "webkit",
+      "theme": "Dark",
+      "minimumRatio": 6.216736662015766
+    }
+  ],
+  "historicalFailedLinuxRun": {
+    "id": 40695920045,
+    "head": "215f1cb84c3acb46e41304fcb81946ead036fc23",
+    "nativePassed": 44,
+    "nativeFailed": 1,
+    "finding": "WebKit immediate theme contrast; colour cross-fade corrected, all assertions retained"
   }
 }
