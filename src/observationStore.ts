@@ -10,7 +10,7 @@ export async function collectObservations(source:Observation['source'],start=fal
   if(!start&&!prefs.observationRecording)return {added:0,warning:''};
   const printers=await db.printers.toArray(),tasks=await db.tasks.toArray();
   if(printers.length>observationLimits.printers||tasks.length>observationLimits.tasks)return {added:0,warning:'Observation coverage limit reached. No new history was recorded or removed. Export a backup for review.'};
-  const instant=new Date(),observedAt=instant.toISOString(),utcDay=observedAt.slice(0,10),localDate=today(),timezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'UTC',offset=-instant.getTimezoneOffset(),batchId=uid();
+  const instant=new Date(),observedAt=instant.toISOString(),utcDay=observedAt.slice(0,10),localDate=today(),timezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'UTC',offset=-instant.getTimezoneOffset()||0,batchId=uid();
   const existing=await db.observations.toArray();const additions:Observation[]=[];
   for(const printer of printers){
    const history=existing.filter(row=>row.printerId===printer.id).sort((a,b)=>a.observedAt.localeCompare(b.observedAt));
