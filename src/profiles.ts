@@ -27,8 +27,8 @@ export function selectTemplate(template:Profile['templates'][number],selectionId
  return {...template,interval:{...option.interval},originalInterval:{...option.interval},selectionId};
 }
 const evidenceFields=['title','description','category','priority','interval','originalInterval','sourceUrl','sourceTitle','verified','materials','safety','profileVersion','scheduleKind','intervalOptions','selectionId','legacyTitles'] as const;
-export function isVerifiedTask(t:Pick<Task,typeof evidenceFields[number]|'source'|'profileId'|'templateId'>,p:Pick<Printer,'manufacturer'|'model'|'technology'>){
- return t.source==='Manufacturer Verified'&&reviewedProfiles.some(b=>b.manufacturer===p.manufacturer&&b.model===p.model&&b.technology===p.technology&&b.version===t.profileVersion&&(!t.profileId||t.profileId===b.id)&&b.templates.some(template=>{
+export function isVerifiedTask(t:Pick<Task,typeof evidenceFields[number]|'source'|'profileId'|'templateId'|'recommendation'>,p:Pick<Printer,'manufacturer'|'model'|'technology'>){
+ return !t.recommendation&&t.source==='Manufacturer Verified'&&reviewedProfiles.some(b=>b.manufacturer===p.manufacturer&&b.model===p.model&&b.technology===p.technology&&b.version===t.profileVersion&&(!t.profileId||t.profileId===b.id)&&b.templates.some(template=>{
   if(t.templateId&&t.templateId!==(template.templateId||template.title))return false;
   if(t.selectionId&&!template.intervalOptions?.some(o=>o.id===t.selectionId))return false;
   const expected=selectTemplate(template,t.selectionId);return evidenceFields.every(k=>sameRecord(t[k],expected[k]));

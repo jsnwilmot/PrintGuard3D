@@ -1,3 +1,5 @@
+import {createReviewReminder,taskDecisionIssue,type ReviewChoice} from './recommendations';
+import {disclaimerVersion} from './legal';
 import Dexie,{type Table} from 'dexie';
 import { z } from 'zod';
 import {overdueHistorySchema,observationIssues,type Observation} from './observations';
@@ -32,16 +34,19 @@ export async function completeTask(id:string,input:Pick<Log,'date'|'hours'|'prin
  await db.tasks.put(next.task);await db.printers.update(p.id,{hours:input.hours,prints:input.prints});await db.readings.add({id:uid(),printerId:p.id,date:input.date,hours:input.hours,prints:input.prints});
  });
 }
-export const backupSchema=z.object({application:z.literal('PrintGuard3D'),schemaVersion:z.literal(1),exportedAt:z.string(),scope:z.enum(['full','printer']),printers:z.array(printerSchema),tasks:z.array(taskSchema),logs:z.array(logSchema),readings:z.array(readingSchema),inventory:z.array(inventorySchema),repairs:z.array(repairSchema),profiles:z.array(profileSchema),preferences:preferencesSchema.optional(),overdueHistory:overdueHistorySchema.optional()}).strict();
+export const backupSchema=z.object({application:z.literal('PrintGuard3D'),schemaVersion:z.literal(1),exportedAt:z.string(),scope:z.enum(['full','printer']),printers:z.array(printerSchema),tasks:z.array(taskSchema),logs:z.array(logSchema),readings:z.array(readingSchema),inventory:z.array(inventorySchema),repairs:z.array(repairSchema),profiles:z.array(profileSchema),preferences:preferencesSchema.optional(),overdueHistory:overdueHistorySchema.optional(),recommendationPolicy:z.object({version:z.literal(1)}).strict().optional()}).strict();
 export type Backup=z.infer<typeof backupSchema>;
 export async function makeBackup(printerId?:string):Promise<Backup>{
  const byPrinter=<T extends {printerId:string}>(rows:T[])=>printerId?rows.filter(x=>x.printerId===printerId):rows;
- return db.transaction('r',db.tables,async()=>({application:'PrintGuard3D',schemaVersion:1,exportedAt:new Date().toISOString(),scope:printerId?'printer':'full',printers:(await db.printers.toArray()).filter(x=>!printerId||x.id===printerId),tasks:byPrinter(await db.tasks.toArray()),logs:byPrinter(await db.logs.toArray()),readings:byPrinter(await db.readings.toArray()),inventory:(await db.inventory.toArray()).filter(x=>!printerId||!x.printerId||x.printerId===printerId),repairs:byPrinter(await db.repairs.toArray()),profiles:await db.profiles.toArray(),preferences:await db.preferences.get('preferences')??defaults,...await observationBackup(printerId)}));
+ return db.transaction('r',db.tables,async()=>{const backup:Backup={application:'PrintGuard3D',schemaVersion:1,exportedAt:new Date().toISOString(),scope:printerId?'printer':'full',printers:(await db.printers.toArray()).filter(x=>!printerId||x.id===printerId),tasks:byPrinter(await db.tasks.toArray()),logs:byPrinter(await db.logs.toArray()),readings:byPrinter(await db.readings.toArray()),inventory:(await db.inventory.toArray()).filter(x=>!printerId||!x.printerId||x.printerId===printerId),repairs:byPrinter(await db.repairs.toArray()),profiles:await db.profiles.toArray(),preferences:await db.preferences.get('preferences')??defaults,...await observationBackup(printerId)};
+ if([...backup.tasks,...backup.logs,...(backup.overdueHistory?.records||[]).flatMap(o=>o.tasks)].some(t=>t.recommendation))backup.recommendationPolicy={version:1};
+ return backup;});
 }
 async function observationBackup(printerId?:string){const records=(await db.observations.toArray()).filter(row=>!printerId||row.printerId===printerId);return records.length?{overdueHistory:{version:1 as const,records}}:{};}
 export function validateBackup(value:unknown):Backup{
  if(value&&typeof value==='object'&&'schemaVersion' in value&&value.schemaVersion!==1)throw Error('This backup uses an unsupported schema. Version 1 is supported; newer versions require an application update.');
  const b=backupSchema.parse(value);
+ if([...b.tasks,...b.logs,...(b.overdueHistory?.records||[]).flatMap(o=>o.tasks)].some(t=>t.recommendation)&&!b.recommendationPolicy)throw Error('Recommendation metadata requires its supported policy marker; no records imported.');
  assertGraph(b);
  if(b.overdueHistory&&(!Number.isFinite(Date.parse(b.exportedAt))||new Date(b.exportedAt).toISOString()!==b.exportedAt))throw Error('Observation exports require an exact UTC export instant.');
  if(b.overdueHistory?.records.some(row=>row.observedAt>b.exportedAt||Date.parse(row.observedAt)>Date.now()+300000))throw Error('Observation time cannot follow its export or be in the future. Check the device clock before importing.');
@@ -58,7 +63,9 @@ function importPlan(b:Backup,current:RecordGraph,replace:boolean){
  for(const key of recordTables){
   const existing=new Map(current[key].map(r=>[r.id,r]));const rows=replace?[]:[...current[key]];
   for(const row of b[key]){const old=existing.get(row.id);
-   if(old){preview.duplicates++;if(!sameRecord(old,row)){
+   if(old){preview.duplicates++;
+    if((key==='tasks'||key==='logs')&&('recommendation' in old||'recommendation' in row)&&!sameRecord((old as Task).recommendation,(row as Task).recommendation))preview.conflicts.push(`${key} ${row.id}: immutable recommendation decision conflicts; import blocked.`);
+    if(!sameRecord(old,row)){
     preview.retained.push(`${key} ${row.id}: ${replace?'will replace local record':'local record retained; incoming values differ'}`);
     const a=old as unknown as Record<string,unknown>,v=row as unknown as Record<string,unknown>;
     const immutable=key==='printers'?['manufacturer','model','technology','serial','installed']:key==='tasks'||key==='inventory'||key==='repairs'?['printerId']:key==='logs'||key==='readings'?Object.keys({...a,...v}):['version','manufacturer','model','technology'];
@@ -91,7 +98,7 @@ export async function restoreBackup(value:Backup,replace:boolean){
 }
 export function historySnapshot(t:Task,p:Printer,currency:string){
  const profileId=t.profileId||(t.profileVersion===p.profileVersion?p.profileId:bundled.find(b=>b.manufacturer===p.manufacturer&&b.model===p.model&&b.technology===p.technology&&b.version===t.profileVersion)?.id)||'';
- return {category:t.category,priority:t.priority,profileId,profileVersion:t.profileVersion,templateId:t.templateId,manufacturer:p.manufacturer,model:p.model,technology:p.technology,currency};
+ return {category:t.category,priority:t.priority,profileId,profileVersion:t.profileVersion,templateId:t.templateId,manufacturer:p.manufacturer,model:p.model,technology:p.technology,currency,...(t.recommendation?{recommendation:structuredClone(t.recommendation)}:{})};
 }
 export async function postponeTask(id:string,date:string,notes:string){
  dateSchema.parse(date);if(date<today())throw Error('Choose today or a future date.');
@@ -140,6 +147,14 @@ export async function saveRepair(value:Repair){
   const record={...r};delete record.currency;if(currency)record.currency=currency;await db.repairs.put(record);
  });
 }
+export async function acceptReviewReminder(printerId:string,choice:ReviewChoice){
+ return db.transaction('rw',[db.tasks,db.printers,db.readings,db.preferences],async()=>{
+  const prefs=await db.preferences.get('preferences');if(prefs?.acknowledgment?.version!==disclaimerVersion||!prefs.acknowledgment.date)throw Error('Required disclaimer acknowledgment is missing on this device.');
+  const p=await db.printers.get(printerId);if(!p)throw Error('Printer no longer exists. Reopen review.');
+  const t=createReviewReminder(p,choice,await db.readings.where('printerId').equals(p.id).toArray());
+  await db.tasks.add(t);return t;
+ });
+}
 export async function saveTask(value:Task,expected?:Task){
  const parsed=taskSchema.parse(value);
  return db.transaction('rw',[db.tasks,db.printers,db.logs,db.inventory,db.profiles],async()=>{
@@ -149,7 +164,11 @@ export async function saveTask(value:Task,expected?:Task){
   if(!expected&&old)throw Error('A maintenance rule already uses this identifier.');
   const logs=old?await db.logs.where('taskId').equals(old.id).toArray():[];
   if(old&&old.printerId!==parsed.printerId&&logs.length)throw Error('A rule with maintenance history cannot be reassigned. Create a new user-defined rule for the other printer.');
+  if(parsed.recommendation&&!old)throw Error('New suggestions require the dedicated acknowledged review.');
+  if(old?.recommendation&&(!sameRecord(old.recommendation,parsed.recommendation)||old.printerId!==parsed.printerId))throw Error('Initial recommendation provenance and ownership are immutable. Create a separately reviewed reminder.');
   let t=rebaseTaskEdit(parsed,old);
+  if(t.recommendation&&old&&!sameRecord(t,old))t={...t,source:'User Defined'};
+  const decisionProblem=taskDecisionIssue(t,p);if(decisionProblem)throw Error(decisionProblem);
   if(old&&old.printerId!==t.printerId)t={...t,source:'User Defined',profileId:'',profileVersion:'',templateId:'',verified:''};
   else if(t.source==='Manufacturer Verified'&&!isVerifiedTask(t,p))t={...t,source:old?'User Defined':'Pending Verification'};
   assertGraph({printers:await db.printers.toArray(),tasks:[t],logs,readings:[],inventory:await db.inventory.toArray(),repairs:[],profiles:await db.profiles.toArray()});

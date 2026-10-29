@@ -1,0 +1,37 @@
+# Controlled recommendation implementation for Architect review
+
+Issue [#23](https://github.com/jsnwilmot/PrintGuard3D/issues/23), manufacturer gate [#14](https://github.com/jsnwilmot/PrintGuard3D/issues/14). Base approved main `d03eb59cb887cfad335241b9f56d260b5a75abdc`; branch `release1/manufacturer-controlled-suggestions`. **Release 1 NOT approved. F07 remains PARTIAL.**
+
+## Behavior
+
+- Prospective task/option labels distinguish Manufacturer Documented, PrintGuard Suggested and User Defined. The existing exact-profile verifier remains authoritative; stored legacy enums, accepted profile JSONs and historical records are not renamed. Profile-wide badges describe limited documented facts. Pending claims remain pending, not promoted.
+- Maintenance offers a keyboard-accessible review dialog. It shows exact model, official ambiguous ranges, source link/date, metric caveat, suggested reminder, custom interval and unchecked acknowledgment before storage. Reject/defer writes nothing. Exactly fan 5/10 -> 6/3 months, X/Y 5 -> 1 month, Z 5 -> 3 months. Other values receive no suggestion.
+- Acceptance creates a separate inspection/review rule. It does not alter an existing manufacturer rule, due anchor, overdue state or history. No heated, lubricating, cleaning, tension or replacement steps/materials are attached. Reminders recur indefinitely through the existing engine; more frequent physical servicing is not asserted safer.
+- The optional 30-day calculation requires complete daily endpoints and explicit actual-printing-counter confirmation. Missing or noisy data stays unavailable. Manual values are labelled owner assertions; no boundary is rounded or inferred. Fan working-hour versus printing-hour equivalence remains unresolved.
+- Pro keeps its one exact-guide interval. Its optional owner-defined filter inspection is condition-only, initially unobserved, with no default cadence. Stock C5 and mechanical enclosures get no filter task or Pro transfer.
+- Immutable initial decision metadata survives new task completions/postponements, observation snapshots and full/printer backups. Later custom edits display User Defined while retaining the original decision. Profile packages cannot carry task-specific accepted decisions. Imports validate model, source, acknowledgment, allowed policy, original interval and source class; conflicting initial decisions block replacement as well as merge.
+- Task details, task lists, calendar/ICS, notifications, print schedules and all tabular reports/CSV/HTML/JSON carry scoped classification/assumptions. Existing report column positions are preserved and a disclosure column is appended. Historical output uses captured model/decision facts only, not current entities. Fixed hour figures have a separate provisional whole-printer counter warning.
+
+## Compatibility decision
+
+See [DESIGN.md](DESIGN.md), recorded before field changes and corrected after experimentation. IndexedDB remains **Dexie 2/native 20**, with no stores, indexes or migration. Strict optional task/log/observation fields and optional backup `recommendationPolicy.version=1` preserve older records without backfill. Old strict backup readers reject enriched files before writes; new readers accept old backups, reject unsupported/illegal fields and preserve local legal acknowledgment. There is no lossy legacy export.
+
+**Important independently reviewable limitation:** Dexie retries an old requested version against the current database; a version increment alone cannot fence an already-running old executable. This was tested, and the proposed empty v30 upgrade was removed. Raw legacy-readable task title, source, full description and safety retain the warning; however an old completion implementation cannot capture the new structured history field. Legacy runtime coexistence/rollback remains a deployment/compatibility review item in #16. Keep the current app version and a pre-feature backup; use an isolated old database for any owner-approved rollback. No unsupported in-place downgrade, store rename, duplicate workshop database or misleading rollback guarantee is introduced. This task does not authorize deployment.
+
+## Verification and test inventory
+
+- `tests/recommendations.test.ts`: 29 added policy/data regressions: all six near/at boundary values for each group, strict origin matching, dedicated consent, owner customization, variant/equipment exclusion, complete/invalid date windows, DST/leap centuries, backup/unsupported-reader rejection, immutable history, exports, recurrence after 2500, actual legacy-Dexie behavior.
+- `release1-suggestions/native/suggestions.mjs`: six real-browser workflows, run in Chromium/Firefox/WebKit by the existing reporting suite (18 added native cases). Acceptance/rejection and source displays, model switching/customization, offline/keyboard/reflow/axe, full backup restoration with completed review history and observations, CSV/HTML/JSON/print/ICS caveats, forged/imported policy rejection.
+- Existing 195 standard tests, unchanged 45 acceptance assertions and 92 native/printing tests retained. The parts-report alignment test now explicitly checks the appended disclosure header while retaining every original value/link assertion. A prospective native badge assertion now checks the scoped label; raw stored source checks remain unchanged. No baseline assertion is bypassed or suppressed.
+- Local original acceptance: **45/45**. Local standard regressions: **224/224** before final review refinements, rerun on final head in CI. TypeScript/build and repository/profile validation are required on final head. Exact final-head counts, CI run and SHA belong in the draft PR to avoid a self-referential commit hash.
+- Initial browser harness failures (unordered UUID array assumption and incorrect new-test export-button labels) were corrected, not reclassified as passes. Final results supersede those failed attempts; raw outputs are ignored local/CI artifacts.
+
+No automated test verifies manufacturer truth, legal approval or physical servicing safety. Axe/reflow/keyboard tests do not replace screen-reader, actual assistive-device or field testing. Existing dependency annotation/large-bundle warnings remain outside this scope.
+
+## Preservation, review and remaining risks
+
+All accepted profile definitions, manufacturer audit documents, original 86 acceptance rows, legal wording, dependencies, CI configuration and scheduling engine remain unchanged. [MATRIX.md](MATRIX.md) retains the entire original matrix and adds the scoped engineering evidence. [SOURCE-DECISIONS.md](SOURCE-DECISIONS.md) defines supported R1 facts versus unresolved/excluded procedures and future scope.
+
+No production/privately hosted application or real user data was accessed or changed, no hosting/access setting changed, no manufacturer message sent, no copyrighted manual/video copied, no merge/deployment or Release 1 approval performed. No new environment variables or runtime dependencies. Local browser binaries and raw test evidence remain ignored verification artifacts.
+
+Architect must independently review strict import/history semantics, narrow claims, legacy executable coexistence, complete-data calculation requirements and reminder-only separation. Manufacturer Q01–Q14, full AV #22, legal #10, human/device/accessibility #15, hosting/upgrade #16 and program/master #17/#1 remain open. Only an explicit owner-scoped acceptance decision can close the manufacturer gate. Further profile or physical-procedure expansion needs separate authorization.

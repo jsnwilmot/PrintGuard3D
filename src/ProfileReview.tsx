@@ -1,8 +1,9 @@
+import {taskClassification,recommendationPolicy} from './recommendations';
 import {useState} from 'react';
-import {type Profile,intervalLabel} from './domain';
+import {type Profile,type Task,intervalLabel} from './domain';
 import {useData} from './context';
 import {installProfile} from './db';
-import {assessProfile} from './profiles';
+import {assessProfile,selectTemplate} from './profiles';
 import {profileChanges,matchingTask} from './profileChanges';
 import {Modal,Button,Field,External} from './components';
 
@@ -19,15 +20,15 @@ export function ProfileReview({incoming,prior,onClose}:{incoming:Profile;prior?:
  return <Modal title="Review profile package" subtitle={`${incoming.manufacturer} ${incoming.model} · v${incoming.version}`} onClose={onClose}>
   <div className="callout">{prior?`Installed/bundled version: ${prior.version}. Incoming version: ${incoming.version}.`:'This is a new profile.'} No service history will be overwritten. Existing rules, customizations and service baselines stay pinned to their applied versions.</div>
   <h3>Revision history</h3>{incoming.revisions.map((r,n)=><p key={n}>{r}</p>)}
-  <div className="callout amber">{incoming.status}. Unsubstantiated manufacturer labels are quarantined. Applying pending tasks is an explicit custom scheduling decision; it does not verify their safety or intervals.</div>
+  <div className="callout amber">{incoming.status==='Manufacturer Verified'?'Documented facts; limited coverage':incoming.status}. Unsubstantiated manufacturer labels are quarantined. Applying pending tasks is an explicit custom scheduling decision; it does not verify their safety or intervals.</div>
   {incoming.coverage&&<p>{incoming.coverage.reviewed}/{incoming.coverage.indexTotal} indexed text articles reviewed. {incoming.coverage.notes}</p>}
   <h3>Complete old/new comparison</h3>
   <p>{changes.length} changed field(s). Removed definitions do not delete active rules. Expand a field to inspect its full old and new value, including documentation, applicability, materials, safety and reference arrays.</p>
   <div className="profile-comparison">{changes.map((change,n)=><details key={n}><summary>{change.path||'Entire profile'}</summary><strong>Before</strong><pre>{change.before===undefined?'Not present':JSON.stringify(change.before,null,2)}</pre><strong>After</strong><pre>{change.after===undefined?'Removed from package':JSON.stringify(change.after,null,2)}</pre></details>)}</div>
-  <h3>Incoming tasks</h3>{incoming.templates.map(t=>{const id=t.templateId||t.title;return <div key={id} className="profile-procedure">
+  <p>{recommendationPolicy.explanation}</p><p>{recommendationPolicy.counter}</p><h3>Incoming tasks</h3>{incoming.templates.map(t=>{const id=t.templateId||t.title;return <div key={id} className="profile-procedure">
    <label className="check-label"><input type="checkbox" checked={selected.includes(id)} onChange={e=>choose(id,e.target.checked)}/>Add procedure: {t.title}</label>
-   <p><strong>{t.title}</strong> · {t.source} · {intervalLabel(t.interval)}<br/>Template: {id} · Source version {t.profileVersion}<br/>Description: {t.description}<br/>Materials: {t.materials}<br/>Safety: {t.safety}<br/>{t.sourceUrl&&<External url={t.sourceUrl}>Review reference</External>}</p>
-   {t.intervalOptions&&<Field label={`Usage band for ${t.title}`} hint="Choose only a published band that applies to your actual usage. Source boundaries may overlap or have gaps at exactly 5/10 hours per day; seek manufacturer clarification, do not infer a band."><select value={bands[id]||''} onChange={e=>{setBands({...bands,[id]:e.target.value});choose(id,!!e.target.value);}}><option value="">Do not activate; retain as reference</option>{t.intervalOptions.map(o=><option key={o.id} value={o.id}>{o.label} — {intervalLabel(o.interval)}</option>)}</select></Field>}
+   <p><strong>{t.title}</strong> · {taskClassification(t as Task,incoming)} · {intervalLabel(t.interval)}<br/>Template: {id} · Source version {t.profileVersion}<br/>Description: {t.description}<br/>Materials: {t.materials}<br/>Safety: {t.safety}<br/>{t.sourceUrl&&<External url={t.sourceUrl}>Review reference</External>}</p>
+   {t.intervalOptions&&<Field label={`Usage band for ${t.title}`} hint="Choose only a published band that applies to your actual usage. Source boundaries may overlap or have gaps at exactly 5/10 hours per day; seek manufacturer clarification, do not infer a band."><select value={bands[id]||''} onChange={e=>{setBands({...bands,[id]:e.target.value});choose(id,!!e.target.value);}}><option value="">Do not activate; retain as reference</option>{t.intervalOptions.map(o=><option key={o.id} value={o.id}>{o.label} — {intervalLabel(o.interval)} — {taskClassification(selectTemplate(t,o.id) as Task,incoming)}</option>)}</select></Field>}
   </div>;})}
   {prior&&<><h3>Current task definitions</h3>{prior.templates.map((t,n)=><p key={n}>{t.title} · {intervalLabel(t.interval)} · {t.description} · {t.materials} · {t.safety}</p>)}</>}
   <Field label="Optional: apply new defaults to a matching printer" hint="Only selected new procedures are added. Matching active rules remain completely unchanged; no automatic replacement or deletion. Usage readings and history are preserved."><select value={target} onChange={e=>{setTarget(e.target.value);setAck(false);}}><option value="">Install profile only; retain current schedules</option>{printers.filter(p=>!p.archived&&p.manufacturer===incoming.manufacturer&&p.model===incoming.model&&p.technology===incoming.technology).map(p=><option key={p.id} value={p.id}>{p.name}</option>)}</select></Field>

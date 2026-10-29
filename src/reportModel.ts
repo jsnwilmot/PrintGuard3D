@@ -1,3 +1,4 @@
+import {taskClassification,taskContext,historicalContext,recommendationPolicy} from './recommendations';
 import {type Printer,type Task,type Log,type Repair,type Reading,type Preferences,today,intervalLabel,formatDate} from './domain';
 import {type Observation} from './observations';
 import {status,due,compliance,addInterval} from './engine';
@@ -67,17 +68,17 @@ export function selectReport(data:ReportData,type:ReportType,filters:ReportFilte
  const rows:ReportRow[]=[];let cs=columns(['Task','Printer','Date','Status','Usage','Cost','Documentation','Notes'],['text','text','date','text','text','money','url','text']);cs[2].friendlyDate=true;
  const add=(id:string,values:ReportValue[],printerId?:string,provenance:ReportRow['provenance']={},drilldown?:ReportQuery)=>rows.push({id,values,printerId,provenance,...(drilldown?{drilldown}:{})});
  const logRow=(log:Log)=>add('log:'+log.id,[log.title,name(log.printerId),log.date,log.outcome,`${log.hours} h / ${log.prints} prints`,amount(log),log.sourceUrl,log.notes],log.printerId,{category:log.category||null,priority:log.priority||null,currency:log.currency||null,source:log.source,sourceUrl:log.sourceUrl,profileId:log.profileId||null,profileVersion:log.profileVersion||null,onTime:log.onTime});
- const warnings=['Historical facts are never inferred from current rules. Missing attribution/currency remains unclassified.','Recorded compliance describes completed and explicitly skipped occurrences; postponements are excluded. It is not a mechanical health or reliability measurement.'];
+ const warnings=[recommendationPolicy.explanation,recommendationPolicy.counter,recommendationPolicy.coverage,'Historical facts are never inferred from current rules. Missing attribution/currency remains unclassified.','Recorded compliance describes completed and explicitly skipped occurrences; postponements are excluded. It is not a mechanical health or reliability measurement.'];
  if(type==='Complete Maintenance History'||(type==='Maintenance Compliance'&&filters.detail==='records')){
   const selected=type==='Maintenance Compliance'?ls.filter(log=>log.outcome!=='Postponed'):ls;selected.forEach(logRow);
  }else if(type==='Complete Maintenance Schedule'){
   cs=columns(['Task','Printer','Next date','Usage threshold','Interval','Status','Documentation','Source','Profile version','Documentation checked','Safety','Source review','Description','Model','Original interval']);cs[6].type='url';
-  for(const task of ts){const printer=printers.find(p=>p.id===task.printerId)!,d=due(task);add('task:'+task.id,[task.title,name(printer.id),task.postponedUntil||d.date,[d.hours!==null?`${d.hours} h`:'',d.prints!==null?`${d.prints} prints`:''].filter(Boolean).join(' or '),intervalLabel(task.interval),status(task,printer,now,prefs.reminderDays),task.sourceUrl,reviewTask(task,printer).source,task.profileVersion,task.verified,task.safety,prefs.sourceFlags?.some(flag=>flag.url===task.sourceUrl)?'Flagged for review':'Check current source before servicing',task.description,printer.model,intervalLabel(task.originalInterval)],printer.id,{source:reviewTask(task,printer).source,profileVersion:task.profileVersion});}
+  for(const task of ts){const printer=printers.find(p=>p.id===task.printerId)!,d=due(task);add('task:'+task.id,[task.title,name(printer.id),task.postponedUntil||d.date,[d.hours!==null?`${d.hours} h`:'',d.prints!==null?`${d.prints} prints`:''].filter(Boolean).join(' or '),intervalLabel(task.interval),status(task,printer,now,prefs.reminderDays),task.sourceUrl,taskClassification(task,printer),task.profileVersion,task.verified,task.safety,prefs.sourceFlags?.some(flag=>flag.url===task.sourceUrl)?'Flagged for review':'Check current source before servicing',task.description,printer.model,intervalLabel(task.originalInterval)],printer.id,{source:reviewTask(task,printer).source,profileVersion:task.profileVersion});}
  }else if(type==='Upcoming Maintenance'){
   cs=columns(['Task','Printer','Date','Occurrence / current status','Interval / usage threshold','Source','Documentation']);cs[6].type='url';
   for(const task of ts){const printer=printers.find(p=>p.id===task.printerId)!;
-   if(filters.workload!=='usage-due')for(const event of upcomingOccurrences(task,printer,filters.start,filters.end,now))add(task.id+'@'+event.date,[task.title,name(printer.id),event.date,event.projected?'Projected recurrence':'Next due',intervalLabel(task.interval),reviewTask(task,printer).source,task.sourceUrl],printer.id,{projected:event.projected,taskId:task.id});
-   if(filters.workload!=='dated'&&dateMatches(now)&&usageDue(task,printer,now))add(task.id+'@usage',[task.title,name(printer.id),'',`${status(task,printer,now)} · current usage; calendar date unknown`,intervalLabel(task.interval),reviewTask(task,printer).source,task.sourceUrl],printer.id,{projected:false,taskId:task.id});
+   if(filters.workload!=='usage-due')for(const event of upcomingOccurrences(task,printer,filters.start,filters.end,now))add(task.id+'@'+event.date,[task.title,name(printer.id),event.date,event.projected?'Projected recurrence':'Next due',intervalLabel(task.interval),taskClassification(task,printer),task.sourceUrl],printer.id,{projected:event.projected,taskId:task.id});
+   if(filters.workload!=='dated'&&dateMatches(now)&&usageDue(task,printer,now))add(task.id+'@usage',[task.title,name(printer.id),'',`${status(task,printer,now)} · current usage; calendar date unknown`,intervalLabel(task.interval),taskClassification(task,printer),task.sourceUrl],printer.id,{projected:false,taskId:task.id});
   }
  }else if(type==='Overdue Maintenance'||type==='Overdue Critical Maintenance'||type==='Current Maintenance'){
   cs=columns(['Task','Printer','Calendar due','Hour threshold','Print threshold','Interval','Documentation','Current status']);cs[6].type='url';
@@ -118,6 +119,17 @@ export function selectReport(data:ReportData,type:ReportType,filters:ReportFilte
   for(const printer of ps){const selected=ls.filter(l=>l.printerId===printer.id);add('summary:'+printer.id,[printer.name,selected.filter(l=>l.outcome==='Completed').length,compliance(selected),ts.filter(t=>t.printerId===printer.id&&status(t,printer,now)==='Overdue').length,printer.hours,groups(selected,rs.filter(r=>r.printerId===printer.id))],printer.id,{}, {type:'Complete Maintenance History',filters:{...filters,printer:printer.id,recordKeys:selected.map(l=>'log:'+l.id)}});}
  }
  if(type==='Printer Register'||type.startsWith('Observed')){cs.push({key:'printerId',label:'Printer ID',type:'text'});for(const row of rows)row.values.push(row.printerId||null);}
+ // Append without changing the original typed column positions used by drilldowns.
+ cs.push({key:'recommendationContext',label:'Recommendation classification and assumptions',type:'text'});
+ const taskById=new Map(tasks.map(t=>[t.id,t])),logById=new Map(logs.map(l=>[l.id,l]));
+ const capturedById=new Map(type==='Observed Task Details'?(data.observations||[]).flatMap(o=>o.tasks.map(t=>[o.id+':'+t.id,{...t,manufacturer:o.printer.manufacturer,model:o.printer.model,technology:o.printer.technology}] as const)):[]);
+ for(const row of rows){
+  const task=taskById.get(typeof row.provenance.taskId==='string'?row.provenance.taskId:row.id.startsWith('task:')?row.id.slice(5):'');
+  const log=logById.get(row.id.startsWith('log:')?row.id.slice(4):'');
+  const captured=capturedById.get(row.id);
+  const context=task?taskContext(task,printers.find(p=>p.id===task.printerId)!):log?historicalContext(log):captured?historicalContext(captured):recommendationPolicy.explanation;
+  row.values.push(context);row.provenance.recommendationContext=context;
+ }
  const used=new Set(rows.map(row=>row.printerId));const historical=type.startsWith('Observed');
  return {name:type,generatedAt,filters:{...filters},columns:cs,rows,printers:historical?[]:ps.filter(p=>used.has(p.id)),tasks:type==='Complete Maintenance Schedule'?ts:[],warnings,stats:{completed:ls.filter(l=>l.outcome==='Completed').length,compliance:compliance(ls),hours:ps.reduce((total,p)=>total+p.hours,0),expenses:expenseSummary(ls,rs)}};
 }

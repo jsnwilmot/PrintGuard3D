@@ -1,3 +1,4 @@
+import {decisionIssue} from './recommendations';
 import {z} from 'zod';
 import {printerSchema,taskSchema,dateSchema,type Task,type Printer} from './domain';
 import {status} from './engine';
@@ -6,7 +7,7 @@ import {reviewTask} from './profiles';
 
 export const observationLimits={records:20000,perPrinterDay:96,printers:1000,tasks:10000} as const;
 const printerFacts=printerSchema.pick({id:true,name:true,manufacturer:true,model:true,technology:true,hours:true,prints:true,archived:true,profileId:true,profileVersion:true});
-const taskFacts=taskSchema.pick({id:true,printerId:true,title:true,category:true,priority:true,interval:true,anchorDate:true,anchorHours:true,anchorPrints:true,base:true,cycleOffset:true,enabled:true,postponedUntil:true,condition:true,source:true,sourceUrl:true,profileId:true,profileVersion:true,templateId:true});
+const taskFacts=taskSchema.pick({id:true,printerId:true,title:true,category:true,priority:true,interval:true,anchorDate:true,anchorHours:true,anchorPrints:true,base:true,cycleOffset:true,enabled:true,postponedUntil:true,condition:true,source:true,sourceUrl:true,profileId:true,profileVersion:true,templateId:true,recommendation:true});
 const states=['Overdue','Due Today','Due Soon','Upcoming','Postponed','Not Yet Due','Completed','Paused'] as const;
 const instant=z.string().refine(value=>{try{return new Date(value).toISOString()===value;}catch{return false;}},'Use an exact UTC observation instant.');
 export const observationSchema=z.object({
@@ -22,6 +23,8 @@ export const observationSchema=z.object({
  if(Number.isFinite(Date.parse(value.observedAt))&&new Date(Date.parse(value.observedAt)+value.utcOffsetMinutes*60000).toISOString().slice(0,10)!==value.localDate)issue('Observation UTC/local date is inconsistent with its captured offset.');
  const seen=new Set<string>();
  for(const task of value.tasks){
+  const problem=decisionIssue(task,value.printer);if(problem)issue(problem);
+  if(task.recommendation&&task.source==='General Recommendation'&&!sameRecord(task.interval,{mode:'calendar',months:task.recommendation.chosenMonths}))issue('A suggested captured reminder must retain its accepted interval.');
   if(seen.has(task.id)||task.printerId!==value.printerId)issue('Observation contains duplicate tasks or conflicting printer ownership.');seen.add(task.id);
   if(task.eligible!==(!value.printer.archived&&task.enabled))issue('Observation eligibility contradicts its captured archive/enabled facts.');
   // Every field consumed by status/due is captured. Never merge in present-day entities.

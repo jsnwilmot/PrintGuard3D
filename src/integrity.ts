@@ -4,6 +4,7 @@ import {profileArchiveId,profileIdentity,reviewedProfiles} from './profiles';
 export const recordTables=['printers','tasks','logs','readings','inventory','repairs','profiles'] as const;
 export type RecordTable=typeof recordTables[number];
 export interface RecordGraph {printers:Printer[];tasks:Task[];logs:Log[];readings:Reading[];inventory:Inventory[];repairs:Repair[];profiles:Profile[];}
+import {taskDecisionIssue,decisionIssue} from './recommendations';
 import {sameRecord} from './comparison';
 export {sameRecord} from './comparison';
 function stableJson(value:unknown):string{
@@ -20,6 +21,8 @@ export function graphIssues(g:RecordGraph):string[]{
  for(const row of [...g.tasks,...g.logs,...g.readings,...g.repairs])if(!ps.has(row.printerId))issue('Record',row.id,'References a printer that is missing.');
  for(const i of g.inventory)if(i.printerId&&!ps.has(i.printerId))issue('Inventory',i.id,'References a printer that is missing.');
  for(const l of g.logs){
+  if(l.recommendation&&(!l.model||!l.manufacturer||!l.technology))issue('History',l.id,'Recommendation history requires its captured exact model.');
+  const recommendationProblem=decisionIssue(l,l.model?{manufacturer:l.manufacturer||'',model:l.model,technology:l.technology||'FDM/FFF'}:undefined);if(recommendationProblem)issue('History',l.id,recommendationProblem);
   const t=ts.get(l.taskId);if(!t)issue('History',l.id,'References a maintenance rule that is missing.');else if(t.printerId!==l.printerId)issue('History',l.id,'Maintenance rule belongs to a different printer.');
   if(l.inventoryId){const i=stock.get(l.inventoryId);if(!i)issue('History',l.id,'References inventory that is missing.');else if(i.printerId&&i.printerId!==l.printerId)issue('History',l.id,'Inventory belongs to a different printer.');if(l.quantity<=0)issue('History',l.id,'Inventory consumption must be positive.');}
   else if(l.quantity!==0)issue('History',l.id,'Consumption requires an inventory reference.');
@@ -29,6 +32,7 @@ export function graphIssues(g:RecordGraph):string[]{
  for(const l of g.logs)if(l.profileId&&!definitionsAvailable.has(profileArchiveId(l.profileId,l.profileVersion||'')))issue('History',l.id,'References a profile version that is missing.');
  for(const p of g.printers)if(p.profileId&&!definitionsAvailable.has(profileArchiveId(p.profileId,p.profileVersion)))issue('Printer',p.id,'References a profile version that is missing.');
  for(const t of g.tasks){const p=ps.get(t.printerId);if(!p)continue;
+  const recommendationProblem=taskDecisionIssue(t,p);if(recommendationProblem)issue('Task',t.id,recommendationProblem);
   if(t.profileId&&!definitionsAvailable.has(profileArchiveId(t.profileId,t.profileVersion)))issue('Task',t.id,'References a profile version that is missing.');
   if(t.anchorHours>p.hours||t.anchorPrints>p.prints)issue('Task',t.id,'Baseline exceeds current recorded printer usage.');
   if(t.interval.mode!=='once'&&t.base==='completion'&&t.anchorDate>today())issue('Task',t.id,'A service baseline cannot be in the future.');
