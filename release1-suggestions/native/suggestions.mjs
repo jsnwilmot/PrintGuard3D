@@ -42,7 +42,7 @@ test('B05 CSV, JSON, offline HTML, print and calendar ICS retain reminder purpos
  }
  await page.emulateMedia({media:'print'});await expect(page.locator('.schedule-print')).toContainText('Not a direction to clean');await page.emulateMedia({media:'screen'});await page.goto('/#Calendar');await page.getByLabel('Jump to calendar date').fill('2027-04-29');const ics=(await download(page,info,'Export ICS','suggested.ics')).text.replace(/\r\n /g,'');expect(ics).toContain('PrintGuard Suggested');expect(ics).toContain('FlashForge has not confirmed');expect(ics).toContain('Working hours T<5');
 });
-test('B06 forged manufacturer claims and unsupported decision formats fail before writes; history is never reclassified',async({page,context})=>{
+test('B06 forged manufacturer claims and unsupported decision formats fail before writes; history is never reclassified',async({page,context},info)=>{
  await setup(page,context);await accept(await review(page));await page.goto('/#Settings');const b=JSON.parse((await download(page,info,'Back Up My Data','original-new-policy.json')).text),before=await raw(page);
  for(const mutation of ['source','version','marker','procedure']){const bad=structuredClone(b),t=bad.tasks.find(t=>t.recommendation);if(mutation==='source')t.source='Manufacturer Verified';if(mutation==='version')t.recommendation.version=99;if(mutation==='marker')delete bad.recommendationPolicy;if(mutation==='procedure')t.description='Unreviewed physical servicing directions';await upload(page,bad);await expect(page.getByRole('alert')).toBeVisible();await expect(page.getByRole('dialog',{name:'Review your backup'})).toHaveCount(0);expect(await raw(page)).toEqual(before);}
 });
