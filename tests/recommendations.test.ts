@@ -72,7 +72,7 @@ it('S25: backup roundtrip preserves decisions, old backup compatibility and stri
  await acceptReviewReminder('p1',choice());const b=await makeBackup();expect(b.recommendationPolicy).toEqual({version:1});expect(validateBackup(b).tasks).toEqual(b.tasks);
  const strictOld=backupSchema.omit({recommendationPolicy:true}).extend({tasks:z.array(taskSchema.omit({recommendation:true}))});expect(()=>strictOld.parse(b)).toThrow();
  const missing=structuredClone(b);delete missing.recommendationPolicy;expect(()=>validateBackup(missing)).toThrow('policy marker');
- for(const mutate of [(b:any)=>b.tasks[0].source='Manufacturer Verified',(b:any)=>b.tasks[0].recommendation.policyVersion='99',(b:any)=>b.tasks[0].recommendation.model='Creator 5 Pro',(b:any)=>b.tasks[0].recommendation.acknowledged=false,(b:any)=>b.tasks[0].sourceUrl='https://example.com']){
+ for(const mutate of [(b:any)=>b.tasks[0].source='Manufacturer Verified',(b:any)=>b.tasks[0].recommendation.policyVersion='99',(b:any)=>b.tasks[0].recommendation.model='Creator 5 Pro',(b:any)=>b.tasks[0].recommendation.acknowledged=false,(b:any)=>b.tasks[0].sourceUrl='https://example.com',(b:any)=>b.tasks[0].description='Unreviewed heated servicing steps',(b:any)=>b.tasks[0].title='Replace equipment now']){
   const bad=structuredClone(b);mutate(bad);await expect(restoreBackup(bad,true)).rejects.toThrow();expect((await makeBackup()).tasks).toEqual(b.tasks);
  }
  await restoreBackup(old,true);expect(await db.tasks.count()).toBe(0);await restoreBackup(b,true);expect((await makeBackup()).tasks).toEqual(b.tasks);
@@ -92,6 +92,7 @@ it('S27: completion, later customization and observation capture retain historic
  const current=(await db.tasks.get(t.id))!;await saveTask({...current,interval:{mode:'calendar',months:7}},current);expect(await db.logs.toArray()).toEqual(before);
  const facts=observationFacts(printer(),[current],'2026-10-29',7);expect(facts.tasks[0].recommendation).toEqual(t.recommendation);
  const obs={version:1,id:'batch:p1',batchId:'batch',printerId:'p1',observedAt:'2026-10-29T12:00:00.000Z',timezone:'UTC',utcOffsetMinutes:0,source:'manual observation',...facts};expect(()=>observationSchema.parse(obs)).not.toThrow();
+ const alias={...obs,id:'task:p1',batchId:'task'};const displayed=selectReport({printers:[printer()],tasks:[{...current,id:'p1:'+current.id,source:'User Defined'}],logs:[],readings:[],repairs:[],prefs:defaults,observations:[observationSchema.parse(alias)]},'Observed Task Details',defaultReportFilters());expect(displayed.rows[0].provenance.recommendationContext).toContain('PrintGuard Suggested');expect(displayed.rows[0].provenance.recommendationContext).not.toContain('User Defined.');
  const bad=structuredClone(obs);bad.tasks[0].source='Manufacturer Verified';expect(()=>observationSchema.parse(bad)).toThrow('verification');
 });
 it('S28: classifications and assumptions survive CSV, offline HTML, JSON, ICS and recurrence beyond 2500',()=>{

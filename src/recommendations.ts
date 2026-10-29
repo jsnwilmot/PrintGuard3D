@@ -17,6 +17,8 @@ export const reviewGroups={
  filter:{label:'Filter condition inspection',url:root+'filter-cartridge-replacement',ranges:'Pro HEPA13/carbon hardware is documented. Cleaning versus replacement, discoloration scope and cadence are unresolved. No interval is supplied by PrintGuard.'},
 } as const;
 export type ReviewGroup=keyof typeof reviewGroups;
+const reminderTitle=(group:ReviewGroup,custom=false)=>`Review ${reviewGroups[group].label.toLowerCase()} \u2014 ${custom?'User Defined':'PrintGuard Suggested'}`;
+const reminderSourceTitle='Ambiguous manufacturer reference; independent owner-approved review reminder';
 export function suggestedMonths(group:ReviewGroup,hours:number){
  if(group==='fan')return hours===5?6:hours===10?3:null;
  return hours===5?(group==='xy'?1:group==='z'?3:null):null;
@@ -33,12 +35,13 @@ export function printingAverage(readings:Reading[],printer:Printer,end=today()){
  if(values.some((r,i)=>i>0&&(r.hours<values[i-1].hours||r.hours-values[i-1].hours>24||r.prints<values[i-1].prints)))return null;
  return {hours:(values[30].hours-values[0].hours)/30,start,end,coverage:31};
 }
-type Fact={source:string;sourceUrl:string;recommendation?:Recommendation};
+type Fact={source:string;sourceUrl:string;recommendation?:Recommendation;title?:string;category?:string;priority?:string};
 export function decisionIssue(record:Fact,model?:{manufacturer:string;model:string;technology:string}){
  const d=record.recommendation;if(!d)return '';
  if(!recommendationSchema.safeParse(d).success)return 'Unsupported or invalid recommendation policy metadata.';
  if(record.source!=='General Recommendation'&&record.source!=='User Defined')return 'Recommendation decisions cannot assert manufacturer verification.';
  if(d.decision==='customized'&&record.source!=='User Defined')return 'An owner-customized decision must remain User Defined.';
+ if(record.source==='General Recommendation'&&((record.title!==undefined&&record.title!==reminderTitle(d.group))||(record.category!==undefined&&record.category!=='Inspection')||(record.priority!==undefined&&record.priority!=='Normal')))return 'Suggested history must retain its reviewed reminder identity; unreviewed content is not PrintGuard guidance.';
  if(model&&(!exactReviewModel(model)||d.model!==model.model))return 'Recommendation decision is incompatible with the exact model.';
  if((d.group==='filter')!==(d.model==='Creator 5 Pro'))return 'Series suggestions cannot transfer to Pro or stock C5 filtration.';
  if(record.sourceUrl!==reviewGroups[d.group].url)return 'Recommendation provenance source must retain its policy reference.';
@@ -51,6 +54,7 @@ export function taskDecisionIssue(t:Task,p:Pick<Printer,'manufacturer'|'model'|'
  if(d.group==='filter'&&(t.interval.mode!=='condition'||t.originalInterval.mode!=='condition'))return 'Pro inspection has no predefined cadence.';
  const original=d.group==='filter'?{mode:'condition'}:{mode:'calendar',months:d.chosenMonths};
  if(!sameRecord(t.originalInterval,original))return 'Initial decision interval must remain immutable.';
+ if(t.source==='General Recommendation'&&(t.title!==reminderTitle(d.group)||t.description!==decisionContext(d)||t.category!=='Inspection'||t.priority!=='Normal'||t.materials!==''||t.minutes!==0||t.safety!==recommendationPolicy.warning||t.sourceTitle!==reminderSourceTitle))return 'PrintGuard Suggested requires the exact reviewed reminder definition; custom content must be User Defined.';
  if(t.source==='General Recommendation'&&(d.decision!=='accepted'||!sameRecord(t.interval,original)))return 'A custom decision or edited interval must be User Defined.';
  return '';
 }
@@ -81,6 +85,6 @@ export function createReviewReminder(p:Printer,choice:ReviewChoice,readings:Read
  if(choice.group!=='filter'&&(!Number.isInteger(months)||months!<=0||months!>1200))throw Error('Choose a whole calendar interval of 1–1200 months.');
  const recommendation:Recommendation={version:1,policyVersion:'1.0.0',model:p.model as Recommendation['model'],group:choice.group,decision:choice.custom?'customized':'accepted',basis:choice.basis,acknowledged:true,acceptedOn:date,...(choice.group==='filter'?{}:{dailyHours:hours,suggestedMonths:suggested!,chosenMonths:months}),...window};
  const interval=choice.group==='filter'?{mode:'condition' as const}:{mode:'calendar' as const,months};
- const task=taskSchema.parse({id:uid(),printerId:p.id,title:`Review ${reviewGroups[choice.group].label.toLowerCase()} — ${choice.custom?'User Defined':'PrintGuard Suggested'}`,description:decisionContext(recommendation),category:'Inspection',priority:'Normal',interval,originalInterval:interval,anchorDate:date,anchorHours:p.hours,anchorPrints:p.prints,base:'completion',source:choice.custom?'User Defined':'General Recommendation',sourceUrl:reviewGroups[choice.group].url,sourceTitle:'Ambiguous manufacturer reference; independent owner-approved review reminder',verified:'',materials:'',safety:recommendationPolicy.warning,minutes:0,notes:'',enabled:true,postponedUntil:'',condition:false,profileVersion:'',recommendation});
+ const task=taskSchema.parse({id:uid(),printerId:p.id,title:reminderTitle(choice.group,choice.custom),description:decisionContext(recommendation),category:'Inspection',priority:'Normal',interval,originalInterval:interval,anchorDate:date,anchorHours:p.hours,anchorPrints:p.prints,base:'completion',source:choice.custom?'User Defined':'General Recommendation',sourceUrl:reviewGroups[choice.group].url,sourceTitle:reminderSourceTitle,verified:'',materials:'',safety:recommendationPolicy.warning,minutes:0,notes:'',enabled:true,postponedUntil:'',condition:false,profileVersion:'',recommendation});
  const issue=taskDecisionIssue(task,p);if(issue)throw Error(issue);return task;
 }

@@ -127,7 +127,7 @@ export function selectReport(data:ReportData,type:ReportType,filters:ReportFilte
   const task=taskById.get(typeof row.provenance.taskId==='string'?row.provenance.taskId:row.id.startsWith('task:')?row.id.slice(5):'');
   const log=logById.get(row.id.startsWith('log:')?row.id.slice(4):'');
   const captured=capturedById.get(row.id);
-  const context=task?taskContext(task,printers.find(p=>p.id===task.printerId)!):log?historicalContext(log):captured?historicalContext(captured):recommendationPolicy.explanation;
+  const context=type==='Observed Task Details'?(captured?historicalContext(captured):'No captured recommendation facts; current rules are never substituted.'):task?taskContext(task,printers.find(p=>p.id===task.printerId)!):log?historicalContext(log):recommendationPolicy.explanation;
   row.values.push(context);row.provenance.recommendationContext=context;
  }
  const used=new Set(rows.map(row=>row.printerId));const historical=type.startsWith('Observed');
