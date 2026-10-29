@@ -1,6 +1,6 @@
 import {beforeEach,afterEach,it,expect,vi} from 'vitest';
 import {z} from 'zod';
-import {empty,seed,printer,task,input} from '../acceptance-review/fixtures';
+import {empty,seed,printer,task,input,log} from '../acceptance-review/fixtures';
 import {db,acceptReviewReminder,makeBackup,restoreBackup,validateBackup,saveTask,completeTask,backupSchema,PrintGuardDB} from '../src/db';
 import {defaults,taskSchema,profileSchema,type Reading} from '../src/domain';
 import {createReviewReminder,suggestedMonths,printingAverage,taskClassification,taskContext,type ReviewChoice} from '../src/recommendations';
@@ -99,6 +99,8 @@ it('S28: classifications and assumptions survive CSV, offline HTML, JSON, ICS an
  for(const serialized of [serializeReportCSV(report),reportJSON(report),reportHTML(report),scheduleICS([{id:t.id,title:t.title,date:'2501-01-01',description:taskContext(t,printer())}],'20261029T120000Z')]){
   expect(serialized).toContain('PrintGuard Suggested');expect(serialized.replace(/\r\n /g,'')).toContain('Not a direction to clean');expect(serialized).not.toContain('manufacturer requires');
  }
+ const historical=log('suggested-history',{taskId:t.id,title:t.title,source:t.source,sourceUrl:t.sourceUrl,recommendation:t.recommendation,manufacturer:'FlashForge',model:'Creator 5',technology:'FDM/FFF'});
+ for(const type of ['Complete Maintenance History','Maintenance Expenses','Parts Replacement History'] as const){const result=selectReport({...data,logs:[historical]},type,defaultReportFilters());expect(serializeReportCSV(result)).toContain(t.sourceUrl);expect(serializeReportCSV(result)).toContain('FlashForge has not confirmed');}
  expect(occurrences(t,'2501-01-01','2501-12-31')).toHaveLength(2);expect(report.rows.every(row=>row.values.length===report.columns.length)).toBe(true);
 });
 it('S29: existing DB layout stays v20; old Dexie fallback is measured and caveats survive raw task access',async()=>{
