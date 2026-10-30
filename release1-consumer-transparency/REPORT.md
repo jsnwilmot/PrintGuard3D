@@ -1,0 +1,38 @@
+# Phase B privacy and consumer transparency — Architect review
+
+2026-10-30 UTC. Implementation [#27](https://github.com/jsnwilmot/PrintGuard3D/issues/27); approved Phase A main `d6a28ccb79f0a57a3cec4ea7cd7776feae9fb634`. GitHub confirmed PR #28 merged before work. Branch `release1/privacy-consumer-transparency`. Latest Architect instructions in [comment 6524544601](https://github.com/jsnwilmot/PrintGuard3D/issues/27#issuecomment-6524544601) reviewed. No stacked base.
+
+## Implementation
+
+One shared bundled `DataHandlingDetails` component supplies source-scoped information in public Help and the existing accessible Modal through a reusable button in Settings/footer. It takes no workshop data or context. Settings presents the shared backup/privacy summary beside the full-backup action. Overbroad “only here/private” descriptions in Help, Dashboard, sidebar and metadata are narrowed to browser-local application facts. Manufacturer independence/source warnings remain unchanged.
+
+Information revision **1.0, 2026-10-30** identifies factual copy, not a legal consent version. It is explicitly not an adopted final privacy policy. There is no privacy checkbox, record, acknowledgment renewal, new timer, deletion/retention workflow, migration, dependency, API or environment variable. `src/legal.ts` v1.0 and acknowledgment behavior are unchanged. The [pre-implementation design](DESIGN.md) explains this boundary. The separate [privacy notice draft](DRAFT-PRIVACY-NOTICE.md) is owner-review documentation; unresolved policy placeholders are not bundled as final promises.
+
+Copy explains actual IndexedDB data, no automatic sync/upload feature, clearing/eviction/device loss, browser persistence limits, unencrypted backup content and old-reader risks, observations retained during printer deletion/replacement, external copies, optional device notifications, local imports, printing/download destinations, initial host/SW requests, external manufacturer sites and user-controlled mailto drafts. It does not claim zero logging/cookies, Canadian-only processing, no third-party transfers, universal deletion or guaranteed recovery. Inquiry email is not represented as a verified statutory officer, response commitment or automated rights backend.
+
+## Evidence package
+
+- [DATA-FLOWS.md](DATA-FLOWS.md): flow/initiator/category/operator/retention/source inventory; bounded source/loopback findings separated from live host uncertainty. Sites static source manifest is evidence of configuration intent, not live processor/DNS/log/cookie/geography verification. Full owner/provider fact checklist remains #16.
+- [OWNER-MARKET-DECISIONS.md](OWNER-MARKET-DECISIONS.md): Canada/provinces, Alberta, Quebec/French, international offer, minors, commercial/noncommercial activities, support and final-policy decisions all explicitly unsigned. No exclusion, translation, geoblock or applicability determination. Four official primary sources reviewed as of 2026-10-30; Alberta direct retrieval timed out, search-retrieved guidance body distinguished. Source-specific versions and limitations are recorded.
+- [AI-RISK-REVIEW.md](AI-RISK-REVIEW.md): exact prepared prompts and all required per-model/citation/conflict/source/owner/release fields. No external model execution, consensus, legal opinion or signed acceptance fabricated. Full original Q01–Q10 packet unavailable; only issue-supplied Q02/Q08/Q09 claims reconciled against already implemented classifications, exports and v1.0 gate. Remaining original claims stay NOT VERIFIED.
+- [MATRIX.md](MATRIX.md): all original 86 requirement IDs/statuses and historical evidence preserved, with scoped Phase B addendum. Phase A/source registers and historical matrices are untouched.
+
+## Verification
+
+Four new standard cases `tests/data-handling.test.tsx` cover public independent rendering, informational/no-consent contract, modal focus return and no record/acknowledgment writes, source/host distinction, manufacturer independence, actual plain backup notes/photos and preservation. Four native workflows run in all three engines through the existing reporting job: PB01 protected records/public information; PB02 genuine server-off offline reload, keyboard/focus, both-theme axe and mobile reflow; PB03 actual full/report/ICS downloads, print warnings and unchanged history; PB04 bounded same-origin GET trace, unsent feedback and unverified live-host scope.
+
+Local verification passed **242/242 standard regressions** and **45/45 unchanged acceptance assertions**, TypeScript/static checks and production build. All four new native workflows passed across the three engines (12 cases across the final targeted runs); final-head full-suite results are in the PR.
+
+The unchanged five-job CI runs all **238 retained regressions + 4 new = 242**, **45 unchanged acceptance assertions**, and **128 retained native/printing + 12 new = 140** (20 original Chromium, 45 compatibility/printing, 75 reporting/safety/privacy), plus TypeScript/static/build. No baseline case/assertion is removed, bypassed or reclassified. The draft PR records exact final head, observed counts/results, CI job links and retained artifact references; this report does not substitute expected totals for observed evidence. Existing dependency annotation/large-bundle build warnings remain. The first parallel Windows run had an original 1-second UI-query timeout; the focused and subsequent full run passed without changing the original assertion. The original U14 contact assertion caught a duplicate email link name: the new link now has a descriptive purpose label, preserving the original contact/assertion. PB01 now explicitly reloads its protected deep link instead of assuming hash navigation remounts the app. No assertion was removed or timeout increased.
+
+## Changed files (16)
+
+`index.html`; `src/App.tsx`; `src/Dashboard.tsx`; `src/Help.tsx`; `src/Settings.tsx`; `src/DataHandling.tsx`; `tests/data-handling.test.tsx`; `release1-reporting/native/reporting.mjs`; `release1-consumer-transparency/native/privacy.mjs`; `release1-consumer-transparency/DESIGN.md`; `DATA-FLOWS.md`; `DRAFT-PRIVACY-NOTICE.md`; `OWNER-MARKET-DECISIONS.md`; `AI-RISK-REVIEW.md`; `MATRIX.md`; `REPORT.md` (last six short names are in `release1-consumer-transparency/`).
+
+## Remaining requirements and limits
+
+Owner must review final copy and actual operator/host/email facts, policy adoption/process, intended markets/languages/audience and specific residual risks. The owner elected AI internal triage instead of external counsel: original counsel criterion is **NOT PERFORMED / NOT VERIFIED**, not PASS. No multi-AI answers or original full simulation packet were available; the framework is prepared, not a completed multi-model legal assessment. A risk choice does not disapply any applicable law. No conclusion of Canadian legal compliance or trademark clearance.
+
+Human screen-reader, touch/device/zoom, actual OS notifications, external calendar clients and physical print remain #15/#25; automated browser/axe checks do not close those gates. Live host access/headers/cookies/logs/processor geography and old cached Dexie coexistence remain #16. Manufacturer coverage/AV/source questions remain #14/#22. No source/export warning machinery is duplicated or relaxed, and no reviewed profile, interval, perpetual engine or historical/observation data changed.
+
+No production user database/private hosted application, hosting/access/permissions, deployment, preview provisioning, external communication or manufacturer contact. No merge or Release 1 approval. Independent Architect review and a separately authorized owner merge are required. #10/#14/#15/#16/#1/#17 remain open pending actual evidence and owner dispositions.
