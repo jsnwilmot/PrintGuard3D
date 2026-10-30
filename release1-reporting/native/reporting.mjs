@@ -1,3 +1,4 @@
+import '../../release1-suggestions/native/suggestions.mjs';
 import {test,expect} from '@playwright/test';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';

@@ -1,3 +1,4 @@
+import {taskClassification,taskContext,historicalContext} from './recommendations';
 import {useState} from 'react';
 import {Plus,ChevronLeft,ChevronRight,Download,CalendarDays} from 'lucide-react';
 import {useData} from './context';
@@ -8,7 +9,6 @@ import {Button,PageHeading,Empty,Badge,Modal,External} from './components';
 import {money,unclassifiedForFilter} from './reporting';
 import {TaskForm} from './forms';
 import {scheduleICS} from './safety';
-import {reviewTask} from './profiles';
 import {validCalendarDate,usageDue,historyMatches,calendarOccurrences} from './scheduleView';
 
 export function Calendar({onTask}:{onTask:(t:Task)=>void}){
@@ -50,7 +50,7 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
  }
  function exportICS(){
   const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
-  const rows=events.map(e=>{const p=printers.find(p=>p.id===e.task.printerId)!;return {id:e.key,date:e.date,title:e.task.title,description:`${p.name}. ${e.projected?'Projected recurrence; actual next date may change after completion. ':''}Source: ${reviewTask(e.task,p).source}; profile ${e.task.profileVersion||'not verified'}. ${e.task.sourceUrl}`};});
+  const rows=events.map(e=>{const p=printers.find(p=>p.id===e.task.printerId)!;return {id:e.key,date:e.date,title:e.task.title,description:`${p.name}. ${e.projected?'Projected recurrence; actual next date may change after completion. ':''}${taskContext(e.task,p)}; source: profile ${e.task.profileVersion||'not verified'}. ${e.task.sourceUrl}`};});
   download(`printguard-schedule-${start}.ics`,scheduleICS(rows,stamp),'text/calendar');
  }
  function completedEvents(day?:string){return history.filter(l=>!day||l.date===day).map(l=><button key={l.id} className="calendar-event complete" onClick={()=>setRecord(l)}>
@@ -77,7 +77,7 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
   </div>
   <p className="muted">Historical records without category or priority snapshots remain visible as unclassified when those filters are selected. Printer and status filters always apply; current rules never supply missing historical metadata.</p>
   <section className="panel calendar-panel">{view==='Agenda'?<div className="agenda">
-   {events.map(e=><button key={e.key} className="agenda-row" onClick={()=>onTask(e.task)}><span className="agenda-date">{new Date(e.date+'T12:00:00').toLocaleDateString(undefined,{month:'short'})}<strong>{Number(e.date.slice(-2))}</strong></span><span><strong>{e.task.title}</strong><small>{printers.find(p=>p.id===e.task.printerId)?.name}</small></span><Badge>{e.projected?'Projected recurrence':'Next occurrence'}</Badge></button>)}
+   {events.map(e=><button key={e.key} className="agenda-row" onClick={()=>onTask(e.task)}><span className="agenda-date">{new Date(e.date+'T12:00:00').toLocaleDateString(undefined,{month:'short'})}<strong>{Number(e.date.slice(-2))}</strong></span><span><strong>{e.task.title}</strong><small>{printers.find(p=>p.id===e.task.printerId)?.name} · {taskClassification(e.task,printers.find(p=>p.id===e.task.printerId)!)}</small></span><Badge>{e.projected?'Projected recurrence':'Next occurrence'}</Badge></button>)}
    {completedEvents()}
    {!events.length&&!history.length&&<Empty icon={CalendarDays} title="A little breathing room" text="No dated maintenance in this period. Usage thresholds are listed separately when actual readings reach them."/>}
   </div>:<>
@@ -91,8 +91,8 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
      className={'calendar-event '+(e.projected?'projected':status(e.task,printers.find(p=>p.id===e.task.printerId)!)==='Overdue'?'overdue':'')}
      key={e.key} draggable={!e.projected}
      onDragStart={event=>{event.dataTransfer.setData('text/plain',e.task.id);event.dataTransfer.effectAllowed='move';}}
-     title={`${e.task.title} · ${e.projected?'Projected recurrence':'Next due'}`} onClick={()=>onTask(e.task)}>
-     {e.projected?'↻ ':''}{e.task.title}<small>{printers.find(p=>p.id===e.task.printerId)?.name}</small></button>)}
+     title={`${e.task.title} · ${e.projected?'Projected recurrence':'Next due'} · ${taskContext(e.task,printers.find(p=>p.id===e.task.printerId)!)}`} onClick={()=>onTask(e.task)}>
+     {e.projected?'↻ ':''}{e.task.title}<small>{printers.find(p=>p.id===e.task.printerId)?.name} · {taskClassification(e.task,printers.find(p=>p.id===e.task.printerId)!)}</small></button>)}
     {completedEvents(day)}
    </div>)}</div>
   </>}
@@ -105,6 +105,6 @@ export function Calendar({onTask}:{onTask:(t:Task)=>void}){
   <p className="muted calendar-note">Future recurrences are generated for the visible period and never expire. Projected dates may change after completion. Hour-based and print-count rules appear when actual readings reach their thresholds, without invented calendar dates.</p>
   {visible.some(t=>{const d=due(t).date;return d&&d<start&&status(t,printers.find(p=>p.id===t.printerId)!)==='Overdue';})&&<div className="callout amber">Outstanding overdue tasks remain in Maintenance, even when their due date falls before this calendar period.</div>}
   {add&&<TaskForm date={add} printerId={printer} onClose={()=>setAdd(null)}/>}
-  {record&&<Modal title={record.title} subtitle="Historical maintenance record · read only" onClose={()=>setRecord(null)}><p>{printers.find(p=>p.id===record.printerId)?.name} · {formatDate(record.date)} · {record.outcome} · {record.onTime?'On time':'After threshold'}</p><dl className="detail-grid"><div><dt>Usage at completion</dt><dd>{record.hours} h / {record.prints} prints</dd></div><div><dt>Recorded cost</dt><dd>{money(record.cost,record.currency)}</dd></div><div><dt>Historical category / priority</dt><dd>{record.category||'Unclassified'} / {record.priority||'Unclassified'}</dd></div><div><dt>Profile / version at completion</dt><dd>{record.profileId||'Not recorded'} / {record.profileVersion||'Not recorded'}</dd></div></dl><p>{record.notes||'No notes recorded'}</p><p>Materials: {record.materials||'Not recorded'} · {record.minutes} minutes · {record.skippedCycles} elapsed unrecorded cycles</p><p>Recorded source: {record.source||'Not recorded'}. This historical attribution is not a new verification claim.</p>{record.sourceUrl&&safeUrl(record.sourceUrl)&&<External url={record.sourceUrl}>Documentation recorded at completion</External>}{record.image&&<img className="record-photo" src={record.image} alt="Historical maintenance attachment"/>}</Modal>}
+  {record&&<Modal title={record.title} subtitle="Historical maintenance record · read only" onClose={()=>setRecord(null)}><p>{printers.find(p=>p.id===record.printerId)?.name} · {formatDate(record.date)} · {record.outcome} · {record.onTime?'On time':'After threshold'}</p><dl className="detail-grid"><div><dt>Usage at completion</dt><dd>{record.hours} h / {record.prints} prints</dd></div><div><dt>Recorded cost</dt><dd>{money(record.cost,record.currency)}</dd></div><div><dt>Historical category / priority</dt><dd>{record.category||'Unclassified'} / {record.priority||'Unclassified'}</dd></div><div><dt>Profile / version at completion</dt><dd>{record.profileId||'Not recorded'} / {record.profileVersion||'Not recorded'}</dd></div></dl><p>{record.notes||'No notes recorded'}</p><p>Materials: {record.materials||'Not recorded'} · {record.minutes} minutes · {record.skippedCycles} elapsed unrecorded cycles</p><p>{historicalContext(record)}</p>{record.sourceUrl&&safeUrl(record.sourceUrl)&&<External url={record.sourceUrl}>Documentation recorded at completion</External>}{record.image&&<img className="record-photo" src={record.image} alt="Historical maintenance attachment"/>}</Modal>}
  </>;
 }
