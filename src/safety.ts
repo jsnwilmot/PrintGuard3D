@@ -3,7 +3,7 @@ import type {Preferences} from './domain';
 import {csv} from './db';
 import {addInterval} from './engine';
 
-export const exportSafety=shortDisclaimer+' Not affiliated with or endorsed by printer manufacturers.';
+export const exportSafety=shortDisclaimer+' Not affiliated with or endorsed by printer manufacturers. Source labels are not safety approval. Unknown hazards are not proof of safety; review current manufacturer precautions and seek qualified assistance where necessary.';
 export const hasAcknowledgment=(prefs:Preferences)=>prefs.acknowledgment?.version===disclaimerVersion&&!!prefs.acknowledgment.date;
 export function reportCSV(headers:string[],rows:(string|number)[][]){
  // Include the notice even in a header-only empty export; never invent a task row.

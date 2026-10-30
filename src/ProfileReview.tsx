@@ -1,3 +1,4 @@
+import {ManufacturerNotice} from './MaintenanceSafetyPanel';
 import {taskClassification,recommendationPolicy} from './recommendations';
 import {useState} from 'react';
 import {type Profile,type Task,intervalLabel} from './domain';
@@ -19,7 +20,7 @@ export function ProfileReview({incoming,prior,onClose}:{incoming:Profile;prior?:
  function choose(id:string,checked:boolean){setAck(false);setSelected(values=>checked?[...new Set([...values,id])]:values.filter(v=>v!==id));}
  return <Modal title="Review profile package" subtitle={`${incoming.manufacturer} ${incoming.model} · v${incoming.version}`} onClose={onClose}>
   <div className="callout">{prior?`Installed/bundled version: ${prior.version}. Incoming version: ${incoming.version}.`:'This is a new profile.'} No service history will be overwritten. Existing rules, customizations and service baselines stay pinned to their applied versions.</div>
-  <h3>Revision history</h3>{incoming.revisions.map((r,n)=><p key={n}>{r}</p>)}
+  <h3>Revision history</h3><ManufacturerNotice/>{incoming.revisions.map((r,n)=><p key={n}>{r}</p>)}
   <div className="callout amber">{incoming.status==='Manufacturer Verified'?'Documented facts; limited coverage':incoming.status}. Unsubstantiated manufacturer labels are quarantined. Applying pending tasks is an explicit custom scheduling decision; it does not verify their safety or intervals.</div>
   {incoming.coverage&&<p>{incoming.coverage.reviewed}/{incoming.coverage.indexTotal} indexed text articles reviewed. {incoming.coverage.notes}</p>}
   <h3>Complete old/new comparison</h3>

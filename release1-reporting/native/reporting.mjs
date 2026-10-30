@@ -1,3 +1,4 @@
+import '../../release1-safety/native/safety.mjs';
 import '../../release1-suggestions/native/suggestions.mjs';
 import {test,expect} from '@playwright/test';
 import {pathToFileURL} from 'node:url';
