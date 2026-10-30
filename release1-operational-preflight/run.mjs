@@ -1,7 +1,7 @@
 // Evidence collection only. A detected unsafe old writer is a FAIL, never an expected PASS.
 import {expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
-import {join,relative} from 'node:path';
+import {relative} from 'node:path';
 import {Lab,fixture,stores,sameCore,digest,diskIndex} from './harness.mjs';
 const lab=new Lab(process.argv[2]);await lab.init();
 const engines=process.argv[3]?[process.argv[3]]:['chromium','firefox','webkit'];
