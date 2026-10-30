@@ -1,0 +1,1800 @@
+{
+  "version": 1,
+  "approvedMain": "aa6ae5892fde8e0d621bbb34b765c41739e7a2ba",
+  "environment": {
+    "executedAt": "2026-10-30T16:49:48.430Z",
+    "tester": "Codex automated synthetic harness; no human/device acceptance",
+    "node": "v22.23.3",
+    "platform": "win32",
+    "release": "10.0.26300",
+    "toolVersions": {
+      "@playwright/test": "1.64.1",
+      "dexie": "4.4.7",
+      "vite": "6.4.5",
+      "typescript": "5.8.3"
+    }
+  },
+  "versions": {
+    "prePhase5": {
+      "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+      "sourceTree": "e4276e5aea68dfe7c334b0f313fcc5b17247466a",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-BnsBSSBh.js": "016147215c2890c032e14c33703ba42a43cf8d5d7022449813217c945a49aea8",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-DkxIiPac.css": "9251ef9e5f50aab63368cc89bc8529928f725885d128563dcdc0a979296c9fda",
+        "assets/index-Mg1tR4XT.js": "d04f3631d0718818781789f6fcbf2e60d07768891e1ba2a23adc833e3219051e",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Db6Si-HD.js": "c28294d4824efba69a2609932aeb99e282a2da9b9d993077ef0e78ceecff4100",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "06d180366766643a977affb36b59d5d3dc31dc5c899c7c89eeedc31eede6dd29",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "049a86eca41237d7ce66c4db53d27082d265ab6f1b7bbf992362b71b19e50a95",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "a847a05f3bea79a47e71fbb8c1cc449e180dc7841527cb3e980255d2b5a5608f"
+    },
+    "preRecommendations": {
+      "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+      "sourceTree": "360433dda800354f66a3be0fb293602aef74bfd5",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+        "assets/index-CyBCToO1.js": "5f55bfffd2b966fde4457a3dec243381a966e178e6a960b57aa0e86329eea0fa",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "b3199643bb40388e84a4c78a519fef7eb80e1851ad050b861fcc05ffd59babf4",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "19e34162195441d2f45c264f82808d01a983e50762bb372ebb71260737264782",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "a00ff277c74ec5db5f36a88b7a2721f78edceeea3d03b4ee2e9792b10186bd1d"
+    },
+    "current": {
+      "commit": "aa6ae5892fde8e0d621bbb34b765c41739e7a2ba",
+      "sourceTree": "90a4705e60ad82496979aa7be08e0f87c3ea538c",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+        "assets/index-DLvU2FnS.js": "e1749b7f0669ec341169060c2b9a50dc1445efa47884b7412df9e0299473eb9c",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "ef1dd1677c8116a8adaf5ebe11e8f126acc6a9e29f2b0d63b4632a26c7e00756",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "5902b925eab7dacd7bf5db79ab18995da15880f6f368172a346a591ea5b13553",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "5f25fc4e0c952fab28f000c92562dfbf9f32d401888968345b00e787d3f9a6f5"
+    }
+  },
+  "results": [
+    {
+      "id": "chromium-01-prePhase5",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:49:48.433Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 10,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "origin": "http://127.0.0.1:50227",
+      "browser": "156.0.8078.4",
+      "finishedAt": "2026-10-30T16:49:52.437Z"
+    },
+    {
+      "id": "chromium-01-preRecommendations",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:49:52.438Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ]
+      },
+      "origin": "http://127.0.0.1:55913",
+      "browser": "156.0.8078.4",
+      "finishedAt": "2026-10-30T16:49:56.445Z"
+    },
+    {
+      "id": "chromium-02",
+      "requirement": "Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations",
+      "startedAt": "2026-10-30T16:49:56.446Z",
+      "status": "PASS",
+      "expected": "Current valid full backup and actual opt-in records, no fabricated old observations",
+      "actual": {
+        "backupSHA256": "6a3554bfbe699644fa65e6f398896cce1274c444c3d2214ddefe309e7b43e1f7",
+        "counts": {
+          "printers": 4,
+          "tasks": 10,
+          "logs": 5,
+          "readings": 6,
+          "inventory": 2,
+          "repairs": 1,
+          "profiles": 3
+        },
+        "observations": 4,
+        "recommendationLogs": 2,
+        "currencies": [
+          "USD",
+          "unknown",
+          "CAD"
+        ],
+        "hashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        }
+      },
+      "origin": "http://127.0.0.1:54650",
+      "browser": "156.0.8078.4",
+      "finishedAt": "2026-10-30T16:50:04.642Z"
+    },
+    {
+      "id": "chromium-03",
+      "requirement": "Legacy v10 actual native upgrade adds empty observations without rewriting original stores",
+      "startedAt": "2026-10-30T16:50:04.643Z",
+      "status": "PASS",
+      "expected": "v10 → v20 lossless original stores; zero startup backfill",
+      "actual": {
+        "beforeVersion": 10,
+        "afterVersion": 20,
+        "originalHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "afterHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        }
+      },
+      "finishedAt": "2026-10-30T16:50:08.761Z"
+    },
+    {
+      "id": "chromium-04",
+      "requirement": "Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations",
+      "startedAt": "2026-10-30T16:50:08.762Z",
+      "status": "PASS",
+      "expected": "Lossless supported restore; no write on cancel/conflict/abort; retained observation history on legacy replacement",
+      "actual": {
+        "roundtripHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        },
+        "repeatedMergeIdempotent": true,
+        "cancelUnchanged": true,
+        "immutableConflictBothModesBlocked": true,
+        "nativeQuotaAbortUnchanged": true,
+        "physicalQuotaExhausted": false,
+        "legacyReplaceObservationSHA256": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39"
+      },
+      "finishedAt": "2026-10-30T16:50:17.335Z"
+    },
+    {
+      "id": "chromium-05-prePhase5",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:50:17.336Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"overdueHistory\",\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized keys: \\\"overdueHistory\\\", \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:55492",
+        "http://127.0.0.1:50126"
+      ],
+      "finishedAt": "2026-10-30T16:50:23.035Z"
+    },
+    {
+      "id": "chromium-06-prePhase5",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:50:23.036Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "991512d1-bf38-47e5-aa51-66a33e3016a4",
+            "printerId": "p1",
+            "taskId": "dc244e31-95d3-4d71-b153-094396ca9b86",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "eef60701996dff06c0674010ee690ac282996756673400b2e5355531347cdcc0",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "7d5a91b5f033578027d334fb122e17d24e8e2fcd113a6294ac5e1f9e353c2faf",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "a80462893ba80afdbbeaf351ac1d647449ea73cd22810694ee6b40e32741188c"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:54672",
+      "finishedAt": "2026-10-30T16:50:30.155Z"
+    },
+    {
+      "id": "chromium-05-preRecommendations",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:50:30.156Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized key: \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:61924",
+        "http://127.0.0.1:63844"
+      ],
+      "finishedAt": "2026-10-30T16:50:35.810Z"
+    },
+    {
+      "id": "chromium-06-preRecommendations",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:50:35.811Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "ba163b1a-0e2d-402c-ae9d-bb8182fbd17f",
+            "printerId": "p1",
+            "taskId": "dc244e31-95d3-4d71-b153-094396ca9b86",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "811a1fa2ba5c9c919655758a297579cfd0e87f47876d52c72d82bb702adb802c",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "8b20afc14da48cf5f90508d6eb2b230239f93229de5ce32ca02a5aaecf67c46f",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "a80462893ba80afdbbeaf351ac1d647449ea73cd22810694ee6b40e32741188c"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:60686",
+      "finishedAt": "2026-10-30T16:50:43.177Z"
+    },
+    {
+      "id": "chromium-07",
+      "requirement": "STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data",
+      "startedAt": "2026-10-30T16:50:43.179Z",
+      "status": "FAIL",
+      "expected": "Safe refusal/handshake for stale writer after worker activation",
+      "actual": {
+        "oldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "currentScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "heldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "oldCaches": [
+          "printguard-122f0252764c"
+        ],
+        "cachesAfter": [
+          "printguard-545e0041bef4"
+        ],
+        "controllerEvents": [
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          },
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          }
+        ],
+        "staleWriteError": "",
+        "addedLogs": [
+          {
+            "id": "e2be1695-f49d-4326-8325-f87fba091e77",
+            "printerId": "p1",
+            "taskId": "dc244e31-95d3-4d71-b153-094396ca9b86",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 held old tab write",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "softRefreshScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "hardRefresh": "CDP HTTP cache disabled + service-worker bypass navigation executed; not a physical keyboard test",
+        "physicalInstalledPWA": "NOT EXECUTED"
+      },
+      "severity": "STOP deployment blocker",
+      "finishedAt": "2026-10-30T16:50:49.603Z"
+    },
+    {
+      "id": "chromium-08",
+      "requirement": "Cold process reopen after complete localhost network loss preserves cached current shell and full data",
+      "startedAt": "2026-10-30T16:50:49.604Z",
+      "status": "PASS",
+      "expected": "No server response; shell cached; all rows/history/observations unchanged after browser process restart",
+      "actual": {
+        "uncachedDirectRequestFailed": true,
+        "before": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        },
+        "after": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "c5b6c655dbfdbafb99b9f05633abb5023da6f0ebbc6699d8a2ad36c777a19bf7",
+          "observations": "ac784354d4b8d721204385b7b572db37588d3d6690c3a4a4b829f8aa8f2c1a39",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "6927b40991c446ab280024534ec9a4959cf1d8381c4cee7f3f05f0ae466665d6",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "09753752095a7921c948395f961f69fb43dd375d7fe5309ff66a3ce0f4dda343",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "af199f47eaee803b3b2ebf16c6817a28f298d72c00a5d338c82a01d95d687283"
+        },
+        "onDiskArtifactCount": 88
+      },
+      "browser": "156.0.8078.4",
+      "finishedAt": "2026-10-30T16:50:51.843Z"
+    },
+    {
+      "id": "chromium-09",
+      "requirement": "STOP: native database number alone must not be treated as an old-executable fence",
+      "startedAt": "2026-10-30T16:50:51.845Z",
+      "status": "FAIL",
+      "expected": "No reliance on numeric bump as old-writer exclusion",
+      "actual": {
+        "hypotheticalNativeVersionBumpOnly": true,
+        "nativeVersion": 30,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "severity": "STOP: separate executable/writer policy required",
+      "finishedAt": "2026-10-30T16:50:55.772Z"
+    },
+    {
+      "id": "chromium-10",
+      "requirement": "Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin",
+      "startedAt": "2026-10-30T16:50:55.773Z",
+      "status": "PASS",
+      "expected": "Loss after explicitly clearing only disposable origin; full backup restores independently",
+      "actual": {
+        "simulatedSiteClear": true,
+        "realBrowserEviction": "NOT EXECUTED",
+        "originalBackupSHA256": "6a3554bfbe699644fa65e6f398896cce1274c444c3d2214ddefe309e7b43e1f7",
+        "restoredAllCoreAndObservations": true
+      },
+      "finishedAt": "2026-10-30T16:51:02.559Z"
+    },
+    {
+      "id": "chromium-11",
+      "requirement": "Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests",
+      "startedAt": "2026-10-30T16:51:02.561Z",
+      "status": "PASS",
+      "expected": "Isolated destructive cases never touch reference upgraded origin/file",
+      "actual": {
+        "origin": "http://127.0.0.1:54650",
+        "backupSHA256": "6a3554bfbe699644fa65e6f398896cce1274c444c3d2214ddefe309e7b43e1f7",
+        "historyCount": 5,
+        "observationCount": 4
+      },
+      "finishedAt": "2026-10-30T16:51:03.036Z"
+    },
+    {
+      "id": "firefox-01-prePhase5",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:51:03.037Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 10,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "origin": "http://127.0.0.1:61246",
+      "browser": "157.0",
+      "finishedAt": "2026-10-30T16:51:12.128Z"
+    },
+    {
+      "id": "firefox-01-preRecommendations",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:51:12.129Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ]
+      },
+      "origin": "http://127.0.0.1:61264",
+      "browser": "157.0",
+      "finishedAt": "2026-10-30T16:51:20.633Z"
+    },
+    {
+      "id": "firefox-02",
+      "requirement": "Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations",
+      "startedAt": "2026-10-30T16:51:20.635Z",
+      "status": "PASS",
+      "expected": "Current valid full backup and actual opt-in records, no fabricated old observations",
+      "actual": {
+        "backupSHA256": "398269ddfd5409b347a3457d599f6e4d68a9d4a36d83c409d6fbf6fa469a91d0",
+        "counts": {
+          "printers": 4,
+          "tasks": 10,
+          "logs": 5,
+          "readings": 6,
+          "inventory": 2,
+          "repairs": 1,
+          "profiles": 3
+        },
+        "observations": 4,
+        "recommendationLogs": 2,
+        "currencies": [
+          "CAD",
+          "unknown",
+          "USD"
+        ],
+        "hashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        }
+      },
+      "origin": "http://127.0.0.1:61275",
+      "browser": "157.0",
+      "finishedAt": "2026-10-30T16:51:34.758Z"
+    },
+    {
+      "id": "firefox-03",
+      "requirement": "Legacy v10 actual native upgrade adds empty observations without rewriting original stores",
+      "startedAt": "2026-10-30T16:51:34.760Z",
+      "status": "PASS",
+      "expected": "v10 → v20 lossless original stores; zero startup backfill",
+      "actual": {
+        "beforeVersion": 10,
+        "afterVersion": 20,
+        "originalHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "afterHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        }
+      },
+      "finishedAt": "2026-10-30T16:51:45.352Z"
+    },
+    {
+      "id": "firefox-04",
+      "requirement": "Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations",
+      "startedAt": "2026-10-30T16:51:45.353Z",
+      "status": "PASS",
+      "expected": "Lossless supported restore; no write on cancel/conflict/abort; retained observation history on legacy replacement",
+      "actual": {
+        "roundtripHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        },
+        "repeatedMergeIdempotent": true,
+        "cancelUnchanged": true,
+        "immutableConflictBothModesBlocked": true,
+        "nativeQuotaAbortUnchanged": true,
+        "physicalQuotaExhausted": false,
+        "legacyReplaceObservationSHA256": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e"
+      },
+      "finishedAt": "2026-10-30T16:51:59.426Z"
+    },
+    {
+      "id": "firefox-05-prePhase5",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:51:59.428Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"overdueHistory\",\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized keys: \\\"overdueHistory\\\", \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:61316",
+        "http://127.0.0.1:61327"
+      ],
+      "finishedAt": "2026-10-30T16:52:13.577Z"
+    },
+    {
+      "id": "firefox-06-prePhase5",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:52:13.579Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "5c049781-8a47-465c-a099-c4271bf7a890",
+            "printerId": "p1",
+            "taskId": "19523062-6331-48f7-8ce6-f8a7d09bdb8a",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "143948248c048af1a01dd9f09300bea7d01d46d73c97bbc4284f4d7df8b21197",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "b681aad36294f7bbf1454f9b0c6b6aaaf10a85b247fe4d1d8edc6744129631b6",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "10f9b5bbac8672dc0c72d06b1dc410f7e7a6247c4f2341bdf7eb5874f9e0f6b4"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:61338",
+      "finishedAt": "2026-10-30T16:52:30.198Z"
+    },
+    {
+      "id": "firefox-05-preRecommendations",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:52:30.200Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized key: \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:61361",
+        "http://127.0.0.1:61373"
+      ],
+      "finishedAt": "2026-10-30T16:52:43.726Z"
+    },
+    {
+      "id": "firefox-06-preRecommendations",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:52:43.728Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "267935dd-5b9a-4995-a621-78bbf9f1c62d",
+            "printerId": "p1",
+            "taskId": "19523062-6331-48f7-8ce6-f8a7d09bdb8a",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "53565086846d215343b2eff43f91bb790d7fd500c187f7f358b86c2216449d45",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "5fd907fcf8a2cce11c03b775295aba531cc7e8edf70f44d76cb8db0622644632",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "10f9b5bbac8672dc0c72d06b1dc410f7e7a6247c4f2341bdf7eb5874f9e0f6b4"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:61384",
+      "finishedAt": "2026-10-30T16:52:59.863Z"
+    },
+    {
+      "id": "firefox-07",
+      "requirement": "STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data",
+      "startedAt": "2026-10-30T16:52:59.864Z",
+      "status": "FAIL",
+      "expected": "Safe refusal/handshake for stale writer after worker activation",
+      "actual": {
+        "oldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "currentScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "heldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "oldCaches": [
+          "printguard-122f0252764c"
+        ],
+        "cachesAfter": [
+          "printguard-545e0041bef4"
+        ],
+        "controllerEvents": [
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          },
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          }
+        ],
+        "staleWriteError": "",
+        "addedLogs": [
+          {
+            "id": "e16fc7ee-6c1c-4fbd-a951-b245d7d44c48",
+            "printerId": "p1",
+            "taskId": "19523062-6331-48f7-8ce6-f8a7d09bdb8a",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 held old tab write",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "softRefreshScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "hardRefresh": "NOT EXECUTED: actual browser hard-refresh/PWA UI requires human test",
+        "physicalInstalledPWA": "NOT EXECUTED"
+      },
+      "severity": "STOP deployment blocker",
+      "finishedAt": "2026-10-30T16:53:11.809Z"
+    },
+    {
+      "id": "firefox-08",
+      "requirement": "Cold process reopen after complete localhost network loss preserves cached current shell and full data",
+      "startedAt": "2026-10-30T16:53:11.810Z",
+      "status": "PASS",
+      "expected": "No server response; shell cached; all rows/history/observations unchanged after browser process restart",
+      "actual": {
+        "uncachedDirectRequestFailed": true,
+        "before": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        },
+        "after": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "efd0a8603c6eeafe6fa3d22cc9ebd7d159bc9930d3ec3abbae561ca348ff5a19",
+          "observations": "6241b093402c29b20b8375a6cd48214a0e970bf814ff3b865545aa67452fca6e",
+          "preferences": "a5a3a633f728f9e5c6e329666e9619636e5a70c11a160908121829b0628b135c",
+          "printers": "24fa28810a8d3080cfc3d4e77c7ccfd1b7c310e958dda3cccdb1ec3b066c6d11",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "4d3c0ebf96ce7038afc2b2cd36d0031a00c2f08a5dfdc3db1386b37c3f47745b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "6e4fda6febb1c16a5270063c803c8402697ecad6061f905f0d1659d629bdd1f7"
+        },
+        "onDiskArtifactCount": 68
+      },
+      "browser": "157.0",
+      "finishedAt": "2026-10-30T16:53:17.622Z"
+    },
+    {
+      "id": "firefox-09",
+      "requirement": "STOP: native database number alone must not be treated as an old-executable fence",
+      "startedAt": "2026-10-30T16:53:17.624Z",
+      "status": "FAIL",
+      "expected": "No reliance on numeric bump as old-writer exclusion",
+      "actual": {
+        "hypotheticalNativeVersionBumpOnly": true,
+        "nativeVersion": 30,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "severity": "STOP: separate executable/writer policy required",
+      "finishedAt": "2026-10-30T16:53:28.938Z"
+    },
+    {
+      "id": "firefox-10",
+      "requirement": "Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin",
+      "startedAt": "2026-10-30T16:53:28.941Z",
+      "status": "PASS",
+      "expected": "Loss after explicitly clearing only disposable origin; full backup restores independently",
+      "actual": {
+        "simulatedSiteClear": true,
+        "realBrowserEviction": "NOT EXECUTED",
+        "originalBackupSHA256": "398269ddfd5409b347a3457d599f6e4d68a9d4a36d83c409d6fbf6fa469a91d0",
+        "restoredAllCoreAndObservations": true
+      },
+      "finishedAt": "2026-10-30T16:53:47.018Z"
+    },
+    {
+      "id": "firefox-11",
+      "requirement": "Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests",
+      "startedAt": "2026-10-30T16:53:47.020Z",
+      "status": "PASS",
+      "expected": "Isolated destructive cases never touch reference upgraded origin/file",
+      "actual": {
+        "origin": "http://127.0.0.1:61275",
+        "backupSHA256": "398269ddfd5409b347a3457d599f6e4d68a9d4a36d83c409d6fbf6fa469a91d0",
+        "historyCount": 5,
+        "observationCount": 4
+      },
+      "finishedAt": "2026-10-30T16:53:49.567Z"
+    },
+    {
+      "id": "webkit-01-prePhase5",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:53:49.570Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 10,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "origin": "http://127.0.0.1:51672",
+      "browser": "27.2",
+      "finishedAt": "2026-10-30T16:53:57.417Z"
+    },
+    {
+      "id": "webkit-01-preRecommendations",
+      "requirement": "Actual historical build, matching fixture and restorable pre-upgrade full backup",
+      "startedAt": "2026-10-30T16:53:57.419Z",
+      "status": "PASS",
+      "expected": "Valid old backup restores all core rows in its matching old reader",
+      "actual": {
+        "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+        "backupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ]
+      },
+      "origin": "http://127.0.0.1:51680",
+      "browser": "27.2",
+      "finishedAt": "2026-10-30T16:54:04.756Z"
+    },
+    {
+      "id": "webkit-02",
+      "requirement": "Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations",
+      "startedAt": "2026-10-30T16:54:04.759Z",
+      "status": "PASS",
+      "expected": "Current valid full backup and actual opt-in records, no fabricated old observations",
+      "actual": {
+        "backupSHA256": "5cb31d8cc9e9a21dad6cbeea174c0ff4e6cfba07033cce683a9fe32abd370df1",
+        "counts": {
+          "printers": 4,
+          "tasks": 10,
+          "logs": 5,
+          "readings": 6,
+          "inventory": 2,
+          "repairs": 1,
+          "profiles": 3
+        },
+        "observations": 4,
+        "recommendationLogs": 2,
+        "currencies": [
+          "CAD",
+          "unknown",
+          "USD"
+        ],
+        "hashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        }
+      },
+      "origin": "http://127.0.0.1:51688",
+      "browser": "27.2",
+      "finishedAt": "2026-10-30T16:54:20.240Z"
+    },
+    {
+      "id": "webkit-03",
+      "requirement": "Legacy v10 actual native upgrade adds empty observations without rewriting original stores",
+      "startedAt": "2026-10-30T16:54:20.243Z",
+      "status": "PASS",
+      "expected": "v10 → v20 lossless original stores; zero startup backfill",
+      "actual": {
+        "beforeVersion": 10,
+        "afterVersion": 20,
+        "originalHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "afterHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        }
+      },
+      "finishedAt": "2026-10-30T16:54:24.888Z"
+    },
+    {
+      "id": "webkit-04",
+      "requirement": "Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations",
+      "startedAt": "2026-10-30T16:54:24.890Z",
+      "status": "PASS",
+      "expected": "Lossless supported restore; no write on cancel/conflict/abort; retained observation history on legacy replacement",
+      "actual": {
+        "roundtripHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        },
+        "repeatedMergeIdempotent": true,
+        "cancelUnchanged": true,
+        "immutableConflictBothModesBlocked": true,
+        "nativeQuotaAbortUnchanged": true,
+        "physicalQuotaExhausted": false,
+        "legacyReplaceObservationSHA256": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1"
+      },
+      "finishedAt": "2026-10-30T16:54:46.809Z"
+    },
+    {
+      "id": "webkit-05-prePhase5",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:54:46.811Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"overdueHistory\",\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized keys: \\\"overdueHistory\\\", \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:51721",
+        "http://127.0.0.1:51731"
+      ],
+      "finishedAt": "2026-10-30T16:54:58.104Z"
+    },
+    {
+      "id": "webkit-06-prePhase5",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:54:58.107Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "3c37d1b3-2ff2-410c-96cc-d1d2aa14f4e8",
+            "printerId": "p1",
+            "taskId": "178042ce-f72f-40bf-b77e-89a27696f811",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"observationRecording\"\n    ],\n    \"path\": [\n      \"preferences\"\n    ],\n    \"message\": \"Unrecognized key: \\\"observationRecording\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "5884b221e65cef14f0c986c1a8776956aebd5ec5fd884b8906146d634098e48f",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "7eccd742dda91b69ecd3fa49c1353504035cf6e43b556da559c9dac656e772ac",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "156b1db11c86c143183b8955785580e1abd1cffad485476735da8a3bebe9ab99"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:51740",
+      "finishedAt": "2026-10-30T16:55:13.078Z"
+    },
+    {
+      "id": "webkit-05-preRecommendations",
+      "requirement": "Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file",
+      "startedAt": "2026-10-30T16:55:13.080Z",
+      "status": "PASS",
+      "expected": "No field stripping; old reader rejects current data and rollback restores only old snapshot in another origin",
+      "actual": {
+        "rejection": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      4\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendationPolicy\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized key: \\\"recommendationPolicy\\\"\"\n  }\n]",
+        "oldBackupSHA256": "868e7689d1d429e407f4a75953a203963ad4b7cef0211c7e965ed015fff8d24d",
+        "restoredHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "6d8689eea096a848e5bd3a271b949d4145c3900c31be0bf420d2b2edbf13026d",
+          "observations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "preferences": "7e76a8fee57d541daebbb537f2d2ca35d9ddb49f8a2517983f04cd635003bdef",
+          "printers": "8b4970006ed24dfc90c8849cc74e4fa5586023e8b1d41ded7bc00051d58b5554",
+          "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+          "readings": "807e48af655a8f22d090f8b31efb60d7806a84b764aaca372d5737b7929bf37b",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "f2fc6abb0cf50b4f45fac4a405ac7dbf87c891d865cd590dd43313696e02a130"
+        },
+        "rollbackOmitsLatestRecommendationAndObservationData": true
+      },
+      "origins": [
+        "http://127.0.0.1:51756",
+        "http://127.0.0.1:51764"
+      ],
+      "finishedAt": "2026-10-30T16:55:24.792Z"
+    },
+    {
+      "id": "webkit-06-preRecommendations",
+      "requirement": "STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations",
+      "startedAt": "2026-10-30T16:55:24.794Z",
+      "status": "FAIL",
+      "expected": "Old executable refuses unsafe writes/clears or preserves all new semantics",
+      "actual": {
+        "nativeVersion": 20,
+        "dexieVersion": 2,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences",
+          "observations"
+        ],
+        "oldWriteError": "",
+        "addedLogs": [
+          {
+            "id": "38ac0007-d6aa-4452-b76f-347964aa2e7e",
+            "printerId": "p1",
+            "taskId": "178042ce-f72f-40bf-b77e-89a27696f811",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 deliberately stale writer",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "oldExportValidForOldReader": {
+          "accepted": false,
+          "message": "[\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"tasks\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"logs\",\n      5\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      0\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      1\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      2\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"recommendation\"\n    ],\n    \"path\": [\n      \"overdueHistory\",\n      \"records\",\n      1,\n      \"tasks\",\n      3\n    ],\n    \"message\": \"Unrecognized key: \\\"recommendation\\\"\"\n  }\n]"
+        },
+        "oldExportValidForCurrentReader": {
+          "accepted": false,
+          "message": "Recommendation metadata requires its supported policy marker; no records imported."
+        },
+        "observationsBefore": 4,
+        "observationsAfterOldReplacement": 4,
+        "observationsErasedOrChanged": false,
+        "replacementError": "",
+        "preWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        },
+        "postWriteHashes": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "3854abd0dc66b5f5e9d9f9941d29b0bece6a16ad16e0b2a2b45b869780898d90",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "1d2b8ca4d026d66f3e6498a0e0d17babb185f6e789a0c1f42b146b45839aed56",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "156b1db11c86c143183b8955785580e1abd1cffad485476735da8a3bebe9ab99"
+        }
+      },
+      "severity": "STOP deployment blocker",
+      "origin": "http://127.0.0.1:63638",
+      "finishedAt": "2026-10-30T16:55:40.567Z"
+    },
+    {
+      "id": "webkit-07",
+      "requirement": "STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data",
+      "startedAt": "2026-10-30T16:55:40.569Z",
+      "status": "FAIL",
+      "expected": "Safe refusal/handshake for stale writer after worker activation",
+      "actual": {
+        "oldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "currentScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "heldScripts": [
+          "/assets/index-CyBCToO1.js"
+        ],
+        "oldCaches": [
+          "printguard-122f0252764c"
+        ],
+        "cachesAfter": [
+          "printguard-545e0041bef4"
+        ],
+        "controllerEvents": [
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          },
+          {
+            "type": "controllerchange",
+            "at": 1793361600000
+          }
+        ],
+        "staleWriteError": "",
+        "addedLogs": [
+          {
+            "id": "2ef59ee1-d957-4d09-a279-17aa1b3ce0ee",
+            "printerId": "p1",
+            "taskId": "178042ce-f72f-40bf-b77e-89a27696f811",
+            "title": "Review fan guidance — PrintGuard Suggested",
+            "date": "2026-10-30",
+            "hours": 600,
+            "prints": 20,
+            "outcome": "Completed",
+            "notes": "SYNTHETIC OP32 held old tab write",
+            "cost": 5.25,
+            "minutes": 0,
+            "materials": "",
+            "image": "",
+            "onTime": true,
+            "dueDate": "2027-01-30",
+            "sourceUrl": "https://wiki.flashforge.com/en/creator-series/creator-5-series/maintenance/cooling-fan-dust-cleaning",
+            "source": "General Recommendation",
+            "skippedCycles": 0,
+            "inventoryId": "",
+            "quantity": 0,
+            "category": "Inspection",
+            "priority": "Normal",
+            "profileId": "",
+            "profileVersion": "",
+            "manufacturer": "FlashForge",
+            "model": "Creator 5",
+            "technology": "FDM/FFF",
+            "currency": "USD"
+          }
+        ],
+        "missingRecommendationProvenance": true,
+        "softRefreshScripts": [
+          "/assets/index-DLvU2FnS.js"
+        ],
+        "hardRefresh": "NOT EXECUTED: actual browser hard-refresh/PWA UI requires human test",
+        "physicalInstalledPWA": "NOT EXECUTED"
+      },
+      "severity": "STOP deployment blocker",
+      "finishedAt": "2026-10-30T16:55:51.998Z"
+    },
+    {
+      "id": "webkit-08",
+      "requirement": "Cold process reopen after complete localhost network loss preserves cached current shell and full data",
+      "startedAt": "2026-10-30T16:55:52.000Z",
+      "status": "PASS",
+      "expected": "No server response; shell cached; all rows/history/observations unchanged after browser process restart",
+      "actual": {
+        "uncachedDirectRequestFailed": true,
+        "before": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        },
+        "after": {
+          "version": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+          "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+          "logs": "9ea7e1f75f9c449cc39dbdedd9adb5f0408b8d0a1ef5a5450b384dc0cd467178",
+          "observations": "933d49532235917152c436d72bf8f7d0f7c4ffe6124ff132f93da4a5c884ffd1",
+          "preferences": "d875cad41b01d8b2e36442b23c182bb224104090b0af950948468abe7128702e",
+          "printers": "5d8904ca643240b8d89f7906f471bdc9f6ba7aa34328dc2fbaa28c19843cf9e7",
+          "profiles": "f535699ffae534d13bd622f3736761f08aeed719e4b56dd5e59e6983f135f03c",
+          "readings": "71d4b35d2d3c601da78475a0ce7877d3152b93f8e199935b17c373244f180c31",
+          "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+          "tasks": "5edc7d641f560068360a63cc8bdc09e1bd8323c0395148fa19852ce0048c5251"
+        },
+        "onDiskArtifactCount": 29
+      },
+      "browser": "27.2",
+      "finishedAt": "2026-10-30T16:55:55.654Z"
+    },
+    {
+      "id": "webkit-09",
+      "requirement": "STOP: native database number alone must not be treated as an old-executable fence",
+      "startedAt": "2026-10-30T16:55:55.656Z",
+      "status": "FAIL",
+      "expected": "No reliance on numeric bump as old-writer exclusion",
+      "actual": {
+        "hypotheticalNativeVersionBumpOnly": true,
+        "nativeVersion": 30,
+        "dexieVersion": 1,
+        "tables": [
+          "printers",
+          "tasks",
+          "logs",
+          "readings",
+          "inventory",
+          "repairs",
+          "profiles",
+          "preferences"
+        ]
+      },
+      "severity": "STOP: separate executable/writer policy required",
+      "finishedAt": "2026-10-30T16:56:03.948Z"
+    },
+    {
+      "id": "webkit-10",
+      "requirement": "Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin",
+      "startedAt": "2026-10-30T16:56:03.950Z",
+      "status": "PASS",
+      "expected": "Loss after explicitly clearing only disposable origin; full backup restores independently",
+      "actual": {
+        "simulatedSiteClear": true,
+        "realBrowserEviction": "NOT EXECUTED",
+        "originalBackupSHA256": "5cb31d8cc9e9a21dad6cbeea174c0ff4e6cfba07033cce683a9fe32abd370df1",
+        "restoredAllCoreAndObservations": true
+      },
+      "finishedAt": "2026-10-30T16:56:19.925Z"
+    },
+    {
+      "id": "webkit-11",
+      "requirement": "Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests",
+      "startedAt": "2026-10-30T16:56:19.926Z",
+      "status": "PASS",
+      "expected": "Isolated destructive cases never touch reference upgraded origin/file",
+      "actual": {
+        "origin": "http://127.0.0.1:51688",
+        "backupSHA256": "5cb31d8cc9e9a21dad6cbeea174c0ff4e6cfba07033cce683a9fe32abd370df1",
+        "historyCount": 5,
+        "observationCount": 4
+      },
+      "finishedAt": "2026-10-30T16:56:20.823Z"
+    },
+    {
+      "id": "HUMAN-NOT-EXECUTED",
+      "requirement": "Actual installed PWA/browser coexistence, native AT, OS clients/notifications, real UI hard refresh and physical printing",
+      "startedAt": "2026-10-30T16:56:20.825Z",
+      "status": "NOT VERIFIED",
+      "actual": "NOT EXECUTED: no named human/device execution. See HUMAN-WORKSHEET.md M01–M22; two browser tabs are not an installed PWA test.",
+      "finishedAt": "2026-10-30T16:56:20.826Z"
+    }
+  ],
+  "releaseApproved": false
+}
