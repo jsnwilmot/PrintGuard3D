@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "reviewed": "2026-10-30",
+  "manufacturer": "FlashForge",
+  "model": "Creator 5",
+  "technology": "FDM/FFF",
+  "versions": ["1.0.0", "1.1.0"],
+  "notice": "https://wiki.flashforge.com/en/creator-series/creator-5-series/manual/notice",
+  "procedures": [
+    {"id":"extruder-mount-positioning-balls","hazards":["materials"],"scope":"The procedure lists WD-40 and grease; product-specific exposure controls are not independently assessed."},
+    {"id":"nozzle-cold-pull-cleaning","hazards":["thermal"],"scope":"The article describes intentional controlled heating. No temperature, sequence or universal power-off instruction is supplied by this application."},
+    {"id":"feed-motor-gear-debris-cleaning","hazards":["moving","dust"],"scope":"The article describes gear debris and brushing; moving-part hazards come from the general model notice, not a fully reviewed video sequence."},
+    {"id":"cooling-fan-dust-cleaning","hazards":["moving","dust"],"scope":"Dust and cleaning tools are described; moving-part context is from the model notice. Full video precautions remain unreviewed."},
+    {"id":"heatsink-fan-dust-cleaning","hazards":["moving","dust"],"scope":"Dust and cleaning tools are described; moving-part context is from the model notice. Full video precautions remain unreviewed."},
+    {"id":"mainboard-cooling-fan-dust-cleaning","hazards":["electrical","moving","dust"],"scope":"Dust/tools are documented; electrical and moving-part cautions are model-level references. No PCB repair, power-state sequence or technician-only requirement is verified."},
+    {"id":"clean-and-lubricate-the-x-axis-linear-shaft","hazards":["moving","materials"],"scope":"The article lists silicone lubricant; moving-part context is from the model notice. Powered-service sequence is not assessed."},
+    {"id":"clean-and-lubricate-the-y-axis-linear-guide-rail","hazards":["moving","materials"],"scope":"The article lists grease; moving-part context is from the model notice. Powered-service sequence is not assessed."},
+    {"id":"xy-axis-belt-tension-adjustment","hazards":["moving"],"scope":"The article concerns belt tension; model notice identifies entanglement/mechanical hazards. The linked adjustment video is not fully assessed."},
+    {"id":"z-axis-belt-tension-adjustment","hazards":["moving"],"scope":"The article concerns belt tension; model notice identifies entanglement/mechanical hazards. The linked adjustment video is not fully assessed."},
+    {"id":"xy-axis-pulley-cleaning-and-lubrication","hazards":["moving","materials"],"scope":"The article lists silicone lubricant; moving-part context is from the model notice. Full video sequence is unassessed."},
+    {"id":"z-axis-pulley-cleaning-and-lubrication","hazards":["moving","materials"],"scope":"The article lists silicone lubricant; moving-part context is from the model notice. Full video sequence is unassessed."},
+    {"id":"z-axis-lead-screw-cleaning-and-lubrication","hazards":["moving","materials"],"scope":"The article lists grease; moving-part context is from the model notice. Full video sequence is unassessed."},
+    {"id":"z-axis-lead-screw-bearing-cleaning-and-lubrication","hazards":["moving","materials"],"scope":"The article lists lubricant/grease; moving-part context is from the model notice. Full video sequence is unassessed."},
+    {"id":"z-axis-linear-bearing-cleaning-and-lubrication","hazards":["moving","materials"],"scope":"The article lists silicone lubricant; moving-part context is from the model notice. Full video sequence is unassessed."}
+  ]
+}
