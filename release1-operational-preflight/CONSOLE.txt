@@ -1,0 +1,45 @@
+PASS chromium-01-prePhase5: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS chromium-01-preRecommendations: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS chromium-02: Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations
+PASS chromium-03: Legacy v10 actual native upgrade adds empty observations without rewriting original stores
+PASS chromium-04: Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations
+PASS chromium-05-prePhase5: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL chromium-06-prePhase5: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+PASS chromium-05-preRecommendations: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL chromium-06-preRecommendations: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+FAIL chromium-07: STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data
+PASS chromium-08: Cold process reopen after complete localhost network loss preserves cached current shell and full data
+FAIL chromium-09: STOP: native database number alone must not be treated as an old-executable fence
+PASS chromium-10: Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin
+PASS chromium-11: Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests
+PASS firefox-01-prePhase5: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS firefox-01-preRecommendations: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS firefox-02: Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations
+PASS firefox-03: Legacy v10 actual native upgrade adds empty observations without rewriting original stores
+PASS firefox-04: Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations
+PASS firefox-05-prePhase5: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL firefox-06-prePhase5: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+PASS firefox-05-preRecommendations: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL firefox-06-preRecommendations: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+FAIL firefox-07: STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data
+PASS firefox-08: Cold process reopen after complete localhost network loss preserves cached current shell and full data
+FAIL firefox-09: STOP: native database number alone must not be treated as an old-executable fence
+PASS firefox-10: Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin
+PASS firefox-11: Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests
+PASS webkit-01-prePhase5: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS webkit-01-preRecommendations: Actual historical build, matching fixture and restorable pre-upgrade full backup
+PASS webkit-02: Current isolated workshop includes Pro, archived/custom data, 5/10 opt-ins, captured decisions and prospective observations
+PASS webkit-03: Legacy v10 actual native upgrade adds empty observations without rewriting original stores
+PASS webkit-04: Actual current imports: full roundtrip, cancel, repeat merge, conflicts, quota abort and legacy replace preserve observations
+PASS webkit-05-prePhase5: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL webkit-06-prePhase5: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+PASS webkit-05-preRecommendations: Actual old strict reader rejects enriched current file without writes; fresh-old rollback uses intact pre-upgrade file
+FAIL webkit-06-preRecommendations: STOP: old runtime must not silently write incomplete recommendation history or erase upgraded observations
+FAIL webkit-07: STOP: activated new worker must fence an already-loaded old tab before it writes upgraded data
+PASS webkit-08: Cold process reopen after complete localhost network loss preserves cached current shell and full data
+FAIL webkit-09: STOP: native database number alone must not be treated as an old-executable fence
+PASS webkit-10: Disposable site-data clearing demonstrates local data loss; protected full backup restores in fresh origin
+PASS webkit-11: Pristine upgraded origin and full new-format backup remain intact after all destructive collision/rollback tests
+NOT VERIFIED HUMAN-NOT-EXECUTED: Actual installed PWA/browser coexistence, native AT, OS clients/notifications, real UI hard refresh and physical printing
+Evidence: evidence-2026-10-30T16-49-48-429Z
+{"PASS":30,"FAIL":12,"NOT_VERIFIED":1}

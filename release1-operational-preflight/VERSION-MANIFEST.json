@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "preparedAt": "2026-10-30T16:34:16.128Z",
+  "run": ".verification-local/operational/op32-run2",
+  "toolchain": {
+    "node": "v22.23.3",
+    "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef"
+  },
+  "versions": {
+    "prePhase5": {
+      "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+      "sourceTree": "e4276e5aea68dfe7c334b0f313fcc5b17247466a",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-BnsBSSBh.js": "016147215c2890c032e14c33703ba42a43cf8d5d7022449813217c945a49aea8",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-DkxIiPac.css": "9251ef9e5f50aab63368cc89bc8529928f725885d128563dcdc0a979296c9fda",
+        "assets/index-Mg1tR4XT.js": "d04f3631d0718818781789f6fcbf2e60d07768891e1ba2a23adc833e3219051e",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Db6Si-HD.js": "c28294d4824efba69a2609932aeb99e282a2da9b9d993077ef0e78ceecff4100",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "06d180366766643a977affb36b59d5d3dc31dc5c899c7c89eeedc31eede6dd29",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "049a86eca41237d7ce66c4db53d27082d265ab6f1b7bbf992362b71b19e50a95",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "a847a05f3bea79a47e71fbb8c1cc449e180dc7841527cb3e980255d2b5a5608f"
+    },
+    "preRecommendations": {
+      "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+      "sourceTree": "360433dda800354f66a3be0fb293602aef74bfd5",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+        "assets/index-CyBCToO1.js": "5f55bfffd2b966fde4457a3dec243381a966e178e6a960b57aa0e86329eea0fa",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "b3199643bb40388e84a4c78a519fef7eb80e1851ad050b861fcc05ffd59babf4",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "19e34162195441d2f45c264f82808d01a983e50762bb372ebb71260737264782",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "a00ff277c74ec5db5f36a88b7a2721f78edceeea3d03b4ee2e9792b10186bd1d"
+    },
+    "current": {
+      "commit": "aa6ae5892fde8e0d621bbb34b765c41739e7a2ba",
+      "sourceTree": "90a4705e60ad82496979aa7be08e0f87c3ea538c",
+      "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+      "files": {
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+        "assets/index-DLvU2FnS.js": "e1749b7f0669ec341169060c2b9a50dc1445efa47884b7412df9e0299473eb9c",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "ef1dd1677c8116a8adaf5ebe11e8f126acc6a9e29f2b0d63b4632a26c7e00756",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+        "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+        "sw.js": "5902b925eab7dacd7bf5db79ab18995da15880f6f368172a346a591ea5b13553",
+        "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+        "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+      },
+      "probeSHA256": "5f25fc4e0c952fab28f000c92562dfbf9f32d401888968345b00e787d3f9a6f5"
+    }
+  }
+}

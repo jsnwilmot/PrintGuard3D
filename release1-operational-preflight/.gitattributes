@@ -1,0 +1,5 @@
+# Preserve the exact indexed evidence bytes across Windows/Linux checkouts.
+RESULTS.json -text
+VERSION-MANIFEST.json -text
+EVIDENCE-INDEX.json -text
+CONSOLE.txt -text
