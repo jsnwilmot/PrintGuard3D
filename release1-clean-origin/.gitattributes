@@ -1,0 +1,2 @@
+# Preserve exact JSON evidence bytes/checksums across Windows/Linux checkouts.
+*.json text eol=lf

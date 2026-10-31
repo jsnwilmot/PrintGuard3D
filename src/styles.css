@@ -167,3 +167,4 @@
 .record-chart h2,.record-chart caption,.observation-controls p{overflow-wrap:anywhere}
 
 .record-chart-values{list-style:none;margin:12px 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:12px}.record-chart-values li{border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0;overflow-wrap:anywhere}.record-chart-values small{color:var(--muted)}.record-chart-values .button{align-self:flex-start;white-space:normal}
+.compatibility-notice{display:block;font-size:14px}.compatibility-notice h2{font-size:18px}.compatibility-notice p{max-width:80ch}.compatibility-notice .check-label{margin:12px 0}.compatibility-notice button{margin:4px 8px 4px 0}

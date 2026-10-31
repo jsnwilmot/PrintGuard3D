@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "id": "/",
+    "name": "PrintGuard 3D",
+    "short_name": "PrintGuard",
+    "description": "Protect Your Printer. Maintain Your Performance.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5f7fb",
+    "theme_color": "#0a65d8",
+    "icons": [
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  },
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "dimensions": [
+        192,
+        192
+      ],
+      "sha256": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d"
+    },
+    {
+      "src": "/icon-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2"
+    }
+  ],
+  "rootAssetsExist": true,
+  "topLevel404Absent": true,
+  "precacheEntries": 14,
+  "allPrecacheDigestsMatch": true,
+  "providerVerified": false
+}

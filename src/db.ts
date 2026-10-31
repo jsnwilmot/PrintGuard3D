@@ -1,6 +1,8 @@
 import {createReviewReminder,taskDecisionIssue,type ReviewChoice} from './recommendations';
 import {disclaimerVersion} from './legal';
-import Dexie,{type Table} from 'dexie';
+import Dexie,{type Table,type Transaction} from 'dexie';
+import {installWriterFence,writerStore,writerContract,mixedBuild,recordAcknowledgment} from './writerSafety';
+import {guardedFactory,supportedLayout} from './storageLayout';
 import { z } from 'zod';
 import {overdueHistorySchema,observationIssues,type Observation} from './observations';
 import {printerSchema,taskSchema,logSchema,readingSchema,inventorySchema,repairSchema,profileSchema,preferencesSchema,dateSchema,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile,type Preferences,defaults,today,uid,safeUrl} from './domain';
@@ -10,9 +12,33 @@ import {matchingTask} from './profileChanges';
 import {reviewTask,reviewProfile,assessProfile,profileArchiveId,bundled,isVerifiedTask,reviewedProfiles,defaultProfiles,automaticTemplate,compareVersions,selectTemplate} from './profiles';
 export class PrintGuardDB extends Dexie{
  printers!:Table<Printer,string>;tasks!:Table<Task,string>;logs!:Table<Log,string>;readings!:Table<Reading,string>;inventory!:Table<Inventory,string>;repairs!:Table<Repair,string>;profiles!:Table<Profile,string>;preferences!:Table<Preferences,string>;observations!:Table<Observation,string>;
- constructor(name='PrintGuard3D'){super(name);this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});this.version(2).stores({observations:'id,printerId,observedAt,[printerId+observedAt]'});this.observations.hook('updating',()=>{throw Error('Recorded observations are immutable. Import conflicts require review.');});}
+ constructor(name='PrintGuard3D'){
+  super(name,{indexedDB:guardedFactory(Dexie.dependencies.indexedDB)});
+  this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});
+  const initialize=(tx:Transaction)=>{if(mixedBuild())throw Error('Mixed application assets detected; database initialization refused.');tx.idbtrans.objectStore(writerStore).add(writerContract);};
+  this.version(2).stores({observations:'id,printerId,observedAt,[printerId+observedAt]',writerControl:'id'}).upgrade(initialize);
+  this.on('populate',initialize);
+  installWriterFence(this);
+  this.on('ready',()=>{if(!supportedLayout(this,this.backendDB()))throw Error('Unsupported database layout changed while opening. No workshop writes are permitted.');},true);
+  this.observations.hook('updating',()=>{throw Error('Recorded observations are immutable. Import conflicts require review.');});
+ }
+ // Dexie can otherwise auto-patch missing stores at the same declared version.
+ // Inspect with an unspecified native version and abort creation before Dexie.
+ override open(){
+  if(this.isOpen())return super.open();
+  return Dexie.Promise.resolve(new Promise<void>((resolve,reject)=>{
+   const request=Dexie.dependencies.indexedDB!.open(this.name);let absent=false;
+   request.onupgradeneeded=()=>{absent=true;request.transaction!.abort();};
+   request.onerror=()=>absent?resolve():reject(request.error);
+   request.onsuccess=()=>{
+    const native=request.result,unsupported=!supportedLayout(this,native,true);
+    native.close();if(unsupported)reject(Error('Unsupported pre-public or future database layout. No records changed. Use a compatible application and keep a validated full backup; do not clear site data.'));else resolve();
+   };
+  })).then(()=>super.open());
+ }
 }
 export const db=new PrintGuardDB();
+export const acknowledgeDisclaimer=()=>recordAcknowledgment(db);
 export async function completeTask(id:string,input:Pick<Log,'date'|'hours'|'prints'|'notes'|'cost'|'minutes'|'materials'|'image'|'inventoryId'|'quantity'>,outcome:'Completed'|'Skipped'='Completed'){
  input=logSchema.pick({date:true,hours:true,prints:true,notes:true,cost:true,minutes:true,materials:true,image:true,inventoryId:true,quantity:true}).parse(input);
  await db.transaction('rw',[db.tasks,db.printers,db.logs,db.readings,db.inventory,db.preferences],async()=>{
@@ -40,6 +66,10 @@ export async function makeBackup(printerId?:string):Promise<Backup>{
  const byPrinter=<T extends {printerId:string}>(rows:T[])=>printerId?rows.filter(x=>x.printerId===printerId):rows;
  return db.transaction('r',db.tables,async()=>{const backup:Backup={application:'PrintGuard3D',schemaVersion:1,exportedAt:new Date().toISOString(),scope:printerId?'printer':'full',printers:(await db.printers.toArray()).filter(x=>!printerId||x.id===printerId),tasks:byPrinter(await db.tasks.toArray()),logs:byPrinter(await db.logs.toArray()),readings:byPrinter(await db.readings.toArray()),inventory:(await db.inventory.toArray()).filter(x=>!printerId||!x.printerId||x.printerId===printerId),repairs:byPrinter(await db.repairs.toArray()),profiles:await db.profiles.toArray(),preferences:await db.preferences.get('preferences')??defaults,...await observationBackup(printerId)};
  if([...backup.tasks,...backup.logs,...(backup.overdueHistory?.records||[]).flatMap(o=>o.tasks)].some(t=>t.recommendation))backup.recommendationPolicy={version:1};
+ // The readonly native transaction may wait behind a writer. Stamp only after
+ // its consistent snapshot has been read, including observations committed
+ // while it was waiting; otherwise our own strict reader can reject the file.
+ backup.exportedAt=new Date().toISOString();
  return backup;});
 }
 async function observationBackup(printerId?:string){const records=(await db.observations.toArray()).filter(row=>!printerId||row.printerId===printerId);return records.length?{overdueHistory:{version:1 as const,records}}:{};}
@@ -89,7 +119,7 @@ export async function restoreBackup(value:Backup,replace:boolean){
  const {preview}=importPlan(b,await readGraph(),replace);
  const observations=await observationPlan(b);preview.conflicts.push(...observations.conflicts);
  if(preview.conflicts.length)throw Error(`Import rejected. No records changed.\n${preview.conflicts.join('\n')}`);
- if(replace)for(const t of db.tables)if(t.name!=='observations')await t.clear();
+ if(replace)for(const t of db.tables)if(t.name!=='observations'&&t.name!==writerStore)await t.clear();
  for(const key of recordTables){const table=db.table(key);for(const row of b[key])if(replace||!await table.get(row.id))await table.add(row);}
  await db.observations.bulkAdd(observations.additions);
  // Imported legal acknowledgments never replace acknowledgment on this device.
