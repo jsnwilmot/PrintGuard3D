@@ -1,19 +1,19 @@
 import {useEffect,useRef,useState} from 'react';
 import {download,makeBackup,validateBackup,db} from './db';
 import {activateWriter,writerContract} from './writerSafety';
-import {UpdateReview,readUpdateCandidate,activateReviewedWorker} from './updateReview';
+import {UpdateReview,CandidatePoller,readUpdateCandidate,activateReviewedWorker,offlineUpdateMessage} from './updateReview';
 import {Button} from './components';
 
 export function UpdateSafety({acknowledged}:{acknowledged:boolean}){
  const review=useRef(new UpdateReview()).current;
  const [,render]=useState(0),[error,setError]=useState(''),[busy,setBusy]=useState(false);
- const mounted=useRef(false),request=useRef(0);
+ const mounted=useRef(false);
  useEffect(()=>{
   mounted.current=true;review.invalidate();
-  const check=async()=>{const id=++request.current;try{const candidate=await readUpdateCandidate();if(mounted.current&&id===request.current){review.observe(candidate);setError('');render(v=>v+1);}}catch(e){if(mounted.current&&id===request.current){review.invalidate();setError((e as Error).message);render(v=>v+1);}}};
-  const interrupt=()=>{request.current++;review.invalidate();render(v=>v+1);void check();};
-  void check();const timer=setInterval(check,3000);window.addEventListener('focus',check);window.addEventListener('offline',interrupt);window.addEventListener('online',interrupt);
-  return()=>{mounted.current=false;request.current++;clearInterval(timer);window.removeEventListener('focus',check);window.removeEventListener('offline',interrupt);window.removeEventListener('online',interrupt);review.invalidate();};
+  const poller=new CandidatePoller(readUpdateCandidate,candidate=>{review.observe(candidate);setError('');render(v=>v+1);},error=>{review.invalidate();setError(error.message);render(v=>v+1);});
+  const interrupt=()=>{poller.interrupt();review.invalidate();setError(navigator.onLine?'Connection changed. Review the update again.':offlineUpdateMessage);render(v=>v+1);void poller.poll();};
+  void poller.poll();const timer=setInterval(poller.poll,3000);window.addEventListener('focus',poller.poll);window.addEventListener('offline',interrupt);window.addEventListener('online',interrupt);
+  return()=>{mounted.current=false;poller.stop();clearInterval(timer);window.removeEventListener('focus',poller.poll);window.removeEventListener('offline',interrupt);window.removeEventListener('online',interrupt);review.invalidate();};
  },[acknowledged,review]);
  async function backup(){
   const token=review.token();setBusy(true);

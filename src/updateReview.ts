@@ -4,6 +4,7 @@ import {buildIdentity,readWriterStatus,writerContract,type WriterControl,type Wr
 export type WorkerIdentity={protocol:1;build:string;writer:{protocol:number;generation:number;capabilities:string[]}};
 export type UpdateCandidate={key:string;worker:ServiceWorker|null;identity:WorkerIdentity|null;status:WriterStatus};
 const workerIds=new WeakMap<ServiceWorker,number>();let nextId=0;
+export const offlineUpdateMessage='Update confirmation is paused while offline. Your existing workshop and backup files are preserved. Reconnect and review again.';
 export function controlIdentity(control:WriterControl){return JSON.stringify([control.id,control.protocol,control.generation,control.capabilities]);}
 export function validateWorkerIdentity(value:unknown):WorkerIdentity{
  const v=value as WorkerIdentity;
@@ -20,7 +21,7 @@ export function workerRequest(worker:ServiceWorker,message:unknown,timeout=5000)
  });
 }
 export async function readUpdateCandidate():Promise<UpdateCandidate>{
- if(!navigator.onLine)throw Error('Update confirmation is paused while offline. Your existing workshop and backup files are preserved. Reconnect and review again.');
+ if(!navigator.onLine)throw Error(offlineUpdateMessage);
  const status=await readWriterStatus(db);
  if(!status.control)throw Error(status.message);
  if(!status.writable&&!status.upgrade)return {key:JSON.stringify([buildIdentity,controlIdentity(status.control)]),worker:null,identity:null,status};
@@ -36,6 +37,25 @@ export async function readUpdateCandidate():Promise<UpdateCandidate>{
  const after=await readWriterStatus(db);
  if(!after.control||controlIdentity(after.control)!==controlIdentity(status.control))throw Error('Workshop writer requirements changed while checking the update.');
  return {key:JSON.stringify([buildIdentity,workerId,identity,controlIdentity(after.control)]),worker,identity,status:after};
+}
+
+/** Coalesce interval/focus reads so a slow error cannot be overtaken forever.
+ * Explicit lifecycle interruption cancels the result, never the IDB operation.
+ */
+export class CandidatePoller{
+ private running=false;
+ private revision=0;
+ private stopped=false;
+ constructor(private read:()=>Promise<UpdateCandidate>,private accept:(candidate:UpdateCandidate)=>void,private reject:(error:Error)=>void){}
+ poll=async()=>{
+  if(this.running||this.stopped)return;
+  this.running=true;const revision=this.revision;
+  try{const candidate=await this.read();if(!this.stopped&&revision===this.revision)this.accept(candidate);}
+  catch(error){if(!this.stopped&&revision===this.revision)this.reject(error as Error);}
+  finally{this.running=false;}
+ };
+ interrupt(){this.revision++;}
+ stop(){this.stopped=true;this.interrupt();}
 }
 
 /** In-memory permission only. A file download never proves recoverability. */
