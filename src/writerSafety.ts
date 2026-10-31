@@ -3,12 +3,14 @@ import {z} from 'zod';
 import {defaults,preferencesSchema} from './domain';
 import {disclaimerVersion} from './legal';
 import {sameRecord} from './comparison';
+import releaseContract from '../release-contract.json';
 
 export const writerControlKey='__printguard_writer_control_v1__';
 export const writerStore='writerControl';
 const controlSchema=z.object({id:z.literal(writerControlKey),protocol:z.literal(1),generation:z.number().int().positive(),capabilities:z.array(z.string()).max(30)}).strict();
 export type WriterControl=z.infer<typeof controlSchema>;
-export const writerContract:WriterControl=Object.freeze({id:writerControlKey,protocol:1,generation:typeof __PRINTGUARD_GENERATION__==='undefined'?1:__PRINTGUARD_GENERATION__,capabilities:['backup:1',`consent:${disclaimerVersion}`,'observations:1','profiles:1','recommendations:1']});
+export const writerContract:WriterControl=Object.freeze({id:writerControlKey,protocol:1,generation:typeof __PRINTGUARD_GENERATION__==='undefined'?releaseContract.writer.generation:__PRINTGUARD_GENERATION__,capabilities:releaseContract.writer.capabilities});
+if(!writerContract.capabilities.includes(`consent:${disclaimerVersion}`))throw Error('Release contract and disclaimer version disagree.');
 Object.freeze(writerContract.capabilities);
 export const buildIdentity=typeof __PRINTGUARD_BUILD__==='undefined'?'source-test':__PRINTGUARD_BUILD__;
 export type WriterStatus={writable:boolean;upgrade:boolean;message:string;control?:WriterControl};

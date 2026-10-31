@@ -1,0 +1,21 @@
+import 'fake-indexeddb/auto';
+import {it,expect} from 'vitest';
+import {UpdateReview,controlIdentity,validateWorkerIdentity,type UpdateCandidate} from '../src/updateReview';
+import {writerContract} from '../src/writerSafety';
+const candidate=(key='worker-a'):UpdateCandidate=>({key,worker:null,identity:null,status:{writable:true,upgrade:false,message:'Compatible',control:structuredClone(writerContract)}});
+function ready(){const r=new UpdateReview();r.observe(candidate());r.downloaded(r.token());r.confirm(true);expect(r.ready).toBe(true);return r;}
+it('F01 review starts without authority',()=>{expect(new UpdateReview().ready).toBe(false);});
+it('F02 both download and confirmation must refer to current exact candidate',()=>{const r=new UpdateReview();r.observe(candidate());r.confirm(true);expect(r.ready).toBe(false);r.downloaded(r.token());expect(r.ready).toBe(true);});
+it('F03 unchanged polling preserves current explicit review',()=>{const r=ready();r.observe(candidate());expect(r.ready).toBe(true);});
+it('F04 waiting worker replacement clears backup and checkbox authority',()=>{const r=ready();r.observe(candidate('worker-b'));expect(r.ready).toBe(false);expect(r.backupKey).toBeNull();expect(r.confirmedKey).toBeNull();});
+it('F05 persisted control change requires fresh review',()=>{const r=ready();r.observe(candidate('control-2'));expect(r.ready).toBe(false);});
+it('F06 offline/error/unmount invalidation clears authority even if same candidate returns',()=>{const r=ready();r.invalidate();r.observe(candidate());expect(r.ready).toBe(false);});
+it('F07 late backup completion cannot approve a different candidate',()=>{const r=ready(),old=r.token();r.observe(candidate('worker-b'));r.downloaded(old);r.confirm(true);expect(r.ready).toBe(false);});
+it('F08 ABA candidate replacement cannot revive an in-flight old backup',()=>{const r=ready(),old=r.token();r.observe(candidate('worker-b'));r.observe(candidate());r.downloaded(old);r.confirm(true);expect(r.ready).toBe(false);});
+it('F09 revalidation immediately detects changed pending candidate',async()=>{const r=ready();await expect(r.revalidate(async()=>candidate('worker-b'))).rejects.toThrow(/changed/);expect(r.ready).toBe(false);});
+it('F10 errors during final revalidation fail closed',async()=>{const r=ready();await expect(r.revalidate(async()=>{throw Error('Offline failure');})).rejects.toThrow(/Offline/);expect(r.candidate).toBeNull();});
+it('F11 concurrent invalidation during awaited final check refuses',async()=>{const r=ready();await expect(r.revalidate(async()=>{r.invalidate();return candidate();})).rejects.toThrow(/changed/);expect(r.ready).toBe(false);});
+it('F12 fresh exact-candidate check permits only already reviewed action',async()=>{const r=ready();expect((await r.revalidate(async()=>candidate())).key).toBe('worker-a');});
+it('F13 no confirmation can grant a stale writer authority',()=>{const r=new UpdateReview(),c=candidate();c.status.writable=false;r.observe(c);r.downloaded(r.token());r.confirm(true);expect(r.ready).toBe(false);});
+it('F14 control snapshot includes capabilities and generation',()=>{expect(controlIdentity(writerContract)).not.toBe(controlIdentity({...writerContract,generation:2}));expect(controlIdentity(writerContract)).not.toBe(controlIdentity({...writerContract,capabilities:['unknown:1']}));});
+it('F15 worker identity must be explicit and same supported format',()=>{expect(()=>validateWorkerIdentity({})).toThrow(/Unknown/);expect(()=>validateWorkerIdentity({protocol:1,build:'a'.repeat(24),writer:{...writerContract,capabilities:['unknown:1']}})).toThrow(/Unknown/);expect(validateWorkerIdentity({protocol:1,build:'a'.repeat(24),writer:writerContract}).build).toBe('a'.repeat(24));});

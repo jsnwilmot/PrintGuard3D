@@ -1,0 +1,9 @@
+export type ReleaseContract={schemaVersion:number;releaseVersion:string;writer:{protocol:number;generation:number;capabilities:string[]};nativeVersion:number;compatibility:{classification:string;baselineCommit:string;reason:string;evidence:string[]};approvedReviewers:Record<string,{name:string;publicKey:string}>};
+export type BuildContext={sourceCommit:string;buildIdentity:string;releaseVersion:string;writer:ReleaseContract['writer'];nativeVersion:number;compatibility:ReleaseContract['compatibility'];kind:string};
+export function configureBuild(root:string,env:NodeJS.ProcessEnv,mode:string):{contract:ReleaseContract;context:BuildContext;deployable:boolean};
+export function validateContract(value:unknown,baseline?:unknown):ReleaseContract;
+export function baselineContract(root:string,contract:ReleaseContract):Pick<ReleaseContract,'writer'|'nativeVersion'>;
+export function buildContext(root:string,contract:ReleaseContract,generation?:number,kind?:string):BuildContext;
+export function canonical(value:unknown):string;
+export function validateReleaseReview(declaration:unknown,context:BuildContext,contract:ReleaseContract,options?:{clean?:boolean}):unknown;
+export const bootstrap:Pick<ReleaseContract,'writer'|'nativeVersion'>;
