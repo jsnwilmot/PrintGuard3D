@@ -1,0 +1,8 @@
+// PROPOSED LOCAL TEMPLATE ONLY. Not a provisioned project or deployment approval.
+// After separate hosting authorization, copy and select an owner-approved name.
+// No account, domain, bindings, secrets, Functions or deployment automation.
+{
+  "name": "OWNER-APPROVED-PROJECT-NAME",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-31"
+}
