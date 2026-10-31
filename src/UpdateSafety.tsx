@@ -28,7 +28,7 @@ export function UpdateSafety({acknowledged}:{acknowledged:boolean}){
  const candidate=review.candidate,status=candidate?.status,waiting=candidate?.worker,incompatible=status&&!status.writable;
  if(!incompatible&&!waiting&&!error)return null;
  return <section className="callout amber compatibility-notice" aria-label="Application compatibility">
-  <h2>{incompatible?'Read-only workshop':'Application update available'}</h2>
+  <h2>{incompatible?'Read-only workshop':waiting?'Application update available':'Update check unavailable'}</h2>
   {status?.control&&<p>Saved writer version: {status.control.generation}. This application: {writerContract.generation}. {status.upgrade?'This newer compatible application needs your approval before workshop changes.':''}</p>}
   {candidate?.identity&&<p>Pending application: <code>{candidate.identity.build}</code>. Writer version: {candidate.identity.writer.generation}.</p>}
   <p>{incompatible?status.message:error?'Update readiness could not be confirmed. Keep the current application and review again.':'A complete update is waiting. Back up first, finish work and close other PrintGuard tabs/windows, then explicitly reload. Held tabs do not update their running code automatically.'}</p>
