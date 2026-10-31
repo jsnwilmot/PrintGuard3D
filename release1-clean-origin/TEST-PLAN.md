@@ -32,7 +32,7 @@ New preparation copies source/public/config/lock into a fresh ignored directory,
 | --- | --- |
 | N01 | Clean app has only operational control before consent, public disclosure works without workshop writes, actual synthetic acknowledgment and UI file replacement; rich multi-printer decision/completion/image/observation backup |
 | P-action ×21 | Compatible positive control executes each actual mutation path and changes persistent data; invalid selectors/arguments cannot count as stale-write protection |
-| N02 | Actual complete waiting worker, explicit backup/update/reload, explicit monotonic writer activation, held original executable/HTML remains loaded |
+| N02 | Actual complete waiting worker, both-theme mobile/keyboard/axe checks, explicit backup/update/reload and monotonic activation; every user store preserved, held executable remains loaded and its actual full backup download leaves metadata unchanged |
 | S-action ×21 | Same actual operations in the held generation-1 client reject after generation-2 activation; every user store and operational control is exactly unchanged, with per-store digests |
 | N03 | Generation-2 completion retains captured recommendation provenance; full file passes the actual strict validator |
 | N07 | Caught control-write refusal and an explicitly injected quota exception both abort preceding mutations atomically; not real disk-full evidence |
@@ -44,6 +44,8 @@ New preparation copies source/public/config/lock into a fresh ignored directory,
 | O-prePhase5 / O-preRecommendations | Exact historical executable and its real usage UI change only origin A; origin B in the SAME browser profile remains intact; cross-origin window IndexedDB access throws SecurityError. A second disposable profile is also clean at B. Older reader rejects enriched file; verified original compatible file restores independently |
 
 Expected executable cases: **53 per engine, 159 total**. New unit cases additionally cover unknown/missing/future controls, protected operational clear, activation refusal, pre-Dexie layout rejection, timestamp consistency and canonical-origin policy. No PASS may be inferred from a mere warning, checksum/download, unopened restore, expected locator failure or different browser profile alone.
+
+Cases have a 120-second diagnostic ceiling; exceeding it fails the run and leaves remaining cases NOT VERIFIED. Firefox update testing observes the actual installed waiting worker and post-reload compiled identity, rather than depending on resolution of a queued update-call Promise; reported API rejections still fail. A replacement window is opened before closing the last held Firefox tab, then the entire browser process is closed/relaunched for the offline oracle.
 
 Each new run writes RESULTS.json with exact IDs/status/UTC/source commit, build/probe hash inventory, browser/profile/origin identities, before/after per-store digests and actual errors. N01 captures an app-only screenshot. SUMMARY.json records counts; any failure exits 1. Full local profiles/builds remain ignored and are never deleted by these scripts. Selected synthetic ledger evidence can be committed; raw personal data must never be substituted. CI uploads only manifest/build logs/evidence, not profiles/source archives. The report must distinguish prepared source commit and final documentation-only commits, and link final-head CI separately.
 

@@ -14,11 +14,23 @@ Retain database name `PrintGuard3D` within the new origin. The public build refu
 | First-public native 20 / Dexie 2, ten stores | Original nine stores/indexes plus `writerControl` (`id` key). Strict protocol/epoch checks govern writes |
 | Unknown/future native number or store set | Refuse before Dexie's automatic schema-patching behavior; do not guess compatibility |
 
-**Architect scrutiny required:** the first public footprint adds an operational store while retaining the private app's declared native number 20. This is scoped to a different origin with zero existing public users, and deliberately does not upgrade historic native-20 storage. Exact layout and protocol, not the number, determine compatibility. Future PUBLIC store-layout changes must increment the schema/native version. No production database was inspected. The original supported native-10-to-20 preservation assertions remain unchanged. If this first-public layout decision is rejected, it must be revised and retested before merge; passing tests are not architectural acceptance.
+**Architect scrutiny required:** the first public footprint adds an operational store while retaining the private app's declared native number 20. This is scoped to a different origin with zero existing public users, and deliberately does not upgrade historic native-20 storage. Exact layout and protocol, not the number, determine compatibility. A per-instance IDBFactory gate permits only native 0-to-20 or 10-to-20 upgrades; all other versionchange attempts are aborted before Dexie can patch an unknown layout. A ready-time layout check and an in-transaction native-version check close the preflight/open race. Future PUBLIC store-layout changes must increment the schema/native version and independently review the allowed transition list. No production database was inspected. The original supported native-10-to-20 preservation assertions remain unchanged. If this first-public layout decision is rejected, it must be revised and retested before merge; passing tests are not architectural acceptance.
 
 The initial reserved-preference-row prototype was discarded because a nonportable preference would break the portable preferences-store contract. The final dedicated store preserves that contract. The only baseline fixture change is explicit preparation of the first-public operational store in the loopback-only review harness; all original test assertions remain unchanged. There is no test-origin exception in the production fence.
 
 Control record: `{id:'__printguard_writer_control_v1__', protocol:1, generation:1, capabilities:['backup:1','observations:1','profiles:1','recommendations:1']}`. No extra fields; generations are positive integers and capabilities must match exactly and in canonical order. This is local operational metadata, not legal consent, historical evidence or a portable user preference. The generation-2 executable is a build-time test fixture with the same supported data format; it is not a released future version.
+
+## Build/capability matrix
+
+| Executable / persistent requirement | Read/write behavior |
+| --- | --- |
+| First-public candidate: protocol 1, generation 1, four v1 capabilities | Writes only matching native-20 first-public layout and matching control |
+| Test generation 2: same readable format/capabilities, generation 2 | Reads supported data; remains read-only against control 1 until explicit monotonic activation; writes against control 2 |
+| Held generation 1 after control 2 | Supported read-only views/full backup; every mutation refuses atomically |
+| Unknown protocol/capability set, malformed/missing control, mixed identity | Refuse writes; do not reset controls or infer compatibility |
+| Future schema or genuinely new file/data format | No generic migration or activation promise. Requires separately reviewed executable/format transitions; current readers reject unsupported formats |
+
+Capabilities mean strict backup schema 1, immutable observation v1, modular profile/archive format 1 and controlled recommendation policy v1. Exact matching is deliberate. A future format-incompatible update requires a separately authorized migration; the current activation API changes only an epoch for the same supported format.
 
 ## Transaction barrier and activation
 

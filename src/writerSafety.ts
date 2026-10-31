@@ -20,6 +20,7 @@ export function assessWriter(value:unknown):WriterStatus{
  return {writable:false,upgrade:capable&&control.generation<writerContract.generation,message:'Workshop writer generation differs. '+refusal,control};
 }
 export async function readWriterStatus(db:Dexie):Promise<WriterStatus>{
+ await db.open();
  if(!db.backendDB().objectStoreNames.contains(writerStore))return {writable:false,upgrade:false,message:'Unsupported pre-public database layout. '+refusal};
  const control=await db.table(writerStore).get(writerControlKey);
  return assessWriter(control);
@@ -33,6 +34,7 @@ export function installWriterFence(db:Dexie){
   const control=core.schema.tables.some(t=>t.name===writerStore)?core.table(writerStore):null;
   const checked=new WeakMap<DBCoreTransaction,Promise<void>>();
   const check=(trans:DBCoreTransaction)=>{
+   if((trans as IDBTransaction).db.version!==20)return Dexie.Promise.reject(Error('Unsupported native database version. '+refusal));
    if(mixedBuild())return Dexie.Promise.reject(Error('Mixed application assets detected. '+refusal));
    const prior=checked.get(trans);if(prior)return prior;
    if(!control)return Dexie.Promise.reject(Error('Unsupported pre-public database layout. '+refusal));

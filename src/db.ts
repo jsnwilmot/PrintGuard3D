@@ -2,6 +2,7 @@ import {createReviewReminder,taskDecisionIssue,type ReviewChoice} from './recomm
 import {disclaimerVersion} from './legal';
 import Dexie,{type Table,type Transaction} from 'dexie';
 import {installWriterFence,writerStore,writerContract,mixedBuild} from './writerSafety';
+import {guardedFactory,supportedLayout} from './storageLayout';
 import { z } from 'zod';
 import {overdueHistorySchema,observationIssues,type Observation} from './observations';
 import {printerSchema,taskSchema,logSchema,readingSchema,inventorySchema,repairSchema,profileSchema,preferencesSchema,dateSchema,type Printer,type Task,type Log,type Reading,type Inventory,type Repair,type Profile,type Preferences,defaults,today,uid,safeUrl} from './domain';
@@ -12,12 +13,13 @@ import {reviewTask,reviewProfile,assessProfile,profileArchiveId,bundled,isVerifi
 export class PrintGuardDB extends Dexie{
  printers!:Table<Printer,string>;tasks!:Table<Task,string>;logs!:Table<Log,string>;readings!:Table<Reading,string>;inventory!:Table<Inventory,string>;repairs!:Table<Repair,string>;profiles!:Table<Profile,string>;preferences!:Table<Preferences,string>;observations!:Table<Observation,string>;
  constructor(name='PrintGuard3D'){
-  super(name);
+  super(name,{indexedDB:guardedFactory(Dexie.dependencies.indexedDB)});
   this.version(1).stores({printers:'id,manufacturer,archived',tasks:'id,printerId',logs:'id,printerId,taskId,date',readings:'id,printerId,date',inventory:'id,printerId',repairs:'id,printerId,status',profiles:'id',preferences:'id'});
   const initialize=(tx:Transaction)=>{if(mixedBuild())throw Error('Mixed application assets detected; database initialization refused.');tx.idbtrans.objectStore(writerStore).add(writerContract);};
   this.version(2).stores({observations:'id,printerId,observedAt,[printerId+observedAt]',writerControl:'id'}).upgrade(initialize);
   this.on('populate',initialize);
   installWriterFence(this);
+  this.on('ready',()=>{if(!supportedLayout(this,this.backendDB()))throw Error('Unsupported database layout changed while opening. No workshop writes are permitted.');},true);
   this.observations.hook('updating',()=>{throw Error('Recorded observations are immutable. Import conflicts require review.');});
  }
  // Dexie can otherwise auto-patch missing stores at the same declared version.
@@ -29,9 +31,7 @@ export class PrintGuardDB extends Dexie{
    request.onupgradeneeded=()=>{absent=true;request.transaction!.abort();};
    request.onerror=()=>absent?resolve():reject(request.error);
    request.onsuccess=()=>{
-    const native=request.result,expected=this.tables.filter(t=>native.version!==10||!['observations',writerStore].includes(t.name)),names=[...native.objectStoreNames].sort();
-    let unsupported=![10,20].includes(native.version)||JSON.stringify(names)!==JSON.stringify(expected.map(t=>t.name).sort());
-    if(!unsupported){const tx=native.transaction(names,'readonly');unsupported=expected.some(table=>{const store=tx.objectStore(table.name);if(JSON.stringify(store.keyPath)!==JSON.stringify(table.schema.primKey.keyPath)||store.autoIncrement)return true;if(native.version===10)return false;const indexes=table.schema.indexes;if(JSON.stringify([...store.indexNames].sort())!==JSON.stringify(indexes.map(i=>i.name).sort()))return true;return indexes.some(index=>{const actual=store.index(index.name);return JSON.stringify(actual.keyPath)!==JSON.stringify(index.keyPath)||actual.unique!==!!index.unique||actual.multiEntry!==!!index.multi;});});}
+    const native=request.result,unsupported=!supportedLayout(this,native,true);
     native.close();if(unsupported)reject(Error('Unsupported pre-public or future database layout. No records changed. Use a compatible application and keep a validated full backup; do not clear site data.'));else resolve();
    };
   })).then(()=>super.open());
