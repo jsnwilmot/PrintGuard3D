@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "sourceCommit": "c140bb37822b086ae415d9e2eeeeef7db08d9d22",
+  "files": {
+    "RESULTS.json": {
+      "sha256": "282aed6db67c8498b363f8127a544b62c261c0ab7a6d40fda43b4203c5a51c22",
+      "bytes": 397105
+    },
+    "RUNTIME-MANIFEST.json": {
+      "sha256": "9a521c2bc5cd796ba4cdfa947ecc03e26454057b97460bd1d67c153fcf6be856",
+      "bytes": 9427
+    },
+    "VERIFICATION.json": {
+      "sha256": "4e96fe76a219e5cfcafea7f60b852b21e0f7812330e73f6dadcac3758d617662",
+      "bytes": 2160
+    },
+    "evidence/artifact-check.json": {
+      "sha256": "4dad8a29110313fa8051589be2edf89b528c3b392cc1a398af2070e40302126e",
+      "bytes": 1042
+    },
+    "evidence/chromium-workshop.png": {
+      "sha256": "ef7a7a9c40020fbf39d1a84a9654a367868e810046fda0b8f983ec94da59bc8c",
+      "bytes": 237900
+    },
+    "evidence/firefox-workshop.png": {
+      "sha256": "a23e852303fa36cba0130e7a473b14c52222cbaac0cc943f17b0734392415014",
+      "bytes": 234017
+    },
+    "evidence/full-workshop.synthetic.json": {
+      "sha256": "c5cfa596f9343f09e0e0667c4bbdd292fbeaa9e3776504b69663d73150991eae",
+      "bytes": 34057
+    },
+    "evidence/update-dark.png": {
+      "sha256": "3884d0895ab8cee1cb5862960314cc0f763603fca38173bc04b2b2288b7b92d5",
+      "bytes": 432235
+    },
+    "evidence/update-light.png": {
+      "sha256": "8810f5461da7f4505f72ae0e41054e7981d815e68a552f81743098a062dac30d",
+      "bytes": 432421
+    },
+    "evidence/webkit-workshop.png": {
+      "sha256": "60fe1a70922af277a57e583e43424f83f64673e074e1adea36457478320db143",
+      "bytes": 204043
+    }
+  },
+  "personalData": false,
+  "note": "All workshop rows and screen captures are synthetic; browser profiles/source archives are not committed."
+}

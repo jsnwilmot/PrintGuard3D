@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "preparedAt": "2026-10-31T16:55:37.163950+00:00",
+  "approvedBase": "aa8ade54061dec95ee51c65ba2e4ed46c0261c5d",
+  "runtimeImplementationCommit": "c06ce50925f71a0fa9f411f9c0a17d698d143b28",
+  "completeTestedTreeCommit": "c140bb37822b086ae415d9e2eeeeef7db08d9d22",
+  "unit": {
+    "original": 242,
+    "new": 45,
+    "passed": 287,
+    "failed": 0,
+    "reportSHA256": "d673ac58fcae2e6d257173530f0fec2b2a7cdd661cc47aac4b8e027cf2757376"
+  },
+  "acceptance": {
+    "passed": 45,
+    "failed": 0,
+    "assertionsUnchanged": true,
+    "reportSHA256": "1531ab981ba7cce3dadc04b448623a4eb503a0657cdc87451d468030e692a576"
+  },
+  "originalNative": {
+    "originalChromium": {
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "reportSHA256": "08f1788728feac0849b17e2b69ad76743a38b441522075abc019a753f60501c5"
+    },
+    "originalCompatibilityPrint": {
+      "passed": 45,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "reportSHA256": "359e6e8d878eede0d4fb6a2b62b2a8625d385f85e0ea82bc79b85e2feb75d8f9"
+    },
+    "originalReportingSafetyPrivacy": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "reportSHA256": "17074689a9b382e06f76983795c44bd9053216b10fd19cc35ca07324c67451a2"
+    }
+  },
+  "newNative": {
+    "commit": "c140bb37822b086ae415d9e2eeeeef7db08d9d22",
+    "results": 171,
+    "passed": 171,
+    "failed": 0,
+    "humanAndHost": "NOT VERIFIED",
+    "releaseApproved": false
+  },
+  "typescript": "PASS",
+  "productionBuild": "PASS",
+  "staticRepository": "PASS",
+  "immutableReviewedDefinitions": 3,
+  "originalRequirementIDsPreserved": 86,
+  "originalOperationalAudit": {
+    "PASS": 30,
+    "FAIL": 12,
+    "NOT VERIFIED": 1
+  },
+  "ci": {
+    "testedCommit": "c140bb37822b086ae415d9e2eeeeef7db08d9d22",
+    "runURL": "https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41220051691",
+    "jobsPassed": 6,
+    "conclusion": "success",
+    "finalDocumentationHead": "See final PR checks; evidence-only commit follows this tested source tree."
+  },
+  "externalHostAndHuman": "NOT VERIFIED",
+  "releaseApproved": false,
+  "trackedFilesValidated": 241
+}
