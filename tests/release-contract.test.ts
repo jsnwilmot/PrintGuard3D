@@ -3,6 +3,8 @@ import {readFileSync} from 'node:fs';
 import {generateKeyPairSync,sign} from 'node:crypto';
 import {resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {runInNewContext} from 'node:vm';
+import {serviceWorkerSource} from '../scripts/service-worker.mjs';
 import {validateContract,validateReleaseReview,buildContext,canonical,configureBuild,bootstrap} from '../scripts/release-contract.mjs';
 import declaration from '../release-contract.json';
 const fresh=()=>structuredClone(declaration);
@@ -38,3 +40,14 @@ it('G21 tracked writer/runtime contract uses the single reviewed declaration',()
 it('G22 production release refuses test identity mode',()=>{expect(()=>configureBuild(process.cwd(),{VITEST:'true'},'release')).toThrow(/test identity cannot produce/);});
 it('G23 future-dated approval does not authorize a release',()=>{const {contract,artifact,receipt}=signed();receipt.review.reviewedAt='9999-01-01T00:00:00.000Z';expect(()=>validateReleaseReview(receipt,artifact,contract)).toThrow(/dated approved/);});
 it('G24 reviewer register accepts only public key material',()=>{const c=fresh(),{privateKey}=generateKeyPairSync('ed25519');c.approvedReviewers={synthetic:{name:'Disposable test reviewer',publicKey:privateKey.export({type:'pkcs8',format:'pem'}).toString()}};expect(()=>validateContract(c)).toThrow(/never private/);});
+it('G25 an already installed canonical PWA cannot install an unsigned developer worker or touch its reviewed cache',async()=>{
+ const origin='https://printguard3d.roseandpaw.ca',handlers:Record<string,(event:{waitUntil:(promise:Promise<void>)=>void})=>void>={},touches:string[]=[];
+ const source=serviceWorkerSource({cache:'nondeployable-fixture',assets:[],hashes:{},identity:'a'.repeat(24),writer:bootstrap.writer,canonicalOrigin:origin,deployable:false});
+ runInNewContext(source,{self:{location:{origin},registration:{active:{state:'activated'}},addEventListener:(name:string,handler:typeof handlers[string])=>{handlers[name]=handler;}},fetch:()=>{touches.push('fetch');throw Error('Must not fetch');},caches:{open:()=>{touches.push('cache');throw Error('Must not touch reviewed cache');}}});
+ let install!:Promise<void>;handlers.install({waitUntil:promise=>{install=promise;}});await expect(install).rejects.toThrow('Non-deployable artifact cannot install at the canonical origin');expect(touches).toEqual([]);
+ // Positive control exercises the declared release flag; this is not a real
+ // signing approval or a provider/browser deployment claim.
+ const entries:unknown[]=[];const release=serviceWorkerSource({cache:'declared-release-fixture',assets:[],hashes:{},identity:'b'.repeat(24),writer:bootstrap.writer,canonicalOrigin:origin,deployable:true});
+ runInNewContext(release,{self:{location:{origin},registration:{active:{state:'activated'}},addEventListener:(name:string,handler:typeof handlers[string])=>{handlers[name]=handler;}},Response,caches:{open:async(name:string)=>{expect(name).toBe('declared-release-fixture');return {put:async(path:string,value:Response)=>{entries.push({path,value:await value.json()});}};}}});
+ handlers.install({waitUntil:promise=>{install=promise;}});await install;expect(entries).toEqual([{path:'/__printguard_install__',value:{initial:false}}]);
+});

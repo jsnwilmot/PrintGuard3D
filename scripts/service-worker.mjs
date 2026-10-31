@@ -1,8 +1,9 @@
 // Generated worker has no remote imports or data migrations.
-export function serviceWorkerSource({cache,assets,hashes,identity,writer}){
+export function serviceWorkerSource({cache,assets,hashes,identity,writer,canonicalOrigin,deployable}){
  return `const CACHE=${JSON.stringify(cache)},ASSETS=${JSON.stringify(assets)},HASHES=${JSON.stringify(hashes)};
-const IDENTITY=${JSON.stringify({protocol:1,build:identity,writer})};
+const IDENTITY=${JSON.stringify({protocol:1,build:identity,writer})},PUBLIC_ORIGIN=${JSON.stringify(canonicalOrigin)},DEPLOYABLE=${JSON.stringify(deployable)};
 self.addEventListener('install',e=>e.waitUntil((async()=>{
+ if(self.location.origin===PUBLIC_ORIGIN&&!DEPLOYABLE)throw Error('Non-deployable artifact cannot install at the canonical origin');
  const initial=!self.registration.active,staged=[];
  for(const path of ASSETS){const response=await fetch(new Request(path,{cache:'reload'}));if(!response.ok)throw Error('Incomplete update');const bytes=await response.clone().arrayBuffer(),hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(b=>b.toString(16).padStart(2,'0')).join('');if(hash!==HASHES[path])throw Error('Mixed update assets');staged.push([path,response]);}
  const cache=await caches.open(CACHE);for(const [path,response]of staged)await cache.put(path,response);await cache.put('/__printguard_install__',new Response(JSON.stringify({initial})));

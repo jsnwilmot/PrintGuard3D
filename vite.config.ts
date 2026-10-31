@@ -6,6 +6,7 @@ import {createHash} from 'node:crypto';
 import {join} from 'node:path';
 import {configureBuild} from './scripts/release-contract.mjs';
 import {serviceWorkerSource} from './scripts/service-worker.mjs';
+import {canonicalOrigin} from './src/appOrigin';
 export default defineConfig(({mode})=>{
 const configured=configureBuild(process.cwd(),process.env,mode);
 const {context,deployable}=configured;
@@ -15,7 +16,7 @@ function offline(){return {name:'printguard-offline',closeBundle(){
  const files=walk('dist').filter(p=>!p.endsWith('sw.js')&&!p.endsWith('_headers')&&!p.endsWith('_redirects')).sort().map(p=>'/'+p.replaceAll('\\','/').replace(/^dist\//,''));
  const version=createHash('sha256').update(files.map(p=>readFileSync('dist'+p).toString('base64')).join('')).digest('hex').slice(0,12);
  const hashes=Object.fromEntries(files.map(p=>[p,createHash('sha256').update(readFileSync('dist'+p)).digest('hex')]));
- writeFileSync('dist/sw.js',serviceWorkerSource({cache:'printguard-'+version,assets:files,hashes,identity:context.buildIdentity,writer:context.writer}));
+ writeFileSync('dist/sw.js',serviceWorkerSource({cache:'printguard-'+version,assets:files,hashes,identity:context.buildIdentity,writer:context.writer,canonicalOrigin,deployable}));
  }};}
 const generation=context.writer.generation,identity=context.buildIdentity;
 return {
