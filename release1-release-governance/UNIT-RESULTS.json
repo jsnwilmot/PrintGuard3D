@@ -1,0 +1,243 @@
+{
+  "sourceCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+  "originalRegressions": 287,
+  "totalPassed": 326,
+  "failed": 0,
+  "rawReportSHA256": "62bc9579891c308bfe4c9e681635f3c7164eabd8ca08b3ac3241423e8de68298",
+  "results": [
+    {
+      "id": "unit-G01",
+      "requirement": "G01 explicit compatible contract preserves known generation and data format",
+      "status": "PASS",
+      "durationMilliseconds": 6.989299999999957
+    },
+    {
+      "id": "unit-G02",
+      "requirement": "G02 absent release declaration is never inferred",
+      "status": "PASS",
+      "durationMilliseconds": 2.0206000000000586
+    },
+    {
+      "id": "unit-G03",
+      "requirement": "G03 missing compatibility reasoning/evidence refuses",
+      "status": "PASS",
+      "durationMilliseconds": 0.9551000000000158
+    },
+    {
+      "id": "unit-G04",
+      "requirement": "G04 incompatible change cannot retain its old generation",
+      "status": "PASS",
+      "durationMilliseconds": 1.0172000000000025
+    },
+    {
+      "id": "unit-G05",
+      "requirement": "G05 same-format declared writer bump is permitted with higher generation",
+      "status": "PASS",
+      "durationMilliseconds": 0.7195000000000391
+    },
+    {
+      "id": "unit-G06",
+      "requirement": "G06 compatible declaration cannot silently increase generation",
+      "status": "PASS",
+      "durationMilliseconds": 1.373299999999972
+    },
+    {
+      "id": "unit-G07",
+      "requirement": "G07 unsupported capabilities require separate migration STOP",
+      "status": "PASS",
+      "durationMilliseconds": 0.8428000000000111
+    },
+    {
+      "id": "unit-G08",
+      "requirement": "G08 unsupported native schema refuses",
+      "status": "PASS",
+      "durationMilliseconds": 0.6865999999999985
+    },
+    {
+      "id": "unit-G09",
+      "requirement": "G09 incompatible format classification refuses instead of automatic adoption",
+      "status": "PASS",
+      "durationMilliseconds": 1.7285000000000537
+    },
+    {
+      "id": "unit-G10",
+      "requirement": "G10 positive signed exact-artifact review validates only with a registered disposable key",
+      "status": "PASS",
+      "durationMilliseconds": 597.0463
+    },
+    {
+      "id": "unit-G11",
+      "requirement": "G11 real draft has no trusted signer and cannot forge approved release",
+      "status": "PASS",
+      "durationMilliseconds": 353.0474999999999
+    },
+    {
+      "id": "unit-G12",
+      "requirement": "G12 altered source SHA invalidates prior approval",
+      "status": "PASS",
+      "durationMilliseconds": 281.91150000000016
+    },
+    {
+      "id": "unit-G13",
+      "requirement": "G13 altered build identity invalidates prior approval",
+      "status": "PASS",
+      "durationMilliseconds": 341.2407000000003
+    },
+    {
+      "id": "unit-G14",
+      "requirement": "G14 tampered compatibility reasoning invalidates signature even for a matching supplied context",
+      "status": "PASS",
+      "durationMilliseconds": 335.1812
+    },
+    {
+      "id": "unit-G15",
+      "requirement": "G15 rejected/missing review cannot produce a release",
+      "status": "PASS",
+      "durationMilliseconds": 336.67480000000023
+    },
+    {
+      "id": "unit-G16",
+      "requirement": "G16 dirty source cannot use an earlier signed approval",
+      "status": "PASS",
+      "durationMilliseconds": 356.0154000000002
+    },
+    {
+      "id": "unit-G17",
+      "requirement": "G17 development/fixture artifacts remain nondeployable",
+      "status": "PASS",
+      "durationMilliseconds": 978.2062000000001
+    },
+    {
+      "id": "unit-G18",
+      "requirement": "G18 unmarked generation environment override refuses; explicit fixture cannot enter release mode",
+      "status": "PASS",
+      "durationMilliseconds": 374.02409999999963
+    },
+    {
+      "id": "unit-G19",
+      "requirement": "G19 actual release configuration refuses missing signed approval before writing build output",
+      "status": "PASS",
+      "durationMilliseconds": 2676.9438
+    },
+    {
+      "id": "unit-G20",
+      "requirement": "G20 reviewer signature is independent of JSON key ordering but not payload values",
+      "status": "PASS",
+      "durationMilliseconds": 248.03679999999986
+    },
+    {
+      "id": "unit-G21",
+      "requirement": "G21 tracked writer/runtime contract uses the single reviewed declaration",
+      "status": "PASS",
+      "durationMilliseconds": 1.6049000000002707
+    },
+    {
+      "id": "unit-G22",
+      "requirement": "G22 production release refuses test identity mode",
+      "status": "PASS",
+      "durationMilliseconds": 171.9434999999994
+    },
+    {
+      "id": "unit-G23",
+      "requirement": "G23 future-dated approval does not authorize a release",
+      "status": "PASS",
+      "durationMilliseconds": 239.72009999999955
+    },
+    {
+      "id": "unit-G24",
+      "requirement": "G24 reviewer register accepts only public key material",
+      "status": "PASS",
+      "durationMilliseconds": 1.327700000000732
+    },
+    {
+      "id": "unit-F01",
+      "requirement": "F01 review starts without authority",
+      "status": "PASS",
+      "durationMilliseconds": 3.90969999999993
+    },
+    {
+      "id": "unit-F02",
+      "requirement": "F02 both download and confirmation must refer to current exact candidate",
+      "status": "PASS",
+      "durationMilliseconds": 1.0371000000000095
+    },
+    {
+      "id": "unit-F03",
+      "requirement": "F03 unchanged polling preserves current explicit review",
+      "status": "PASS",
+      "durationMilliseconds": 1.1462999999998829
+    },
+    {
+      "id": "unit-F04",
+      "requirement": "F04 waiting worker replacement clears backup and checkbox authority",
+      "status": "PASS",
+      "durationMilliseconds": 1.3430000000000746
+    },
+    {
+      "id": "unit-F05",
+      "requirement": "F05 persisted control change requires fresh review",
+      "status": "PASS",
+      "durationMilliseconds": 1.019800000000032
+    },
+    {
+      "id": "unit-F06",
+      "requirement": "F06 offline/error/unmount invalidation clears authority even if same candidate returns",
+      "status": "PASS",
+      "durationMilliseconds": 0.6307000000001608
+    },
+    {
+      "id": "unit-F07",
+      "requirement": "F07 late backup completion cannot approve a different candidate",
+      "status": "PASS",
+      "durationMilliseconds": 0.5451000000000477
+    },
+    {
+      "id": "unit-F08",
+      "requirement": "F08 ABA candidate replacement cannot revive an in-flight old backup",
+      "status": "PASS",
+      "durationMilliseconds": 0.4492999999999938
+    },
+    {
+      "id": "unit-F09",
+      "requirement": "F09 revalidation immediately detects changed pending candidate",
+      "status": "PASS",
+      "durationMilliseconds": 4.600100000000111
+    },
+    {
+      "id": "unit-F10",
+      "requirement": "F10 errors during final revalidation fail closed",
+      "status": "PASS",
+      "durationMilliseconds": 1.4514000000001488
+    },
+    {
+      "id": "unit-F11",
+      "requirement": "F11 concurrent invalidation during awaited final check refuses",
+      "status": "PASS",
+      "durationMilliseconds": 1.0253000000000156
+    },
+    {
+      "id": "unit-F12",
+      "requirement": "F12 fresh exact-candidate check permits only already reviewed action",
+      "status": "PASS",
+      "durationMilliseconds": 0.626700000000028
+    },
+    {
+      "id": "unit-F13",
+      "requirement": "F13 no confirmation can grant a stale writer authority",
+      "status": "PASS",
+      "durationMilliseconds": 0.3671999999999116
+    },
+    {
+      "id": "unit-F14",
+      "requirement": "F14 control snapshot includes capabilities and generation",
+      "status": "PASS",
+      "durationMilliseconds": 1.535799999999881
+    },
+    {
+      "id": "unit-F15",
+      "requirement": "F15 worker identity must be explicit and same supported format",
+      "status": "PASS",
+      "durationMilliseconds": 1.1455000000000837
+    }
+  ]
+}

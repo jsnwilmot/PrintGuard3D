@@ -1,0 +1,2 @@
+# Evidence digests refer to LF JSON bytes on every checkout platform.
+*.json text eol=lf

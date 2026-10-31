@@ -1,0 +1,159 @@
+{
+  "approvedBase": "f93bbf5297ac1ca858a521cc2781777b4c492073",
+  "runtimeCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+  "changedFiles": 38,
+  "files": [
+    {
+      "status": "M",
+      "path": ".github/workflows/validate.yml"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "package.json"
+    },
+    {
+      "status": "A",
+      "path": "release-contract.json"
+    },
+    {
+      "status": "M",
+      "path": "release1-clean-origin/harness.mjs"
+    },
+    {
+      "status": "M",
+      "path": "release1-clean-origin/prepare.mjs"
+    },
+    {
+      "status": "M",
+      "path": "release1-clean-origin/run.mjs"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/ARTIFACT-CHECK.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/BASELINE-RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/CI-EXCERPTS.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/DESIGN.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/DIAGNOSTICS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/EVIDENCE-INDEX.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/FILES.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/MATRIX.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/RELEASE-GATE.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/REPORT.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/RUNTIME-MANIFEST.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/UNIT-RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/VERIFICATION.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/evidence/pre-update-full.synthetic.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/evidence/replacement-dark.png"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/evidence/replacement-light.png"
+    },
+    {
+      "status": "A",
+      "path": "release1-release-governance/run.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/release-contract.d.mts"
+    },
+    {
+      "status": "A",
+      "path": "scripts/release-contract.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/service-worker.d.mts"
+    },
+    {
+      "status": "A",
+      "path": "scripts/service-worker.mjs"
+    },
+    {
+      "status": "M",
+      "path": "src/UpdateSafety.tsx"
+    },
+    {
+      "status": "M",
+      "path": "src/main.tsx"
+    },
+    {
+      "status": "A",
+      "path": "src/updateReview.ts"
+    },
+    {
+      "status": "M",
+      "path": "src/vite-env.d.ts"
+    },
+    {
+      "status": "M",
+      "path": "src/writerSafety.ts"
+    },
+    {
+      "status": "A",
+      "path": "tests/release-contract.test.ts"
+    },
+    {
+      "status": "A",
+      "path": "tests/update-review.test.ts"
+    },
+    {
+      "status": "M",
+      "path": "vite.config.ts"
+    }
+  ]
+}

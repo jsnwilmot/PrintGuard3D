@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "runtimeCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+  "files": {
+    "ARTIFACT-CHECK.json": {
+      "sha256": "1bbf20c41e236a0f35b85ac0faaebe6dfb5553175ce7af5a8258c1277edce609",
+      "bytes": 1138
+    },
+    "BASELINE-RESULTS.json": {
+      "sha256": "3d1441149930bf540f10655336f9b284cc4c8962a641151586c726ab147aa986",
+      "bytes": 399376
+    },
+    "DIAGNOSTICS.json": {
+      "sha256": "0f617918f1353fb8d81ea44721bf904cd028268019f300f06f10a47b04ef602d",
+      "bytes": 4242
+    },
+    "evidence/pre-update-full.synthetic.json": {
+      "sha256": "6056a2b6213445ced399544f5d8fc4357bf2accc1d9d52acfb12fbd6b81bff67",
+      "bytes": 34044
+    },
+    "evidence/replacement-dark.png": {
+      "sha256": "451a5db346503bf9b70054c5bf86b9cc1e1224a0ce4d369276337423afce06a8",
+      "bytes": 494411
+    },
+    "evidence/replacement-light.png": {
+      "sha256": "6d86a3494b63f7c5a2df0b24fdd6395a857f783202363692cde068928ac27c87",
+      "bytes": 489039
+    },
+    "FILES.json": {
+      "sha256": "aa3c21818a0936a54d7163718070a6fe3dcff2a5f2fc08ee798588216b582ab3",
+      "bytes": 3403
+    },
+    "RELEASE-GATE.json": {
+      "sha256": "88da62317e2b000e9b181bf55f97e265c3cfa84b388de136dab82afbfb067f44",
+      "bytes": 2076
+    },
+    "RESULTS.json": {
+      "sha256": "8f87ff74b904a240e71bb305e833f75ad1bc11b0d57f9b8ad93565debaa9cab0",
+      "bytes": 68584
+    },
+    "RUNTIME-MANIFEST.json": {
+      "sha256": "7e71a0cd0c6ea41eb3def7c696436af30710a0e2d23b6fc339f78b6dca4eec2f",
+      "bytes": 11698
+    },
+    "UNIT-RESULTS.json": {
+      "sha256": "605eb34bc275c09314eb2c481fc26ed08b00d67db95f32603fabf6a6fcba32f9",
+      "bytes": 7922
+    },
+    "VERIFICATION.json": {
+      "sha256": "f3d29df83736937f5fd2a0d0fc46a75cdd4105b3c5b0e69537fdae417bba6373",
+      "bytes": 3350
+    }
+  },
+  "note": "Only disposable synthetic workshop evidence. JSON is pinned as LF; no browser profiles or private keys are committed."
+}

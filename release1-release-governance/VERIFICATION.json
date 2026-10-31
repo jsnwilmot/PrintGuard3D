@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "approvedBase": "f93bbf5297ac1ca858a521cc2781777b4c492073",
+  "finalRuntimeCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+  "unit": {
+    "passed": 326,
+    "original": 287,
+    "additive": 39,
+    "failed": 0,
+    "rawReportSHA256": "62bc9579891c308bfe4c9e681635f3c7164eabd8ca08b3ac3241423e8de68298"
+  },
+  "acceptance": {
+    "passed": 45,
+    "failed": 0,
+    "assertionsUnchanged": true,
+    "rawReportSHA256": "83735ef966c4621c723c539518d13af092f587bb557baf23bce2b28e6a18fae3"
+  },
+  "originalNative": {
+    "chromium20": {
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "4aa36d2336e27104871ddadb652eb0e5d1b429b93c2dbbcb95c27b3a55439a4e",
+      "localRuntimeCommit": "e9389be5390bb15cbcffdd2d9c40c7f2f35dca7a",
+      "finalRuntimeCI": "5c0feb2 / run41246412988 attempt2"
+    },
+    "compatibilityPrint45": {
+      "passed": 45,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "100f287ce041937612eee0de638a86466d093abf275dd930a02b650c9ed3742d",
+      "localRuntimeCommit": "e9389be5390bb15cbcffdd2d9c40c7f2f35dca7a",
+      "finalRuntimeCI": "5c0feb2 / run41246412988 attempt2"
+    },
+    "reportingSafetyPrivacy75": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "3638bc45bbd3807a5cf4fe30ce4527a1c89d2d401b5b6f87aaa22c787dbc6d38",
+      "localRuntimeCommit": "e9389be5390bb15cbcffdd2d9c40c7f2f35dca7a",
+      "finalRuntimeCI": "5c0feb2 / run41246412988 attempt2"
+    }
+  },
+  "preservedCompatibility": {
+    "passed": 171,
+    "failed": 0,
+    "staleCases": 66,
+    "everyStaleStoreDigestUnchanged": true
+  },
+  "additiveNative": {
+    "passed": 27,
+    "failed": 0,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "perEngine": 9,
+    "controlledFixtureNavigation": true,
+    "runnerAndHarnessHashes": "RESULTS.json"
+  },
+  "typescript": "PASS",
+  "staticRepository": "PASS",
+  "immutableDefinitions": 3,
+  "productionBuild": "PASS \u2014 NON-DEPLOYABLE development output",
+  "releaseGate": "PASS \u2014 actual unsigned release rejected, existing dist unchanged, no new files",
+  "originalRequirementIDsPreserved": 86,
+  "originalOperationalAudit": {
+    "PASS": 30,
+    "FAIL": 12,
+    "NOT VERIFIED": 1
+  },
+  "ciSource": {
+    "runURL": "https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41246412988",
+    "sourceCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+    "attempt1": "FAIL: reporting N09 readiness wait;74 PASS/1 FAIL. Retained in CI-EXCERPTS and DIAGNOSTICS.",
+    "attempt2": "SUCCESS: all six jobs; unchanged75 reporting cases PASS",
+    "jobIds": [
+      124674302894,
+      124674303606,
+      124674304037,
+      124674304038,
+      124674304062,
+      124674304080
+    ],
+    "finalDocumentationHead": "Exact submitted SHA/CI is linked in PR40; source unchanged by evidence/test-fixture package."
+  },
+  "realReleaseSignerEnrollment": "NOT VERIFIED; empty register, no public artifact authorized",
+  "humanAndHost": "NOT VERIFIED",
+  "unresolvedIntermittentReadiness": "Source CI attempt1 and initial local Firefox setup wait timed out; independent root cause not established. Subsequent complete/targeted runs passed; do not treat retries as a fix.",
+  "releaseApproved": false,
+  "trackedFilesValidated": 268
+}

@@ -1,0 +1,75 @@
+# Issue #39 implementation and independent-review evidence
+
+Prepared 2026-10-31. Approved base `f93bbf5297ac1ca858a521cc2781777b4c492073`. Branch `release1/release-contract-update-confirmation`; [draft PR #40](https://github.com/jsnwilmot/PrintGuard3D/pull/40). Final runtime implementation `5c0feb2ec374bc62439cb7cd7b85d7f370644653` includes truthful unavailable-check wording. Earlier runtime `e9389be5390bb15cbcffdd2d9c40c7f2f35dca7a` and test-only deadline correction `23459f408607e6f47d8a3ae29d1e0265ce69454d` remain traceable diagnostics. Final test-fixture/evidence additions do not alter runtime source. Final documentation/test-fixture commit/CI are linked in the PR. **Engineering submission only; no merge, hosting, deployment or Release 1 approval.**
+
+## Outcome and root causes
+
+F1: changing a content build hash did not advance persisted writer generation, and an environment fallback could silently reuse generation 1. The central first-public fence was correct for declared compatibility but could not infer invisible semantic changes. The new single `release-contract.json` makes generation and compatibility explicit. Its immutable ancestor baseline, classification, reasoning and evidence are validated for every build. Same-generation compatibility is deliberate; same-format writer-bump requires a higher generation. Unsupported data/layout/capability transitions STOP rather than guessing migration.
+
+Public release mode additionally requires a clean exact source SHA/build-bound compatibility review, Ed25519 signature and an independently reviewed registered public key. All decision/version/baseline/contract fields are covered. Altered SHA/build/decision, unknown signer, missing evidence, incompatible classification or invalid signature fails before producing a new release output. The current real signer register is empty. Ordinary development/fixture output remains usable on localhost, marked nondeployable, and refuses canonical App/database/worker initialization. There is no runtime user/URL/import generation override. No deployment or provider API was added.
+
+F2: independent polling of writer status and waiting worker retained two unscoped booleans. The new memory-only authority keys a backup and confirmation to executing build, concrete waiting-worker object/build/writer descriptor and exact persisted control. Changes, interrupted/offline/unknown state, errors or acknowledgment lifecycle reset it. Late backup completion cannot authorize a different/returned candidate. Final activation/adoption revalidates the exact candidate; worker activation independently checks its target build and persisted expected requirements. Adoption keeps the accepted atomic native comparison; ordinary stale writers remain transactionally refused. Timeout no longer forces a reload. Downloaded files and all workshop records survive refusal/failure.
+
+## Architecture and preservation
+
+The [design and signing format](DESIGN.md) contains the release matrix, reviewer trust boundaries and reproduction. React/Vite/Dexie and first-public native20 ten-store layout remain. No IndexedDB migration, schema, portable backup schema 1, five runtime capabilities, observation/recommendation format, manufacturer profile, scheduling engine or disclaimer 1.0 wording changes were made. History, IDs, recommendations, observations, currencies/images/custom schedules and user-controlled strict restore semantics remain unchanged. Perpetual recurrence through 2400 remains in the original suites.
+
+The accepted #38 first-public zero-existing-users premise and acknowledgment-only W14/W15 exception are retained. The old #33 [operational audit](../release1-operational-preflight/RESULTS.json), all prior reports and complete [86-row matrix](../release1-consumer-transparency/MATRIX.md) are unchanged: **30 PASS /12 FAIL /1 human NOT VERIFIED**. New governance oracles do not reclassify old failures.
+
+Original assertion/spec files are unchanged. The existing N11 candidate-delivery setup now calls the actual target/control handshake, because an unbound legacy message is intentionally refused. Its consent, store preservation, backup and adoption assertions are unchanged. Existing preparation/harness supports one additional title-only compatible generation 1 fixture and one explicit synthetic 503 asset injection. Probes call actual frozen production persistence functions, not mocked mutators. The document-title variant proves different executable identities can co-write when the data/semantics are intentionally compatible; it does not claim runtime recognizes undeclared incompatibility.
+
+## Executed verification
+
+All required local suites and all six source-CI jobs have executed successfully in the final verification runs. Earlier failed attempts remain explicit in [DIAGNOSTICS.json](DIAGNOSTICS.json) and [CI-EXCERPTS.md](CI-EXCERPTS.md). See [VERIFICATION.json](VERIFICATION.json), [39 additive unit cases](UNIT-RESULTS.json), [27 additive native cases](RESULTS.json), [171 preserved cases](BASELINE-RESULTS.json), [runtime manifest](RUNTIME-MANIFEST.json) and [actual negative release command](RELEASE-GATE.json).
+
+| Suite | Result | Evidence |
+| --- | --- | --- |
+| 287 originals +39 additive unit regressions | 326/326 PASS locally and in CI | 24 release-contract +15 update-review cases; CI quality log |
+| 45 original acceptance assertions | 45/45 PASS | Local acceptance JSON; CI acceptance job |
+| 20 original Chromium workflows | 20/20 PASS | Native result JSON |
+| 45 original compatibility/printing | 45/45 PASS | Three-engine result JSON |
+| 75 original reporting/safety/privacy | 75/75 PASS locally and in unchanged CI retry | Reporting result JSON |
+| 171 preserved isolation/recovery cases | 171/171 PASS; all 66 stale digest comparisons unchanged | New exact source run ledger; all 66 stale digests required |
+| 27 additive native governance cases | 27/27 PASS on final frozen runtime | Nine cases per Chromium/Firefox/WebKit |
+| TypeScript / static / production build | PASS on implementation | Local and CI; all three immutable definitions unchanged |
+| Source CI | Six jobs SUCCESS on attempt 2; prior reporting failure retained | Exact source run/attempt evidence below; final documentation-head checks in PR |
+| Actual deployment, real installed PWA/OS/Safari/AT/storage | NOT VERIFIED | Outside authorized execution |
+
+CI for final runtime 5c0feb2: [run 41246412988](https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41246412988). All six jobs completed SUCCESS on attempt 2. Reporting attempt 1 had 74 PASS/1 FAIL; its N09 readiness stall was investigated through the uploaded trace and the unchanged case passed three local repetitions before the full unchanged reporting retry passed 75/75. This is separate evidence, not a reclassification of the failed attempt. The final documentation/test-fixture head CI is linked in the PR. Local original 140 browser/printing evidence was generated at e9389be before the error-heading wording change; this source CI re-executed all 140 against final runtime 5c0feb2. The final local 171/27 ledgers and 326 unit run use 5c0feb2 runtime; the new native runner/harness are additionally pinned by exact SHA-256.
+
+The first parallel local G19 run hit its default 5-second unit deadline while its real Vite subprocess took 7.7 seconds. Only this new process integration case now has a 30-second test ceiling and 20-second child ceiling; its nonzero exit and specific missing-signature assertion are unchanged. Another parallel local run passed G19 but missed the existing 1-second heading waits in L03 and the original acknowledgment UI case during simultaneous browser suites. Those original tests/limits were not changed. These failures remain in ignored diagnostic JSON, not relabeled PASS. The subsequent full local 326-case rerun and CI 326 both passed unchanged original limits. One additive Firefox G01 run also failed its initial 5-second controller wait before the compatibility scenario began. The fixture now awaits the active worker, explicitly reloads into it and verifies controller plus all store bytes before arranging an update; original controller/update assertions remain intact. The exact cause of that cold-first-page timing miss is not established, and no guaranteed cold-first-page claim deadline is asserted. Failure metadata now records worker/profile state, and the ledger pins runner/harness hashes. The subsequent complete 27-case rerun passed in all three engines; the failed run is retained separately. Existing Dexie W13 SchemaDiff warning and dependency annotation/empty-chunk build warnings are retained in logs; they are not suppressed.
+
+## Changed-file inventory
+
+The exact complete path/status inventory is [FILES.json](FILES.json); the following groups explain their purpose.
+
+| File(s) | Change |
+| --- | --- |
+| release-contract.json | Explicit version/writer/layout/baseline/compatibility/evidence and empty reviewer public-key register |
+| scripts/release-contract.mjs, scripts/release-contract.d.mts | Shared fail-closed validator, build identity, detached review verification, describe-only CLI and typed interface |
+| scripts/service-worker.mjs, scripts/service-worker.d.mts | Extracted offline generator with exact identity replies and target/control-checked activation; cache policy preserved |
+| vite.config.ts | Validated mode/contract, typed build constants, nondeployable/release metadata, complete hashed offline set |
+| src/writerSafety.ts | Writer generation/capabilities from single explicit declaration; accepted transaction fence/adoption unchanged |
+| src/updateReview.ts | Candidate identity/handshake, scoped memory authority, invalidation and final recheck |
+| src/UpdateSafety.tsx | Exact-candidate UI backup/review/activation; error/offline handling; accessible existing controls |
+| src/main.tsx, src/vite-env.d.ts | Typed public-release guard before dynamic App/bootstrap |
+| package.json | Local build:release and release:describe commands; no dependencies/lockfile changes |
+| tests/release-contract.test.ts, tests/update-review.test.ts | 24 release/signature/packaging and 15 authority/race regressions |
+| release1-clean-origin/prepare.mjs, harness.mjs, run.mjs | Explicit nondeployable fixtures/compatible variant, 503 injection and N11 setup adapter; existing 171 assertions preserved |
+| .github/workflows/validate.yml | Full Git ancestry for immutable baseline checks; additive 27 native step/evidence; all six original jobs/permissions retained, no deployment |
+| README.md; release1-release-governance design/report/matrix/results/evidence | Current build restriction, reproduced evidence and limits; historical documents untouched |
+
+No runtime environment variables or external services are required. Build-time fixture and signed review variables are documented in DESIGN; they are not client preferences. No signing private key, real review attestation, Cloudflare configuration/project/connection, DNS or access change was created.
+
+## Remaining risks and independent review recommendations
+
+1. **Release trust enrollment remains deliberately blocked.** Architect must review the manifest validator, canonical signing bytes, trusted-public-key enrollment/change controls, identity/custody/rotation/revocation process and exact source/build selection. The empty register and PENDING describe output are not independent review. Future owner-authorized enrollment is necessary before a public artifact. A valid compatibility signature does not authorize merge, hosting or legal/release status.
+2. **Compatibility is a reviewed human assertion.** The gate prevents silent/default reuse and binds evidence to actual source, but cannot infer semantic compatibility. A malicious/mistaken trusted reviewer, modified validator/trust store, compromised toolchain, raw same-origin code/XSS/extensions or operator bypass is outside the boundary. Actual release output must remain tied to the exact tested SHA/lockfile/artifact inventory. Future incompatible formats require separately approved migrations and higher layout versions, not a generation override.
+3. **Cross-system lifecycle race remains bounded, not eliminated.** Worker activation and IDB cannot commit atomically. A control can advance after the worker's successful read; ordinary writes still compare within native locked transactions. Exact worker targeting prevents old confirmation selecting another pending worker; a separately reviewed action in another tab or native activation after all clients close is independent of this tab's checkbox. New incompatible-generation code still requires explicit native epoch adoption. Browser-reported online is only a hint. No auto reload is forced after failure.
+4. **Intermittent readiness remains unresolved.** One original Chromium CI N09 run stalled at serviceWorker.ready/controllerchange with a fake clock in 2400/2500, before offline assertions. It passed three unchanged local repetitions, the earlier full local 75 suite and the unchanged full CI retry; the underlying intermittent cause was not established. The additive Firefox fixture also missed an initial controller deadline; controlled-navigation preparation now verifies store preservation/controller before the scenario. No original assertion, deadline or retry setting was modified. Architect should assess this residual reliability risk and the required actual first-install/installed-PWA/device checks. A later green run is not a root-cause fix.
+5. **Operational evidence remains limited.** Real installed PWA/browser coexistence, OS restart, Safari/iOS, actual AT users/manual hard refresh, physical quota/eviction/printing, old-cache retirement and live provider/domain/headers/logging remain NOT VERIFIED. Synthetic delivery/quota/503 exceptions and headless WebKit do not prove those outcomes. No user backup custody/recovery rehearsal is established by a download.
+6. **Original release gates remain open.** #16 P1 RED STOP; #15/#25 manual, #14/#22 manufacturer, #10/#30/#31 legal/privacy/market and #1/#17 release acceptance are unchanged. No AI/technical/cryptographic result establishes Canadian legal compliance or manufacturer approval. Release 1 NOT APPROVED.
+
+Independent Architect should inspect F1's negative release CLI proof and signed synthetic positive controls, G01's same-generation actual co-writes, G02/G03/G04/G05/G06/G09 stale-review refusal, G07 failed install/cold offline preservation and original N02/N11/W14/W15. Review the explicit remaining race and key-enrollment policy before recommending any owner-authorized merge. No hosting action follows from this draft.
+
+Final quality review: shared contract/identity validation is reused; no new dependency, remote data flow, persisted authority, schema or unrelated feature. Production source preservation, original 86 IDs, historical audit, artifact hashes and ledger uniqueness were checked. Final documentation/test-fixture head CI is recorded in the draft PR; actual host/device/reviewer enrollment remains unverified.

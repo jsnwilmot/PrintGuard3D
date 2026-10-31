@@ -1,4 +1,4 @@
-# Issue #39 — release and update governance
+# Issue #39 â€” release and update governance
 
 Approved base: f93bbf5297ac1ca858a521cc2781777b4c492073. Scope: F1/F2 only, synthetic localhost, draft independent review. No schema, backup, data migration, manufacturer, scheduling or disclaimer changes.
 
@@ -26,7 +26,7 @@ After independent approval and a separately reviewed public-key enrollment, a re
 
 An authorized operator later supplies that detached file through build-time PRINTGUARD_RELEASE_REVIEW and invokes `npm run build:release`. Missing approval, dirty source, unknown signer, altered payload/signature, old generation for writer-bump or unsupported formats fail before Vite writes a new release output. A previous dist may still exist after a failed build and must never be treated as its output. This command has no upload/deploy/Cloudflare behavior. An approved cryptographic compatibility attestation is not merge, hosting, legal or Release 1 authorization. CI's current positive signatures are generated disposable synthetic keys; the real register remains empty, so producing a public artifact from this draft is intentionally blocked.
 
-Commands for regression and native reproduction are the preserved TEST-PLAN commands, plus `node release1-release-governance/run.mjs <prepared-clean-origin-directory>`. Preparation now adds a third generation-1 fixture changing only the document title. It is declared compatible, has a different executable identity and shares the same writer/data semantics. The generation-2 fixture exercises monotonic adoption and stale refusal. All fixture outputs remain nondeployable.
+Commands for regression and native reproduction are the preserved TEST-PLAN commands, plus `node release1-release-governance/run.mjs <prepared-clean-origin-directory>`. Preparation now adds a third generation-1 fixture changing only the document title. It is declared compatible, has a different executable identity and shares the same writer/data semantics. The generation-2 fixture exercises monotonic adoption and stale refusal. All fixture outputs remain nondeployable. The additive cases await serviceWorker.ready, explicitly navigate into that active cached application, and verify every store plus its controller before arranging an update. This is controlled-session preparation; it does not claim a guaranteed cold-first-page clients.claim deadline. The unchanged original N02/N11 workflows remain separate. The native ledger records exact runner/harness hashes as well as the frozen application commit.
 
 ## Primary technical references
 
