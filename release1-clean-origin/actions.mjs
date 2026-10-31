@@ -1,4 +1,4 @@
-export const actions=['completion','postpone','printer','task','inventory','repair','profile','suggestion','source','delete-inventory','notes','pause-rule','archive','usage','cascade-delete','preferences','export-timestamp','observations','pause-observations','restore-merge','restore-replace'];
+export const actions=['acknowledgment','completion','postpone','printer','task','inventory','repair','profile','suggestion','source','delete-inventory','notes','pause-rule','archive','usage','cascade-delete','preferences','export-timestamp','observations','pause-observations','restore-merge','restore-replace'];
 // Real production functions/Dexie transactions, transformed into a test-only
 // executable probe. No mock completion, restore, writer or observation code.
 export async function mutate(page,action,generation=1){return page.evaluate(async({action,generation})=>{
@@ -6,7 +6,7 @@ export async function mutate(page,action,generation=1){return page.evaluate(asyn
  const b=await api.makeBackup(),p=b.printers.find(p=>p.id==='p1'),t=b.tasks.find(t=>t.id==='t1');
  const date=new Date().toISOString().slice(0,10);
  const item={id:'guard-new-item',name:'Synthetic guard part',partNumber:'',manufacturer:'',printerId:'',quantity:2,minimum:1,unitCost:2,supplier:'',notes:''};
- const work={
+ const work={acknowledgment:()=>api.acknowledgeDisclaimer(),
  completion:()=>api.completeTask(t.id,{date,hours:p.hours+500,prints:p.prints+10,notes:'Synthetic compatibility completion',cost:12.5,minutes:10,materials:'Synthetic',image:p.image,inventoryId:'',quantity:0}),
  postpone:()=>api.postponeTask(t.id,'2400-01-01','Synthetic postponement'),
  printer:()=>api.savePrinter({...p,id:'guard-new-printer',name:'Synthetic new printer',serial:'guard-unique-serial'}),

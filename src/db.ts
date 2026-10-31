@@ -1,7 +1,7 @@
 import {createReviewReminder,taskDecisionIssue,type ReviewChoice} from './recommendations';
 import {disclaimerVersion} from './legal';
 import Dexie,{type Table,type Transaction} from 'dexie';
-import {installWriterFence,writerStore,writerContract,mixedBuild} from './writerSafety';
+import {installWriterFence,writerStore,writerContract,mixedBuild,recordAcknowledgment} from './writerSafety';
 import {guardedFactory,supportedLayout} from './storageLayout';
 import { z } from 'zod';
 import {overdueHistorySchema,observationIssues,type Observation} from './observations';
@@ -38,6 +38,7 @@ export class PrintGuardDB extends Dexie{
  }
 }
 export const db=new PrintGuardDB();
+export const acknowledgeDisclaimer=()=>recordAcknowledgment(db);
 export async function completeTask(id:string,input:Pick<Log,'date'|'hours'|'prints'|'notes'|'cost'|'minutes'|'materials'|'image'|'inventoryId'|'quantity'>,outcome:'Completed'|'Skipped'='Completed'){
  input=logSchema.pick({date:true,hours:true,prints:true,notes:true,cost:true,minutes:true,materials:true,image:true,inventoryId:true,quantity:true}).parse(input);
  await db.transaction('rw',[db.tasks,db.printers,db.logs,db.readings,db.inventory,db.preferences],async()=>{

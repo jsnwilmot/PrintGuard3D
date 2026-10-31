@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import {it,expect,beforeEach,afterEach,vi} from 'vitest';
 import Dexie from 'dexie';
-import {db,PrintGuardDB,makeBackup,restoreBackup,completeTask,saveInventory,saveRepair,savePrinter,saveTask,installProfile,acceptReviewReminder,postponeTask,flagSource,deleteInventory} from '../src/db';
+import {db,PrintGuardDB,makeBackup,restoreBackup,completeTask,saveInventory,saveRepair,savePrinter,saveTask,installProfile,acceptReviewReminder,postponeTask,flagSource,deleteInventory,acknowledgeDisclaimer} from '../src/db';
 import {empty,seed,input,printer,task} from '../acceptance-review/fixtures';
 import {writerControlKey,writerStore,writerContract,assessWriter,readWriterStatus,activateWriter} from '../src/writerSafety';
 import {collectObservations,pauseObservations} from '../src/observationStore';
@@ -19,7 +19,7 @@ it('W02 first-save abort preserves initial control and leaves workshop empty',as
 it('W03 unknown protocol, capability, missing populated control and newer generation refuse atomically',async()=>{
  await seed();for(const value of [{...writerContract,protocol:2},{...writerContract,capabilities:['unknown:9']},{...writerContract,generation:2},null]){await rawControl(value);const before=await snapshot();await expect(db.printers.update('p1',{notes:'must not save'})).rejects.toThrow();expect(await snapshot()).toEqual(before);} });
 const mutations:[string,()=>Promise<unknown>][]=[
- ['completion',()=>completeTask('t1',input())],['postpone',()=>postponeTask('t1','2400-01-01','')],['printer',()=>savePrinter(printer('new'))],['task',()=>saveTask(task('new'))],
+ ['acknowledgment',()=>acknowledgeDisclaimer()],['completion',()=>completeTask('t1',input())],['postpone',()=>postponeTask('t1','2400-01-01','')],['printer',()=>savePrinter(printer('new'))],['task',()=>saveTask(task('new'))],
  ['inventory',()=>saveInventory({id:'new',name:'Test',partNumber:'',manufacturer:'',printerId:'',quantity:2,minimum:1,unitCost:2,supplier:'',notes:''})],
  ['repair',()=>saveRepair({id:'new',printerId:'p1',title:'Repair',date:'2026-01-01',description:'',component:'',severity:'Low',status:'Open',notes:'',parts:'',cost:0,resolved:'',image:''})],
  ['profile',()=>installProfile({...bundled[0],id:'custom-new',status:'Pending Verification',version:'4.0.0'})],['suggestion',()=>acceptReviewReminder('p1',{group:'fan',dailyHours:5,custom:false,basis:'manual',printingCounterConfirmed:false,acknowledged:true})],
@@ -46,3 +46,5 @@ it('W13 a future upgrade between preflight and Dexie open cannot trigger an auto
  });
  try{await expect(next.open()).rejects.toThrow();const proof=await new Promise<{version:number;names:string[];rows:unknown[]}>((resolve,reject)=>{const r=indexedDB.open(name);r.onsuccess=()=>{const raw=r.result,q=raw.transaction('printers').objectStore('printers').getAll();q.onsuccess=()=>{resolve({version:raw.version,names:[...raw.objectStoreNames],rows:q.result});raw.close();};};r.onerror=()=>reject(r.error);});expect(injected).toBe(true);expect(proof.version).toBe(30);expect(proof.names).toContain('futureMarker');expect(proof.names).not.toContain(writerStore);expect(proof.rows).toEqual([printer()]);}finally{next.close();vi.restoreAllMocks();await Dexie.delete(name);}
 });
+it('W14 explicit acknowledgment preserves every stored preference and workshop field except its own legal stamp',async()=>{await seed();const before=await snapshot();expect((await acknowledgeDisclaimer()).writable).toBe(true);const after=await snapshot();for(const key of Object.keys(before).filter(k=>k!=='preferences'))expect(after[key]).toEqual(before[key]);expect({...after.preferences[0],acknowledgment:null}).toEqual({...before.preferences[0],acknowledgment:null});expect(after.preferences[0].acknowledgment.version).toBe('1.0');expect(after.preferences[0].acknowledgment.date).not.toBe(before.preferences[0].acknowledgment.date);});
+it('W15 acknowledgment authority cannot be reused to alter another preference through an updating hook',async()=>{await seed();const before=await snapshot();const inject=()=>({target:77});db.preferences.hook('updating',inject);try{await expect(acknowledgeDisclaimer()).rejects.toThrow(/only the exact disclaimer/);expect(await snapshot()).toEqual(before);}finally{db.preferences.hook('updating').unsubscribe(inject);}});

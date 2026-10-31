@@ -30,10 +30,10 @@ New preparation copies source/public/config/lock into a fresh ignored directory,
 
 | Family | Observable oracle |
 | --- | --- |
-| N01 | Clean app has only operational control before consent, public disclosure works without workshop writes, actual synthetic acknowledgment and UI file replacement; rich multi-printer decision/completion/image/observation backup |
-| P-action ×21 | Compatible positive control executes each actual mutation path and changes persistent data; invalid selectors/arguments cannot count as stale-write protection |
+| N01 | Local Node emulation of the documented Pages extensionless SPA fallback serves a nested route with root assets; clean app has only operational control before consent, public disclosure works without workshop writes, actual synthetic acknowledgment and UI file replacement; rich multi-printer decision/completion/image/observation backup |
+| P-action ×22 | Compatible positive control executes each actual mutation path and changes persistent data; invalid selectors/arguments cannot count as stale-write protection |
 | N02 | Actual complete waiting worker, both-theme mobile/keyboard/axe checks, explicit backup/update/reload and monotonic activation; every user store preserved, held executable remains loaded and its actual full backup download leaves metadata unchanged |
-| S-action ×21 | Same actual operations in the held generation-1 client reject after generation-2 activation; every user store and operational control is exactly unchanged, with per-store digests |
+| S-action ×22 | Same actual operations in the held generation-1 client reject after generation-2 activation; every user store and operational control is exactly unchanged, with per-store digests |
 | N03 | Generation-2 completion retains captured recommendation provenance; full file passes the actual strict validator |
 | N07 | Caught control-write refusal and an explicitly injected quota exception both abort preceding mutations atomically; not real disk-full evidence |
 | N08 | Deliberately mismatched HTML/build identity refuses mutation with no persistent changes |
@@ -41,9 +41,10 @@ New preparation copies source/public/config/lock into a fresh ignored directory,
 | N05 | Real persistent browser-process close/relaunch with same disposable profile; server destroys requests and a direct network request demonstrably fails; cached current executable/data open and calendar remains valid in 2400 |
 | N09 | Synthetic noncanonical loopback alias serves verified build bytes via test routing; no App module execution, IndexedDB or worker registration. Not provider redirect proof |
 | N10 | Injected interruption in actual PrintGuardDB upgrade leaves native-v10 schema, original rows/images and no new control store |
+| N11-empty / N11-restored | Candidate worker delivery is synthetic setup; actual UI v1.0 acknowledgment precedes backup/adoption. No prior data exposure, only acknowledgment changes, epoch stays old, ordinary preferences still refuse, actual backup succeeds, explicit adoption preserves records |
 | O-prePhase5 / O-preRecommendations | Exact historical executable and its real usage UI change only origin A; origin B in the SAME browser profile remains intact; cross-origin window IndexedDB access throws SecurityError. A second disposable profile is also clean at B. Older reader rejects enriched file; verified original compatible file restores independently |
 
-Expected executable cases: **53 per engine, 159 total**. New unit cases additionally cover unknown/missing/future controls, protected operational clear, activation refusal, pre-Dexie layout rejection, timestamp consistency and canonical-origin policy. No PASS may be inferred from a mere warning, checksum/download, unopened restore, expected locator failure or different browser profile alone.
+Expected executable cases: **57 per engine, 171 total**. New unit cases additionally cover unknown/missing/future controls, protected operational clear, activation refusal, pre-Dexie layout rejection, timestamp consistency and canonical-origin policy. No PASS may be inferred from a mere warning, checksum/download, unopened restore, expected locator failure or different browser profile alone.
 
 Cases have a 120-second diagnostic ceiling; exceeding it fails the run and leaves remaining cases NOT VERIFIED. Firefox update testing observes the actual installed waiting worker and post-reload compiled identity, rather than depending on resolution of a queued update-call Promise; reported API rejections still fail. A replacement window is opened before closing the last held Firefox tab, then the entire browser process is closed/relaunched for the offline oracle.
 

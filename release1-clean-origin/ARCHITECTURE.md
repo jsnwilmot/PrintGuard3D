@@ -18,19 +18,20 @@ Retain database name `PrintGuard3D` within the new origin. The public build refu
 
 The initial reserved-preference-row prototype was discarded because a nonportable preference would break the portable preferences-store contract. The final dedicated store preserves that contract. The only baseline fixture change is explicit preparation of the first-public operational store in the loopback-only review harness; all original test assertions remain unchanged. There is no test-origin exception in the production fence.
 
-Control record: `{id:'__printguard_writer_control_v1__', protocol:1, generation:1, capabilities:['backup:1','observations:1','profiles:1','recommendations:1']}`. No extra fields; generations are positive integers and capabilities must match exactly and in canonical order. This is local operational metadata, not legal consent, historical evidence or a portable user preference. The generation-2 executable is a build-time test fixture with the same supported data format; it is not a released future version.
+Control record: `{id:'__printguard_writer_control_v1__', protocol:1, generation:1, capabilities:['backup:1','consent:1.0','observations:1','profiles:1','recommendations:1']}`. No extra fields; generations are positive integers and capabilities must match exactly and in canonical order. This is local operational metadata, not legal consent, historical evidence or a portable user preference. The generation-2 executable is a build-time test fixture with the same supported data format; it is not a released future version.
 
 ## Build/capability matrix
 
 | Executable / persistent requirement | Read/write behavior |
 | --- | --- |
-| First-public candidate: protocol 1, generation 1, four v1 capabilities | Writes only matching native-20 first-public layout and matching control |
+| First-public candidate: protocol 1, generation 1, five declared capabilities | Writes only matching native-20 first-public layout and matching control |
 | Test generation 2: same readable format/capabilities, generation 2 | Reads supported data; remains read-only against control 1 until explicit monotonic activation; writes against control 2 |
-| Held generation 1 after control 2 | Supported read-only views/full backup; every mutation refuses atomically |
+| Generation 2 before control 1 adoption, same exact format/disclaimer | Explicit acknowledgment-only transaction is allowed; ordinary preferences and workshop writes refuse until backup/review/adoption |
+| Held generation 1 after control 2 | Supported read-only views/full backup; every mutation, including acknowledgment, refuses atomically |
 | Unknown protocol/capability set, malformed/missing control, mixed identity | Refuse writes; do not reset controls or infer compatibility |
 | Future schema or genuinely new file/data format | No generic migration or activation promise. Requires separately reviewed executable/format transitions; current readers reject unsupported formats |
 
-Capabilities mean strict backup schema 1, immutable observation v1, modular profile/archive format 1 and controlled recommendation policy v1. Exact matching is deliberate. A future format-incompatible update requires a separately authorized migration; the current activation API changes only an epoch for the same supported format.
+Capabilities mean strict backup schema 1, exact disclaimer version 1.0, immutable observation v1, modular profile/archive format 1 and controlled recommendation policy v1. Exact matching is deliberate. A future format-incompatible update requires a separately authorized migration; the current activation API changes only an epoch for the same supported format.
 
 ## Transaction barrier and activation
 
@@ -42,6 +43,14 @@ A separate explicit control-only activation API compares the exact previewed old
 
 This protects **cooperating first-public-and-newer builds**, including a held old tab. It is not an ACL against raw IndexedDB, XSS, extensions, modified binaries or device owners. Already shipped unguarded executables cannot be retroactively fenced. Ordinary browser-origin separation keeps those old-origin executables from directly opening the new origin's database. Original same-origin failures remain failures.
 
+## Consent before writer adoption: narrow reviewed exception
+
+A returned visitor may have closed the first build before consenting, or restored a file and left before renewal. A newer build must not deadlock by demanding a backup before acknowledgment while refusing acknowledgment before writer adoption. `recordAcknowledgment` therefore owns a dedicated Dexie transaction over preferences/control, validates persisted requirements FIRST, and permits only an exact acknowledgment write when the client is either current or NEWER with the same supported capabilities AND disclaimer 1.0. It never changes the epoch. Stale/unknown/mixed clients refuse acknowledgment too.
+
+A private transaction-specific authority contains an independent structured clone of the one expected preference record. DBCore verifies the known persisted contract, exact single put, strict preference schema and equality of every other field; additional/hook-modified writes abort atomically. The authority survives only until native commit/abort and cannot be imported from JSON. Existing preferences are validated without normalizing or resetting them. Using Dexie preserves live-query notifications. The same acknowledgment object/version/date and explicit checkbox/button are retained; disclaimer wording is unchanged. This is a technical ordering correction, not legal approval.
+
+After acknowledgment, a newer pending writer remains read-only: the user can read supported records and download a validated full file, then explicitly adopt the new writer generation. Ordinary preferences, histories and schedules cannot change in that interval. New tests cover both empty and restored locked workshops, deny ordinary preference writes after consent but before adoption, and prove old history and the control epoch remain intact. **Architect review must explicitly examine this narrowly scoped forward-consent permission alongside the control-only activation permission.**
+
 ## Write-path inventory
 
 | Files / functions | Persistent writes through the central barrier |
@@ -50,7 +59,8 @@ This protects **cooperating first-public-and-newer builds**, including a held ol
 | db.ts savePrinter / saveTask / installProfile | Registrations, readings, recurring rules, accepted profile updates and immutable applied archives |
 | db.ts saveInventory / deleteInventory / saveRepair | Inventory and repair records |
 | db.ts restoreBackup / acceptReviewReminder / flagSource | Replace/merge, recommendation decisions and source flags |
-| App.tsx acknowledgment and read notices; Settings.tsx save/export | Device acknowledgment v1.0, preferences and lastBackup timestamp |
+| App.tsx acknowledgeDisclaimer/recordAcknowledgment | Exactly one explicit v1.0 acknowledgment; current or narrowly forward-compatible transaction as above |
+| App.tsx read notices; Settings.tsx save/export | Ordinary preferences and lastBackup remain exact-generation fenced |
 | Printers.tsx delete/archive; forms.tsx UsageForm | Cascading user deletion, archive and cumulative readings |
 | Maintenance.tsx task notes/pause | Notes and enabled state |
 | observationStore.ts collectObservations / pauseObservations | Prospective immutable observations and explicit recording preference |

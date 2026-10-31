@@ -12,7 +12,7 @@ Reviewed 2026-10-31. Owner selected Pages Free and **https://printguard3d.rosean
 | Framework/output | Static React/Vite, base `/`, hash routes, manifest start URL `/`, service worker `/sw.js` and root scope |
 | Canonical data origin | Only https://printguard3d.roseandpaw.ca; loopback is development only |
 | Alternative hosts | pages.dev and previews are separate browser stores. Client bootstrap refuses workshop initialization on these aliases. Future owner-approved server redirect/access policy still required and unverified |
-| SPA handling | No top-level 404.html; Pages' documented SPA default falls back to root. Hash routes require no server rewrite. Verify unknown-path behavior separately before hosting approval |
+| SPA handling | No top-level 404.html; Pages' documented SPA default falls back to root. Hash routes require no server rewrite. The new native N01 uses a Node emulation of this documented extensionless fallback and verifies the rendered app/root assets from a nested route. Actual Pages/CDN behavior still needs separate hosting verification |
 | Configuration template | [wrangler.pages.jsonc.example](wrangler.pages.jsonc.example), deliberately not active Wrangler configuration; project name remains unselected |
 | User storage | Local IndexedDB only; JSON files are user-selected recovery files, not cloud backups. No account, remote DB, analytics, telemetry, push service or Pages Functions |
 | Browser policy | Existing public/_headers retained, with conservative no-cache for executable delivery. CSP permits only local scripts/connects and constrained local images. Actual provider enforcement is NOT VERIFIED |
