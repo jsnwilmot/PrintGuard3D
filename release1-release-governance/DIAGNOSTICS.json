@@ -70,6 +70,52 @@
         "FAIL": 0
       },
       "followup": "Unchanged CI reporting rerun and final-head CI required. No original assertions, limits or retries changed."
+    },
+    {
+      "sourceCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+      "runnerSHA256": "915610e89b9c40bbe4d0d4f1f702f99e7a28430e786cffbbb7083be77b1aa4fa",
+      "status": "FAIL",
+      "purpose": "Negative calibration of stronger background-timeout G06 against known pre-fix runtime. No activation click.",
+      "reportSHA256": "df078f6cd15fb89e13ea085df1814ee483f38c1777229af8d60a2b8cb6ab94cd",
+      "counts": {
+        "PASS": 8,
+        "FAIL": 1
+      },
+      "observedCase": {
+        "id": "chromium-G06",
+        "requirement": "Background identity timeout longer than the polling interval clears old confirmation and preserves executable/data/file",
+        "status": "FAIL",
+        "startedAt": "2026-10-31T22:44:56.722Z",
+        "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: getByRole('alert')\nExpected substring: \"identity could not be confirmed\"\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\n  - waiting for getByRole('alert')\n\n    at captureRawStack (C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toContainText (C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-release-governance\\run.mjs:45:464\n    at async check (C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-release-governance\\run.mjs:22:159)\n    at async file:///C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-release-governance/run.mjs:44:2",
+        "diagnostics": [
+          {
+            "origin": "http://127.0.0.1:50988",
+            "profile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.local\\op37\\763dface-1",
+            "browser": "156.0.8078.4",
+            "workerState": {
+              "controller": "activated",
+              "active": "activated",
+              "waiting": "installed",
+              "online": true,
+              "reviewCheckboxChecked": true,
+              "updateButtons": [
+                {
+                  "label": "Download update safety backup",
+                  "disabled": false
+                },
+                {
+                  "label": "Activate update and reload",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        ],
+        "finishedAt": "2026-10-31T22:45:17.566Z"
+      },
+      "rootCause": "3-second overlapping polling repeatedly superseded 5-second timeout errors. Old confirmation remained visible; final activation revalidation still refused unknown state.",
+      "correctedRuntime": "6198e42b5d58827c0761f8cdb68eb7bc3d958388",
+      "currentProof": "F16/F17/F18 and full27 native cases PASS; G06 revokes automatically in all three engines."
     }
   ],
   "note": "Prior failures remain failures; later green runs are separate evidence."

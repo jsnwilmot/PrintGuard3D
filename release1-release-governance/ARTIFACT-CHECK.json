@@ -1,6 +1,7 @@
 {
-  "sourceCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
-  "buildIdentity": "b146bd4fc3c2ca5061aa9594",
+  "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "buildIdentity": "17fc3be2a13c597ce920bb57",
   "nondeployable": true,
   "generation": 1,
   "precacheCount": 15,
@@ -45,5 +46,6 @@
       "sha256": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2"
     }
   ],
+  "canonicalWorkerInstallBoundary": "G25 generated-script VM negative/positive controls; no live provider access",
   "providerVerified": false
 }
