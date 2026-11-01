@@ -2,6 +2,8 @@ import {test,expect} from '@playwright/test';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {join,resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import os from 'node:os';
 import {observe} from './observe.mjs';
 const run=resolve(process.env.PRINTGUARD_CAUSAL_RUN||''),meta=JSON.parse(await readFile(join(run,'SOURCE.json'),'utf8'));
@@ -11,6 +13,10 @@ const api=(request,path)=>request.get(origin+'/__forensic/'+path);
 async function events(request){return(await api(request,'events')).json();}
 async function milestone(request,name){await expect.poll(async()=>(await events(request)).some(e=>e.event===name),{timeout:15000}).toBe(true);}
 const mode=process.env.PRINTGUARD_CAUSAL_MODE||'matrix';
+const runtimeFiles=['cases.mjs','observe.mjs','worker.mjs','server.mjs','playwright.config.mjs'];const hashes={};for(const name of runtimeFiles)hashes[name]=createHash('sha256').update(await readFile('release1-claim-causality/'+name)).digest('hex');
+const harnessPath=join(run,mode+'-HARNESS.json');let recorded;try{recorded=JSON.parse(await readFile(harnessPath,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
+if(recorded){if(JSON.stringify(recorded.hashes)!==JSON.stringify(hashes))throw Error('Executed diagnostic source changed during sampling');}
+else await writeFile(harnessPath,JSON.stringify({commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).trim(),hashes,node:process.version,platform:os.platform(),release:os.release(),arch:os.arch(),CPU:os.cpus().map(c=>c.model),memory:os.totalmem(),startedAt:new Date().toISOString()},null,2));
 const configurations=mode==='controls'?meta.plan.controls.perEngine.map(fault=>({clock:'native',transport:'direct',navigation:'natural',count:0,fault})):meta.plan.clock.flatMap(clock=>meta.plan.transport.flatMap(transport=>meta.plan.navigation.flatMap(navigation=>meta.plan.printerCounts.map(count=>({clock,transport,navigation,count})))));
 for(const config of configurations)test(Object.values(config).join('-'),async({browser,request},info)=>{
  const id=[info.project.name,...Object.values(config)].join('-'),context=await browser.newContext({baseURL:origin,timezoneId:'Asia/Kathmandu'}),record=await observe(context,info,id,run);
@@ -22,7 +28,7 @@ for(const config of configurations)test(Object.values(config).join('-'),async({b
   const b=await fixture(),base=b.printers[0],weekly=b.tasks.find(t=>t.id==='weekly');b.printers=Array.from({length:config.count},(_,index)=>({...base,id:'many-'+index,name:'Synthetic multi printer '+index}));b.tasks=b.printers.map(printer=>({...weekly,id:'rule-'+printer.id,printerId:printer.id}));for(const k of ['logs','readings','inventory','repairs'])b[k]=[];
   await legacySetup(page,context,b);if(config.clock==='fixed')await page.clock.setFixedTime(new Date('2400-02-29T23:30:00Z'));await dashboard(page);
   if(mode==='controls'){
-   if(config.fault==='delay'){await milestone(request,'native-claim-end');expect(await page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);}else{await milestone(request,'install-reject');expect(await page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(false);if(config.fault==='hash')expect((await events(request)).some(e=>e.event==='digest'&&e.match===false)).toBe(true);}
+   if(config.fault==='delay'){await milestone(request,'native-claim-end');await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller),{timeout:5000}).toBe(true);}else{await milestone(request,'install-reject');expect(await page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(false);if(config.fault==='hash')expect((await events(request)).some(e=>e.event==='digest'&&e.match===false)).toBe(true);}
    row.status='PASS';return;
   }
   await page.getByRole('button',{name:'Start recording observed history',exact:true}).click();await expect.poll(async()=>(await raw(page)).observations.length).toBe(config.count);const before=await raw(page),first=before.observations;row.firstDocument=await page.evaluate(()=>({document:globalThis.__causalDocument,controller:!!navigator.serviceWorker.controller,readyState:document.readyState}));
