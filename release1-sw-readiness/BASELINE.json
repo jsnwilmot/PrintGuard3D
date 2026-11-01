@@ -1,0 +1,648 @@
+{
+  "pinnedCommit": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "command": "npx playwright test --config release1-reporting/playwright.config.mjs --grep 'N09 zero/one/twelve printers' --repeat-each=10",
+  "artifact": {
+    "sourceCommit": "0d388b42afff7f57db01028a64deac85e293d2ba",
+    "buildIdentity": "6de031e92021fa1def7cf513",
+    "releaseVersion": "1.0.0-candidate.2",
+    "writer": {
+      "protocol": 1,
+      "generation": 1,
+      "capabilities": [
+        "backup:1",
+        "consent:1.0",
+        "observations:1",
+        "profiles:1",
+        "recommendations:1"
+      ]
+    },
+    "nativeVersion": 20,
+    "compatibility": {
+      "classification": "compatible",
+      "baselineCommit": "f93bbf5297ac1ca858a521cc2781777b4c492073",
+      "reason": "Issue 39 changes release governance and update confirmation, preserving all persisted formats, mutation semantics, historical definitions and the accepted first-public layout.",
+      "evidence": [
+        "release1-release-governance/DESIGN.md",
+        "tests/writer-safety.test.ts",
+        "tests/release-contract.test.ts",
+        "tests/update-review.test.ts"
+      ]
+    },
+    "kind": "development",
+    "deployable": false
+  },
+  "originalCaseCeiling": 120000,
+  "originalRetries": 0,
+  "stats": {
+    "startTime": "2026-11-01T13:55:08.959Z",
+    "duration": 383503.789,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "rawReportSHA256": "73fb9e1a935d33923c38334eead017016e594f7a8b56b8c99e11327cf035c72a",
+  "cases": [
+    {
+      "browser": "chromium",
+      "attempt": 1,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 6180,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 2,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5751,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 3,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5449,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 4,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5343,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 5,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 4665,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 6,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5151,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 7,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 4779,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 8,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5199,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 9,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5242,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "attempt": 10,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 5040,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 1,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 10836,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 2,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 10642,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 3,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 9749,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 4,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 10158,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 5,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 10517,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 6,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 11025,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 7,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 12135,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 8,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 12093,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 9,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 11760,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "attempt": 10,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 11914,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 1,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 16247,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 2,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 18380,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 3,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 16264,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 4,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 16911,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 5,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 16633,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 6,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 15435,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 7,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 18650,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 8,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 16919,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 9,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 18481,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "attempt": 10,
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "expected",
+      "timeout": 120000,
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 18511,
+          "errors": [],
+          "sampleCounts": [
+            0,
+            1,
+            12
+          ]
+        }
+      ]
+    }
+  ],
+  "historicalFailureDisposition": "Unchanged FAIL; these independent green runs do not establish causality."
+}
