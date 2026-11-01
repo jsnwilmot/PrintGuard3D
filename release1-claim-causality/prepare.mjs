@@ -1,0 +1,11 @@
+import {mkdir,symlink,readFile,writeFile,readdir} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const root=process.cwd(),id=process.argv[2];if(!/^[a-zA-Z0-9-]+$/.test(id||''))throw Error('New run ID required');
+const plan=JSON.parse(await readFile('release1-claim-causality/PLAN.json','utf8')),run=resolve('.verification-local/claim-causality',id),source=join(run,'source');await mkdir(run,{recursive:true});
+execFileSync('git',['worktree','add','--detach',source,plan.base],{stdio:'inherit',windowsHide:true});await symlink(join(root,'node_modules'),join(source,'node_modules'),process.platform==='win32'?'junction':'dir');
+for(const [script,args]of [['typescript/bin/tsc',['-b']],['vite/bin/vite.js',['build']]])execFileSync(process.execPath,[join(root,'node_modules',script),...args],{cwd:source,stdio:'inherit',windowsHide:true});
+const sha=b=>createHash('sha256').update(b).digest('hex'),files={};async function walk(path,prefix=''){for(const e of await readdir(path,{withFileTypes:true})){const key=prefix+e.name;if(e.isDirectory())await walk(join(path,e.name),key+'/');else files[key]=sha(await readFile(join(path,e.name)));}}await walk(join(source,'dist'));
+await mkdir(join(run,'tooling'));const old=execFileSync('git',['show',plan.previousHarness+':release1-worker-phases/worker-copy.mjs'],{windowsHide:true});await writeFile(join(run,'tooling/old-worker.mjs'),old);
+await writeFile(join(run,'SOURCE.json'),JSON.stringify({plan,source,files,priorWorkerSHA:sha(old),originalN09SHA:sha(await readFile(join(source,'release1-reporting/native/reporting.mjs'))),originalConfigSHA:sha(await readFile(join(source,'release1-reporting/playwright.config.mjs'))),preparedAt:new Date().toISOString()},null,2));console.log(run);

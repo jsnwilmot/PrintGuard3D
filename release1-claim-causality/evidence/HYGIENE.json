@@ -1,0 +1,13 @@
+{
+  "entriesScanned": 3849,
+  "matches": [],
+  "archiveCRC": "PASS",
+  "scope": [
+    "github_token",
+    "github_pat",
+    "aws_key",
+    "private_key",
+    "signed_download_query"
+  ],
+  "limitation": "Targeted pattern scan only; no exhaustive credential or security guarantee. All data is synthetic localhost test data."
+}

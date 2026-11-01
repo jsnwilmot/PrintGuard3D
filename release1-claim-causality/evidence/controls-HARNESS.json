@@ -1,0 +1,34 @@
+{
+  "commit": "a3b950703c7ca774cba69a84391052eaf1530663",
+  "hashes": {
+    "cases.mjs": "5af3d6334d902834255216561402af86f71339a07ee03f2af713b687b1c3de04",
+    "observe.mjs": "471bd639c31fe8bcda7659331515648c024947488e930d5c20d0a88a89d7ff1b",
+    "worker.mjs": "d251730184b24a6cd64d8dd45e40732c022b1ea1a797188332909bb5de88acff",
+    "server.mjs": "e01cade69d6af1a3aaa4b3a947321a66383f32b4804bebcee925c5307dd9bdc4",
+    "playwright.config.mjs": "a5e51b0acc554b2f571e626cd6070f6fb74f9fda3b60d31a3a95ec3afa2bd9a0"
+  },
+  "node": "v22.23.3",
+  "platform": "win32",
+  "release": "10.0.26300",
+  "arch": "x64",
+  "CPU": [
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     "
+  ],
+  "memory": 30907015168,
+  "startedAt": "2026-11-01T21:05:33.709Z"
+}
