@@ -1,0 +1,11 @@
+import {mkdir,symlink,readFile,writeFile,readdir} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const base='0d388b42afff7f57db01028a64deac85e293d2ba',id=process.argv[2];if(!/^[a-zA-Z0-9-]+$/.test(id||''))throw Error('New run ID required');
+const root=process.cwd(),run=resolve('.verification-local/worker-phases',id),source=join(run,'source');await mkdir(run,{recursive:true});
+execFileSync('git',['worktree','add','--detach',source,base],{stdio:'inherit',windowsHide:true});await symlink(join(root,'node_modules'),join(source,'node_modules'),process.platform==='win32'?'junction':'dir');
+for(const [script,args]of [['typescript/bin/tsc',['-b']],['vite/bin/vite.js',['build']]])execFileSync(process.execPath,[join(root,'node_modules',script),...args],{cwd:source,stdio:'inherit',windowsHide:true});
+const files={};async function walk(at,prefix=''){for(const entry of await readdir(at,{withFileTypes:true})){const name=prefix+entry.name;if(entry.isDirectory())await walk(join(at,entry.name),name+'/');else files[name]=createHash('sha256').update(await readFile(join(at,entry.name))).digest('hex');}}await walk(join(source,'dist'));
+if(Object.keys(files).some(name=>name.includes('forensic'))||(await readFile(join(source,'dist/sw.js'),'utf8')).includes('__forensic'))throw Error('Instrumentation leaked into ordinary artifact');
+await writeFile(join(run,'SOURCE.json'),JSON.stringify({base,source,files,originalN09SHA:createHash('sha256').update(await readFile(join(source,'release1-reporting/native/reporting.mjs'))).digest('hex'),originalConfigSHA:createHash('sha256').update(await readFile(join(source,'release1-reporting/playwright.config.mjs'))).digest('hex'),planned:{originalPerEngine:10,instrumentedPerEngine:10,controlsPerEngine:3},retries:0,originalCeiling:120000},null,2));console.log(run);
