@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "approvedBase": "f93bbf5297ac1ca858a521cc2781777b4c492073",
+  "finalRuntimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "unit": {
+    "passed": 330,
+    "original": 287,
+    "additive": 43,
+    "failed": 0,
+    "rawReportSHA256": "07f2f35bffc159db23137483b104376bd4ecdde7b51367223ef01218269a731c"
+  },
+  "acceptance": {
+    "passed": 45,
+    "failed": 0,
+    "assertionsUnchanged": true,
+    "rawReportSHA256": "f35206ec5ab96dea2af99dbe9b5d94545a39a19a25ac72c7b97b53c9136b15f0"
+  },
+  "originalNative": {
+    "chromium20": {
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "cfbe705531b6bdf5eaacecc26a6e12e064dbba546e6ead5a196f63691c09072d",
+      "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+      "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de"
+    },
+    "compatibilityPrint45": {
+      "passed": 45,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "4d04e22a3ff75ddb616c861df2a11d8e454e77f501943bdaf82f4a12031cda54",
+      "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+      "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de"
+    },
+    "reportingSafetyPrivacy75": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "rawReportSHA256": "28a59cd8382c03901a8517b2e651e9f8bbd7eae86ff7aea5cecc28901281d49f",
+      "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+      "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de"
+    }
+  },
+  "preservedCompatibility": {
+    "passed": 171,
+    "failed": 0,
+    "staleCases": 66,
+    "everyStaleStoreDigestUnchanged": true
+  },
+  "additiveNative": {
+    "passed": 27,
+    "failed": 0,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "perEngine": 9,
+    "controlledFixtureNavigation": true,
+    "runnerAndHarnessHashes": "RESULTS.json"
+  },
+  "typescript": "PASS",
+  "staticRepository": "PASS",
+  "immutableDefinitions": 3,
+  "productionBuild": "PASS — NON-DEPLOYABLE development output",
+  "releaseGate": "PASS — actual unsigned release rejected, existing dist unchanged, no new files",
+  "originalRequirementIDsPreserved": 86,
+  "originalOperationalAudit": {
+    "PASS": 30,
+    "FAIL": 12,
+    "NOT VERIFIED": 1
+  },
+  "ciSource": {
+    "runURL": "https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41252563922",
+    "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+    "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+    "attempt": 1,
+    "conclusion": "success",
+    "jobsPassed": 6,
+    "jobIds": [
+      124688930475,
+      124688930577,
+      124688930624,
+      124688930625,
+      124688930652,
+      124688930696
+    ],
+    "priorFailedReportingAttempt": "41246412988 attempt1 is retained separately, not reclassified.",
+    "finalDocumentationHead": "Exact final SHA/CI is linked in PR40; final evidence package does not change runtime/test logic."
+  },
+  "realReleaseSignerEnrollment": "NOT VERIFIED; empty register, no public artifact authorized",
+  "humanAndHost": "NOT VERIFIED",
+  "unresolvedIntermittentReadiness": "Source CI attempt1 and initial local Firefox setup wait timed out; independent root cause not established. Subsequent complete/targeted runs passed; do not treat retries as a fix.",
+  "releaseApproved": false,
+  "trackedFilesValidated": 268,
+  "completeTestedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "pollingRace": {
+    "fixedIn": "6198e42b5d58827c0761f8cdb68eb7bc3d958388",
+    "knownPreFixRuntime": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+    "negativeCalibration": "DIAGNOSTICS.json: G06 FAIL with checkbox checked and activation button enabled after lost replies",
+    "positiveProof": "F16/F17/F18 and nativeG06 PASS in all three engines; background timeout alone revokes permission"
+  },
+  "canonicalWorkerBoundary": {
+    "fixedIn": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+    "evidence": "G25 generated-script VM: canonical nondeployable install rejects before fetch/cache; declared deployable control installs marker",
+    "liveProvider": "NOT VERIFIED"
+  }
+}

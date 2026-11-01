@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "runtimeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "files": {
+    "ARTIFACT-CHECK.json": {
+      "sha256": "ad34f8c72c3003c9c00b3c3630ab0bb886b0aa18fd8092bc0da9554aff630223",
+      "bytes": 1320
+    },
+    "BASELINE-RESULTS.json": {
+      "sha256": "9d9a0793e6ba9e1ec822f969f58472192a62f6c9372712f698acb42d46dae0a0",
+      "bytes": 399386
+    },
+    "DIAGNOSTICS.json": {
+      "sha256": "c536e5f6448c32ff875d1d63b7cbd89ae93b80a2a61dcbcb95cf4eb6b27afa61",
+      "bytes": 7502
+    },
+    "evidence/pre-update-full.synthetic.json": {
+      "sha256": "db10893a1a0f1b754084c06138b41eeb41fdf1358730972eccbee8864323cf1a",
+      "bytes": 34044
+    },
+    "evidence/replacement-dark.png": {
+      "sha256": "ba6ebed4dac8e098109658be49dc2f4ebe9444a25473efd32926ffbdb65094db",
+      "bytes": 494386
+    },
+    "evidence/replacement-light.png": {
+      "sha256": "fe57e0451e1c8408acf98dd6ffca526e723c0b86f00418ad6b2fe85f70d3f23c",
+      "bytes": 489005
+    },
+    "FILES.json": {
+      "sha256": "7849034dd488c403529528007d7f63006982b804dad0753dea477c14f8bd3347",
+      "bytes": 3469
+    },
+    "RELEASE-GATE.json": {
+      "sha256": "fbcb98fd1168a3034a1756fd0d22f441cc8f8a5af432bdabe0650146910d6be2",
+      "bytes": 2143
+    },
+    "RESULTS.json": {
+      "sha256": "55f43aa57b8f958263295ee54ebb308e3c45e8212635c45302e6c24cdadc9e29",
+      "bytes": 68969
+    },
+    "RUNTIME-MANIFEST.json": {
+      "sha256": "5315a5a7bf24da9099ea7b94fcfab9854ea2049abbad1838aa330b5363c574fc",
+      "bytes": 11699
+    },
+    "UNIT-RESULTS.json": {
+      "sha256": "2760ed4d41c032ce94e15ed3c320c8c089b98679f5013091f2e2d140de9f053c",
+      "bytes": 8931
+    },
+    "VERIFICATION.json": {
+      "sha256": "8341b4209802ba8eb342fdca0a734107ce9cbed94a3a8c65c099ad7133df3d72",
+      "bytes": 4165
+    }
+  },
+  "note": "Only disposable synthetic workshop evidence. JSON is pinned as LF; no browser profiles or private keys are committed.",
+  "testedTreeCommit": "cca78eff8c50e3d584084b819dad3072aa9ec1de"
+}

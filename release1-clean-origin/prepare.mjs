@@ -8,7 +8,7 @@ const id=process.argv[2];if(!/^[a-zA-Z0-9-]+$/.test(id||''))throw Error('Provide
 await mkdir('.verification-local/clean-origin',{recursive:true});
 const run=resolve('.verification-local/clean-origin',id);await mkdir(run,{recursive:false});
 const source=join(run,'source');await mkdir(source);
-for(const path of ['src','public','index.html','vite.config.ts','package.json','package-lock.json','tsconfig.json'])await cp(path,join(source,path),{recursive:true});
+for(const path of ['src','public','index.html','vite.config.ts','package.json','package-lock.json','tsconfig.json','release-contract.json','scripts','tests','release1-release-governance/DESIGN.md'])await cp(path,join(source,path),{recursive:true});
 await symlink(resolve('node_modules'),join(source,'node_modules'),process.platform==='win32'?'junction':'dir');
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const commit=spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).stdout.trim();
@@ -22,16 +22,18 @@ for(const [name,commit]of Object.entries({prePhase5:'616e26ee5c0834a3d0900294981
  if(hash(await readFile(join(historical,name+'-probe.js')))!==oldManifest.versions[name].probeSHA256)throw Error('Historical probe changed');
 }
 manifest.historical={directory:historical,versions:oldManifest.versions};
-const exports=`import * as api from ${JSON.stringify(join(source,'src/db.ts').replaceAll('\\','/'))};import * as writer from ${JSON.stringify(join(source,'src/writerSafety.ts').replaceAll('\\','/'))};import * as observations from ${JSON.stringify(join(source,'src/observationStore.ts').replaceAll('\\','/'))};export {api,writer,observations};`;
+const exports=`import * as api from ${JSON.stringify(join(source,'src/db.ts').replaceAll('\\','/'))};import * as writer from ${JSON.stringify(join(source,'src/writerSafety.ts').replaceAll('\\','/'))};import * as observations from ${JSON.stringify(join(source,'src/observationStore.ts').replaceAll('\\','/'))};import * as updates from ${JSON.stringify(join(source,'src/updateReview.ts').replaceAll('\\','/'))};export {api,writer,observations,updates};`;
 const entry=join(run,'probe.ts');await writeFile(entry,exports);
-for(const generation of [1,2]){
- const built=spawnSync(process.execPath,[resolve('node_modules/vite/bin/vite.js'),'build'],{cwd:source,env:{...process.env,PRINTGUARD_WRITER_GENERATION:String(generation)},encoding:'utf8',windowsHide:true});
- await writeFile(join(run,'build'+generation+'.log'),built.stdout+built.stderr);if(built.status!==0)throw Error('Fixture build failed: '+built.stderr);
- const dir=join(run,'generation'+generation);await cp(join(source,'dist'),dir,{recursive:true,errorOnExist:true,force:false});
+for(const key of [1,2,3]){
+ const generation=key===3?1:key;
+ if(key===3)await writeFile(join(source,'index.html'),(await readFile(join(source,'index.html'),'utf8')).replace('</title>',' — compatible presentation fixture</title>'));
+ const built=spawnSync(process.execPath,[resolve('node_modules/vite/bin/vite.js'),'build'],{cwd:source,env:{...process.env,PRINTGUARD_FIXTURE:'1',PRINTGUARD_WRITER_GENERATION:String(generation)},encoding:'utf8',windowsHide:true});
+ await writeFile(join(run,'build'+key+'.log'),built.stdout+built.stderr);if(built.status!==0)throw Error('Fixture build failed: '+built.stderr);
+ const dir=join(run,'generation'+key);await cp(join(source,'dist'),dir,{recursive:true,errorOnExist:true,force:false});
  const html=await readFile(join(dir,'index.html'),'utf8'),identity=html.match(/name="printguard-build" content="([^"]+)"/)[1];
- await build({configFile:false,logLevel:'warn',define:{__PRINTGUARD_BUILD__:JSON.stringify(identity),__PRINTGUARD_GENERATION__:generation},build:{outDir:join(run,'probe'+generation),emptyOutDir:false,minify:false,lib:{entry,formats:['es'],fileName:()=>`probe${generation}.js`}}});
+ await build({configFile:false,logLevel:'warn',define:{__PRINTGUARD_BUILD__:JSON.stringify(identity),__PRINTGUARD_GENERATION__:generation},build:{outDir:join(run,'probe'+key),emptyOutDir:false,minify:false,lib:{entry,formats:['es'],fileName:()=>`probe${key}.js`}}});
  const files={};async function walk(at,prefix=''){for(const e of await readdir(at,{withFileTypes:true})){const rel=prefix+e.name,p=join(at,e.name);if(e.isDirectory())await walk(p,rel+'/');else files[rel]=hash(await readFile(p));}}await walk(dir);
- manifest.builds[generation]={identity,files,probeSHA256:hash(await readFile(join(run,'probe'+generation,`probe${generation}.js`)))};
+ manifest.builds[key]={identity,generation,compatibility:key===3?'compatible presentation-only title change':'same-format writer fixture',files,probeSHA256:hash(await readFile(join(run,'probe'+key,`probe${key}.js`)))};
 }
 await writeFile(join(run,'manifest.json'),JSON.stringify(manifest,null,2));
 console.log(run);

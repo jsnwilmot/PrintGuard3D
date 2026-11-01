@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
+    "build:release": "tsc -b && vite build --mode release",
+    "release:describe": "node scripts/release-contract.mjs --describe",
     "test": "vitest run",
     "test:native": "playwright test --config remediation-phase1/playwright.config.mjs"
   },

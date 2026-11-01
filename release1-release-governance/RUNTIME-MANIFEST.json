@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "preparedAt": "2026-10-31T23:30:33.873Z",
+  "commit": "cca78eff8c50e3d584084b819dad3072aa9ec1de",
+  "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+  "builds": {
+    "1": {
+      "identity": "2a028b199d3a63b1d21d96f8",
+      "generation": 1,
+      "compatibility": "same-format writer fixture",
+      "files": {
+        "assets/App-xHEWiWE0.js": "cf48ea01e2ec4ab8dbd7928ae027831c250d4de37307c9c28b0c1847dd2582a5",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-DfXxcQLM.js": "ea2246971d6cb78df06a0acf8e75e9b4b7a3529cc3d98314975a237509470e08",
+        "assets/index-DRC6egdU.css": "c0a879590fcc52a507cc48e7d15b56b53a93d6c9f67ea87945a979f5e490af20",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "d4d9667aaf276734ffc0811c9e2e04bee8585295688d95a55d033c75252910fb",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "48b0b02b651596e3b1a5d23f5c7e08748f46da39c268464252a80b68a2ee2e5f",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "f32fbe883ea724669171fe48c666d7313dff43535f4671fe177562f52c14f31f",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "5d2c1517d2d0912a4fae4a39a01d17b10f4854d81af283b05e5b0a74de54a7d2"
+    },
+    "2": {
+      "identity": "6233c612079eae1cef4bd15a",
+      "generation": 2,
+      "compatibility": "same-format writer fixture",
+      "files": {
+        "assets/App-CIuZuzt1.js": "173fdc2229e5dfd0da5bc23c4fa28bd37293abd75c6fdc2d53a83ca46b9a02b9",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-G8Uf2r8W.css": "2b4c6869731c6bfa0f5059834391a4f1be1a08f6382d0053ad0b4a9785246af4",
+        "assets/index-rhKY0R7-.js": "38bdd4e722d8c4019e3a46141b74c50231b7defd06e1a68b7d9cca41492d8713",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "4e6bdc9b4371435e8cc077352594bdd9f4cbac612a169f269c0138435db1de1c",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "ea557f41d8505f142d702021a756953076dc06f2713dc13f336b0095df6e5d41",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "acbf219b6d195e8957724015486e256de26c598fba18292c6d7b585b55a39a0b",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "9e8b3ced3e07ab167eb38ba4ef981c4aa8388d409a25a383c97407705b80bac5"
+    },
+    "3": {
+      "identity": "5c563e316e3e55d01212d0fb",
+      "generation": 1,
+      "compatibility": "compatible presentation-only title change",
+      "files": {
+        "assets/App-rlP07zJ0.js": "8b89af75e89ca02048de90ac53ba393a692b21560b9e2d0b350ce7bc317b3584",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-Cn_KxLeS.js": "8fc2e11ae9a0cc2a6c5ccac0e2d372cfb2b80c7238f4d3c24cd2eb434437aed6",
+        "assets/index-G8Uf2r8W.css": "2b4c6869731c6bfa0f5059834391a4f1be1a08f6382d0053ad0b4a9785246af4",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "0f1972a93be8a1afd30cd67a02a2f9454d81aaa4d970f2ea15aa9ae44f1b7d8d",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "d599e6a82e41c21656950b13e15a69e0521a8800f9b4f9ad1922dc7b5fd1a5e3",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "ea90cd6c6a9fa1e08cbbb01bf3e60d4e3fde9b9c4d5c4a98ec5f1dcafd97630a",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "06a4120f5a09750f0395130b0e090466414eb2fde4463b7ba0f379a1fd91dbd0"
+    }
+  },
+  "historical": {
+    "directory": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\operational\\op32-run2",
+    "versions": {
+      "prePhase5": {
+        "commit": "616e26ee5c0834a3d0900294981bcf8963d2c053",
+        "sourceTree": "e4276e5aea68dfe7c334b0f313fcc5b17247466a",
+        "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+        "files": {
+          "assets/charts-BnsBSSBh.js": "016147215c2890c032e14c33703ba42a43cf8d5d7022449813217c945a49aea8",
+          "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+          "assets/index-DkxIiPac.css": "9251ef9e5f50aab63368cc89bc8529928f725885d128563dcdc0a979296c9fda",
+          "assets/index-Mg1tR4XT.js": "d04f3631d0718818781789f6fcbf2e60d07768891e1ba2a23adc833e3219051e",
+          "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "assets/validation-Db6Si-HD.js": "c28294d4824efba69a2609932aeb99e282a2da9b9d993077ef0e78ceecff4100",
+          "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+          "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+          "index.html": "06d180366766643a977affb36b59d5d3dc31dc5c899c7c89eeedc31eede6dd29",
+          "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+          "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+          "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+          "sw.js": "049a86eca41237d7ce66c4db53d27082d265ab6f1b7bbf992362b71b19e50a95",
+          "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+        },
+        "probeSHA256": "a847a05f3bea79a47e71fbb8c1cc449e180dc7841527cb3e980255d2b5a5608f"
+      },
+      "preRecommendations": {
+        "commit": "d03eb59cb887cfad335241b9f56d260b5a75abdc",
+        "sourceTree": "360433dda800354f66a3be0fb293602aef74bfd5",
+        "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+        "files": {
+          "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+          "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+          "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+          "assets/index-CyBCToO1.js": "5f55bfffd2b966fde4457a3dec243381a966e178e6a960b57aa0e86329eea0fa",
+          "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+          "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+          "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+          "index.html": "b3199643bb40388e84a4c78a519fef7eb80e1851ad050b861fcc05ffd59babf4",
+          "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+          "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+          "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+          "sw.js": "19e34162195441d2f45c264f82808d01a983e50762bb372ebb71260737264782",
+          "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+        },
+        "probeSHA256": "a00ff277c74ec5db5f36a88b7a2721f78edceeea3d03b4ee2e9792b10186bd1d"
+      },
+      "current": {
+        "commit": "aa6ae5892fde8e0d621bbb34b765c41739e7a2ba",
+        "sourceTree": "90a4705e60ad82496979aa7be08e0f87c3ea538c",
+        "lockSHA256": "36f77ffc59578790270b9ffe370b614a5e7731110675c197fef83e5ecbff14ef",
+        "files": {
+          "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+          "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+          "assets/index-CBHTBl8p.css": "510c2efdc53db9a25b2881f45dfac8b9517a03c80aa53ab65b2ccd6697067a7b",
+          "assets/index-DLvU2FnS.js": "e1749b7f0669ec341169060c2b9a50dc1445efa47884b7412df9e0299473eb9c",
+          "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+          "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+          "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+          "index.html": "ef1dd1677c8116a8adaf5ebe11e8f126acc6a9e29f2b0d63b4632a26c7e00756",
+          "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+          "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+          "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+          "sw.js": "5902b925eab7dacd7bf5db79ab18995da15880f6f368172a346a591ea5b13553",
+          "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "_headers": "e211e6f85c9d0b492accf67648880fb43148076d7d25b4bbe304973e5315a8ae"
+        },
+        "probeSHA256": "5f25fc4e0c952fab28f000c92562dfbf9f32d401888968345b00e787d3f9a6f5"
+      }
+    }
+  }
+}
