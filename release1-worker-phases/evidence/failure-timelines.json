@@ -1,0 +1,762 @@
+[
+  {
+    "context": "firefox-r0-c0-natural",
+    "events": [
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:22.228Z",
+        "nodeMonotonic": "310036150529200",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "0d79f287-7ae7-465a-84aa-460c380dd6a7",
+        "wall": 1793558362155,
+        "monotonic": 463,
+        "timeOrigin": 1793558361691,
+        "url": "http://127.0.0.1:4359/review.html",
+        "controller": false
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:22.671Z",
+        "nodeMonotonic": "310036594227200",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "f7121122-817f-4577-b8ff-dc1a59d304ea",
+        "wall": 1793558362655,
+        "monotonic": 43,
+        "timeOrigin": 1793558362611,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.801Z",
+        "nodeMonotonic": "310039722817200",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 81,
+        "event": "marker-value",
+        "wall": 1793558365718,
+        "monotonic": 2480,
+        "timeOrigin": 1793558363237,
+        "name": "printguard-3bf9d4bc53b7",
+        "initial": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.802Z",
+        "nodeMonotonic": "310039724031600",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 82,
+        "event": "marker-complete",
+        "wall": 1793558365724,
+        "monotonic": 2485,
+        "timeOrigin": 1793558363237,
+        "name": "printguard-3bf9d4bc53b7",
+        "asset": "/__printguard_install__",
+        "marker": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.806Z",
+        "nodeMonotonic": "310039727464300",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 83,
+        "event": "install-complete",
+        "wall": 1793558365724,
+        "monotonic": 2486,
+        "timeOrigin": 1793558363237
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.857Z",
+        "nodeMonotonic": "310039779267600",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 84,
+        "event": "activate-start",
+        "wall": 1793558365815,
+        "monotonic": 2577,
+        "timeOrigin": 1793558363237
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:25.859Z",
+        "nodeMonotonic": "310039782136500",
+        "source": "page",
+        "event": "controllerchange",
+        "navigation": "f7121122-817f-4577-b8ff-dc1a59d304ea",
+        "wall": 16725225600000,
+        "monotonic": 4329,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": true,
+        "state": "activating"
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.882Z",
+        "nodeMonotonic": "310039803937300",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 88,
+        "event": "claim-start",
+        "wall": 1793558365821,
+        "monotonic": 2583,
+        "timeOrigin": 1793558363237
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:25.923Z",
+        "nodeMonotonic": "310039845623700",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "c6970a9f-571f-4bc6-a6d3-73581c9a6eec",
+        "wall": 1793558365898,
+        "monotonic": 182,
+        "timeOrigin": 1793558365714,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.950Z",
+        "nodeMonotonic": "310039871906300",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 89,
+        "event": "claim-end",
+        "wall": 1793558365890,
+        "monotonic": 2653,
+        "timeOrigin": 1793558363237
+      },
+      {
+        "receivedAt": "2026-11-01T18:39:25.951Z",
+        "nodeMonotonic": "310039873076700",
+        "source": "worker",
+        "context": "firefox-r0-c0-natural",
+        "boot": "98f594e6-9b88-4853-800d-c0635353fa7e",
+        "sequence": 90,
+        "event": "activate-complete",
+        "wall": 1793558365890,
+        "monotonic": 2653,
+        "timeOrigin": 1793558363237
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:27.258Z",
+        "nodeMonotonic": "310041180986600",
+        "source": "page",
+        "event": "ready-wait-start",
+        "navigation": "c6970a9f-571f-4bc6-a6d3-73581c9a6eec",
+        "wall": 16725225600000,
+        "monotonic": 5648,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:27.259Z",
+        "nodeMonotonic": "310041182059400",
+        "source": "page",
+        "event": "ready-wait-resolved",
+        "navigation": "c6970a9f-571f-4bc6-a6d3-73581c9a6eec",
+        "wall": 16725225600000,
+        "monotonic": 5651,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:39:27.262Z",
+        "nodeMonotonic": "310041184484800",
+        "source": "page",
+        "event": "controller-wait-start",
+        "navigation": "c6970a9f-571f-4bc6-a6d3-73581c9a6eec",
+        "wall": 16725225600000,
+        "monotonic": 5652,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r0-c0-natural",
+        "receivedAt": "2026-11-01T18:41:19.415Z",
+        "nodeMonotonic": "310153336801000",
+        "source": "harness",
+        "event": "case-end",
+        "status": "timedOut",
+        "errors": [
+          {
+            "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+            "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "context": "firefox-r2-c0-natural",
+    "events": [
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:02.549Z",
+        "nodeMonotonic": "310196472282900",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "46a01d5f-e51a-4325-abb8-e270fdaf8454",
+        "wall": 1793558522502,
+        "monotonic": 342,
+        "timeOrigin": 1793558522158,
+        "url": "http://127.0.0.1:4359/review.html",
+        "controller": false
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:02.952Z",
+        "nodeMonotonic": "310196875257400",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "d036c278-161f-4a0d-8187-8fa75bb0a743",
+        "wall": 1793558522932,
+        "monotonic": 43,
+        "timeOrigin": 1793558522886,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.160Z",
+        "nodeMonotonic": "310199082495700",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 81,
+        "event": "marker-value",
+        "wall": 1793558525129,
+        "monotonic": 1651,
+        "timeOrigin": 1793558523477,
+        "name": "printguard-3bf9d4bc53b7",
+        "initial": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.175Z",
+        "nodeMonotonic": "310199098307300",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 82,
+        "event": "marker-complete",
+        "wall": 1793558525138,
+        "monotonic": 1659,
+        "timeOrigin": 1793558523477,
+        "name": "printguard-3bf9d4bc53b7",
+        "asset": "/__printguard_install__",
+        "marker": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.176Z",
+        "nodeMonotonic": "310199098808400",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 83,
+        "event": "install-complete",
+        "wall": 1793558525138,
+        "monotonic": 1659,
+        "timeOrigin": 1793558523477
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.206Z",
+        "nodeMonotonic": "310199129002700",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 84,
+        "event": "activate-start",
+        "wall": 1793558525190,
+        "monotonic": 1711,
+        "timeOrigin": 1793558523477
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:05.261Z",
+        "nodeMonotonic": "310199184057400",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "9dc46522-ab8f-4f6d-93ee-37ab0f56b27b",
+        "wall": 1793558525219,
+        "monotonic": 107,
+        "timeOrigin": 1793558525109,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.262Z",
+        "nodeMonotonic": "310199185426300",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 88,
+        "event": "claim-start",
+        "wall": 1793558525196,
+        "monotonic": 1717,
+        "timeOrigin": 1793558523477
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.291Z",
+        "nodeMonotonic": "310199213639700",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 89,
+        "event": "claim-end",
+        "wall": 1793558525264,
+        "monotonic": 1786,
+        "timeOrigin": 1793558523477
+      },
+      {
+        "receivedAt": "2026-11-01T18:42:05.291Z",
+        "nodeMonotonic": "310199214224000",
+        "source": "worker",
+        "context": "firefox-r2-c0-natural",
+        "boot": "41b34f2c-9b0c-4c3d-bd9e-b17c9750e912",
+        "sequence": 90,
+        "event": "activate-complete",
+        "wall": 1793558525264,
+        "monotonic": 1786,
+        "timeOrigin": 1793558523477
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:05.981Z",
+        "nodeMonotonic": "310199904414800",
+        "source": "page",
+        "event": "ready-wait-start",
+        "navigation": "9dc46522-ab8f-4f6d-93ee-37ab0f56b27b",
+        "wall": 16725225600000,
+        "monotonic": 3891,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:05.982Z",
+        "nodeMonotonic": "310199905400700",
+        "source": "page",
+        "event": "ready-wait-resolved",
+        "navigation": "9dc46522-ab8f-4f6d-93ee-37ab0f56b27b",
+        "wall": 16725225600000,
+        "monotonic": 3892,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:42:05.983Z",
+        "nodeMonotonic": "310199906245000",
+        "source": "page",
+        "event": "controller-wait-start",
+        "navigation": "9dc46522-ab8f-4f6d-93ee-37ab0f56b27b",
+        "wall": 16725225600000,
+        "monotonic": 3892,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r2-c0-natural",
+        "receivedAt": "2026-11-01T18:43:59.949Z",
+        "nodeMonotonic": "310313871976900",
+        "source": "harness",
+        "event": "case-end",
+        "status": "timedOut",
+        "errors": [
+          {
+            "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+            "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "context": "firefox-r4-c0-natural",
+    "events": [
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:12.408Z",
+        "nodeMonotonic": "310386332079600",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "e0d94638-bf7f-4bc7-af66-25cd5307378e",
+        "wall": 1793558712259,
+        "monotonic": 613,
+        "timeOrigin": 1793558711646,
+        "url": "http://127.0.0.1:4359/review.html",
+        "controller": false
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:13.168Z",
+        "nodeMonotonic": "310387092467000",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "8741ca06-0adc-41f3-af66-36087ca6b17a",
+        "wall": 1793558713144,
+        "monotonic": 55,
+        "timeOrigin": 1793558713089,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.640Z",
+        "nodeMonotonic": "310389565434300",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 81,
+        "event": "marker-value",
+        "wall": 1793558715595,
+        "monotonic": 1873,
+        "timeOrigin": 1793558713723,
+        "name": "printguard-3bf9d4bc53b7",
+        "initial": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.647Z",
+        "nodeMonotonic": "310389571879800",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 82,
+        "event": "marker-complete",
+        "wall": 1793558715604,
+        "monotonic": 1881,
+        "timeOrigin": 1793558713723,
+        "name": "printguard-3bf9d4bc53b7",
+        "asset": "/__printguard_install__",
+        "marker": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.649Z",
+        "nodeMonotonic": "310389574235100",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 83,
+        "event": "install-complete",
+        "wall": 1793558715604,
+        "monotonic": 1881,
+        "timeOrigin": 1793558713723
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.673Z",
+        "nodeMonotonic": "310389598078500",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 84,
+        "event": "activate-start",
+        "wall": 1793558715663,
+        "monotonic": 1940,
+        "timeOrigin": 1793558713723
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:15.723Z",
+        "nodeMonotonic": "310389647453700",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "4b870719-eda4-4d07-852d-2b98bcd1ec31",
+        "wall": 1793558715694,
+        "monotonic": 172,
+        "timeOrigin": 1793558715522,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.724Z",
+        "nodeMonotonic": "310389649456400",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 88,
+        "event": "claim-start",
+        "wall": 1793558715671,
+        "monotonic": 1947,
+        "timeOrigin": 1793558713723
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.753Z",
+        "nodeMonotonic": "310389677849800",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 89,
+        "event": "claim-end",
+        "wall": 1793558715729,
+        "monotonic": 2006,
+        "timeOrigin": 1793558713723
+      },
+      {
+        "receivedAt": "2026-11-01T18:45:15.753Z",
+        "nodeMonotonic": "310389678331600",
+        "source": "worker",
+        "context": "firefox-r4-c0-natural",
+        "boot": "fff28ca6-3588-4930-a38f-159d93b1cbb1",
+        "sequence": 90,
+        "event": "activate-complete",
+        "wall": 1793558715729,
+        "monotonic": 2006,
+        "timeOrigin": 1793558713723
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:16.639Z",
+        "nodeMonotonic": "310390562867000",
+        "source": "page",
+        "event": "ready-wait-start",
+        "navigation": "4b870719-eda4-4d07-852d-2b98bcd1ec31",
+        "wall": 16725225600000,
+        "monotonic": 5070,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:16.640Z",
+        "nodeMonotonic": "310390563703300",
+        "source": "page",
+        "event": "ready-wait-resolved",
+        "navigation": "4b870719-eda4-4d07-852d-2b98bcd1ec31",
+        "wall": 16725225600000,
+        "monotonic": 5070,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:45:16.640Z",
+        "nodeMonotonic": "310390563859000",
+        "source": "page",
+        "event": "controller-wait-start",
+        "navigation": "4b870719-eda4-4d07-852d-2b98bcd1ec31",
+        "wall": 16725225600000,
+        "monotonic": 5071,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r4-c0-natural",
+        "receivedAt": "2026-11-01T18:47:05.746Z",
+        "nodeMonotonic": "310499670380200",
+        "source": "harness",
+        "event": "case-end",
+        "status": "timedOut",
+        "errors": [
+          {
+            "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+            "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "context": "firefox-r9-c0-natural",
+    "events": [
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:36.223Z",
+        "nodeMonotonic": "310590148756900",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "cb683109-a933-4b86-9e0f-80eb567fb582",
+        "wall": 1793558916168,
+        "monotonic": 280,
+        "timeOrigin": 1793558915887,
+        "url": "http://127.0.0.1:4359/review.html",
+        "controller": false
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:36.613Z",
+        "nodeMonotonic": "310590538752000",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "b4e53059-ee1e-435c-8bd2-3da13b9ba363",
+        "wall": 1793558916591,
+        "monotonic": 44,
+        "timeOrigin": 1793558916546,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.683Z",
+        "nodeMonotonic": "310592608154800",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 81,
+        "event": "marker-value",
+        "wall": 1793558918647,
+        "monotonic": 1490,
+        "timeOrigin": 1793558917156,
+        "name": "printguard-3bf9d4bc53b7",
+        "initial": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.684Z",
+        "nodeMonotonic": "310592608509500",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 82,
+        "event": "marker-complete",
+        "wall": 1793558918649,
+        "monotonic": 1492,
+        "timeOrigin": 1793558917156,
+        "name": "printguard-3bf9d4bc53b7",
+        "asset": "/__printguard_install__",
+        "marker": true
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.684Z",
+        "nodeMonotonic": "310592608760500",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 83,
+        "event": "install-complete",
+        "wall": 1793558918650,
+        "monotonic": 1493,
+        "timeOrigin": 1793558917156
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.712Z",
+        "nodeMonotonic": "310592637166200",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 84,
+        "event": "activate-start",
+        "wall": 1793558918691,
+        "monotonic": 1534,
+        "timeOrigin": 1793558917156
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:38.715Z",
+        "nodeMonotonic": "310592640426400",
+        "source": "page",
+        "event": "controllerchange",
+        "navigation": "b4e53059-ee1e-435c-8bd2-3da13b9ba363",
+        "wall": 16725225600000,
+        "monotonic": 3007,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": true,
+        "state": "activating"
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.721Z",
+        "nodeMonotonic": "310592645765900",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 88,
+        "event": "claim-start",
+        "wall": 1793558918701,
+        "monotonic": 1544,
+        "timeOrigin": 1793558917156
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.758Z",
+        "nodeMonotonic": "310592683429500",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 89,
+        "event": "claim-end",
+        "wall": 1793558918721,
+        "monotonic": 1565,
+        "timeOrigin": 1793558917156
+      },
+      {
+        "receivedAt": "2026-11-01T18:48:38.763Z",
+        "nodeMonotonic": "310592687929000",
+        "source": "worker",
+        "context": "firefox-r9-c0-natural",
+        "boot": "991cb4af-be88-43cc-8b91-1201edf8472a",
+        "sequence": 90,
+        "event": "activate-complete",
+        "wall": 1793558918721,
+        "monotonic": 1565,
+        "timeOrigin": 1793558917156
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:38.763Z",
+        "nodeMonotonic": "310592688389200",
+        "source": "page",
+        "event": "document-start",
+        "navigation": "77db0083-5d35-4c2e-a508-3dea04a15d2b",
+        "wall": 1793558918746,
+        "monotonic": 92,
+        "timeOrigin": 1793558918652,
+        "url": "http://127.0.0.1:4359/#Dashboard",
+        "controller": false
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:39.475Z",
+        "nodeMonotonic": "310593400257000",
+        "source": "page",
+        "event": "ready-wait-start",
+        "navigation": "77db0083-5d35-4c2e-a508-3dea04a15d2b",
+        "wall": 16725225600000,
+        "monotonic": 3668,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:39.476Z",
+        "nodeMonotonic": "310593401393400",
+        "source": "page",
+        "event": "ready-wait-resolved",
+        "navigation": "77db0083-5d35-4c2e-a508-3dea04a15d2b",
+        "wall": 16725225600000,
+        "monotonic": 3669,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:48:39.477Z",
+        "nodeMonotonic": "310593402265900",
+        "source": "page",
+        "event": "controller-wait-start",
+        "navigation": "77db0083-5d35-4c2e-a508-3dea04a15d2b",
+        "wall": 16725225600000,
+        "monotonic": 3670,
+        "timeOrigin": 1793188800000,
+        "url": "http://127.0.0.1:4359/#Dashboard"
+      },
+      {
+        "context": "firefox-r9-c0-natural",
+        "receivedAt": "2026-11-01T18:50:33.932Z",
+        "nodeMonotonic": "310707858636900",
+        "source": "harness",
+        "event": "case-end",
+        "status": "timedOut",
+        "errors": [
+          {
+            "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+            "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+          }
+        ]
+      }
+    ]
+  }
+]

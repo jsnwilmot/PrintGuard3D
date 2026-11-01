@@ -1,0 +1,4876 @@
+{
+  "source": {
+    "base": "0d388b42afff7f57db01028a64deac85e293d2ba",
+    "source": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-1\\source",
+    "files": {
+      "assets/App-CRyu6iqH.js": "c79869dd3d26d970ad80788bc3f8c4d4662e5839b343333a3a84a0c7cb4147e3",
+      "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+      "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+      "assets/index-4XDHOwJL.js": "bacb45edc0c8be2e3a1d5ea7a76b70d68710a2abd902774db002f238340b7c9c",
+      "assets/index-D6sY9d4M.css": "75aaf1c226f7220f04f0930b86179cea6754c93c0173cd33fc1a58f31698da3c",
+      "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+      "build-contract.json": "84e230e73b73d4a87b4d1e420cc8843206c07bd7ea79a7421fe19fd8b199f71e",
+      "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+      "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+      "index.html": "7186b539d0317261080a72ebab0719b6ade50a841843bfd91a4c7b7596ceda18",
+      "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+      "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+      "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+      "sw.js": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+      "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+      "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+    },
+    "originalN09SHA": "2a60018f305483a1287ea9979c7405dc403cd9ef91c2d3bedebfde0bea31e078",
+    "originalConfigSHA": "07fa79866af64dc8a928736ba40167f61fbd7aa0cc83ef2b4c599513013a689b",
+    "planned": {
+      "originalPerEngine": 10,
+      "instrumentedPerEngine": 10,
+      "controlsPerEngine": 3
+    },
+    "retries": 0,
+    "originalCeiling": 120000
+  },
+  "cases": [
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 0,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r0-c0-natural",
+        "chromium-r0-c1-natural",
+        "chromium-r0-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 1,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r1-c0-natural",
+        "chromium-r1-c1-natural",
+        "chromium-r1-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 2,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r2-c0-natural",
+        "chromium-r2-c1-natural",
+        "chromium-r2-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 3,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r3-c0-natural",
+        "chromium-r3-c1-natural",
+        "chromium-r3-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 4,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r4-c0-natural",
+        "chromium-r4-c1-natural",
+        "chromium-r4-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 5,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r5-c0-natural",
+        "chromium-r5-c1-natural",
+        "chromium-r5-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 6,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r6-c0-natural",
+        "chromium-r6-c1-natural",
+        "chromium-r6-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 7,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r7-c0-natural",
+        "chromium-r7-c1-natural",
+        "chromium-r7-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 8,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r8-c0-natural",
+        "chromium-r8-c1-natural",
+        "chromium-r8-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 9,
+      "engine": "chromium",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "chromium-r9-c0-natural",
+        "chromium-r9-c1-natural",
+        "chromium-r9-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "timedOut",
+      "repeat": 0,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r0-c0-natural"
+      ],
+      "errors": [
+        {
+          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+          "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+        }
+      ]
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 1,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r1-c0-natural",
+        "firefox-r1-c1-natural",
+        "firefox-r1-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "timedOut",
+      "repeat": 2,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r2-c0-natural"
+      ],
+      "errors": [
+        {
+          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+          "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+        }
+      ]
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 3,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r3-c0-natural",
+        "firefox-r3-c1-natural",
+        "firefox-r3-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "timedOut",
+      "repeat": 4,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r4-c0-natural"
+      ],
+      "errors": [
+        {
+          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+          "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+        }
+      ]
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 5,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r5-c0-natural",
+        "firefox-r5-c1-natural",
+        "firefox-r5-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 6,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r6-c0-natural",
+        "firefox-r6-c1-natural",
+        "firefox-r6-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 7,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r7-c0-natural",
+        "firefox-r7-c1-natural",
+        "firefox-r7-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 8,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r8-c0-natural",
+        "firefox-r8-c1-natural",
+        "firefox-r8-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "timedOut",
+      "repeat": 9,
+      "engine": "firefox",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "firefox-r9-c0-natural"
+      ],
+      "errors": [
+        {
+          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+          "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+        }
+      ]
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 0,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r0-c0-natural",
+        "webkit-r0-c1-natural",
+        "webkit-r0-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 1,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r1-c0-natural",
+        "webkit-r1-c1-natural",
+        "webkit-r1-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 2,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r2-c0-natural",
+        "webkit-r2-c1-natural",
+        "webkit-r2-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 3,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r3-c0-natural",
+        "webkit-r3-c1-natural",
+        "webkit-r3-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 4,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r4-c0-natural",
+        "webkit-r4-c1-natural",
+        "webkit-r4-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 5,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r5-c0-natural",
+        "webkit-r5-c1-natural",
+        "webkit-r5-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 6,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r6-c0-natural",
+        "webkit-r6-c1-natural",
+        "webkit-r6-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 7,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r7-c0-natural",
+        "webkit-r7-c1-natural",
+        "webkit-r7-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 8,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r8-c0-natural",
+        "webkit-r8-c1-natural",
+        "webkit-r8-c2-natural"
+      ],
+      "errors": []
+    },
+    {
+      "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+      "status": "passed",
+      "repeat": 9,
+      "engine": "webkit",
+      "timeout": 120000,
+      "retry": 0,
+      "contexts": [
+        "webkit-r9-c0-natural",
+        "webkit-r9-c1-natural",
+        "webkit-r9-c2-natural"
+      ],
+      "errors": []
+    }
+  ],
+  "contexts": [
+    {
+      "id": "chromium-r0-c0-503",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 14,
+      "mismatches": [],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:32:59.120Z",
+          "nodeMonotonic": "309653038935700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4cd3fc9989d7ecc65094688add11ac7391c8d7a5c5022cc96577f3ee7fe3218a"
+        }
+      ],
+      "pageLogSHA": "1cb44ff2adccbbd77caad42546771ecc7cdb1854950bfffb6bb7bf2041a96ad2",
+      "workerLogSHA": "0b54c1bc902eb065db2c42d3a00dea4f161b23f1c5332f5e8893039cc0a8b9c0"
+    },
+    {
+      "id": "chromium-r0-c0-delay",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:03.408Z",
+          "nodeMonotonic": "309657327531600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f19d7b498dd98bf3d833ddb6b45e2dd4d121666472d9f5d3bfb26d9babcd700a"
+        }
+      ],
+      "pageLogSHA": "2542d510fe7c5c6b2305cd8eba62ec043d5bbf57ba2e7a9fcd446c46341db447",
+      "workerLogSHA": "dd1e5a66ec9e378d0e79b01f65509f0759bf36d6b0859963202e936ef9a2eb76"
+    },
+    {
+      "id": "chromium-r0-c0-hash",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 15,
+      "mismatches": [
+        {
+          "receivedAt": "2026-11-01T18:33:02.318Z",
+          "nodeMonotonic": "309656237720400",
+          "source": "worker",
+          "context": "chromium-r0-c0-hash",
+          "boot": "db4e881c-6be1-4ecb-a240-de394c46576c",
+          "sequence": 47,
+          "event": "digest",
+          "wall": 1793557982317,
+          "monotonic": 1022.3000000119209,
+          "timeOrigin": 1793557981295.6,
+          "path": "/workshop.svg",
+          "bytes": 78,
+          "expected": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "actual": "adf799d42cc294fe276069fbeaab61c97987a18e78b276296551ab6577e97218",
+          "match": false
+        }
+      ],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:01.290Z",
+          "nodeMonotonic": "309655209277700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "918716ec2ac59c0d7097758a2f7f0742af8903423438c98b95225d86984adf22"
+        }
+      ],
+      "pageLogSHA": "d5b56d520ec8cfc15b838439f7631e4ff1722ba9a82443384c78d3a1d4e52545",
+      "workerLogSHA": "2de14ffc1a7a78fd37b30a9a5ea14b3aa781aee1726154bebed076408d902ed3"
+    },
+    {
+      "id": "chromium-r0-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:41.192Z",
+          "nodeMonotonic": "309875113510100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "aea697d8c6f2294ee75492876eff00abccbb0c79ac33ffe5a3cf29b51a31bc9b"
+        }
+      ],
+      "pageLogSHA": "7dece0d273fb2c48597879f78ab3b8963ce0bad322ca6e5c21d5fa9f74d9cb5c",
+      "workerLogSHA": "75c9cf8647acd2d97d9e09cdb28d5eb82449e1e47276877fc7932d6312f809ac"
+    },
+    {
+      "id": "chromium-r0-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:44.157Z",
+          "nodeMonotonic": "309878078494100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "465214d9d72c074722e5fcb6a6711aa95396a2898dfaf9d7e27ee81fe124f3a7"
+        }
+      ],
+      "pageLogSHA": "d5e5a62823bacd0c1ee12670b56826f672eb2ddaca59273aa8ec113076a227d5",
+      "workerLogSHA": "3b6eaeb14efe2853873cf9555bb5b26c1cc5a467d77c80cca2d8af5fb1043a36"
+    },
+    {
+      "id": "chromium-r0-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:47.280Z",
+          "nodeMonotonic": "309881200772100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8ac98292cb07bd8473d6f0e4ce36c131b2cffea182b64db38209aacc5dafd098"
+        }
+      ],
+      "pageLogSHA": "416cf2e828fa19257b5e14408581ecf393bfe1840aab32d307616b71e8ab080f",
+      "workerLogSHA": "626d04cd382825be6831f3bdb11607bfead277add5935880480faa9b54dce56a"
+    },
+    {
+      "id": "chromium-r1-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:52.634Z",
+          "nodeMonotonic": "309886555007700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "0cdcf8f92d2aaa626e04a616b4fa0bd1033fe674a845c418cfb5ec4585e44462"
+        }
+      ],
+      "pageLogSHA": "1ca6ff3648f5d0c113d6c1b9bdbcee12f78aee6bc957f0eedc8ced77c0c9a7e6",
+      "workerLogSHA": "5c77fcdd0f9dca402f9ccee18ed8f05e6acb86e63087283b150a6e89c4d8921e"
+    },
+    {
+      "id": "chromium-r1-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:56.249Z",
+          "nodeMonotonic": "309890170599200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "55af2d3d4e4d6e393654c76f9476008361cbe0df4fe22dd719280052f757b56c"
+        }
+      ],
+      "pageLogSHA": "bca5256b5d44daa25838cfd8795cb4298c47778ce235424ab06b6412f82559e9",
+      "workerLogSHA": "4129368045a531ad3e406352e751188b2cf6d90851ab379590765f3391a6bc66"
+    },
+    {
+      "id": "chromium-r1-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:36:59.562Z",
+          "nodeMonotonic": "309893483032000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8a71fda63b2e565b195ce04cc830750d5f2235acae35883e6107d454ed58596e"
+        }
+      ],
+      "pageLogSHA": "7b1c3480e81e59b59e150f506627321ad0d96ab0550b0bcc9e671609c129128d",
+      "workerLogSHA": "307c482342bc82d69c6274a63672b0c5f15d8e66b22c5dc2e159fd6b931534f1"
+    },
+    {
+      "id": "chromium-r2-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:05.717Z",
+          "nodeMonotonic": "309899638237300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c6aca8000b120a9366b86bd7b9c3e820ff159a8409124743c17a2d6be7292139"
+        }
+      ],
+      "pageLogSHA": "ff1335cb5fca00723ba64c743ef724b667edb402a2f7576e3093224bbc303c14",
+      "workerLogSHA": "107802cf105f0f71f1239aa1ab12651d30a53a4b61a9d74cf8c490d845fbf7d1"
+    },
+    {
+      "id": "chromium-r2-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:09.678Z",
+          "nodeMonotonic": "309903599343700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "77c40ffb446b118e7490e3ddac404b9086c7171c93f0143875cba100ad29641f"
+        }
+      ],
+      "pageLogSHA": "86c8edfc38e4f3d68a7ee5f53363bcf023acfed2c51237541499b35109fc4d7e",
+      "workerLogSHA": "59433a408108cd0224ce0c938f1077f8260078b8994cd13d5481df1286f84f72"
+    },
+    {
+      "id": "chromium-r2-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "activating",
+        "installed",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:13.402Z",
+          "nodeMonotonic": "309907323739500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "74a4cd4a80a63c5894f6a799865f1d66306e6b5b1d97e24ae6263a7293c55e4c"
+        }
+      ],
+      "pageLogSHA": "53351fd383041928b64082a989038941eb625b211cc390572a89c310b1c70fbe",
+      "workerLogSHA": "a00fc6efb4ff4e3367e3f98c4d8f3ba568e04f2d644423e65e1224a70a512fa2"
+    },
+    {
+      "id": "chromium-r3-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:19.512Z",
+          "nodeMonotonic": "309913433256100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "89ecbd1bf31b254620fa7018d0dde0421eb906a2bfd3fababb11c0fa52c21086"
+        }
+      ],
+      "pageLogSHA": "18d04a4621c695f1ddb4cfbdbf34d82818211bd3f8d5a1408c3579764c335034",
+      "workerLogSHA": "61c79feca7ba8c5fe6a14aacc3638289f2860fc3fae1de0932933199bb78a8c3"
+    },
+    {
+      "id": "chromium-r3-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:23.644Z",
+          "nodeMonotonic": "309917565299600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "391d7e3a5adaf3518d8017bd5274bc55ea9a389e0b13f77345a28ad1ff94bf6d"
+        }
+      ],
+      "pageLogSHA": "d003900a52ea861334a89eb00de29ecbeac1a7048eb185cfb2c570136bcc4ba4",
+      "workerLogSHA": "d0929e93590011dc0eeb6120837910111bffb19a0fc1e5acfa5a190dc69f16f4"
+    },
+    {
+      "id": "chromium-r3-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:27.889Z",
+          "nodeMonotonic": "309921810394200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5feb3902e176c60e0f94f5142aebba3ffb15c72594026d5cd2910ac8201674e6"
+        }
+      ],
+      "pageLogSHA": "94c5df48a10bf3d94d9286493566829d315e23f54b6b9e669b2dacb7b4cc55a9",
+      "workerLogSHA": "281d513ffcd903a7c46de1d613d6d2ea6ebb1799f054474bdf4a7a1ffa33a081"
+    },
+    {
+      "id": "chromium-r4-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:36.277Z",
+          "nodeMonotonic": "309930198612000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5df33bb5f17a2f5e55322d0548e8f73f91e5998e1f9abcde9e2dcb6fad161209"
+        }
+      ],
+      "pageLogSHA": "ebefefbb81465f9ec287f39a5ce886aff80cc9255e95ae0df9e5b6b77e16e232",
+      "workerLogSHA": "b5c027b6300b7b599364bf3bf3c7c09131b77286119f75e99fc7555d05d3e1f5"
+    },
+    {
+      "id": "chromium-r4-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:41.424Z",
+          "nodeMonotonic": "309935345512600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "e6c945f1fed3a2e084a0b7513168d071da3439d33583a651871e4c457ddbc723"
+        }
+      ],
+      "pageLogSHA": "020c2539604c6ea2588ee407ec64a049fa31156c4c330fa986bf19048cd497b9",
+      "workerLogSHA": "1f059ee13567e75d0292ddd29e0d553f9cb1364eb96c46adaa326e2ef9b48aad"
+    },
+    {
+      "id": "chromium-r4-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:46.304Z",
+          "nodeMonotonic": "309940225183200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d338017065cabe39485901126c67eeff7ebab631a6f8702f592da4359210e3ee"
+        }
+      ],
+      "pageLogSHA": "72ff7ea6304d33e1467d0e0faa47d45b2ab02775e5dde3642630e3e07073149d",
+      "workerLogSHA": "b047309a05af2af37154bc530a4b9e4ea83b152ea42e476659e74ad61729d216"
+    },
+    {
+      "id": "chromium-r5-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:37:56.168Z",
+          "nodeMonotonic": "309950089025500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c1c1c45ef035d68f66543c02ff42cb47d360df8d5989a09cc68ae9f3528b351a"
+        }
+      ],
+      "pageLogSHA": "6adc095126400dbc4f3b38c974654bf2643ee0a78a4d6351643ee9664133d260",
+      "workerLogSHA": "07c2f07853e0cd92308774aea9c9e2a623b78e18554e4e6b2b1d873dcd696828"
+    },
+    {
+      "id": "chromium-r5-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:01.055Z",
+          "nodeMonotonic": "309954976534100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c42024fcbb91f7b256c199a5a1d7546497355f025966de8b148a8616e414c387"
+        }
+      ],
+      "pageLogSHA": "4a73c0f69c3bcd833f2bc8724354858aef69c92c7db49766b49e7ee5bdb5a1fd",
+      "workerLogSHA": "d16b0c69212e4fd149acc33f4f31f0d9e81b4460913f9f72182872059dc05aac"
+    },
+    {
+      "id": "chromium-r5-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:06.377Z",
+          "nodeMonotonic": "309960298219300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "859eed66e336fd8b7dec49d67d9437d30ce3da1b11e4a3e28f6561b1888dae7c"
+        }
+      ],
+      "pageLogSHA": "3b8973890dd6d35a1699d8eef96dbdbc8eab687343940c3ef0b60047d2cb7814",
+      "workerLogSHA": "f3b8592f20e3d34c90d2d8c8cbe2ada4bd894c88b6c4125763a2ef0796915efe"
+    },
+    {
+      "id": "chromium-r6-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:15.441Z",
+          "nodeMonotonic": "309969362370900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "cddb76b550612c115d7882c9095b1bc91ee05fa3de9399fd64cc5dca7e521614"
+        }
+      ],
+      "pageLogSHA": "ded9135a67f572680564bf92fdc10037cf1607f7e26181ff072be94bbb49c26f",
+      "workerLogSHA": "febc6cef1a95b6311ed55d49ba3659037bf9c472b83b9dd42efac1d74e8fbc17"
+    },
+    {
+      "id": "chromium-r6-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:20.256Z",
+          "nodeMonotonic": "309974177168700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "b89c445c093b674508ce68c42f5e8e55d57451041851d28a4569fab0aad4fdd4"
+        }
+      ],
+      "pageLogSHA": "a7ec34eb053de447c702a266e01b5eb595558a093c887a99bdbe386c9d5779a0",
+      "workerLogSHA": "697d9b65c990a752707bce620ac83ba21e6cced92a764ead54ba99a274d93afd"
+    },
+    {
+      "id": "chromium-r6-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:24.974Z",
+          "nodeMonotonic": "309978895460600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "e998c71bbae0d1f9bb42b350e45709587b190dd0897b193632af13ce405e75ec"
+        }
+      ],
+      "pageLogSHA": "abb292a55755f735e4989ab94b8b35503aff1833a9191a8014caec1ad6ddabfa",
+      "workerLogSHA": "ca22bd64ee081d4edc0190d84280c8bc4b216978c5ace8bc2f32bc8ecaf783eb"
+    },
+    {
+      "id": "chromium-r7-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:31.991Z",
+          "nodeMonotonic": "309985912512200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c82883aa370437600f78d430b739515fa8d8b755bffc873fe87c95a9cace1d88"
+        }
+      ],
+      "pageLogSHA": "041f124c4225a9f306a0e4da1aba1218d745ba2719ad54150a71278cbe028d4b",
+      "workerLogSHA": "f52a46ec00030971041b17f4bd86cfdafc0983aa1572e307bf9e47d662a8887d"
+    },
+    {
+      "id": "chromium-r7-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:35.956Z",
+          "nodeMonotonic": "309989876634500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "159fa68ac0f1846ca4198c4f419cc261811deb63a2c87acb096f467b488a3d85"
+        }
+      ],
+      "pageLogSHA": "3272a2af6bfbdc9623277ef8c53d338adf710690b4a2c8e223b689ea0d8d66e0",
+      "workerLogSHA": "68a584dcbb82db179ad15d66efb53f75a0f0ee10617afd1a3bf7d7c39c582e4a"
+    },
+    {
+      "id": "chromium-r7-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:39.595Z",
+          "nodeMonotonic": "309993515628700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "9bbeab5a2adc6d3839a733819470bc468455034eb8026634661334faafa7ba62"
+        }
+      ],
+      "pageLogSHA": "0e6560b81d062d321f346fbebf4136c582ebc60650516e6584cdf6091ec7f5cc",
+      "workerLogSHA": "22d214bb78c6027c811ec0de5f87db67bd06eac0468682b144d46fd7304b7c10"
+    },
+    {
+      "id": "chromium-r8-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:46.078Z",
+          "nodeMonotonic": "309999999640100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3af10fd452a9a249aaecac4b795f0aaa4f472a492ababd03f7ef7fa6b25e42d3"
+        }
+      ],
+      "pageLogSHA": "bcb368f3e41bc3b29a611f80e289e051c599d714f793ba0a2d32e68bfad9ac44",
+      "workerLogSHA": "b3549c385b1b5a0ce82495faf9444637acefdd9cda8040df3608fc512bc6e45a"
+    },
+    {
+      "id": "chromium-r8-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:50.381Z",
+          "nodeMonotonic": "310004303263300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "757718f013547e8a2958c46940d8040a429cdc61f3d4369dc99f1513e0ece998"
+        }
+      ],
+      "pageLogSHA": "59f548a108b8c0c8a7a17cb485bedff1c4e0ea11a2885d3029d211b9d8a30203",
+      "workerLogSHA": "fc92fd2245a6ea2750b90472e65207e77c97e47b47936a0aacc21a15db3dbce5"
+    },
+    {
+      "id": "chromium-r8-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:38:53.883Z",
+          "nodeMonotonic": "310007805304600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f7ce3405a9043805fa5e4fdb751e2e9ddecb003d160c9696691ea4c9e3888af0"
+        }
+      ],
+      "pageLogSHA": "3f9745162b5316767113817946f13ba50f897f1cfbf8dec39acaf6ce2c12d3ea",
+      "workerLogSHA": "0762b64b33a86266f3f9762d8a14cd427b9bcfce1850d750310950cefc2d8086"
+    },
+    {
+      "id": "chromium-r9-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:39:00.533Z",
+          "nodeMonotonic": "310014455033800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d9bcf82aed30988743c88e5affaff28f078f3dddd8d4ad057830a07b16f77a8a"
+        }
+      ],
+      "pageLogSHA": "479156f92fa7e3905b642074ef20caf50e1409c113dff285902f32c020a68494",
+      "workerLogSHA": "3120f6ee7994c631a16cc72a89fe31034affac5df653b7ac29ef3c72f204c5b3"
+    },
+    {
+      "id": "chromium-r9-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:39:04.985Z",
+          "nodeMonotonic": "310018907181900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "9480e031b3c6cd9e735acc92f0cb51abd4d7dc8b18e1b98bb78a9f931a4d30a9"
+        }
+      ],
+      "pageLogSHA": "d6efaea20ce219fa4d5017c523b11694371b794baf61b1434df471f1145ab181",
+      "workerLogSHA": "918c8c00e38e749d45bee94df4209af810c45ce0c6221eee2a24b5b7ba71b77e"
+    },
+    {
+      "id": "chromium-r9-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:39:09.615Z",
+          "nodeMonotonic": "310023536370600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "250e5a1868f25170d32ae912b8cc9828df97f5f2e462bc67e6a7fb7393e19063"
+        }
+      ],
+      "pageLogSHA": "b07f8295be0f5e6ea419d6b7f143c4f1c1432ac3c26035f214d893449a29ce51",
+      "workerLogSHA": "6bc389cb6d72913fe0ea2338632e98ad9ee98082e1d47ac8d053675ee598fb9f"
+    },
+    {
+      "id": "firefox-r0-c0-503",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 14,
+      "mismatches": [],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:11.165Z",
+          "nodeMonotonic": "309665084281400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c2bbc33ca7bfe54278ea6b5e1f1968c73c5da2f2a16234b8c96926d27a003ad5"
+        }
+      ],
+      "pageLogSHA": "c4f314e3c28d4f13efe299bcfe3272b7119cdec68dbdd3f8e55d31155ce974d8",
+      "workerLogSHA": "40066f67b436fe3385c0d6822a1c93ab824038b801854be7aa1bbe253ea82156"
+    },
+    {
+      "id": "firefox-r0-c0-delay",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:15.929Z",
+          "nodeMonotonic": "309669847970100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "483dd4e9caec0d2a2d3810f24e8baa8bd2ca7e9e7b19c02a2c39b0df274ba7e4"
+        }
+      ],
+      "pageLogSHA": "b3775defae863de21610bf64dc93cbcfbdf2370b8036dcfdff72e12c019b7325",
+      "workerLogSHA": "0fbc06008ea88d13b7618d3db0d7a03b94567b852135b4153381594fc5a68114"
+    },
+    {
+      "id": "firefox-r0-c0-hash",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 15,
+      "mismatches": [
+        {
+          "receivedAt": "2026-11-01T18:33:14.689Z",
+          "nodeMonotonic": "309668608286200",
+          "source": "worker",
+          "context": "firefox-r0-c0-hash",
+          "boot": "a631b33c-8967-4dd7-94aa-ea9e6720590e",
+          "sequence": 47,
+          "event": "digest",
+          "wall": 1793557994681,
+          "monotonic": 613,
+          "timeOrigin": 1793557994066,
+          "path": "/workshop.svg",
+          "bytes": 78,
+          "expected": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "actual": "adf799d42cc294fe276069fbeaab61c97987a18e78b276296551ab6577e97218",
+          "match": false
+        }
+      ],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:13.979Z",
+          "nodeMonotonic": "309667898494200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7cddf9b6babc4911e6e6f1de8862c76262f1628f2a0baeff37cee5331184bd1c"
+        }
+      ],
+      "pageLogSHA": "2adb606a65c1f2c3e5d5fef5319960a87a1c3c1d273eabc78e093e389ed426f7",
+      "workerLogSHA": "8774a59ca642345407f5d52d01680d5555a56adc27e67ee939c9d08c955faf1a"
+    },
+    {
+      "id": "firefox-r0-c0-natural",
+      "blocked": "controllerchange",
+      "caseEnd": "timedOut",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:39:23.151Z",
+          "nodeMonotonic": "310037072402200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "159ed00daaa470fa946f885803c8b4324da43b2a18e44cad852181c0fafcac22"
+        }
+      ],
+      "pageLogSHA": "4746f80b1e76451a066414087ae3759adbff7dd3ffad597c159085f819e3ba09",
+      "workerLogSHA": "b46a4daf8bc0f7ab9aad99530884702938a009a2088e26f1f1353298b3530888"
+    },
+    {
+      "id": "firefox-r1-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:41:35.734Z",
+          "nodeMonotonic": "310169656831600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "1c177fe12ff718e8e3fcb15195bfdf003b31bad9da2e07d8c1d4ef0a0a411a99"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:39.405Z",
+          "nodeMonotonic": "310173327829600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "1c177fe12ff718e8e3fcb15195bfdf003b31bad9da2e07d8c1d4ef0a0a411a99"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:40.508Z",
+          "nodeMonotonic": "310174430458600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "1c177fe12ff718e8e3fcb15195bfdf003b31bad9da2e07d8c1d4ef0a0a411a99"
+        }
+      ],
+      "pageLogSHA": "dd0da9eec012f1cad8d20b3bb3204a78c2809c68b75f55f7a5c71893af68a26b",
+      "workerLogSHA": "73af247306e2d7a04043b0ad30549c3530b1c6410f86062fd72cf829ce33e1ca"
+    },
+    {
+      "id": "firefox-r1-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:41:42.399Z",
+          "nodeMonotonic": "310176322385700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "81fe13200631344f9be3aa8a0c9e339e7425ece66ce0a5308ce5c2bfe44b85c6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:45.098Z",
+          "nodeMonotonic": "310179020853700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "81fe13200631344f9be3aa8a0c9e339e7425ece66ce0a5308ce5c2bfe44b85c6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:46.330Z",
+          "nodeMonotonic": "310180252501500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "81fe13200631344f9be3aa8a0c9e339e7425ece66ce0a5308ce5c2bfe44b85c6"
+        }
+      ],
+      "pageLogSHA": "344b60eb47f15b4a118b459423580c77a3e5e0214362d4a0a833e2052cf31b39",
+      "workerLogSHA": "7b6dddd310f0691dad205b0afd50ce19eca85c4e6c1d1c304436c7333e2da2f0"
+    },
+    {
+      "id": "firefox-r1-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:41:49.193Z",
+          "nodeMonotonic": "310183115709000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "0b61f27f7e26d80b4107e3771b42c8918c716f7c541c41005d2f6a4fb464bc1d"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:52.670Z",
+          "nodeMonotonic": "310186593266000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "0b61f27f7e26d80b4107e3771b42c8918c716f7c541c41005d2f6a4fb464bc1d"
+        },
+        {
+          "receivedAt": "2026-11-01T18:41:53.929Z",
+          "nodeMonotonic": "310187852426400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "0b61f27f7e26d80b4107e3771b42c8918c716f7c541c41005d2f6a4fb464bc1d"
+        }
+      ],
+      "pageLogSHA": "e24ead8d927eedeb9108f971bbbcb718a5ab8a9ce7d21ad02b9fbb8bac074730",
+      "workerLogSHA": "7b3b7045e8dcb4be66edf76d9cd41b42b2db0b4549689e95a4eda4dac59c0438"
+    },
+    {
+      "id": "firefox-r2-c0-natural",
+      "blocked": "controllerchange",
+      "caseEnd": "timedOut",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:42:03.411Z",
+          "nodeMonotonic": "310197334136100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "2a22caadaa51843750fd97a7598e5814420c339ff73d6386f584cee928ed41d3"
+        }
+      ],
+      "pageLogSHA": "2681e462572234a9be94f42749f7b33f3f9f8b001e38c08564982b133cfe2821",
+      "workerLogSHA": "6d14e8823f6ce903df89a963b855af57469ee4d420fd6d90128da90940f5f5cd"
+    },
+    {
+      "id": "firefox-r3-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:44:18.935Z",
+          "nodeMonotonic": "310332859904900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "efb4a08f4a7f2f756978260b0938421535c4df01fc8b9167cf18cc7f592d3449"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:23.535Z",
+          "nodeMonotonic": "310337459858400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "efb4a08f4a7f2f756978260b0938421535c4df01fc8b9167cf18cc7f592d3449"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:24.723Z",
+          "nodeMonotonic": "310338648027300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "efb4a08f4a7f2f756978260b0938421535c4df01fc8b9167cf18cc7f592d3449"
+        }
+      ],
+      "pageLogSHA": "780491ff0ad5da27777b50eb3878302fa27e6be1ea88caa74080ab577f9658d0",
+      "workerLogSHA": "9f70452dea9fc3125e8e26c044db002db827cd6bc48555a41d44230ea0bfe709"
+    },
+    {
+      "id": "firefox-r3-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:44:27.535Z",
+          "nodeMonotonic": "310341460199500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "124dad501859d10d155fab99923851387278fb0e4dce254afdcbb519f33a2c91"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:30.356Z",
+          "nodeMonotonic": "310344280593400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "124dad501859d10d155fab99923851387278fb0e4dce254afdcbb519f33a2c91"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:31.714Z",
+          "nodeMonotonic": "310345638989200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "124dad501859d10d155fab99923851387278fb0e4dce254afdcbb519f33a2c91"
+        }
+      ],
+      "pageLogSHA": "a4ecb369d43f9c6198b2dbea75783d68a21e42c5e565f50e5b8e257bac0fc29f",
+      "workerLogSHA": "29cb195920d7a4bf442d4b2930bfb01ee9aae7865107ab5e8b300e8197d817ca"
+    },
+    {
+      "id": "firefox-r3-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:44:35.731Z",
+          "nodeMonotonic": "310349655894600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "529c112631206b6a84ceb738904db35d66043143b8587d6e0d6180201555cd46"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:39.513Z",
+          "nodeMonotonic": "310353438010000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "529c112631206b6a84ceb738904db35d66043143b8587d6e0d6180201555cd46"
+        },
+        {
+          "receivedAt": "2026-11-01T18:44:41.173Z",
+          "nodeMonotonic": "310355098442300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "529c112631206b6a84ceb738904db35d66043143b8587d6e0d6180201555cd46"
+        }
+      ],
+      "pageLogSHA": "d9c7ea12d48c35b674450d401b06ec9598fa648b086bedd12df068f98d7f3ceb",
+      "workerLogSHA": "ad51e2b33138f318db9c58df348e763174dd20a2596231ed304c5d8036385206"
+    },
+    {
+      "id": "firefox-r4-c0-natural",
+      "blocked": "controllerchange",
+      "caseEnd": "timedOut",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:45:13.651Z",
+          "nodeMonotonic": "310387576366400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "b3b9f76f3c1f8b45d64468f425b0c4765dceceb061397724c7d9847bc4276e75"
+        }
+      ],
+      "pageLogSHA": "04ee3048120228858afb2d5f66eeefca4a65f6fed0bb838d535d22d516415b70",
+      "workerLogSHA": "9571d3f4d40498ca4df68bfe8046f375fc4602b43a209728433d2f7bbdc29722"
+    },
+    {
+      "id": "firefox-r5-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:14.051Z",
+          "nodeMonotonic": "310507975928000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8bf3406944c9f6625884f6e888368d8eabebabbf471deb197a1a504803342ec2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:17.157Z",
+          "nodeMonotonic": "310511081795600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8bf3406944c9f6625884f6e888368d8eabebabbf471deb197a1a504803342ec2"
+        }
+      ],
+      "pageLogSHA": "2d0f72bbde14bc446965912ae0e9eda8782af227b48578fd7e77eb86f864c046",
+      "workerLogSHA": "8aea6e867ddb800b59cd7c98832513cabb06cd4ded13e4be4f0ed954d0c4c5a6"
+    },
+    {
+      "id": "firefox-r5-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:18.964Z",
+          "nodeMonotonic": "310512889172900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "54c03a9c5893005bfb84b1c5195f995b8460c4552ad5b723b80ea8559c52899f"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:21.484Z",
+          "nodeMonotonic": "310515409210600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "54c03a9c5893005bfb84b1c5195f995b8460c4552ad5b723b80ea8559c52899f"
+        }
+      ],
+      "pageLogSHA": "7416148107ac3d4c0b288570068d1c165337fef2c3b2a11995c3a34f31f2a8a6",
+      "workerLogSHA": "5a430eb2aa9c929d33865c0b660124fec40e52f69a57a43e9787cea10e4d2a61"
+    },
+    {
+      "id": "firefox-r5-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "activating",
+        "installed",
+        "installed",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:23.968Z",
+          "nodeMonotonic": "310517892683200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d9a6402d36c042e744e247430c890e5b573ee9887b091af7eb91bd79867f5839"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:26.475Z",
+          "nodeMonotonic": "310520400520700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d9a6402d36c042e744e247430c890e5b573ee9887b091af7eb91bd79867f5839"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:27.619Z",
+          "nodeMonotonic": "310521544215900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d9a6402d36c042e744e247430c890e5b573ee9887b091af7eb91bd79867f5839"
+        }
+      ],
+      "pageLogSHA": "9508a1ecd44689c526d5cfc94e0db55e0513e38308dba8163586749f2f678025",
+      "workerLogSHA": "4f0c7e4dd89202fcfe006c134c8467d05b755cf67b010aa7300d3fdc586a42c4"
+    },
+    {
+      "id": "firefox-r6-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installed",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:34.823Z",
+          "nodeMonotonic": "310528747820700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5a8bafddf4953947113ef0d50c718a2938fccae49354a0c9889fc2493fe7cd74"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:37.527Z",
+          "nodeMonotonic": "310531451596800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5a8bafddf4953947113ef0d50c718a2938fccae49354a0c9889fc2493fe7cd74"
+        }
+      ],
+      "pageLogSHA": "3bb8087be5d93a24b95b77025c7caee10f1e3e5d92795b77a9f202f04f086e33",
+      "workerLogSHA": "df8dc030ee97f22bee080735ffed6c029fde678447c056b250d9570c7c064c1e"
+    },
+    {
+      "id": "firefox-r6-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:40.138Z",
+          "nodeMonotonic": "310534062970700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "31a3f4d922d488ee0196967971ddcc2d1d78501f1e9fca2da0941f05fae5e2a7"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:42.830Z",
+          "nodeMonotonic": "310536754604100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "31a3f4d922d488ee0196967971ddcc2d1d78501f1e9fca2da0941f05fae5e2a7"
+        }
+      ],
+      "pageLogSHA": "219b3c80f717639f8561b1c969c1eb7f2a119c0eb796df343f1f7f01705ba91e",
+      "workerLogSHA": "902c773a0f778fc1faa21e4998e4dd9310d2ff9d31376cea852982556131c09c"
+    },
+    {
+      "id": "firefox-r6-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:44.991Z",
+          "nodeMonotonic": "310538915779500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d5a898ef6b395a9568591bba6324d6873d574123be0a86ef5ce291f2a5d62cab"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:47.323Z",
+          "nodeMonotonic": "310541248309600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d5a898ef6b395a9568591bba6324d6873d574123be0a86ef5ce291f2a5d62cab"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:48.408Z",
+          "nodeMonotonic": "310542333328200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d5a898ef6b395a9568591bba6324d6873d574123be0a86ef5ce291f2a5d62cab"
+        }
+      ],
+      "pageLogSHA": "68a3a805ed8c2fa9e8436d1a335a8fe2d4bf92caf10763170a7e5e4399820382",
+      "workerLogSHA": "a5f185f0326eb554f6efd765b512495aa4b2876765a6f130ff9ea4ef46fadc38"
+    },
+    {
+      "id": "firefox-r7-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:53.776Z",
+          "nodeMonotonic": "310547701224500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4d9ccc9db063f07732daa9cf358b88dffa22f8363ed138498fe361ddae8051d1"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:56.120Z",
+          "nodeMonotonic": "310550045364900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4d9ccc9db063f07732daa9cf358b88dffa22f8363ed138498fe361ddae8051d1"
+        },
+        {
+          "receivedAt": "2026-11-01T18:47:57.156Z",
+          "nodeMonotonic": "310551080652700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4d9ccc9db063f07732daa9cf358b88dffa22f8363ed138498fe361ddae8051d1"
+        }
+      ],
+      "pageLogSHA": "d36ddf1abd0e03d382e2215a7b570e76fde60e773beb2b5792a781cae75a2342",
+      "workerLogSHA": "f9db932a05448b71283df6533eb99e4a005430ba4fa26c4ec1a677095843cdeb"
+    },
+    {
+      "id": "firefox-r7-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:47:58.582Z",
+          "nodeMonotonic": "310552506749700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "e465cb1eb2088e1bebbe639a937925ec0869231cc98269879f1d1093047a1610"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:01.179Z",
+          "nodeMonotonic": "310555103805800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "e465cb1eb2088e1bebbe639a937925ec0869231cc98269879f1d1093047a1610"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:02.349Z",
+          "nodeMonotonic": "310556274305300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "e465cb1eb2088e1bebbe639a937925ec0869231cc98269879f1d1093047a1610"
+        }
+      ],
+      "pageLogSHA": "fdc454e13d753bab8f196f61f1eb3dac78994397fea8acf6de5350e81535ef94",
+      "workerLogSHA": "b8d7d090eb2bb69c531dec4e2f4d75948ef64f9b3146289e83c2fff5a30bab72"
+    },
+    {
+      "id": "firefox-r7-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:48:04.551Z",
+          "nodeMonotonic": "310558476495400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ba4a779961ede2367686d824826deaa8f133c4df26245983773f4d17cbe644c2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:06.981Z",
+          "nodeMonotonic": "310560906568300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ba4a779961ede2367686d824826deaa8f133c4df26245983773f4d17cbe644c2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:08.368Z",
+          "nodeMonotonic": "310562293437800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ba4a779961ede2367686d824826deaa8f133c4df26245983773f4d17cbe644c2"
+        }
+      ],
+      "pageLogSHA": "81fd348e09eb226d79e19d2387ce7a4adf3418e2e32779961d8c2814de8a6fb2",
+      "workerLogSHA": "112abdbf2d052588885b380fe352a2a6133b0a7d05fcb8175471f7b0802e815c"
+    },
+    {
+      "id": "firefox-r8-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:48:15.744Z",
+          "nodeMonotonic": "310569669129100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d609d1f63f8dc9bbeda8ef77338c175e481b170835de524f9dcdf64c2df1d85e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:18.239Z",
+          "nodeMonotonic": "310572163908100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "d609d1f63f8dc9bbeda8ef77338c175e481b170835de524f9dcdf64c2df1d85e"
+        }
+      ],
+      "pageLogSHA": "d76479c81f7fe3d04ab7d83469fb1993040383b62075805e5b3a1845753a9e04",
+      "workerLogSHA": "a61d072b0aa306955d40b19dd82de163cf65d956b49e389ab99b5f9220a7ed0e"
+    },
+    {
+      "id": "firefox-r8-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:48:20.345Z",
+          "nodeMonotonic": "310574269803800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "83e34aae796a42d7f4b446f99b38bc4f37056486e7b74a7c7e4fba26f27b1cee"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:22.806Z",
+          "nodeMonotonic": "310576731323300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "83e34aae796a42d7f4b446f99b38bc4f37056486e7b74a7c7e4fba26f27b1cee"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:23.818Z",
+          "nodeMonotonic": "310577742540500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "83e34aae796a42d7f4b446f99b38bc4f37056486e7b74a7c7e4fba26f27b1cee"
+        }
+      ],
+      "pageLogSHA": "0f7ed792d3569b7391fea2e04465a658f1e12d4fe7ec0b6c6855d91149417a13",
+      "workerLogSHA": "7b7d8023036e2ef4ad9947ce075b09ed45ab0ee8b10c0d91272fa30347206241"
+    },
+    {
+      "id": "firefox-r8-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installed",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:48:25.492Z",
+          "nodeMonotonic": "310579416756200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "751a9fbde5639e7dc962e14bdc79ed220a9b84053c604a73908a3d25ebefc55e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:27.930Z",
+          "nodeMonotonic": "310581855418000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "751a9fbde5639e7dc962e14bdc79ed220a9b84053c604a73908a3d25ebefc55e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:48:29.123Z",
+          "nodeMonotonic": "310583047952500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "751a9fbde5639e7dc962e14bdc79ed220a9b84053c604a73908a3d25ebefc55e"
+        }
+      ],
+      "pageLogSHA": "6a019384a1aa0222b7e4cea518a9c1d498dbd334c58eb229af0ce5a3d155a9fb",
+      "workerLogSHA": "6fc5f0ff92c4d87430e681c10a98c5976d822a6bfa864e3d4aeb8ebb998ab72c"
+    },
+    {
+      "id": "firefox-r9-c0-natural",
+      "blocked": "controllerchange",
+      "caseEnd": "timedOut",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:48:37.098Z",
+          "nodeMonotonic": "310591022535200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "56e477055fe5c5ecc1f9a6b8328b487c8ff21af3f37136552b44f830a4dfc21f"
+        }
+      ],
+      "pageLogSHA": "0b1358fe9a6cab8d0e8a58d590c4fe9a157d5aab5045715a77bf6ac8c6246932",
+      "workerLogSHA": "3f0daec3bf3739022992240e819088d4ff3af1c9a059553bd0f7bd5cd3346455"
+    },
+    {
+      "id": "webkit-r0-c0-503",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 14,
+      "mismatches": [],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:20.657Z",
+          "nodeMonotonic": "309674576011400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c8096eace5557a2b35fbc014ce7a7b2dbe24d416a14af05fffa61a5acfe18bbb"
+        }
+      ],
+      "pageLogSHA": "6e0bc6acf6591b786b1bafec877a6f9b349f4bdeb6a9e55fac00caf9443bb2f5",
+      "workerLogSHA": "61312fab1ed10de6107b51536351ec5f909d97d65484cc752fcb9a8a617bfc7c"
+    },
+    {
+      "id": "webkit-r0-c0-delay",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:23.412Z",
+          "nodeMonotonic": "309677331233000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "537697fa9c2994a2cf294d0886274ef3ccbeab7fe9b602c69809c6b82c418ce5"
+        }
+      ],
+      "pageLogSHA": "7e78e921e90442e403c570902d13dfed49aefa455ec6649cfb33f11dc7987ce1",
+      "workerLogSHA": "d6f400acb309d573ace97fd52411394071411b8c829122294ba084cb6bf535f4"
+    },
+    {
+      "id": "webkit-r0-c0-hash",
+      "blocked": null,
+      "caseEnd": null,
+      "readyStarted": false,
+      "readyResolved": false,
+      "controllerResolved": false,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "redundant",
+        "redundant"
+      ],
+      "digests": 15,
+      "mismatches": [
+        {
+          "receivedAt": "2026-11-01T18:33:22.235Z",
+          "nodeMonotonic": "309676154414700",
+          "source": "worker",
+          "context": "webkit-r0-c0-hash",
+          "boot": "c13ec58b-c79d-4799-9f22-6d97e1f9eb1f",
+          "sequence": 47,
+          "event": "digest",
+          "wall": 1793558002234,
+          "monotonic": 297,
+          "timeOrigin": 1793558001937,
+          "path": "/workshop.svg",
+          "bytes": 78,
+          "expected": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+          "actual": "adf799d42cc294fe276069fbeaab61c97987a18e78b276296551ab6577e97218",
+          "match": false
+        }
+      ],
+      "puts": 0,
+      "marker": 0,
+      "installComplete": 0,
+      "installReject": 1,
+      "activateStart": 0,
+      "activateComplete": 0,
+      "claimStart": 0,
+      "claimEnd": 0,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:33:21.924Z",
+          "nodeMonotonic": "309675843392500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "201c52d868861d39f7dc8f25daa1db174f80aa65c7b1793bc7eef462fe99df62"
+        }
+      ],
+      "pageLogSHA": "ffda39c2446205a61306805022fb40d27c25f4f16f08038a469410d11fcaf151",
+      "workerLogSHA": "131b2ba9d4fc3858e878997e6894eaac6e78bcc4580a8928b6460e02f204e248"
+    },
+    {
+      "id": "webkit-r0-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:50:41.416Z",
+          "nodeMonotonic": "310715341721100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "1ab87062a1d532e92c1948445b3696b57f729e245bbd6bc17f0fc229450431c0"
+        },
+        {
+          "receivedAt": "2026-11-01T18:50:43.624Z",
+          "nodeMonotonic": "310717549801800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "1ab87062a1d532e92c1948445b3696b57f729e245bbd6bc17f0fc229450431c0"
+        }
+      ],
+      "pageLogSHA": "deafff39f8345fef178e7caf9caaa5981696f56101970d54652e151b4ca62a01",
+      "workerLogSHA": "760ef2ed10fc166c2300ee5d2fb9d1daf0ac1ea021ff48589756735be94e4f57"
+    },
+    {
+      "id": "webkit-r0-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:50:45.578Z",
+          "nodeMonotonic": "310719503844600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "44a915a85293f3018022b1ad1319c49e38b405d5661ae68874313a7d07e54fcf"
+        },
+        {
+          "receivedAt": "2026-11-01T18:50:48.246Z",
+          "nodeMonotonic": "310722172139200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "44a915a85293f3018022b1ad1319c49e38b405d5661ae68874313a7d07e54fcf"
+        }
+      ],
+      "pageLogSHA": "142a2f74c82153da3672f7ff74769aa680f1b3e8deca64ce0365cded9da823dc",
+      "workerLogSHA": "74e8a84e9e17dc766d5f8755415b973db8bd3afd942f2bf411a394a125932932"
+    },
+    {
+      "id": "webkit-r0-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "installed",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:50:50.898Z",
+          "nodeMonotonic": "310724824421500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4740f863e7f4a24fc1e772fef3df27792ae5e868da973384632d82c407160757"
+        },
+        {
+          "receivedAt": "2026-11-01T18:50:53.688Z",
+          "nodeMonotonic": "310727613663800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4740f863e7f4a24fc1e772fef3df27792ae5e868da973384632d82c407160757"
+        },
+        {
+          "receivedAt": "2026-11-01T18:50:55.073Z",
+          "nodeMonotonic": "310728999480900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "4740f863e7f4a24fc1e772fef3df27792ae5e868da973384632d82c407160757"
+        }
+      ],
+      "pageLogSHA": "f07c6c25c1714fc7ae71f7051921373388f678546388891b24e80b9acd2aab33",
+      "workerLogSHA": "7feb71f7bfc484a5d897a4e23652d7adcb68905dc6ae68686f23d55d7c0770da"
+    },
+    {
+      "id": "webkit-r1-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:50:58.510Z",
+          "nodeMonotonic": "310732436175400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "fcb64cf7063bd6f1fade187740017ec4614b1270a519eb6d87e157d23771a4c2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:00.907Z",
+          "nodeMonotonic": "310734832681400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "fcb64cf7063bd6f1fade187740017ec4614b1270a519eb6d87e157d23771a4c2"
+        }
+      ],
+      "pageLogSHA": "ef052c94bc16dbf66d3cde782f3f5b249f14b448525fba2dd4bb61068516d2a5",
+      "workerLogSHA": "a1c2d4e7c04df0830928ecb41271a764a0eaca8a8ddfb963817c4933f3977ff8"
+    },
+    {
+      "id": "webkit-r1-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:03.416Z",
+          "nodeMonotonic": "310737341961200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "2b039860e8e9d706c5514e351377ff14945a97a40994d929c68f622b6ca5c50e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:06.190Z",
+          "nodeMonotonic": "310740116471800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "2b039860e8e9d706c5514e351377ff14945a97a40994d929c68f622b6ca5c50e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:07.596Z",
+          "nodeMonotonic": "310741521705200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "2b039860e8e9d706c5514e351377ff14945a97a40994d929c68f622b6ca5c50e"
+        }
+      ],
+      "pageLogSHA": "4a2fdb8a769a92ee8b14995d446649f3771a68588718403d76160be395c78ad5",
+      "workerLogSHA": "13dbcc4b5937079724fd97f2e40fac0e9f2bd0ea9a8665ee6f90908cacb10b16"
+    },
+    {
+      "id": "webkit-r1-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:09.687Z",
+          "nodeMonotonic": "310743612968300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7a270c848a8aefb2e3a380dd2aaf1cd286399b4d2e9814d724fb59948d94ac4e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:13.098Z",
+          "nodeMonotonic": "310747023944200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7a270c848a8aefb2e3a380dd2aaf1cd286399b4d2e9814d724fb59948d94ac4e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:14.808Z",
+          "nodeMonotonic": "310748734577400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7a270c848a8aefb2e3a380dd2aaf1cd286399b4d2e9814d724fb59948d94ac4e"
+        }
+      ],
+      "pageLogSHA": "8bd5c6fb7e02450a9ccf637b69df7981507038c9d702f047719743a881d874dc",
+      "workerLogSHA": "3438b36d79c9a0a65c52fefd93214f55e9aa6f0762fe2e51739b27a2dc1ef1f8"
+    },
+    {
+      "id": "webkit-r2-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:19.000Z",
+          "nodeMonotonic": "310752926340200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "718f4b708cf859e3d5ff963e30fe532251d7fcd8c504ff2d113d24bc90c78fdf"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:21.283Z",
+          "nodeMonotonic": "310755209146300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "718f4b708cf859e3d5ff963e30fe532251d7fcd8c504ff2d113d24bc90c78fdf"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:22.358Z",
+          "nodeMonotonic": "310756284197400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "718f4b708cf859e3d5ff963e30fe532251d7fcd8c504ff2d113d24bc90c78fdf"
+        }
+      ],
+      "pageLogSHA": "73cdce19c8a65204460697af255d3b98d3b04dd0d95a441a5994f2cd005bc66e",
+      "workerLogSHA": "5acc6e2faa1e1584cc0679f423719e60a25f20076e24f89eec52ce2b54503407"
+    },
+    {
+      "id": "webkit-r2-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:23.790Z",
+          "nodeMonotonic": "310757716493600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c149ae231b78b4c083df874c7dceac04a5053d7a93e78c9e2860e442dd10c6cd"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:26.826Z",
+          "nodeMonotonic": "310760752250500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c149ae231b78b4c083df874c7dceac04a5053d7a93e78c9e2860e442dd10c6cd"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:28.228Z",
+          "nodeMonotonic": "310762154096500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "c149ae231b78b4c083df874c7dceac04a5053d7a93e78c9e2860e442dd10c6cd"
+        }
+      ],
+      "pageLogSHA": "3f9ae539591e9892d1decf5934b78f928e84ac728924bbc79c1d175a90f95ead",
+      "workerLogSHA": "8d62959369f26b58d19b220301c0aeb2b778d87a931d1e3685b2d40807eff94e"
+    },
+    {
+      "id": "webkit-r2-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:30.386Z",
+          "nodeMonotonic": "310764312560700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "348ee086ee88d7f5a4d61edf4c996c71191db4a9205ad5867aa18a065fdccd9d"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:33.480Z",
+          "nodeMonotonic": "310767406068300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "348ee086ee88d7f5a4d61edf4c996c71191db4a9205ad5867aa18a065fdccd9d"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:35.137Z",
+          "nodeMonotonic": "310769063594200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "348ee086ee88d7f5a4d61edf4c996c71191db4a9205ad5867aa18a065fdccd9d"
+        }
+      ],
+      "pageLogSHA": "8baf20fb2de7002a2b33a7072fe0035d325758bbb9b467442187ccc92c3ae390",
+      "workerLogSHA": "f277b5b9b92b76e2b1e2c2e4cba91abbf62a738cc48b41b67f80c294c955047f"
+    },
+    {
+      "id": "webkit-r3-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:39.218Z",
+          "nodeMonotonic": "310773143930500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7866082834584b2f252519d0f09cb276ffec5a1e8b836bbc3373dd13fb97d4f4"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:41.702Z",
+          "nodeMonotonic": "310775628075100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7866082834584b2f252519d0f09cb276ffec5a1e8b836bbc3373dd13fb97d4f4"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:42.773Z",
+          "nodeMonotonic": "310776699369100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "7866082834584b2f252519d0f09cb276ffec5a1e8b836bbc3373dd13fb97d4f4"
+        }
+      ],
+      "pageLogSHA": "6c9c8726d992702523f6d8397b14c681d585af5ffe805ad3e93fc8b6468209c1",
+      "workerLogSHA": "924acffab7c8fbedb3ae455bc23c658f4e5d361036dfd297b86bae5a59d98207"
+    },
+    {
+      "id": "webkit-r3-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:44.097Z",
+          "nodeMonotonic": "310778023337100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ff53a1acb7d92c1381c892955e110a9b5e9d73de896bcf27a0e023694b5b4d47"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:46.858Z",
+          "nodeMonotonic": "310780784109900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ff53a1acb7d92c1381c892955e110a9b5e9d73de896bcf27a0e023694b5b4d47"
+        }
+      ],
+      "pageLogSHA": "d8ca6ca21f3e845c9f6d27a2c20d5cacccb655ba089cd1964cc2a605d9909427",
+      "workerLogSHA": "4604a972c614ba9d45a79c991809a950bf99ea7304669d986c44eb8d3a1885db"
+    },
+    {
+      "id": "webkit-r3-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:49.386Z",
+          "nodeMonotonic": "310783311639800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f783f3ed6d80a580b592f914d11cdbd866ef8b0bc55abc6619c68dc8d6340758"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:52.352Z",
+          "nodeMonotonic": "310786278283300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f783f3ed6d80a580b592f914d11cdbd866ef8b0bc55abc6619c68dc8d6340758"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:53.616Z",
+          "nodeMonotonic": "310787541892100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f783f3ed6d80a580b592f914d11cdbd866ef8b0bc55abc6619c68dc8d6340758"
+        }
+      ],
+      "pageLogSHA": "65699574e31b58042a656a424d16c881610c973dee621b8c2163ed0f9ebdf379",
+      "workerLogSHA": "efddf5b82a94f1436242130dbe10d28c256426885e563396bb042850d9f24b10"
+    },
+    {
+      "id": "webkit-r4-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:51:56.801Z",
+          "nodeMonotonic": "310790726862900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "62fd0cd93c053e63bc16a7c616d82a0fec32dde6caea9749ebc88df7cfabf40d"
+        },
+        {
+          "receivedAt": "2026-11-01T18:51:59.020Z",
+          "nodeMonotonic": "310792946124200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "62fd0cd93c053e63bc16a7c616d82a0fec32dde6caea9749ebc88df7cfabf40d"
+        }
+      ],
+      "pageLogSHA": "1e77dd0ff155e68e24bec160ae8a5a63cb77302c90cbc1b4a0fff624cc64aaa1",
+      "workerLogSHA": "b1a38eb33eddfa504930679fb59b6cfb10796a6889aa78a562683ef8d5927b0c"
+    },
+    {
+      "id": "webkit-r4-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:01.360Z",
+          "nodeMonotonic": "310795286353000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "fb2b685e968a22a4a1b48f0b1e5e3bd825ed070a4b725ea32a90a667ed9478a0"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:04.415Z",
+          "nodeMonotonic": "310798341432700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "fb2b685e968a22a4a1b48f0b1e5e3bd825ed070a4b725ea32a90a667ed9478a0"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:05.629Z",
+          "nodeMonotonic": "310799554736100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "fb2b685e968a22a4a1b48f0b1e5e3bd825ed070a4b725ea32a90a667ed9478a0"
+        }
+      ],
+      "pageLogSHA": "3fa72b3732a81b130c3afa4899254fb4a4b8da0487341b992621b428bc03ba68",
+      "workerLogSHA": "2b77398579c8bd4d9ee146a24565235abea2b214f55b533461f4d9cfd4001f5f"
+    },
+    {
+      "id": "webkit-r4-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activated",
+        "activating",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:07.655Z",
+          "nodeMonotonic": "310801580494000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f3ba0f8ece6fc4ec7500a9c2c3137237bb3942c312b8addcefa8f71332b7a53c"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:11.602Z",
+          "nodeMonotonic": "310805527943400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f3ba0f8ece6fc4ec7500a9c2c3137237bb3942c312b8addcefa8f71332b7a53c"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:13.663Z",
+          "nodeMonotonic": "310807589259000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f3ba0f8ece6fc4ec7500a9c2c3137237bb3942c312b8addcefa8f71332b7a53c"
+        }
+      ],
+      "pageLogSHA": "3a5b5ee793ad3c44ce9ff5865702a6f19574e55261c06a5c26087e8ba24123fb",
+      "workerLogSHA": "06800d8af1a11bd291bd0fca550950afd48445ab376b5e4a6f8f90879501421c"
+    },
+    {
+      "id": "webkit-r5-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:19.140Z",
+          "nodeMonotonic": "310813065973400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d7a5424a1b2fd3d041116d06ee0a51c627ebcbce036ac841e76effcce3255d6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:21.555Z",
+          "nodeMonotonic": "310815480767000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d7a5424a1b2fd3d041116d06ee0a51c627ebcbce036ac841e76effcce3255d6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:22.860Z",
+          "nodeMonotonic": "310816785687700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d7a5424a1b2fd3d041116d06ee0a51c627ebcbce036ac841e76effcce3255d6"
+        }
+      ],
+      "pageLogSHA": "1d2d04f11457a3386aafe7742b453929c2c7f53d222754d9ebd1867c503ec58a",
+      "workerLogSHA": "b1eefe051a47787476365500386dbe4ab0b2d2707db1aaeaab421a7904fc797e"
+    },
+    {
+      "id": "webkit-r5-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:25.400Z",
+          "nodeMonotonic": "310819325725300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "31e9b2138828201f03893c637359b156440500561e4d097fd13c55ba604626d2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:28.934Z",
+          "nodeMonotonic": "310822859518700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "31e9b2138828201f03893c637359b156440500561e4d097fd13c55ba604626d2"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:30.686Z",
+          "nodeMonotonic": "310824612434800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "31e9b2138828201f03893c637359b156440500561e4d097fd13c55ba604626d2"
+        }
+      ],
+      "pageLogSHA": "aa76c3004f88af48d395e7ab0e3cbba6581499d6a03846e7a645282abf0f03b2",
+      "workerLogSHA": "cf8cf55e27aadac713ea019849a4cb4703683ce2d3005a22886d7189fdf0b47a"
+    },
+    {
+      "id": "webkit-r5-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:33.144Z",
+          "nodeMonotonic": "310827070440500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "436870eee29eba97d9adebe35e62a47662b4a817dc4f0f3dcb0c540a1b0cd8f6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:37.017Z",
+          "nodeMonotonic": "310830943326100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "436870eee29eba97d9adebe35e62a47662b4a817dc4f0f3dcb0c540a1b0cd8f6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:39.047Z",
+          "nodeMonotonic": "310832972604500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "436870eee29eba97d9adebe35e62a47662b4a817dc4f0f3dcb0c540a1b0cd8f6"
+        }
+      ],
+      "pageLogSHA": "da452d2e5d6cbbfddb41d40ab1399d54ed56640af539d319bfb70b37ee527637",
+      "workerLogSHA": "b6ded57a9bf92f4ffd0e7fc62c8f0bc70b4fed2af159e98f0810438663ae806d"
+    },
+    {
+      "id": "webkit-r6-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "installed",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:44.514Z",
+          "nodeMonotonic": "310838441028900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f24dafcb2addaa4acf0621a5657da7486ce79a170b5b93b105159f8165020dfb"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:47.025Z",
+          "nodeMonotonic": "310840952060800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f24dafcb2addaa4acf0621a5657da7486ce79a170b5b93b105159f8165020dfb"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:48.147Z",
+          "nodeMonotonic": "310842074051600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "f24dafcb2addaa4acf0621a5657da7486ce79a170b5b93b105159f8165020dfb"
+        }
+      ],
+      "pageLogSHA": "421885b76764ff5c84bc4feafff20b7ec660dc285f6e95cee5a8a2dd3f69e858",
+      "workerLogSHA": "b7f95ea03623fa35561b3e92ee357956d3587f2d76e574fe732a2e7b9f93247b"
+    },
+    {
+      "id": "webkit-r6-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:50.341Z",
+          "nodeMonotonic": "310844268002700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "b0bb9d9649cff4a4042d47aae57adeedfe712c36d5a922661a72e3d0cd99bc0e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:53.528Z",
+          "nodeMonotonic": "310847455166600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "b0bb9d9649cff4a4042d47aae57adeedfe712c36d5a922661a72e3d0cd99bc0e"
+        },
+        {
+          "receivedAt": "2026-11-01T18:52:55.071Z",
+          "nodeMonotonic": "310848998176800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "b0bb9d9649cff4a4042d47aae57adeedfe712c36d5a922661a72e3d0cd99bc0e"
+        }
+      ],
+      "pageLogSHA": "bba5b23e9b3988df6a1e65ec549a9eb10c95942c405167a5c93ee163a05ea58e",
+      "workerLogSHA": "4bd09cc4a12088e779f4d8ba669b03ceb4455aae0d04c33c3c1180ce95742f62"
+    },
+    {
+      "id": "webkit-r6-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:52:58.283Z",
+          "nodeMonotonic": "310852209252600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d65f2de7d55c82ee81afe773e354b5b5b497fbc9db2cd06b8b7b33ffce21ec4"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:02.296Z",
+          "nodeMonotonic": "310856222932500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d65f2de7d55c82ee81afe773e354b5b5b497fbc9db2cd06b8b7b33ffce21ec4"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:04.530Z",
+          "nodeMonotonic": "310858456961700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "3d65f2de7d55c82ee81afe773e354b5b5b497fbc9db2cd06b8b7b33ffce21ec4"
+        }
+      ],
+      "pageLogSHA": "f3ffde195084086d8e3c3cd0ee13b6672cd98ea0737c53e05e2040c25bb9ddc2",
+      "workerLogSHA": "c5b18b2b10c00bcc90f76fbb26e8755d698b26493a436f0c9d851c90f61cac20"
+    },
+    {
+      "id": "webkit-r7-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "installed",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:10.115Z",
+          "nodeMonotonic": "310864041393400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "cb789ffd3d6210b119c3c2c578efbc4f62c0c909b253240f9f4a384d8977e805"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:12.711Z",
+          "nodeMonotonic": "310866638067600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "cb789ffd3d6210b119c3c2c578efbc4f62c0c909b253240f9f4a384d8977e805"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:13.955Z",
+          "nodeMonotonic": "310867881949300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "cb789ffd3d6210b119c3c2c578efbc4f62c0c909b253240f9f4a384d8977e805"
+        }
+      ],
+      "pageLogSHA": "c0e2092edbffbf5e0c5d2b215c5ad6d539a0533d19c5ac5e8765679645c34b67",
+      "workerLogSHA": "ce63ee134b1ca0ac7d84c2bdfd8053059f3b41983b0f39d9bf93a183eef7cc90"
+    },
+    {
+      "id": "webkit-r7-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:15.758Z",
+          "nodeMonotonic": "310869684803500",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5e3e382b29b5bc8c9ba87ab2a8ef6cbf509fc664b8f937ed1f2ed71467680418"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:19.190Z",
+          "nodeMonotonic": "310873116274200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5e3e382b29b5bc8c9ba87ab2a8ef6cbf509fc664b8f937ed1f2ed71467680418"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:21.015Z",
+          "nodeMonotonic": "310874942146700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "5e3e382b29b5bc8c9ba87ab2a8ef6cbf509fc664b8f937ed1f2ed71467680418"
+        }
+      ],
+      "pageLogSHA": "9e3bd5a8414f31428c9bc1e0d0358670b893b6a1514193dbe7c6292a05b0af15",
+      "workerLogSHA": "ee7ca66c8427b4b08ba39265411e4de91881bf07b42781a956507a0bb3694ff5"
+    },
+    {
+      "id": "webkit-r7-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:23.317Z",
+          "nodeMonotonic": "310877244144200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "67e7f2b7ec47255d1387be2b2bd1926e8e431619449ec894cdc5e2598a42caff"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:26.902Z",
+          "nodeMonotonic": "310880828390700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "67e7f2b7ec47255d1387be2b2bd1926e8e431619449ec894cdc5e2598a42caff"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:28.834Z",
+          "nodeMonotonic": "310882761036900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "67e7f2b7ec47255d1387be2b2bd1926e8e431619449ec894cdc5e2598a42caff"
+        }
+      ],
+      "pageLogSHA": "1ac5424459dff42408e9b5fd327e2f01f0d15946f2d17dc81ec9dedab2831bf6",
+      "workerLogSHA": "1106dfbe0f79218403c57c39c9d1d182eb2727aba7a8f3ed528561c199749c1a"
+    },
+    {
+      "id": "webkit-r8-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:33.736Z",
+          "nodeMonotonic": "310887662358000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "819ff63b0e0f773ba4b3e441eaa6be32b6637eee58c5adb056010cba4936d8de"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:36.315Z",
+          "nodeMonotonic": "310890241909300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "819ff63b0e0f773ba4b3e441eaa6be32b6637eee58c5adb056010cba4936d8de"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:37.528Z",
+          "nodeMonotonic": "310891454974200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "819ff63b0e0f773ba4b3e441eaa6be32b6637eee58c5adb056010cba4936d8de"
+        }
+      ],
+      "pageLogSHA": "55e9cf0547b66b0850c633e616f11e04f499d41149051a4d416334f5a889a0b0",
+      "workerLogSHA": "7a4072b803fa9b447e1236d0a440400e29dd5012bdd99cd4fa60c302915a9d66"
+    },
+    {
+      "id": "webkit-r8-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:39.622Z",
+          "nodeMonotonic": "310893549036000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8e0a49d4c60ce544d40a928ffbf9236621bf31b7d7773db797d1d30a83a89a56"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:42.754Z",
+          "nodeMonotonic": "310896681098200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8e0a49d4c60ce544d40a928ffbf9236621bf31b7d7773db797d1d30a83a89a56"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:43.958Z",
+          "nodeMonotonic": "310897885064100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "8e0a49d4c60ce544d40a928ffbf9236621bf31b7d7773db797d1d30a83a89a56"
+        }
+      ],
+      "pageLogSHA": "d04da521481386078eb065536e47efaac6ef47032fbec494b2b99878f59ba78a",
+      "workerLogSHA": "9a24b50539bc1f8e41d7d1243da39b9637a54b1b5dabd550bf22ad6cad2a7581"
+    },
+    {
+      "id": "webkit-r8-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "installed",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:46.601Z",
+          "nodeMonotonic": "310900528015200",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "396e3ad377f2a336ce16abd4ad32acf186035ba9cac7ae4df8707048164f62c6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:50.165Z",
+          "nodeMonotonic": "310904091564600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "396e3ad377f2a336ce16abd4ad32acf186035ba9cac7ae4df8707048164f62c6"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:51.985Z",
+          "nodeMonotonic": "310905912369100",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "396e3ad377f2a336ce16abd4ad32acf186035ba9cac7ae4df8707048164f62c6"
+        }
+      ],
+      "pageLogSHA": "c869c49b894ce75cd0b93dd16ee6722d07cdaa2af80b6ac5dec7c4fcaab8eb1f",
+      "workerLogSHA": "802d8149f6941868139beb9719c06ba72c48c1ce2e99cec4ce41f3d8956adcc3"
+    },
+    {
+      "id": "webkit-r9-c0-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:53:56.983Z",
+          "nodeMonotonic": "310910910258300",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "41751269eff7af3f8a1fad328948c98eae44ddc51238f318a1483a9c58ce4e02"
+        },
+        {
+          "receivedAt": "2026-11-01T18:53:59.462Z",
+          "nodeMonotonic": "310913388937000",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "41751269eff7af3f8a1fad328948c98eae44ddc51238f318a1483a9c58ce4e02"
+        },
+        {
+          "receivedAt": "2026-11-01T18:54:00.520Z",
+          "nodeMonotonic": "310914447253600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "41751269eff7af3f8a1fad328948c98eae44ddc51238f318a1483a9c58ce4e02"
+        }
+      ],
+      "pageLogSHA": "dbbc3ea84c8f513c10d9c2e26d7c761e37c615f96af12ea5988b12f8e72a4325",
+      "workerLogSHA": "5552f8959974f8c1ffc11663f59e98724e8475881a2fae8edff50c34af98ee7d"
+    },
+    {
+      "id": "webkit-r9-c1-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "activating",
+        "activating",
+        "installed",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:54:02.219Z",
+          "nodeMonotonic": "310916146435800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "221475840e9d2ea71281609bea672d3b851b1f4fb161e3d0f878569b83ee3a58"
+        },
+        {
+          "receivedAt": "2026-11-01T18:54:05.605Z",
+          "nodeMonotonic": "310919532457600",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "221475840e9d2ea71281609bea672d3b851b1f4fb161e3d0f878569b83ee3a58"
+        },
+        {
+          "receivedAt": "2026-11-01T18:54:07.214Z",
+          "nodeMonotonic": "310921140594900",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "221475840e9d2ea71281609bea672d3b851b1f4fb161e3d0f878569b83ee3a58"
+        }
+      ],
+      "pageLogSHA": "d9ba5ad8f14d55b616678bae6f1f5b135a4dde1ec4bc8d49fae85a8d4d91535c",
+      "workerLogSHA": "168b041acb0fd7186d6ab9ee117510506ccc0a0b67a5c943f79f00d2a6cf1a97"
+    },
+    {
+      "id": "webkit-r9-c2-natural",
+      "blocked": null,
+      "caseEnd": "passed",
+      "readyStarted": true,
+      "readyResolved": true,
+      "controllerResolved": true,
+      "nativeStates": [
+        "installing",
+        "installing",
+        "installed",
+        "installed",
+        "activating",
+        "activating",
+        "activated",
+        "activated",
+        "activated",
+        "activated"
+      ],
+      "digests": 15,
+      "mismatches": [],
+      "puts": 15,
+      "marker": 1,
+      "installComplete": 1,
+      "installReject": 0,
+      "activateStart": 1,
+      "activateComplete": 1,
+      "claimStart": 1,
+      "claimEnd": 1,
+      "workerCopies": [
+        {
+          "receivedAt": "2026-11-01T18:54:09.617Z",
+          "nodeMonotonic": "310923544103700",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ccceba9a73c0451cbb7c2768ebe4a80d94dfc14fd22ba23ad857d5b23d0bf835"
+        },
+        {
+          "receivedAt": "2026-11-01T18:54:13.029Z",
+          "nodeMonotonic": "310926956301800",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ccceba9a73c0451cbb7c2768ebe4a80d94dfc14fd22ba23ad857d5b23d0bf835"
+        },
+        {
+          "receivedAt": "2026-11-01T18:54:15.060Z",
+          "nodeMonotonic": "310928987305400",
+          "source": "server",
+          "event": "worker-copy",
+          "originalSHA": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+          "instrumentedSHA": "ccceba9a73c0451cbb7c2768ebe4a80d94dfc14fd22ba23ad857d5b23d0bf835"
+        }
+      ],
+      "pageLogSHA": "c9f5b353211b5b5794030667cda1693a37037ac18476da88155886a6597ed26d",
+      "workerLogSHA": "1b78d7391e6e105a17526cc057b243e0e33dae0fb0acb0f40c6c5d9f5362a974"
+    }
+  ],
+  "rootCause": "NOT DETERMINED",
+  "releaseApproved": false
+}

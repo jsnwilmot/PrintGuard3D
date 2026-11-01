@@ -1,0 +1,1733 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "release1-reporting/playwright.config.mjs",
+      "--grep",
+      "N09 zero/one/twelve printers",
+      "--repeat-each=10"
+    ],
+    "configFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\playwright.config.mjs",
+    "rootDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/release1-reporting/native",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/test-results/reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/test-results/reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/test-results/reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/sw-readiness/local-pin/approved/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\test-results\\reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\test-results\\reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\test-results\\reporting",
+        "repeatEach": 10,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\test-results/reporting-native.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\playwright-report/reporting",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node remediation-phase1/server.mjs 4359 --source-headers --offline-control",
+      "cwd": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\sw-readiness\\local-pin\\approved\\",
+      "url": "http://127.0.0.1:4359/review.html",
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "reporting.mjs",
+      "file": "reporting.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5445,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:05:39.350Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2a2569e078b76d1c9ff3",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:05:45.937Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-f83c01616eeb24d7b106",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:05:53.003Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-e728ab9bb5fb2155b060",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:05:59.599Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-bd0e1f352c38f708244e",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:06.647Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-3764520080580ce5fa53",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:13.574Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-9244dc47b76f68325360",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:20.405Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-9d0cac953287c87681fb",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5051,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:26.639Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-fed03bf6996af5981a38",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:32.733Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-f8ecd0dcca833ff2b2c9",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:38.912Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-b5264b308f50b9c20f3a",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:46.056Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-b5d23d18a22e6114be80",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10507,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:06:58.883Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-ef9f39a68082632ce39f",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:07:11.382Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-e47db20d7031e67745a0",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:07:23.759Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-1435486428eb56575f45",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10094,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:07:36.053Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-c9593512c5dd267f146a",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10426,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:07:48.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2776fc9b77870e17cae2",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:08:00.499Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-7f5319ee644224c3ba69",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11636,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:08:13.008Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-e44a319e68dfb0332361",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:08:26.529Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-cf0b835fa61036b96785",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:08:38.719Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-4baa186c60e248bc133c",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:08:51.727Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-64440e3591a91104f072",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:09:06.469Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-7940669a5d58953fcf47",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:09:21.297Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-59c3f010a353d1d93080",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:09:35.885Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-276e7792ef1673fd3953",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:09:50.395Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-341b550fe420094a371f",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:10:06.039Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-fa6549d7f1e99caa8817",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:10:20.792Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-8d3c6f98b7138b4b2645",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 27,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13543,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:10:35.569Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-ecc7b67cc79cd41e649a",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 28,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13743,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:10:50.178Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-30c9552a95ba2117b5b9",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 29,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13771,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:11:04.948Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-c186b9c4fe0a3562fe5c",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-01T18:05:37.858Z",
+    "duration": 341397.929,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

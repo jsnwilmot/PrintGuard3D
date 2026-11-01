@@ -1,0 +1,32 @@
+{
+  "base": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "source": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-1\\source",
+  "files": {
+    "assets/App-CRyu6iqH.js": "c79869dd3d26d970ad80788bc3f8c4d4662e5839b343333a3a84a0c7cb4147e3",
+    "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+    "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+    "assets/index-4XDHOwJL.js": "bacb45edc0c8be2e3a1d5ea7a76b70d68710a2abd902774db002f238340b7c9c",
+    "assets/index-D6sY9d4M.css": "75aaf1c226f7220f04f0930b86179cea6754c93c0173cd33fc1a58f31698da3c",
+    "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+    "build-contract.json": "84e230e73b73d4a87b4d1e420cc8843206c07bd7ea79a7421fe19fd8b199f71e",
+    "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+    "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+    "index.html": "7186b539d0317261080a72ebab0719b6ade50a841843bfd91a4c7b7596ceda18",
+    "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+    "manifest.webmanifest": "fe2937c4ca3ebf60fd361f2832271b34914a0de5846c785e47839ea38ef8fbe9",
+    "printer.svg": "505578ad4ce40a797f72f28ce450e55edf50cac86d0740a16a079509d91511d6",
+    "sw.js": "f7aa0b74ae0c8cfb5d83c30411f1f300fb004db1cce438d3fb821fc138bfc484",
+    "workshop.svg": "9bb1ef5cc7dd2667e919002feace9b995e8ab8e35e66d55ceeab14ce19156be0",
+    "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+  },
+  "originalN09SHA": "2a60018f305483a1287ea9979c7405dc403cd9ef91c2d3bedebfde0bea31e078",
+  "originalConfigSHA": "07fa79866af64dc8a928736ba40167f61fbd7aa0cc83ef2b4c599513013a689b",
+  "planned": {
+    "originalPerEngine": 10,
+    "instrumentedPerEngine": 10,
+    "controlsPerEngine": 3
+  },
+  "retries": 0,
+  "originalCeiling": 120000
+}

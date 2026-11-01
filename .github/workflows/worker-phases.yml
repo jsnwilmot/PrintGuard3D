@@ -40,6 +40,9 @@ jobs:
         env:
           PRINTGUARD_PHASE_CONTROLS: '0'
         run: npx playwright test --config release1-worker-phases/playwright.config.mjs --grep 'N09 zero/one/twelve printers' --repeat-each=10
+      - name: Summarize recorded stages without changing outcomes
+        if: always()
+        run: node release1-worker-phases/analyze.mjs .verification-local/worker-phases/ci
       - name: Preserve synthetic evidence including failed cases
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
@@ -47,6 +50,7 @@ jobs:
           name: worker-phase-evidence
           path: |
             .verification-local/worker-phases/ci/SOURCE.json
+            .verification-local/worker-phases/ci/SUMMARY.json
             .verification-local/worker-phases/ci/original.json
             .verification-local/worker-phases/ci/controls.json
             .verification-local/worker-phases/ci/observed.json
