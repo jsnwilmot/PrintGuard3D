@@ -1,0 +1,115 @@
+{
+  "fixture": "Synthetic CSS UTF-8 bytes, no PrintGuard application or data",
+  "rows": [
+    {
+      "charset": false,
+      "routed": false,
+      "expected": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "pageSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "workerSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "trace": ".verification-local/issue41-encoding/charset-false-route-false.zip",
+      "recordedCSS": [
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": null,
+          "sha256": "d4fd64d2de1fe942e000b2504cff45469448fc201431923a452231ff80daf799",
+          "size": 52
+        },
+        {
+          "serviceWorker": "worker@92585fa5c36685e9e066cf4219a36e37",
+          "sha256": "d4fd64d2de1fe942e000b2504cff45469448fc201431923a452231ff80daf799",
+          "size": 52
+        }
+      ],
+      "status": "PASS",
+      "traceSHA256": "ee1f263722523a627618ccd44346c45a0f7e646a857c25c6db3a8dcb056a2283"
+    },
+    {
+      "charset": false,
+      "routed": true,
+      "expected": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "pageSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "workerSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "trace": ".verification-local/issue41-encoding/charset-false-route-true.zip",
+      "recordedCSS": [
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": null,
+          "sha256": "d4fd64d2de1fe942e000b2504cff45469448fc201431923a452231ff80daf799",
+          "size": 52
+        },
+        {
+          "serviceWorker": "worker@c36a38b852998bea3d8d21e19c4dde3b",
+          "sha256": "d4fd64d2de1fe942e000b2504cff45469448fc201431923a452231ff80daf799",
+          "size": 52
+        }
+      ],
+      "status": "PASS",
+      "traceSHA256": "5979e3d7a7d8f912fec51bf44198985d3af1507342ce52092a313f2e7cd399af"
+    },
+    {
+      "charset": true,
+      "routed": false,
+      "expected": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "pageSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "workerSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "trace": ".verification-local/issue41-encoding/charset-true-route-false.zip",
+      "recordedCSS": [
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": "worker@f0716d0cf27460b98faa95f77f401539",
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        }
+      ],
+      "status": "PASS",
+      "traceSHA256": "d73b19d1516fe8aa929a234baa36d9482d0daed1399346176840996eba74e356"
+    },
+    {
+      "charset": true,
+      "routed": true,
+      "expected": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "pageSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "workerSHA": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+      "trace": ".verification-local/issue41-encoding/charset-true-route-true.zip",
+      "recordedCSS": [
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": null,
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        },
+        {
+          "serviceWorker": "worker@d5fae87059e151426baa9921580dd2e5",
+          "sha256": "e8ada7a62aa968b7b7046a33cf05e002029e56aae117fd624ea2fc1e3aedca4e",
+          "size": 44
+        }
+      ],
+      "status": "PASS",
+      "traceSHA256": "648c487060f2964dc3f29f1e9ecd4980d689d5fb2624db85890e9c311dc90e28"
+    }
+  ],
+  "scriptSHA256": "4bc97ac7854c03d4c0a3a7b4a550d17ca5c9ffcdb3b9fb89b97bb76f5121e6e9",
+  "conclusion": "All native fetch byte hashes match the server in this four-case fixture. Trace encoding differs in the recorded worker CSS without explicit charset; this is a measurement representation discrepancy, not proof of corrupted delivered bytes or the historical root cause."
+}

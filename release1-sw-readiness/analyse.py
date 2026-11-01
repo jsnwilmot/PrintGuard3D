@@ -42,7 +42,7 @@ for engine in ["chromium", "firefox", "webkit"]:
     scenarios = {}
     for scenario in sorted({row["scenario"] for row in selected}):
         cases = [row for row in selected if row["scenario"] == scenario]
-        times = sorted(row["observation"]["milliseconds"] for row in cases if "observation" in row)
+        times = sorted(row["observation"]["milliseconds"] for row in cases if "milliseconds" in row.get("observation", {}))
         scenarios[scenario] = {
             "attempts": len(cases),
             "statuses": dict(collections.Counter(row["status"] for row in cases)),

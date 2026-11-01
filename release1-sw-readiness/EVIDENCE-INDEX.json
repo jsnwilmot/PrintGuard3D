@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "pinnedRuntime": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "note": "JSON pinned to LF; original selected ZIP bytes unchanged. Root-cause failure statuses are never promoted by successful independent reruns.",
+  "files": {
+    "ARTIFACTS.json": {
+      "sha256": "7532b3204f842e7f325588146d5541d66cbd530b50b9025e02e87d3ea890ca46",
+      "bytes": 8287
+    },
+    "BASELINE.json": {
+      "sha256": "d385ab7f1d58bb510d9e69f952087544a68634ae4e8654c3db01e0811d30fbf5",
+      "bytes": 15914
+    },
+    "CI-EVIDENCE.json": {
+      "sha256": "46936baaf5b9a22edc096f64405eeec8a569362ae3be126b3705661b6fa91738",
+      "bytes": 2180
+    },
+    "ENCODING-RESULTS.json": {
+      "sha256": "6015f66b0d26447fb87c099cc10eb21c6b50a56db5593ccae7cd562746135d94",
+      "bytes": 4749
+    },
+    "evidence/encoding-no-charset.zip": {
+      "sha256": "5979e3d7a7d8f912fec51bf44198985d3af1507342ce52092a313f2e7cd399af",
+      "bytes": 4379
+    },
+    "evidence/firefox-import-snapshot-failure.zip": {
+      "sha256": "4761eff29d2e9cf4b7fa8d64e899bdeb1c5098dbcfbf21463e8c11ee8a27e9cc",
+      "bytes": 55731
+    },
+    "evidence/historical-chromium-n09.zip": {
+      "sha256": "a4d1be04f23bbede1f1573a98e1093bf7de4cb1809dc096faa20f343960011c9",
+      "bytes": 1894756
+    },
+    "FILES.json": {
+      "sha256": "b91cb0e30a505321b247d2501b86190df79895cef5c3227533d3988e4b50f000",
+      "bytes": 2138
+    },
+    "HISTORICAL-TRACE.json": {
+      "sha256": "5fa7e84b392234ef68ed4751b013b527f2ef1a103961ebc82058bb32e6ce1b04",
+      "bytes": 15763
+    },
+    "RESULTS.json": {
+      "sha256": "7f7a42c0b6b0813d30f125c4163ae3469b96cb384b5593ba7315ec4356c233c5",
+      "bytes": 270035
+    },
+    "SELECTED-EVENTS.json": {
+      "sha256": "3b33aed021318471ca711d8db6c8cf912bb8356762b3f7a9a4a3b0ca1880e060",
+      "bytes": 523789
+    },
+    "SETUP-FAILURES.json": {
+      "sha256": "b817cee27d204220e568e89c711ea1f5a4387f4c853c130ca41e6a77fb1bb193",
+      "bytes": 1526
+    }
+  }
+}

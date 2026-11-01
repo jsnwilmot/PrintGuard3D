@@ -1,0 +1,73 @@
+{
+  "pinnedRuntime": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "diagnosticSource": "8f90fb5e631f7e68df5d7ba66a9145c263538f53",
+  "sourceValidation": {
+    "run": 41316238655,
+    "url": "https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41316238655",
+    "jobs": [
+      {
+        "id": 124876777509,
+        "name": "Reporting, immutable history and offline exports",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777681,
+        "name": "Clean origin, cooperative updates and independent recovery",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777686,
+        "name": "TypeScript, regression tests and build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777711,
+        "name": "Native Chromium backup and restoration",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777713,
+        "name": "Full Release 1 acceptance",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777734,
+        "name": "Chromium, Firefox, WebKit and print compatibility",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "conclusion": "success"
+  },
+  "initialSupplemental": {
+    "run": 41316238711,
+    "job": 124876777704,
+    "conclusion": "failure",
+    "originalN09": {
+      "PASS": 30,
+      "FAIL": 0
+    },
+    "observerCases": {
+      "PASS": 144,
+      "FAIL": 0
+    },
+    "failure": "Postprocessing KeyError milliseconds on optional held-tab observation duration; not a browser-oracle failure. Preserved as FAIL.",
+    "artifact": {
+      "id": 13087618803,
+      "digest": "a51322df85cb94e53e5f17401f793e1b483aaa16c15dac92521843b0a5c5e9e7",
+      "expires": "2026-11-15"
+    }
+  },
+  "localFinal": {
+    "PASS": 143,
+    "FAIL": 1,
+    "remainingFailure": "Firefox native snapshot query throws {} during injected App503. Not reclassified by CI greens."
+  },
+  "finalHead": "Exact submitted SHA and final CI conclusions are recorded in draft PR44.",
+  "releaseApproved": false
+}
