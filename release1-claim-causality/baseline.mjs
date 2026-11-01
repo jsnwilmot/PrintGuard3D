@@ -1,0 +1,8 @@
+import {spawn} from 'node:child_process';
+import {readFile,writeFile,appendFile,copyFile,mkdir} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import os from 'node:os';
+const run=resolve(process.argv[2]||''),meta=JSON.parse(await readFile(join(run,'SOURCE.json'),'utf8')),cli=resolve('node_modules/@playwright/test/cli.js');
+await writeFile(join(run,'BASELINE-ENVIRONMENT.json'),JSON.stringify({platform:os.platform(),release:os.release(),arch:os.arch(),CPU:os.cpus().map(c=>c.model),memory:os.totalmem(),node:process.version,source:meta.plan.base,args:['--config','release1-reporting/playwright.config.mjs','--grep','N09 zero/one/twelve printers','--repeat-each=10'],retries:0,timeout:120000},null,2));
+const p=spawn(process.execPath,[cli,'test','--config','release1-reporting/playwright.config.mjs','--grep','N09 zero/one/twelve printers','--repeat-each=10'],{cwd:meta.source,windowsHide:true,stdio:'inherit'});let previous=process.hrtime.bigint();const timer=setInterval(()=>{const now=process.hrtime.bigint();void appendFile(join(run,'baseline-resources.ndjson'),JSON.stringify({at:new Date().toISOString(),monotonic:now.toString(),intervalMilliseconds:Number(now-previous)/1e6,memory:os.freemem(),hostCPU:os.cpus().map(c=>c.times),loadAverage:os.platform()==='win32'?null:os.loadavg()})+'\n');previous=now;},500);timer.unref();
+const status=await new Promise(resolve=>p.on('exit',resolve));clearInterval(timer);await copyFile(join(meta.source,'test-results/reporting-native.json'),join(run,'original.json'));await writeFile(join(run,'BASELINE-EXIT.json'),JSON.stringify({exit:status,completedAt:new Date().toISOString()}));process.exitCode=status||0;
