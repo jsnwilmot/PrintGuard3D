@@ -1,0 +1,628 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "release1-worker-phases/playwright.config.mjs"
+    ],
+    "configFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases\\playwright.config.mjs",
+    "rootDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/release1-worker-phases",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/.verification-local/worker-phases/phases-local-2/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": [
+          "controls.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/.verification-local/worker-phases/phases-local-2/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": [
+          "controls.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/.verification-local/worker-phases/phases-local-2/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-worker-phase/release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": [
+          "controls.mjs"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": "controls.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "on",
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": "controls.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "on",
+          "screenshot": "only-on-failure",
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\release1-worker-phases",
+        "testIgnore": [],
+        "testMatch": "controls.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "on",
+          "screenshot": "only-on-failure",
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2/controls.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node release1-worker-phases/server.mjs",
+      "cwd": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\",
+      "url": "http://127.0.0.1:4359/__forensic/health",
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "controls.mjs",
+      "file": "controls.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Worker phase negative/positive control 503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:32:58.644Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiY2hyb21pdW0tcjAtYzAtNTAzIiwibW9kZSI6IjUwMyJ9"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-503-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-4a9dcb636f2e66f11984",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1940,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:00.974Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiY2hyb21pdW0tcjAtYzAtaGFzaCIsIm1vZGUiOiJoYXNoIn0="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-hash-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-30c615e11b626590e072",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3993,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:03.105Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiY2hyb21pdW0tcjAtYzAtZGVsYXkiLCJtb2RlIjoiZGVsYXkifQ=="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-delay-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-f35f29fad38be5ecc249",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control 503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:08.206Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiZmlyZWZveC1yMC1jMC01MDMiLCJtb2RlIjoiNTAzIn0="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-503-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-6419bf5a3878ccceb947",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:13.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiZmlyZWZveC1yMC1jMC1oYXNoIiwibW9kZSI6Imhhc2gifQ=="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-hash-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-49ea54920464997ac288",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:15.112Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0IjoiZmlyZWZveC1yMC1jMC1kZWxheSIsIm1vZGUiOiJkZWxheSJ9"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-delay-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-bbe1315d1a51c86f04c7",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control 503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:19.844Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0Ijoid2Via2l0LXIwLWMwLTUwMyIsIm1vZGUiOiI1MDMifQ=="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-503-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-a6196d385aca5ef284aa",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:21.458Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0Ijoid2Via2l0LXIwLWMwLWhhc2giLCJtb2RlIjoiaGFzaCJ9"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-hash-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-d23dcd1e45543286c30c",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        },
+        {
+          "title": "Worker phase negative/positive control delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3206,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T18:33:22.815Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forensic-context",
+                      "contentType": "application/json",
+                      "body": "eyJjb250ZXh0Ijoid2Via2l0LXIwLWMwLWRlbGF5IiwibW9kZSI6ImRlbGF5In0="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-worker-phase\\.verification-local\\worker-phases\\phases-local-2\\controls-traces\\controls.mjs-Worker-phase-negative-positive-control-delay-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addd342cad3d1fbab162-49605ee52a0a6cfe4f73",
+          "file": "controls.mjs",
+          "line": 5,
+          "column": 42
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-01T18:32:57.406Z",
+    "duration": 29102.694,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

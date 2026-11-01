@@ -1,0 +1,65 @@
+name: Supplemental worker-phase investigation
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  phases:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      PRINTGUARD_FORENSIC_RUN: ${{ github.workspace }}/.verification-local/worker-phases/ci
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: node release1-worker-phases/prepare.mjs ci
+      - name: Original pinned N09, ten per engine, unchanged oracle and config
+        working-directory: .verification-local/worker-phases/ci/source
+        run: npx playwright test --config release1-reporting/playwright.config.mjs --grep 'N09 zero/one/twelve printers' --repeat-each=10
+      - name: Preserve original result and traces before separate instrumentation
+        if: always()
+        run: |
+          cp "$PRINTGUARD_FORENSIC_RUN/source/test-results/reporting-native.json" "$PRINTGUARD_FORENSIC_RUN/original.json"
+      - name: Separate phase-log controls, no retry
+        if: always()
+        env:
+          PRINTGUARD_PHASE_CONTROLS: '1'
+        run: npx playwright test --config release1-worker-phases/playwright.config.mjs
+      - name: Separate instrumented N09, ten per engine, unchanged 120s limit
+        if: always()
+        env:
+          PRINTGUARD_PHASE_CONTROLS: '0'
+        run: npx playwright test --config release1-worker-phases/playwright.config.mjs --grep 'N09 zero/one/twelve printers' --repeat-each=10
+      - name: Summarize recorded stages without changing outcomes
+        if: always()
+        run: node release1-worker-phases/analyze.mjs .verification-local/worker-phases/ci
+      - name: Preserve synthetic evidence including failed cases
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: worker-phase-evidence
+          path: |
+            .verification-local/worker-phases/ci/SOURCE.json
+            .verification-local/worker-phases/ci/SUMMARY.json
+            .verification-local/worker-phases/ci/original.json
+            .verification-local/worker-phases/ci/controls.json
+            .verification-local/worker-phases/ci/observed.json
+            .verification-local/worker-phases/ci/case-outcomes/
+            .verification-local/worker-phases/ci/events/
+            .verification-local/worker-phases/ci/page-events/
+            .verification-local/worker-phases/ci/controls-traces/
+            .verification-local/worker-phases/ci/observed-traces/
+            .verification-local/worker-phases/ci/source/test-results/reporting/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

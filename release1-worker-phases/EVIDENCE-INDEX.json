@@ -1,0 +1,62 @@
+{
+  "release1-worker-phases\\evidence\\controls-1-controls.json": {
+    "bytes": 33409,
+    "sha256": "d51349b8c20660d498539faab0f59631ab89e3165a2619ec01ed728aad638db4"
+  },
+  "release1-worker-phases\\evidence\\controls-1-SOURCE.json": {
+    "bytes": 2200,
+    "sha256": "c02ef08ee2dce04a9893889ad3638a51166954833466887cfc59dacb8c4ec688"
+  },
+  "release1-worker-phases\\evidence\\controls-1.synthetic.zip": {
+    "bytes": 14051569,
+    "sha256": "3cbb2aedd14b44ec3a86835b5771588a96d859f41076ff0d72bd11cf6f58dbce"
+  },
+  "release1-worker-phases\\evidence\\controls-2-controls.json": {
+    "bytes": 24178,
+    "sha256": "3fca0241ea4364ce56497deeeb8ed5865aa0c4e914ee49f4910f7dbfa1fc1a4d"
+  },
+  "release1-worker-phases\\evidence\\controls-2-SOURCE.json": {
+    "bytes": 2200,
+    "sha256": "c02ef08ee2dce04a9893889ad3638a51166954833466887cfc59dacb8c4ec688"
+  },
+  "release1-worker-phases\\evidence\\ENVIRONMENT.json": {
+    "bytes": 1554,
+    "sha256": "ec4fdedc018d9565568ce49a730a767d499d07ff211c0859dab662258322726a"
+  },
+  "release1-worker-phases\\evidence\\failure-timelines.json": {
+    "bytes": 25307,
+    "sha256": "24757bb742bc4625f3ba03945eb572711ab8e957755a0cde2e024674a04acd34"
+  },
+  "release1-worker-phases\\evidence\\firefox-repeat0.synthetic.zip": {
+    "bytes": 32503451,
+    "sha256": "460e366afa4c495991df8c4ad19aac893251c40a49756cda347c00a70bfca390"
+  },
+  "release1-worker-phases\\evidence\\firefox-repeat2.synthetic.zip": {
+    "bytes": 32351180,
+    "sha256": "5414ebee03e8deb0b23837c23f6456862513ae20d3b0f7845937491725794bb3"
+  },
+  "release1-worker-phases\\evidence\\firefox-repeat4.synthetic.zip": {
+    "bytes": 31334865,
+    "sha256": "780939aec787b72f6654cf4ffc0aad81f1ab23ab6bb88f5073976306d4dee346"
+  },
+  "release1-worker-phases\\evidence\\firefox-repeat9.synthetic.zip": {
+    "bytes": 32151102,
+    "sha256": "62c5504486b6cd1665acb9123dcc16636c0de2e028356487249533aac409e56a"
+  },
+  "release1-worker-phases\\evidence\\observed.json": {
+    "bytes": 246008,
+    "sha256": "3d0f4dd4648fa07f4a0835996d10da0f35e80d387b9fbf7a4e9e683a9ddcc705"
+  },
+  "release1-worker-phases\\evidence\\original-local.json": {
+    "bytes": 181365,
+    "sha256": "a6e7b6143dfd76dcaaf9729a987478b8b8669d2eab7f482e27f1ef7b6c489473"
+  },
+  "release1-worker-phases\\evidence\\phase-2.synthetic.zip": {
+    "bytes": 11770949,
+    "sha256": "7ba73bc403b4174660b7e727a92fcf14141fb958f8a9d4f7ee250734d83beda6"
+  },
+  "release1-worker-phases\\evidence\\SUMMARY.json": {
+    "bytes": 159514,
+    "sha256": "e27fadc139eaa171cca553669b5d0b44535743d715c899e65aedd2fbc6eac127"
+  }
+}
