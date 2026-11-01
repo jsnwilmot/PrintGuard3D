@@ -2,8 +2,11 @@
 function traceWorker(config){
  if(!/^http:\/\/127\.0\.0\.1:\d+$/.test(self.location.origin)||!config.testOnly)throw Error('Forensic worker is localhost-only');
  const fetchNative=self.fetch.bind(self),digestNative=crypto.subtle.digest.bind(crypto.subtle),addNative=self.addEventListener.bind(self),openNative=caches.open.bind(caches),claimNative=self.clients.claim.bind(self.clients);
- const boot=crypto.randomUUID();let sequence=0,path='';
- const emit=(event,detail={})=>{const payload={source:'worker',context:config.context,boot,sequence:++sequence,event,wall:Date.now(),monotonic:performance.now(),timeOrigin:performance.timeOrigin,...detail};void fetchNative('/__forensic/log',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(()=>{});};
+ const boot=crypto.randomUUID(),pending=new Set();let sequence=0,path='';
+ const emit=(event,detail={})=>{const payload={source:'worker',context:config.context,boot,sequence:++sequence,event,wall:Date.now(),monotonic:performance.now(),timeOrigin:performance.timeOrigin,...detail};const sent=fetchNative('/__forensic/log',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(()=>{},()=>{});pending.add(sent);void sent.finally(()=>pending.delete(sent));return sent;};
+ // Test-only transport barrier: Firefox can terminate a rejected worker before
+ // queued terminal records leave. Bound flushing; never alter the120s oracle.
+ const flush=()=>Promise.race([Promise.allSettled([...pending]),new Promise(resolve=>setTimeout(resolve,1000))]);
  emit('worker-start',{originalSHA:config.originalSHA,cache:config.cache});
  self.fetch=(...args)=>{const url=new URL(args[0]?.url||args[0],self.location.href);path=url.pathname;emit('fetch-start',{path});return fetchNative(...args).then(response=>{emit('fetch-response',{path:url.pathname,status:response.status});return response;},error=>{emit('fetch-reject',{path:url.pathname,error:String(error)});throw error;});};
  crypto.subtle.digest=(algorithm,bytes)=>{const requestPath=path;return digestNative(algorithm,bytes).then(result=>{const actual=Array.from(new Uint8Array(result)).map(value=>value.toString(16).padStart(2,'0')).join('');emit('digest',{path:requestPath,bytes:bytes.byteLength,expected:config.hashes[requestPath],actual,match:actual===config.hashes[requestPath]});return result;},error=>{emit('digest-reject',{path:requestPath,error:String(error)});throw error;});};
@@ -17,7 +20,7 @@ function traceWorker(config){
   if(!['install','activate'].includes(type))return addNative(type,listener,options);
   addNative(type,event=>{
    emit(type+'-start');const wait=event.waitUntil.bind(event);
-   const proxy=new Proxy(event,{get(target,key){if(key==='waitUntil')return promise=>wait(Promise.resolve(promise).then(value=>{emit(type+'-complete');return value;},error=>{emit(type+'-reject',{error:String(error)});throw error;}));const value=Reflect.get(target,key,target);return typeof value==='function'?value.bind(target):value;}});
+   const proxy=new Proxy(event,{get(target,key){if(key==='waitUntil')return promise=>wait(Promise.resolve(promise).then(async value=>{emit(type+'-complete');await flush();return value;},async error=>{emit(type+'-reject',{error:String(error)});await flush();throw error;}));const value=Reflect.get(target,key,target);return typeof value==='function'?value.bind(target):value;}});
    try{typeof listener==='function'?listener.call(self,proxy):listener.handleEvent(proxy);}catch(error){emit(type+'-throw',{error:String(error)});throw error;}
   },options);
  };

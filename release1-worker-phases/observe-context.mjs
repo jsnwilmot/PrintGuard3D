@@ -12,6 +12,7 @@ export async function observeContext(context,info,index,mode='natural'){
   globalThis.__phaseEmit=(event,detail={})=>{void globalThis.__recordPhase({event,navigation,wall:Date.now(),monotonic:performance.now(),timeOrigin:performance.timeOrigin,url:location.href,...detail}).catch(()=>{});};
   globalThis.__phaseEmit('document-start',{controller:!!navigator.serviceWorker.controller});
   navigator.serviceWorker.addEventListener('controllerchange',()=>globalThis.__phaseEmit('controllerchange',{controller:!!navigator.serviceWorker.controller,state:navigator.serviceWorker.controller?.state}));
+  const register=navigator.serviceWorker.register.bind(navigator.serviceWorker);navigator.serviceWorker.register=(...args)=>register(...args).then(registration=>{const watch=worker=>{if(worker){globalThis.__phaseEmit('native-worker-state',{state:worker.state});worker.addEventListener('statechange',()=>globalThis.__phaseEmit('native-worker-state',{state:worker.state}));}};watch(registration.installing);watch(registration.active);registration.addEventListener('updatefound',()=>watch(registration.installing));return registration;});
   void navigator.serviceWorker.ready.then(registration=>globalThis.__phaseEmit('independent-ready-resolved',{controller:!!navigator.serviceWorker.controller,active:registration.active?.state}));
   addEventListener('error',event=>globalThis.__phaseEmit('page-error',{error:event.message}));
  });
