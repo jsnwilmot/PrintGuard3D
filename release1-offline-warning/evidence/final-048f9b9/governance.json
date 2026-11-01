@@ -1,0 +1,1029 @@
+{
+  "version": 1,
+  "sourceCommit": "048f9b9ea54fb2ced8c601c1aed4876171e61c09",
+  "runnerSHA256": "35481086bf2046ded1dea698d50dcae5156f9203f5ff7382a91ef3fda105ecba",
+  "harnessSHA256": "91448976d9ad1fd69bbabacb4932c81258b77634f0a2008e0d7cf5ade6fe1406",
+  "builds": {
+    "1": {
+      "identity": "e0607a91aafca22f2be15ddc",
+      "generation": 1,
+      "compatibility": "same-format writer fixture",
+      "files": {
+        "assets/App-B9hZlvEX.js": "a3f8829d89e6b99e8d7981c26b40232fd3a6788a60ea5b7bc26514747e7ed1e1",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-Djj0bggX.js": "266132902ce4bad3f191c37113892e28f5faad1beb2a5707d12fca2c7a7c227a",
+        "assets/index-hWQCgzvp.css": "e7ed9b1d387484d8fa3973a3281b58ef9611b9d28b4e896defeda104e838e7b5",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "efee0a36efa01aea7dcc8ee10a01a54801d0b199b85a2518cba27af3604a705e",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "3befb99df09ca7e5ee797c556b1208e89868ae9a7c1601da55fa4e87c0364a89",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "172516c86eaf26532dc88f027716376cbb4eaf292ad660dbb2864cb7dca7b45f",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "d7c7c4197392dd1e604b309b8e2a2c1e39cedb3c636aaa1b8b0053c5437ae430"
+    },
+    "2": {
+      "identity": "72c7b072f838a2493f90e040",
+      "generation": 2,
+      "compatibility": "same-format writer fixture",
+      "files": {
+        "assets/App-Dpe6YOHh.js": "9ede6b2c0d2cb5dbb5de45b38c958d0e38eadbcda010de3d553418891848d649",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-Dq57kx7D.js": "c88294824dc4a5e15332f21f9cc871dd792c05e807058d7c7e98abee7647d2bf",
+        "assets/index-mUDQICnV.css": "2325c3d25c27ed28629eaaade59efe2b18b0df1c4b315e8c7728f7d2152bffaa",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "b804ea499ddcb25d15294163db5000a078028ccbf4a3111eb5716d909269c4b2",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "7d610f9156627225453744bb7141f010d07771d2ec2df3313d5dee0673f477ab",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "894bd63224d23d3e425587e22796dc3439bc5d81ead32ca16f796a9c64809b71",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "8b9eb82286fcc6a9238ed9f9628edbf85d4dc266e59f8f2b5e06c590f3174be3"
+    },
+    "3": {
+      "identity": "015b5f9945c655239c786db8",
+      "generation": 1,
+      "compatibility": "compatible presentation-only title change",
+      "files": {
+        "assets/App-CyKpNONL.js": "6a4dc1d053c485082281b6483be83c607470179ca0832f5cfc89cc21e12803da",
+        "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+        "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+        "assets/index-CxEaaScu.js": "fdb28006199a7a9ff5428443ee3d217d5fec0e57ef2374780ae4051438ea200b",
+        "assets/index-mUDQICnV.css": "2325c3d25c27ed28629eaaade59efe2b18b0df1c4b315e8c7728f7d2152bffaa",
+        "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+        "build-contract.json": "d7f94b4fc67ace0188329c2036d8ec72ca01c6231b471bbdafa1fba215a74bc0",
+        "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+        "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+        "index.html": "3e5fd5f26a1ad5deca99b235ee65fb58941993f775d88991fe3655b48fd89dd1",
+        "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+        "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+        "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+        "sw.js": "04307b546e83b54044550772ada60540a73f0945622b2f92f0f1aa10e031ff08",
+        "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+        "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e"
+      },
+      "probeSHA256": "a706b905143b0a02d85f8e9319f133cb59c6ded65593be9f4edf7fceaf681126"
+    }
+  },
+  "fixture": "Prior reviewed full synthetic backup; recording disabled, recorded observations retained",
+  "results": [
+    {
+      "id": "chromium-G01",
+      "requirement": "Different declared compatible presentation builds share generation1 and preserve recorded history while both write",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:00:40.507Z",
+      "origin": "http://127.0.0.1:58377",
+      "profile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.local\\op37\\0c116dc3-e",
+      "browser": "156.0.8078.4",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-compatible.synthetic.json",
+        "sha256": "be71eca7efad002dfc041101683d51823bcf8c3274b9b5c9a7259c73dcf48083"
+      },
+      "oldBuild": "e0607a91aafca22f2be15ddc",
+      "newBuild": "015b5f9945c655239c786db8",
+      "generation": 1,
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "410b89dcea12ad1883a33f22abb702082d8081e997d00db81e8cfb4160ec1ddc",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:00:46.333Z"
+    },
+    {
+      "id": "chromium-G02",
+      "requirement": "Actual waiting-worker replacement resets downloaded/reviewed authority and remains keyboard/mobile accessible",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:00:46.335Z",
+      "origin": "http://127.0.0.1:58118",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-waiting-a.synthetic.json",
+        "sha256": "f785b6afd60244d5f7c70cbf4ea98cae6fd486733e9ade6c7d667b2330a94efe"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "pending": "015b5f9945c655239c786db8",
+      "actualAT": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:00:58.141Z"
+    },
+    {
+      "id": "chromium-G03",
+      "requirement": "Persisted generation change after confirmation removes stale activation permission with no workshop changes",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:00:58.142Z",
+      "origin": "http://127.0.0.1:59860",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-epoch.synthetic.json",
+        "sha256": "58ec5a4210e1ebebc10836b44a79ce455d8c9c9155e2428563537ca5b6c44e85"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:01:03.996Z"
+    },
+    {
+      "id": "chromium-G04",
+      "requirement": "Offline transition plus changed persisted capabilities invalidates previous confirmation and preserves files/data",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:03.997Z",
+      "origin": "http://127.0.0.1:64704",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-offline.synthetic.json",
+        "sha256": "77fdf514481abf8ffe52cb3b2e07340277dac022672a8a7b8d5705dcf02a63aa"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "finishedAt": "2026-11-01T19:01:10.159Z"
+    },
+    {
+      "id": "chromium-G05",
+      "requirement": "Actual worker-side persisted comparison rejects epoch race after client final check",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:10.160Z",
+      "origin": "http://127.0.0.1:62362",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-activation-race.synthetic.json",
+        "sha256": "0d8211394cde6ba21a1bb87ff679bfe5c782f85c0c6009e6c669badb02593f1a"
+      },
+      "injection": "Native epoch2 committed after client checks, immediately before native worker receives activation",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:01:16.264Z"
+    },
+    {
+      "id": "chromium-G06",
+      "requirement": "Background identity timeout longer than the polling interval clears old confirmation and preserves executable/data/file",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:16.266Z",
+      "origin": "http://127.0.0.1:58381",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\chromium-communication.synthetic.json",
+        "sha256": "311915a5347a461a8d6d574f7bf72703e07b7f916419439c81d195b000531b50"
+      },
+      "injection": "Native message-channel reply deliberately dropped; actual5-second client timeout exceeds3-second poll interval. No activation click; no mutation/compatibility mock.",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:01:29.616Z"
+    },
+    {
+      "id": "chromium-G07",
+      "requirement": "Actual incomplete new-worker asset install leaves active offline application and complete workshop intact",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:29.617Z",
+      "origin": "http://127.0.0.1:63024",
+      "failedAsset": "/assets/App-Dpe6YOHh.js",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "physicalDiskFailure": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:01:32.161Z"
+    },
+    {
+      "id": "chromium-G08",
+      "requirement": "Ordinary unsigned artifact refuses canonical workshop before App/DB/worker bootstrap",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:32.163Z",
+      "syntheticFulfillments": 5,
+      "realProviderRequests": 0,
+      "databases": [],
+      "workers": 0,
+      "resources": [
+        "https://printguard3d.roseandpaw.ca/assets/index-Djj0bggX.js",
+        "https://printguard3d.roseandpaw.ca/assets/database-D0Lgzj1V.js",
+        "https://printguard3d.roseandpaw.ca/assets/index-hWQCgzvp.css",
+        "https://printguard3d.roseandpaw.ca/assets/charts-ClTOde-4.js"
+      ],
+      "provider": "NOT VERIFIED; every request fulfilled locally",
+      "finishedAt": "2026-11-01T19:01:32.594Z"
+    },
+    {
+      "id": "chromium-G09",
+      "requirement": "Missing, wrong-build and stale-control activation messages cannot activate waiting worker",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:32.595Z",
+      "origin": "http://127.0.0.1:62935",
+      "failures": [
+        "Update confirmation does not match this build",
+        "Workshop requirements changed or are incompatible"
+      ],
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:01:35.058Z"
+    },
+    {
+      "id": "firefox-G01",
+      "requirement": "Different declared compatible presentation builds share generation1 and preserve recorded history while both write",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:35.060Z",
+      "origin": "http://127.0.0.1:65287",
+      "profile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.local\\op37\\b5acdf3f-5",
+      "browser": "157.0",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-compatible.synthetic.json",
+        "sha256": "4d670db8440ca8d58968f68222cbcb617d5b511706c9ada5900ac99160073612"
+      },
+      "oldBuild": "e0607a91aafca22f2be15ddc",
+      "newBuild": "015b5f9945c655239c786db8",
+      "generation": 1,
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "410b89dcea12ad1883a33f22abb702082d8081e997d00db81e8cfb4160ec1ddc",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:01:46.691Z"
+    },
+    {
+      "id": "firefox-G02",
+      "requirement": "Actual waiting-worker replacement resets downloaded/reviewed authority and remains keyboard/mobile accessible",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:01:46.692Z",
+      "origin": "http://127.0.0.1:65300",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-waiting-a.synthetic.json",
+        "sha256": "589ee42cc81e507e72fe92e3092641368fcf05d5da888a2ad64d031d38a3331c"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "pending": "015b5f9945c655239c786db8",
+      "actualAT": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:02:08.076Z"
+    },
+    {
+      "id": "firefox-G03",
+      "requirement": "Persisted generation change after confirmation removes stale activation permission with no workshop changes",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:02:08.078Z",
+      "origin": "http://127.0.0.1:53998",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-epoch.synthetic.json",
+        "sha256": "c006349d9b884803279288822454d9720874cd58dc4ed04ee85c4104fcc96824"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:02:19.450Z"
+    },
+    {
+      "id": "firefox-G04",
+      "requirement": "Offline transition plus changed persisted capabilities invalidates previous confirmation and preserves files/data",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:02:19.451Z",
+      "origin": "http://127.0.0.1:64981",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-offline.synthetic.json",
+        "sha256": "f128e41209d84530425d25712b86ef203638f8a38e77b0062b2b88b35e9838f3"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "finishedAt": "2026-11-01T19:02:31.979Z"
+    },
+    {
+      "id": "firefox-G05",
+      "requirement": "Actual worker-side persisted comparison rejects epoch race after client final check",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:02:31.981Z",
+      "origin": "http://127.0.0.1:65002",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-activation-race.synthetic.json",
+        "sha256": "87db0ef63a3d52a51d235cd703c65754386509c4b259ba684054c055d36c55fd"
+      },
+      "injection": "Native epoch2 committed after client checks, immediately before native worker receives activation",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:02:44.613Z"
+    },
+    {
+      "id": "firefox-G06",
+      "requirement": "Background identity timeout longer than the polling interval clears old confirmation and preserves executable/data/file",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:02:44.614Z",
+      "origin": "http://127.0.0.1:65021",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\firefox-communication.synthetic.json",
+        "sha256": "60a2be3a7e8c9061e8f31bbbed8d3dc33b73ec52fc8157242e07f4c5396d73ae"
+      },
+      "injection": "Native message-channel reply deliberately dropped; actual5-second client timeout exceeds3-second poll interval. No activation click; no mutation/compatibility mock.",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:03:08.995Z"
+    },
+    {
+      "id": "firefox-G07",
+      "requirement": "Actual incomplete new-worker asset install leaves active offline application and complete workshop intact",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:03:08.997Z",
+      "origin": "http://127.0.0.1:65051",
+      "failedAsset": "/assets/App-Dpe6YOHh.js",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "physicalDiskFailure": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:03:19.881Z"
+    },
+    {
+      "id": "firefox-G08",
+      "requirement": "Ordinary unsigned artifact refuses canonical workshop before App/DB/worker bootstrap",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:03:19.882Z",
+      "syntheticFulfillments": 6,
+      "realProviderRequests": 0,
+      "databases": [],
+      "workers": 0,
+      "resources": [
+        "https://printguard3d.roseandpaw.ca/assets/index-Djj0bggX.js",
+        "https://printguard3d.roseandpaw.ca/assets/database-D0Lgzj1V.js",
+        "https://printguard3d.roseandpaw.ca/assets/index-hWQCgzvp.css",
+        "https://printguard3d.roseandpaw.ca/assets/charts-ClTOde-4.js",
+        "https://printguard3d.roseandpaw.ca/icon-192.png"
+      ],
+      "provider": "NOT VERIFIED; every request fulfilled locally",
+      "finishedAt": "2026-11-01T19:03:28.203Z"
+    },
+    {
+      "id": "firefox-G09",
+      "requirement": "Missing, wrong-build and stale-control activation messages cannot activate waiting worker",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:03:28.205Z",
+      "origin": "http://127.0.0.1:57427",
+      "failures": [
+        "Update confirmation does not match this build",
+        "Workshop requirements changed or are incompatible"
+      ],
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:03:44.830Z"
+    },
+    {
+      "id": "webkit-G01",
+      "requirement": "Different declared compatible presentation builds share generation1 and preserve recorded history while both write",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:03:44.833Z",
+      "origin": "http://127.0.0.1:57448",
+      "profile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.local\\op37\\02e0d5e7-e",
+      "browser": "27.2",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-compatible.synthetic.json",
+        "sha256": "6943dcfca9ab8e4b6ad0f26e0a65a9cf13b0d54b71db766223012e68eebb0c53"
+      },
+      "oldBuild": "e0607a91aafca22f2be15ddc",
+      "newBuild": "015b5f9945c655239c786db8",
+      "generation": 1,
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "410b89dcea12ad1883a33f22abb702082d8081e997d00db81e8cfb4160ec1ddc",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:03:58.066Z"
+    },
+    {
+      "id": "webkit-G02",
+      "requirement": "Actual waiting-worker replacement resets downloaded/reviewed authority and remains keyboard/mobile accessible",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:03:58.068Z",
+      "origin": "http://127.0.0.1:62431",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-waiting-a.synthetic.json",
+        "sha256": "173e8fa6d1c024c1595242f341679afc952b812ccff9bedb0af663058d23edd5"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "pending": "015b5f9945c655239c786db8",
+      "actualAT": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:04:15.446Z"
+    },
+    {
+      "id": "webkit-G03",
+      "requirement": "Persisted generation change after confirmation removes stale activation permission with no workshop changes",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:04:15.447Z",
+      "origin": "http://127.0.0.1:60843",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-epoch.synthetic.json",
+        "sha256": "524c4e5c3fbe6079754cabd11fbe86a42275322e0c8ea7fa79cf5d2071a335d7"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:04:24.216Z"
+    },
+    {
+      "id": "webkit-G04",
+      "requirement": "Offline transition plus changed persisted capabilities invalidates previous confirmation and preserves files/data",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:04:24.219Z",
+      "origin": "http://127.0.0.1:60849",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-offline.synthetic.json",
+        "sha256": "3144431b501f74e58f9d49440307b26e07e499fbee271c60df0799261a97ba06"
+      },
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "1639edf41b57ff8b39a3dbbc6470340b858de25bf8d5fea94e02aa14d10f88d3"
+      },
+      "finishedAt": "2026-11-01T19:04:32.852Z"
+    },
+    {
+      "id": "webkit-G05",
+      "requirement": "Actual worker-side persisted comparison rejects epoch race after client final check",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:04:32.853Z",
+      "origin": "http://127.0.0.1:56853",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-activation-race.synthetic.json",
+        "sha256": "3ffdb977016d28fa95f6b86c9b947c633f36ca49aed78a1bb33fbf04656003a5"
+      },
+      "injection": "Native epoch2 committed after client checks, immediately before native worker receives activation",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "ae3f49f761672b4d7e98dce66f1c689d549452f266a6da135a454cd5b2801192"
+      },
+      "finishedAt": "2026-11-01T19:04:42.534Z"
+    },
+    {
+      "id": "webkit-G06",
+      "requirement": "Background identity timeout longer than the polling interval clears old confirmation and preserves executable/data/file",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:04:42.536Z",
+      "origin": "http://127.0.0.1:56863",
+      "file": {
+        "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\clean-origin\\issue45-final\\governance-2026-11-01T19-00-40-502Z\\webkit-communication.synthetic.json",
+        "sha256": "48e6ccd565b82d2a8e3b8c3b99023bf5363c7eb9900f857cbbfb55b672e74b64"
+      },
+      "injection": "Native message-channel reply deliberately dropped; actual5-second client timeout exceeds3-second poll interval. No activation click; no mutation/compatibility mock.",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:04:59.006Z"
+    },
+    {
+      "id": "webkit-G07",
+      "requirement": "Actual incomplete new-worker asset install leaves active offline application and complete workshop intact",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:04:59.008Z",
+      "origin": "http://127.0.0.1:56885",
+      "failedAsset": "/assets/App-Dpe6YOHh.js",
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "physicalDiskFailure": "NOT VERIFIED",
+      "finishedAt": "2026-11-01T19:05:06.674Z"
+    },
+    {
+      "id": "webkit-G08",
+      "requirement": "Ordinary unsigned artifact refuses canonical workshop before App/DB/worker bootstrap",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:05:06.676Z",
+      "syntheticFulfillments": 6,
+      "realProviderRequests": 0,
+      "databases": [],
+      "workers": 0,
+      "resources": [
+        "https://printguard3d.roseandpaw.ca/manifest.webmanifest",
+        "https://printguard3d.roseandpaw.ca/assets/index-Djj0bggX.js",
+        "https://printguard3d.roseandpaw.ca/assets/database-D0Lgzj1V.js",
+        "https://printguard3d.roseandpaw.ca/assets/charts-ClTOde-4.js",
+        "https://printguard3d.roseandpaw.ca/assets/index-hWQCgzvp.css"
+      ],
+      "provider": "NOT VERIFIED; every request fulfilled locally",
+      "finishedAt": "2026-11-01T19:05:07.549Z"
+    },
+    {
+      "id": "webkit-G09",
+      "requirement": "Missing, wrong-build and stale-control activation messages cannot activate waiting worker",
+      "status": "PASS",
+      "startedAt": "2026-11-01T19:05:07.550Z",
+      "origin": "http://127.0.0.1:56914",
+      "failures": [
+        "Update confirmation does not match this build",
+        "Workshop requirements changed or are incompatible"
+      ],
+      "before": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "after": {
+        "inventory": "75a65aad148bb2e547a11e8f9338dc25be51ec31aa0ea15aea92d3486672682a",
+        "logs": "39d66e218f3227a454d57ecb3fa61d4589f4b986c02693d1cda05870347f8bb6",
+        "observations": "dbd9822c4ac29f17c39926326672231c47e864ed3fd769df3ef15c464de91d5b",
+        "preferences": "2371f28fc2c6c4673070024fdaf70f594273a9e28f33796d92001fafaae29bad",
+        "printers": "7a576f9c64ab21f2e8a7b0e32c64d0598cffa02791ea6de2744a2f3ae28fb6db",
+        "profiles": "8a62f0a2cc02d9940b4e410985c50827e4a5acc25d0471e8e44879072dbea608",
+        "readings": "3b27b167bc7b2f49c223ffedb49ef2b912eb44edaa9ab545a7c90dc446aa2ff1",
+        "repairs": "1e650d590ad72d6b5db1378d9b3653df49f886603911a9cfd97d775b2685f812",
+        "tasks": "0076757a316f941859bfa40ec9c715aaf1bf3578a4d5026b0d8a93f89ea3b248",
+        "writerControl": "7a01d90496b1e04c548309576401b33fc0435d714b1804cdb888e61ce26caf1e"
+      },
+      "finishedAt": "2026-11-01T19:05:13.645Z"
+    }
+  ],
+  "humanAndHost": "NOT VERIFIED",
+  "releaseApproved": false
+}

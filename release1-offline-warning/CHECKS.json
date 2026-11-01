@@ -1,0 +1,25 @@
+{
+  "runtimeCommit": "8d51f7fb31379858297690bad0843f3e2b721c7b",
+  "regressions": {
+    "pass": 352,
+    "fail": 0
+  },
+  "acceptance": {
+    "pass": 45,
+    "fail": 0
+  },
+  "newNative": {
+    "pass": 23,
+    "fail": 1,
+    "failed": "firefox-offline-before-first-install"
+  },
+  "typeScript": "PASS",
+  "nondeployableBuild": "PASS",
+  "protectedDiff": "PASS: DB, engine, profiles, writer/update review, styles, App/Reports, original N09/config, original workflow,86-row matrix,lockfile unchanged",
+  "archiveTargetedCredentialScan": {
+    "textEntries": 16,
+    "findings": 0,
+    "exhaustive": false
+  },
+  "releaseApproved": false
+}

@@ -1,0 +1,19 @@
+# Issue #45 scoped acceptance addendum
+
+Preserves all [86 original requirements and previous evidence](../release1-consumer-transparency/MATRIX.md), [operational failures](../release1-operational-preflight/MATRIX.md) and [release-contract register](../release1-release-governance/MATRIX.md). PASS applies only to the named local proof. See REPORT.md and exact evidence/CI ledger for final sample totals.
+
+| Requirement | Status | Verification evidence / tests | Outstanding issue / priority / corrective action |
+| --- | --- | --- | --- |
+| Truthful registration/installed/activated/controller/complete-cache distinction | PASS | O01-O03/O06-O09/O14/O16/O17; exact controller build/cache/asset SHA and final marker checks | P1: point-in-time only; cannot promise future eviction resistance |
+| Accessible failed first-install warning with exact actionable wording | PASS | W01-W04; actual 503/bad-hash native cases in three engines | P1: real AT remains NOT VERIFIED |
+| Slow/unsupported/offline/unknown states and later completion | PARTIAL | O03/O10-O12/O16; native delay/policy/offline warnings pass; final Firefox reconnect controller poll FAIL | P1: 15s means unconfirmed, not a browser readiness SLA |
+| Non-destructive recheck/session dismissal/cleanup | PASS | O04/O13/O15/W03-W05; native focus/dismiss/recheck and every-store hashes | P1: no forced reload/re-register/cache reset |
+| Healthy verified cache and actual offline cold browser reopen | PASS | Eight-case native runner's genuine process reopen while application origin unavailable, all three engines | P1: installed PWA/OS/iOS/real host NOT VERIFIED |
+| Full backup/strict independent restore/stale-writer refusal during warning | PASS | Native 503/hash cases validate backup, restore every store, inject future writer requirement and compare every store/control | P1: original initial WebKit N01 checkbox failure retained separately; not explained by a green warning check |
+| Existing regression/acceptance/architecture/data preservation | PASS | 352 regressions, 45 unchanged assertions, TypeScript/static/build; no DB/profile/backup/schedule/legal source edits | P1: inspect final original-browser ledger/CI separately |
+| Original Phase 5 initial sample | FAIL | Initial source32fcb1f: 40 PASS/5 FAIL, D07 duplicate global status roles; raw failures retained | P1: markup corrected in048f9b9; no test weakening/reclassification |
+| Initial compatibility sample | FAIL | Source32fcb1f: 114 PASS/1 FAIL, remaining dependent cases NOT VERIFIED; WebKit restore checkbox click | P1: unresolved; preserve evidence and review subsequent exact-source results separately |
+| Intermediate corrected Phase 5 / full recovery sample | FAIL | 048f9b9: Phase 5 44 PASS/1 FAIL (WebKit D02); original native20, new native21, recovery171 and governance27 PASS | P1: failure retained, cause unproven; final non-flow preparation and extra geometry/KPI tests assessed separately |
+| Final warning/native recovery sample | FAIL | 8d51f7f:23 PASS/1 FAIL; Firefox after reconnect/reload remains uncontrolled at20s, visible truthful warning retained. All3 geometry/KPI and cold-open cases PASS | P1: retained actual trace; post-reload store comparison NOT VERIFIED for failed case; no lifecycle workaround under #45 |
+| Original N09 readiness reliability / causal fix | FAIL | Historical CI 41317785445 28/2; 41317785405 74/1; exact PR44 41320990085 29/1 | P1 RED STOP: #41 remains open; warning is not a repair |
+| Actual public hosting/device/manual/legal/manufacturer release gates | NOT VERIFIED | No such operations or approval evidence | P1: maintain original gates; Release 1 NOT APPROVED |
