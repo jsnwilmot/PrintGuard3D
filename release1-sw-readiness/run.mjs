@@ -4,7 +4,13 @@ import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
 import {Session,digest} from '../release1-clean-origin/harness.mjs';
 import {mutate} from '../release1-clean-origin/actions.mjs';
-import {expect} from '@playwright/test';
+import {expect,chromium,firefox,webkit} from '@playwright/test';
+// Diagnostic bootstrap has its own bounded setup failure, below the unchanged
+// original case ceiling. This does not modify any original test or helper.
+for(const browser of [chromium,firefox,webkit]){
+ const launch=browser.launchPersistentContext.bind(browser);
+ browser.launchPersistentContext=(profile,options)=>launch(profile,{...options,timeout:20000});
+}
 const run=resolve(process.argv[2]||''),repetitions=Number(process.argv[3]||10);
 if(!Number.isInteger(repetitions)||repetitions<1||repetitions>10)throw Error('Repetitions must be 1..10');
 const manifest=JSON.parse(await readFile(join(run,'manifest.json'),'utf8'));
@@ -13,8 +19,10 @@ const out=join(run,'readiness-'+new Date().toISOString().replace(/[:.]/g,'-'));a
 const rows=[],sessions=[];let activeRow;const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const backup=JSON.parse(await readFile('release1-release-governance/evidence/pre-update-full.synthetic.json','utf8'));backup.preferences.observationRecording=false;
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+const runnerSHA256=sha(await readFile(import.meta.filename));
 async function instrument(s){
  await s.context.tracing.start({snapshots:true,screenshots:false,sources:false});
+ s.traceStarted=true;
  s.log??=[];s.fault??=null;s.delay??=0;
  if(!s.diagWrapped){s.diagWrapped=true;
  const handler=s.server.listeners('request')[0];s.server.removeAllListeners('request');
@@ -41,9 +49,45 @@ async function instrument(s){
 }
 async function snapshot(s){return s.page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();const w=v=>v?{state:v.state,script:v.scriptURL}:null;return {ready:globalThis.__readyObserved===true,controller:w(navigator.serviceWorker.controller),registration:r?{installing:w(r.installing),waiting:w(r.waiting),active:w(r.active)}:null,caches:await caches.keys(),url:location.href,title:document.querySelector('h1')?.textContent};});}
 async function observe(s,milliseconds=5000){const started=Date.now();let state;do{state=await snapshot(s);if(state.ready&&state.controller)break;await sleep(50);}while(Date.now()-started<milliseconds);return {milliseconds:Date.now()-started,...state};}
-async function fresh(engine){const s=await new Session(run,engine).open();sessions.push(s);const stop=s.stop.bind(s);s.stop=async()=>{if(s.context){const keep=activeRow.attempt===1||activeRow.status==='FAIL',path=join(out,activeRow.id+'-'+Date.now()+'.zip');await s.context.tracing.stop(keep?{path}:{});if(keep)(activeRow.traces??=[]).push(path);}await stop();};await instrument(s);return s;}
+async function fresh(engine){
+ const session=new Session(run,engine);session.log=[{kind:'setup',event:'open-start',at:Date.now()}];
+ // Own resources before awaiting startup, so a rejected launch cannot escape cleanup.
+ sessions.push(session);activeRow.phase='browser bootstrap';await session.open();
+ session.log.push({kind:'setup',event:'open-resolved',at:Date.now(),profile:session.profile});
+ activeRow.browser=session.context.browser().version();activeRow.phase='application workflow';
+ const stop=session.stop.bind(session);
+ session.stop=async()=>{
+  if(session.context&&session.traceStarted){
+   const keep=activeRow.attempt===1||activeRow.status==='FAIL',path=join(out,activeRow.id+'-'+Date.now()+'.zip');
+   await session.context.tracing.stop(keep?{path}:{});session.traceStarted=false;
+   if(keep)(activeRow.traces??=[]).push(path);
+  }
+  await stop();
+ };
+ await instrument(session);return session;
+}
 async function seed(s){await s.call('restore',[backup,true]);await s.call('consent',[backup.preferences]);await s.page.goto(s.origin+'/#Dashboard');await expect(s.page.getByRole('heading',{name:'Workshop overview'})).toBeVisible();}
-async function check(engine,name,index,work){const row={id:engine+'-'+name+'-'+index,engine,scenario:name,attempt:index,status:'NOT VERIFIED',startedAt:new Date().toISOString()};activeRow=row;let timer;try{Object.assign(row,await Promise.race([work(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Original 120-second ceiling exceeded')),120000);})]));row.status='PASS';}catch(error){row.status='FAIL';row.error=error.stack;}finally{clearTimeout(timer);for(const s of sessions){row.events=(row.events||[]).concat(s.log);row.external=s.events;try{row.finalState=await snapshot(s);}catch{}await s.close();}sessions.length=0;row.finishedAt=new Date().toISOString();rows.push(row);await writeFile(join(out,'RESULTS.json'),JSON.stringify({version:1,pinnedCommit:manifest.commit,runnerSHA256:sha(await readFile(import.meta.filename)),artifactManifestSHA256:sha(await readFile(join(run,'manifest.json'))),repetitions,measurement:'Observer-wrapped register and event listeners; real Node clock; 5s observation window, 120s case ceiling; zero retries',results:rows,releaseApproved:false},null,2));console.log(row.status+' '+row.id);}}
+async function check(engine,name,index,work){
+ const row={id:engine+'-'+name+'-'+index,engine,scenario:name,attempt:index,status:'NOT VERIFIED',startedAt:new Date().toISOString()};
+ activeRow=row;let timer,halt=false;
+ try{
+  Object.assign(row,await Promise.race([work(),new Promise((_,reject)=>{timer=setTimeout(()=>{halt=true;reject(Error('Original 120-second ceiling exceeded; remaining cases NOT VERIFIED'));},120000);})]));
+  row.status='PASS';
+ }catch(error){row.status='FAIL';row.error=error.stack;}
+ finally{
+  clearTimeout(timer);
+  for(const session of sessions){
+   row.events=(row.events||[]).concat(session.log||[]);row.external=session.events;
+   if(session.context)try{row.finalState=await Promise.race([snapshot(session),sleep(2000).then(()=>({diagnosticSnapshot:'Unavailable within2seconds'}))]);}catch(error){row.snapshotError=error.message;}
+   try{await Promise.race([session.close(),sleep(10000).then(()=>{throw Error('Diagnostic cleanup exceeded10seconds');})]);}
+   catch(error){row.cleanupError=error.message;row.status='FAIL';halt=true;}
+  }
+  sessions.length=0;row.finishedAt=new Date().toISOString();rows.push(row);
+  await writeFile(join(out,'RESULTS.json'),JSON.stringify({version:1,pinnedCommit:manifest.commit,runnerSHA256,artifactManifestSHA256:sha(await readFile(join(run,'manifest.json'))),repetitions,environment:{node:process.version,platform:process.platform,arch:process.arch},measurement:'Observer-wrapped register and event listeners; real Node clock; 5s observation window,20s diagnostic bootstrap,120s case ceiling; zero retries; any case/cleanup ceiling halts remaining cases',halted:halt,results:rows,releaseApproved:false},null,2));
+  console.log(row.status+' '+row.id);
+ }
+ if(halt)process.exit(1);
+}
 for(const engine of ['chromium','firefox','webkit']){
  for(const mode of ['cold','routed','clock','clock-routed'])for(let index=1;index<=repetitions;index++)await check(engine,mode,index,async()=>{const s=await fresh(engine);if(mode.includes('routed'))await s.context.route('**/*',route=>new URL(route.request().url()).origin===s.origin?route.continue():route.abort());if(mode.includes('clock'))await s.page.clock.setFixedTime(new Date('2400-02-29T23:30:00Z'));await s.page.goto(s.origin);await expect(s.page.getByRole('heading',{name:'Welcome to a better-kept workshop'})).toBeVisible();const state=await observe(s);expect(state.ready&&!!state.controller).toBe(true);return {observation:state};});
  await check(engine,'second-navigation',1,async()=>{const s=await fresh(engine);await s.page.goto(s.origin);const first=await observe(s);expect(first.ready&&!!first.controller).toBe(true);await seed(s);const before=await s.raw();await s.page.reload();const second=await observe(s);expect(second.ready&&!!second.controller).toBe(true);expect(await s.raw()).toEqual(before);return {first,second,before:digest(before),after:digest(await s.raw())};});
@@ -56,6 +100,10 @@ for(const engine of ['chromium','firefox','webkit']){
   return {injectedFault:fault,readinessStatus:'FAIL',expectedNegative:true,observation:state,visibleHeading:state.title,visibleSWFailureWarning:/offline.*unavailable|service.worker.*fail|cache.*incomplete/i.test(body),before:digest(before),after:digest(fenced),controlChange:'Native synthetic fixture generation2; every other store unchanged',uncontrolledWriteRefusal:write,validatedFullBackup:true,offlineColdError:offlineError,onlineRecoveryPreservesEveryStore:true};});
  await check(engine,'navigation-during-install',1,async()=>{const s=await fresh(engine);s.delay=1000;await s.page.goto(s.origin);await expect(s.page.getByRole('heading',{name:'Welcome to a better-kept workshop'})).toBeVisible();for(let i=0;i<100&&!s.log.some(e=>e.kind==='server'&&e.path==='/workshop.svg');i++)await sleep(20);await s.page.clock.setFixedTime(new Date('2500-01-01'));await s.page.reload();const state=await observe(s);expect(state.ready&&!!state.controller).toBe(true);return {injectedDelay:1000,observation:state};});
  await check(engine,'dynamic-import-failure',1,async()=>{const s=await fresh(engine);s.importFailure=Object.keys(manifest.builds[1].files).find(p=>p.startsWith('assets/App-'));s.importFailure='/'+s.importFailure;await s.page.goto(s.origin);await expect(s.page.getByRole('heading',{name:'Compatible application assets are unavailable'})).toBeVisible();const state=await observe(s);expect(state.registration).toBeNull();return {injectedFault:s.importFailure,expectedNegative:true,readinessStatus:'FAIL',observation:state};});
- await check(engine,'held-old-tab-update',1,async()=>{const s=await fresh(engine);await s.page.goto(s.origin);expect((await observe(s)).controller).not.toBeNull();await seed(s);const before=await s.raw();s.generation=3;await s.page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});let pending;for(let i=0;i<100;i++){pending=await snapshot(s);if(pending.registration?.waiting)break;await sleep(50);}expect(pending.ready).toBe(true);expect(pending.registration?.waiting?.state).toBe('installed');expect(await s.raw()).toEqual(before);return {observation:pending,readyDoesNotMeanNewestWorkerActive:true,before:digest(before),after:digest(await s.raw())};});
+ await check(engine,'held-old-tab-update',1,async()=>{const s=await fresh(engine);await s.page.goto(s.origin);expect((await observe(s)).controller).not.toBeNull();await seed(s);const before=await s.raw();s.generation=3;await s.page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});let pending;for(let i=0;i<100;i++){pending=await snapshot(s);if(pending.registration?.waiting)break;await sleep(50);}expect(pending.ready).toBe(true);expect(pending.registration?.waiting?.state).toBe('installed');expect(await s.raw()).toEqual(before);
+  const heldHTML=await s.page.locator('meta[name="printguard-build"]').getAttribute('content');
+  const activeBuild=await s.page.evaluate(async({build,control})=>{const {updates}=await import('/probe1.js');const registration=await navigator.serviceWorker.getRegistration();await updates.workerRequest(registration.waiting,{type:'PRINTGUARD_ACTIVATE',build,control});for(let i=0;i<100;i++){const active=registration.active;if(active?.state==='activated'){const result=await updates.workerRequest(active,{type:'PRINTGUARD_DESCRIBE'});if(result.identity.build===build)return result.identity.build;}await new Promise(resolve=>setTimeout(resolve,50));}throw Error('New worker activation not observed');},{build:manifest.builds[3].identity,control:before.writerControl[0]});
+  expect(activeBuild).toBe(manifest.builds[3].identity);expect(await s.page.locator('meta[name="printguard-build"]').getAttribute('content')).toBe(heldHTML);expect(await s.raw()).toEqual(before);
+  return {observation:pending,afterActivation:await snapshot(s),activeBuild,heldHTML,activationActor:'Synthetic other reviewed client sends exact target/control protocol; no owner merge or public update',readyDoesNotMeanNewestWorkerActive:true,before:digest(before),after:digest(await s.raw())};});
 }
 console.log(out);process.exitCode=rows.some(r=>r.status==='FAIL')?1:0;

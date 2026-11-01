@@ -1,0 +1,21 @@
+{
+  "runnerCommit": "77172dd",
+  "runnerSHA256": "79c7a8d5a9d5b88dea9f231ffca73e1a0224762c74c21163990a9ab6aa3e166e",
+  "rawReportSHA256": "798cae0299dc2eb6838e1709cec00c9d656b6389c79fa04d37d7e12ebd1c393e",
+  "preservedFailure": {
+    "id": "firefox-clock-3",
+    "engine": "firefox",
+    "scenario": "clock",
+    "attempt": 3,
+    "status": "FAIL",
+    "startedAt": "2026-11-01T14:09:21.712Z",
+    "error": "Error: Original 120-second ceiling exceeded\n    at Timeout._onTimeout (file:///C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-sw-readiness/run.mjs:46:305)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)",
+    "finishedAt": "2026-11-01T14:11:21.717Z"
+  },
+  "precedingCases": 70,
+  "followingRecordedCases": 66,
+  "followingDisposition": "NOT VERIFIED: old harness allowed late work after outer timeout; raw reported statuses preserved separately and not counted as clean evidence",
+  "termination": "Stopped exact diagnostic Node PID20116 after verifying its command line. No production/runtime browser data accessed.",
+  "causeConfidence": "HIGH: Session.open had not returned, because old fresh() only owned the session after open. No worker state observed. Underlying browser bootstrap cause NOT DETERMINED.",
+  "harnessCorrection": "Own session before await, explicit20s diagnostic launch bound, stop remaining cases on120s/cleanup ceiling. No original N09 deadline/assertion/retry or production source changed."
+}
