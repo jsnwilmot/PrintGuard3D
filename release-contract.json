@@ -4,14 +4,30 @@
   "writer": {
     "protocol": 1,
     "generation": 1,
-    "capabilities": ["backup:1", "consent:1.0", "observations:1", "profiles:1", "recommendations:1"]
+    "capabilities": [
+      "backup:1",
+      "consent:1.0",
+      "observations:1",
+      "profiles:1",
+      "recommendations:1"
+    ]
   },
   "nativeVersion": 20,
   "compatibility": {
     "classification": "compatible",
     "baselineCommit": "f93bbf5297ac1ca858a521cc2781777b4c492073",
     "reason": "Issue 39 changes release governance and update confirmation, preserving all persisted formats, mutation semantics, historical definitions and the accepted first-public layout.",
-    "evidence": ["release1-release-governance/DESIGN.md", "tests/writer-safety.test.ts", "tests/release-contract.test.ts", "tests/update-review.test.ts"]
+    "evidence": [
+      "release1-release-governance/DESIGN.md",
+      "tests/writer-safety.test.ts",
+      "tests/release-contract.test.ts",
+      "tests/update-review.test.ts"
+    ]
   },
-  "approvedReviewers": {}
+  "approvedReviewers": {
+    "printguard-owner": {
+      "name": "PrintGuard 3D Application Owner",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAQEFNwnzbCXEFS79MhzrWp2K6SNEqy7F4+9yHe2G4cu4=\n-----END PUBLIC KEY-----\n"
+    }
+  }
 }
