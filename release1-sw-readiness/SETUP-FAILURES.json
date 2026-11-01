@@ -17,5 +17,19 @@
   "followingDisposition": "NOT VERIFIED: old harness allowed late work after outer timeout; raw reported statuses preserved separately and not counted as clean evidence",
   "termination": "Stopped exact diagnostic Node PID20116 after verifying its command line. No production/runtime browser data accessed.",
   "causeConfidence": "HIGH: Session.open had not returned, because old fresh() only owned the session after open. No worker state observed. Underlying browser bootstrap cause NOT DETERMINED.",
-  "harnessCorrection": "Own session before await, explicit20s diagnostic launch bound, stop remaining cases on120s/cleanup ceiling. No original N09 deadline/assertion/retry or production source changed."
+  "harnessCorrection": "Own session before await, explicit20s diagnostic launch bound, stop remaining cases on120s/cleanup ceiling. No original N09 deadline/assertion/retry or production source changed.",
+  "plannedCases": 144,
+  "completedRawRows": 137,
+  "unexecutedCases": 7,
+  "conservativeDisposition": {
+    "PASS": 70,
+    "FAIL": 1,
+    "NOT VERIFIED": 73
+  },
+  "exploratoryPilot": {
+    "PASS": 36,
+    "FAIL": 0,
+    "rawSHA256": "ffde7c292b38d3f6c0acfab24527da1a2eea115aa3ccb855c2392161237b1c22",
+    "use": "Preliminary harness development only; not included in final144 or originalN09 statistics"
+  }
 }

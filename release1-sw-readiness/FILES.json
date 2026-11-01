@@ -48,6 +48,10 @@
     },
     {
       "status": "A",
+      "path": "release1-sw-readiness/NEW-REPRODUCTIONS.json"
+    },
+    {
+      "status": "A",
       "path": "release1-sw-readiness/REPORT.md"
     },
     {
@@ -84,6 +88,18 @@
     },
     {
       "status": "A",
+      "path": "release1-sw-readiness/evidence/new-pinned-chromium-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/new-pinned-firefox-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/new-standard-chromium-n09.zip"
+    },
+    {
+      "status": "A",
       "path": "release1-sw-readiness/prepare.mjs"
     },
     {
@@ -91,5 +107,5 @@
       "path": "release1-sw-readiness/run.mjs"
     }
   ],
-  "count": 22
+  "count": 26
 }
