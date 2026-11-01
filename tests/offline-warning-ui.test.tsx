@@ -1,0 +1,12 @@
+// @vitest-environment jsdom
+import 'fake-indexeddb/auto';
+import {it,expect,afterEach,vi} from 'vitest';
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import {OfflineInstallNotice} from '../src/UpdateSafety';
+import {offlineWarning,type OfflineState} from '../src/offlineInstall';
+afterEach(cleanup);
+const state=(phase:OfflineState['phase'],revision=1):OfflineState=>({phase,reason:'test',revision,milestones:{registered:true,registrationReady:false,activated:false,controlled:false,completeCache:false}});
+it('W01 preparing is polite, does not announce failure or steal focus',()=>{const recheck=vi.fn();const view=render(<><button>Existing action</button><OfflineInstallNotice state={state('preparing')} recheck={recheck}/></>);screen.getByRole('button',{name:'Existing action'}).focus();view.rerender(<><button>Existing action</button><OfflineInstallNotice state={state('failed',2)} recheck={recheck}/></>);expect(document.activeElement).toBe(screen.getByRole('button',{name:'Existing action'}));expect(screen.getAllByRole('alert')).toHaveLength(1);});
+it('W02 installation failure exposes one accessible actionable warning',()=>{render(<OfflineInstallNotice state={state('failed')} recheck={vi.fn()}/>);expect(screen.getByRole('alert').textContent).toBe(offlineWarning);expect(screen.getAllByRole('region',{name:'Offline access status'})).toHaveLength(1);expect(screen.getByRole('button',{name:'Recheck offline access'})).toBeTruthy();});
+it('W03 dismissal is revision/session-only with a stable keyboard focus target',()=>{const recheck=vi.fn(),view=render(<OfflineInstallNotice state={state('failed')} recheck={recheck}/>);fireEvent.click(screen.getByRole('button',{name:'Dismiss warning for this session'}));expect(screen.queryByRole('alert')).toBeNull();expect(document.activeElement).toBe(screen.getByRole('button',{name:'Recheck offline access'}));view.rerender(<OfflineInstallNotice state={state('failed',2)} recheck={recheck}/>);expect(screen.getByRole('alert').textContent).toBe(offlineWarning);});
+it('W04 recheck is explicit, and verified readiness removes the warning',()=>{const recheck=vi.fn(),view=render(<OfflineInstallNotice state={state('unconfirmed')} recheck={recheck}/>);fireEvent.click(screen.getByRole('button',{name:'Recheck offline access'}));expect(recheck).toHaveBeenCalledTimes(1);view.rerender(<OfflineInstallNotice state={state('ready',2)} recheck={recheck}/>);expect(screen.queryByRole('region',{name:'Offline access status'})).toBeNull();});

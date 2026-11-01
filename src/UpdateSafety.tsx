@@ -1,10 +1,25 @@
-import {useEffect,useRef,useState} from 'react';
+import {useEffect,useRef,useState,useSyncExternalStore} from 'react';
+import {offlineInstall,offlineWarning,offlineUnknown,type OfflineState} from './offlineInstall';
 import {download,makeBackup,validateBackup,db} from './db';
 import {activateWriter,writerContract} from './writerSafety';
 import {UpdateReview,CandidatePoller,readUpdateCandidate,activateReviewedWorker,offlineUpdateMessage} from './updateReview';
 import {Button} from './components';
 
+export function OfflineInstallNotice({state,recheck}:{state:OfflineState;recheck:()=>void}){
+ const[dismissed,setDismissed]=useState<number|null>(null),region=useRef<HTMLElement>(null);
+ if(state.phase==='idle'||state.phase==='ready')return null;
+ const preparing=state.phase==='preparing',hidden=dismissed===state.revision;
+ const message=hidden?'Offline access has not been confirmed. Recheck before relying on it.':preparing?'Preparing offline access. You can continue working while this is checked.':state.phase==='offline'?offlineUnknown:offlineWarning;
+ return <section ref={region} className="callout amber compatibility-notice" aria-label="Offline access status">
+  <h2>{preparing?'Preparing offline access':state.phase==='unsupported'?'Offline checks unavailable':'Offline access is not confirmed'}</h2>
+  <p role={!preparing&&!hidden&&state.phase==='failed'?'alert':'status'}>{message}</p>
+  <Button variant="secondary" onClick={()=>{setDismissed(null);recheck();}}>Recheck offline access</Button>
+  {!preparing&&!hidden&&<Button variant="secondary" onClick={()=>{setDismissed(state.revision);region.current?.querySelector<HTMLButtonElement>('button')?.focus();}}>Dismiss warning for this session</Button>}
+ </section>;
+}
+
 export function UpdateSafety({acknowledged}:{acknowledged:boolean}){
+ const offline=useSyncExternalStore(offlineInstall.subscribe,offlineInstall.getSnapshot,offlineInstall.getSnapshot);
  const review=useRef(new UpdateReview()).current;
  const [,render]=useState(0),[error,setError]=useState(''),[busy,setBusy]=useState(false);
  const mounted=useRef(false);
@@ -26,8 +41,7 @@ export function UpdateSafety({acknowledged}:{acknowledged:boolean}){
   catch(e){review.invalidate();setError((e as Error).message);setBusy(false);render(v=>v+1);}
  }
  const candidate=review.candidate,status=candidate?.status,waiting=candidate?.worker,incompatible=status&&!status.writable;
- if(!incompatible&&!waiting&&!error)return null;
- return <section className="callout amber compatibility-notice" aria-label="Application compatibility">
+ return <><OfflineInstallNotice state={offline} recheck={offlineInstall.recheck}/>{(incompatible||waiting||error)&&<section className="callout amber compatibility-notice" aria-label="Application compatibility">
   <h2>{incompatible?'Read-only workshop':waiting?'Application update available':'Update check unavailable'}</h2>
   {status?.control&&<p>Saved writer version: {status.control.generation}. This application: {writerContract.generation}. {status.upgrade?'This newer compatible application needs your approval before workshop changes.':''}</p>}
   {candidate?.identity&&<p>Pending application: <code>{candidate.identity.build}</code>. Writer version: {candidate.identity.writer.generation}.</p>}
@@ -38,5 +52,5 @@ export function UpdateSafety({acknowledged}:{acknowledged:boolean}){
    {waiting&&<Button disabled={busy||!review.ready} onClick={()=>activate('worker')}>Activate update and reload</Button>}
    {status?.upgrade&&<Button disabled={busy||!review.ready} onClick={()=>activate('writer')}>Enable this writer version</Button>}</>}
   {error&&<p role="alert">{error}</p>}
- </section>;
+ </section>}</>;
 }
