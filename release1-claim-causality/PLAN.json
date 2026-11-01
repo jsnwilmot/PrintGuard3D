@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "base": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "previousHarness": "3bf57b4b1c5142fc5619c06b4946f4be6ccf4c64",
+  "engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "clock": [
+    "native",
+    "fixed"
+  ],
+  "transport": [
+    "direct",
+    "proxy"
+  ],
+  "navigation": [
+    "before",
+    "spanning",
+    "after"
+  ],
+  "printerCounts": [
+    0,
+    1,
+    12
+  ],
+  "matrixCases": 108,
+  "pristineOriginalN09": {
+    "perEngine": 10,
+    "total": 30,
+    "timeout": 120000,
+    "retries": 0,
+    "fileUnchanged": true,
+    "configUnchanged": true
+  },
+  "controls": {
+    "perEngine": [
+      "503",
+      "hash",
+      "delay"
+    ],
+    "total": 9
+  },
+  "diagnosticCaseTimeout": 120000,
+  "diagnosticControllerObservationMilliseconds": 10000,
+  "gatePreconditionMilliseconds": 15000,
+  "retries": 0,
+  "workers": 1,
+  "originalAcceptance": "Never replaced or reclassified by altered diagnostic arms",
+  "sampling": "One case for each printer count per cell; three observations per engine/cell, not a reliability estimate",
+  "stop": "No additional cases until green; preserve setup/qualification failures; no production changes"
+}
