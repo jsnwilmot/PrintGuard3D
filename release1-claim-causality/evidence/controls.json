@@ -1,0 +1,595 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "release1-claim-causality/playwright.config.mjs"
+    ],
+    "configFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality\\playwright.config.mjs",
+    "rootDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/release1-claim-causality",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/.verification-local/claim-causality/causal-local-4/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": [
+          "cases.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/.verification-local/claim-causality/causal-local-4/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": [
+          "cases.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/.verification-local/claim-causality/causal-local-4/controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/.verification-local/worktrees/issue41-causality/release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": [
+          "cases.mjs"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": "cases.mjs",
+        "timeout": 120000,
+        "use": {
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": {
+            "mode": "on",
+            "screenshots": false,
+            "snapshots": true,
+            "sources": false
+          },
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": "cases.mjs",
+        "timeout": 120000,
+        "use": {
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": {
+            "mode": "on",
+            "screenshots": false,
+            "snapshots": true,
+            "sources": false
+          },
+          "screenshot": "only-on-failure",
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\release1-claim-causality",
+        "testIgnore": [],
+        "testMatch": "cases.mjs",
+        "timeout": 120000,
+        "use": {
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": {
+            "mode": "on",
+            "screenshots": false,
+            "snapshots": true,
+            "sources": false
+          },
+          "screenshot": "only-on-failure",
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4/controls.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "cwd": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\",
+      "command": "node release1-claim-causality/server.mjs",
+      "url": "http://127.0.0.1:4359/__forensic/health",
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "cases.mjs",
+      "file": "cases.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "native-direct-natural-0-503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1889,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:34.284Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-503-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-fcba1adcb908dc72e3e5",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2673,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:36.437Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-hash-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-6a0af533aeab754c8dcd",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:39.224Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-delay-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-4075a254a27b1018465e",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:43.701Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-503-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-14c19d941cb183b608e2",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:47.201Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-hash-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-97fda171066240340a25",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3015,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:48.984Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-delay-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-28df121c35f4cae32677",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-503",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:53.033Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-503-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-80270005d118c1296cd0",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-hash",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:54.606Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-hash-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-677c8e433df585bab7c1",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        },
+        {
+          "title": "native-direct-natural-0-delay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T21:05:55.828Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\worktrees\\issue41-causality\\.verification-local\\claim-causality\\causal-local-4\\controls-traces\\cases.mjs-native-direct-natural-0-delay-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "052671b143659e501bc6-4a5b3a90ef411a2fd27c",
+          "file": "cases.mjs",
+          "line": 21,
+          "column": 36
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-01T21:05:33.102Z",
+    "duration": 25223.629999999997,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

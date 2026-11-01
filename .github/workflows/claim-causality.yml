@@ -1,0 +1,60 @@
+name: Supplemental navigation-claim causal investigation
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  causality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      PRINTGUARD_CAUSAL_RUN: ${{ github.workspace }}/.verification-local/claim-causality/ci
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: node release1-claim-causality/prepare.mjs ci
+      - name: Pristine original N09, ten per engine, original120s zero retries
+        run: node release1-claim-causality/baseline.mjs .verification-local/claim-causality/ci
+      - name: Independent diagnostic controls, no retries
+        id: controls
+        if: always()
+        env:
+          PRINTGUARD_CAUSAL_MODE: controls
+        run: npx playwright test --config release1-claim-causality/playwright.config.mjs
+      - name: Prespecified144 supplemental comparisons, not original acceptance
+        if: always() && steps.controls.outcome == 'success'
+        env:
+          PRINTGUARD_CAUSAL_MODE: matrix
+        run: npx playwright test --config release1-claim-causality/playwright.config.mjs
+      - name: Summarize actual outcomes and executable hashes without reclassification
+        if: always()
+        run: |
+          node release1-claim-causality/analyze.mjs .verification-local/claim-causality/ci
+          node release1-claim-causality/environment.mjs .verification-local/claim-causality/ci
+      - name: Preserve all synthetic evidence including red cases
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: claim-causality-evidence
+          path: |
+            .verification-local/claim-causality/ci/*.json
+            .verification-local/claim-causality/ci/*.ndjson
+            .verification-local/claim-causality/ci/events/
+            .verification-local/claim-causality/ci/page-events/
+            .verification-local/claim-causality/ci/case-outcomes/
+            .verification-local/claim-causality/ci/controls-traces/
+            .verification-local/claim-causality/ci/matrix-traces/
+            .verification-local/claim-causality/ci/source/test-results/reporting/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

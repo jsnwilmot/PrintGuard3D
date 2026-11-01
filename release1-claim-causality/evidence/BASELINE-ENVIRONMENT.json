@@ -1,0 +1,35 @@
+{
+  "platform": "win32",
+  "release": "10.0.26300",
+  "arch": "x64",
+  "CPU": [
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     "
+  ],
+  "memory": 30907015168,
+  "node": "v22.23.3",
+  "source": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "args": [
+    "--config",
+    "release1-reporting/playwright.config.mjs",
+    "--grep",
+    "N09 zero/one/twelve printers",
+    "--repeat-each=10"
+  ],
+  "retries": 0,
+  "timeout": 120000
+}

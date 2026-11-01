@@ -1,0 +1,61 @@
+{
+  "completed": 144,
+  "counts": {
+    "PASS": 106,
+    "FAIL": 38
+  },
+  "timingQualified": 144,
+  "historicalRowsPreserved": 144,
+  "actualOfflineProof": 106,
+  "offlineNotReachedNotVerified": 38,
+  "readyButUncontrolledAt10s": 38,
+  "oldControlledNewUncontrolled": 38,
+  "replacementAbsentAfterClaimSnapshot": 36,
+  "replacementPresentAfterClaimSnapshot": [
+    "firefox-fixed-proxy-natural-0",
+    "firefox-native-direct-natural-0"
+  ],
+  "duplicateInstallEvidence": [
+    "webkit-fixed-direct-before-1",
+    "webkit-native-direct-before-1",
+    "webkit-native-proxy-before-1"
+  ],
+  "serverSampleIntervalsMilliseconds": {
+    "samples": 1887,
+    "minimum": 499.128,
+    "median": 505.3051,
+    "p95": 514.5665,
+    "maximum": 524.1559
+  },
+  "freeMemoryBytes": {
+    "samples": 1887,
+    "minimum": 15641067520,
+    "median": 16138727424,
+    "p95": 16469979136,
+    "maximum": 16759447552
+  },
+  "serverRSSBytes": {
+    "samples": 1887,
+    "minimum": 54738944,
+    "median": 64040960,
+    "p95": 67047424,
+    "maximum": 68661248
+  },
+  "pageDOMContentLoadedReceiptMinusWallMilliseconds": {
+    "fixed": {
+      "samples": 72,
+      "minimum": -14931658278491.0,
+      "median": -14931657891870.5,
+      "p95": -14931657521852.0,
+      "maximum": -14931657485088.0
+    },
+    "native": {
+      "samples": 72,
+      "minimum": -2.0,
+      "median": 1.0,
+      "p95": 38.0,
+      "maximum": 65.0
+    }
+  },
+  "interpretation": "Receipt lag is not clock precision. Host sampling does not measure every browser process or exclude scheduling contention. Windows loadavg is unavailable."
+}

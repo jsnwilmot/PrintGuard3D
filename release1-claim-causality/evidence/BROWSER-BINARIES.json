@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-01T21:26:39.039Z",
+  "node": "v22.23.3",
+  "platform": "win32",
+  "release": "10.0.26300",
+  "arch": "x64",
+  "CPU": [
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     ",
+    "AMD Ryzen 9 PRO 6950H with Radeon Graphics     "
+  ],
+  "totalMemory": 30907015168,
+  "launcherPaths": {
+    "chromium": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\chromium-1248\\chrome-win64\\chrome.exe",
+    "firefox": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\firefox-1555\\firefox\\firefox.exe",
+    "webkit": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\webkit-2370\\Playwright.exe"
+  },
+  "binaries": {
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\chromium-1248\\chrome-win64\\chrome.exe": {
+      "bytes": 4578816,
+      "sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9"
+    },
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\chromium_headless_shell-1248\\chrome-headless-shell-win64\\chrome-headless-shell.exe": {
+      "bytes": 216950272,
+      "sha256": "f77d8e27c8db1e4ac0399459a00e0c97bb9417adc393474cabaffebe2314ecb0"
+    },
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\firefox-1555\\firefox\\firefox.exe": {
+      "bytes": 1140736,
+      "sha256": "c949e57fba9a65ab6c434a76e32d2c72eb43f8b99a7c48ee7e927a4fad4b2a36"
+    },
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\webkit-2370\\Playwright.exe": {
+      "bytes": 202752,
+      "sha256": "5c2f7bf3592d67bf74a32b01d08ad3b156fd4fff0fea0fabe8dbf99bd37d48f3"
+    },
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\webkit-2370\\WebKitNetworkProcess.exe": {
+      "bytes": 10752,
+      "sha256": "725dc4029d3bf728e4131ab97a43fe16ff1b38aeac0e38c4b11f03650ba06a39"
+    },
+    "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\.verification-local\\browsers\\webkit-2370\\WebKitWebProcess.exe": {
+      "bytes": 10752,
+      "sha256": "eb8517180b15f9df2b496ab69ef9fb90f856bda3f7cc8b7e07cbf04df7b3d88e"
+    }
+  },
+  "note": "Only the disposable Playwright install cache is inspected; no browser user profiles. Per-case browser.version records actual engine version. Headless shell is included separately from full Chromium."
+}
