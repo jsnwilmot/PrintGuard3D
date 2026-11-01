@@ -8,13 +8,14 @@ import {Button} from './components';
 export function OfflineInstallNotice({state,recheck}:{state:OfflineState;recheck:()=>void}){
  const[dismissed,setDismissed]=useState<number|null>(null),region=useRef<HTMLElement>(null);
  if(state.phase==='idle'||state.phase==='ready')return null;
- const preparing=state.phase==='preparing',hidden=dismissed===state.revision,failed=!preparing&&!hidden&&state.phase==='failed';
- const message=hidden?'Offline access has not been confirmed. Recheck before relying on it.':preparing?'Preparing offline access. You can continue working while this is checked.':state.phase==='offline'?offlineUnknown:offlineWarning;
+ if(state.phase==='preparing')return <section className="sr-only" aria-label="Offline access status"><p aria-live="polite" aria-atomic="true">Preparing offline access. You can continue working while this is checked.</p></section>;
+ const hidden=dismissed===state.revision,failed=!hidden&&state.phase==='failed';
+ const message=hidden?'Offline access has not been confirmed. Recheck before relying on it.':state.phase==='offline'?offlineUnknown:offlineWarning;
  return <section ref={region} className="callout amber compatibility-notice" aria-label="Offline access status">
-  <h2>{preparing?'Preparing offline access':state.phase==='unsupported'?'Offline checks unavailable':'Offline access is not confirmed'}</h2>
+  <h2>{state.phase==='unsupported'?'Offline checks unavailable':'Offline access is not confirmed'}</h2>
   <p role={failed?'alert':undefined} aria-live={failed?undefined:'polite'} aria-atomic="true">{message}</p>
   <Button variant="secondary" onClick={()=>{setDismissed(null);recheck();}}>Recheck offline access</Button>
-  {!preparing&&!hidden&&<Button variant="secondary" onClick={()=>{setDismissed(state.revision);region.current?.querySelector<HTMLButtonElement>('button')?.focus();}}>Dismiss warning for this session</Button>}
+  {!hidden&&<Button variant="secondary" onClick={()=>{setDismissed(state.revision);region.current?.querySelector<HTMLButtonElement>('button')?.focus();}}>Dismiss warning for this session</Button>}
  </section>;
 }
 
