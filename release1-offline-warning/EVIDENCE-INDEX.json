@@ -1,4 +1,52 @@
 {
+  "release1-offline-warning/evidence/banner-final/acceptance.json": {
+    "bytes": 15521,
+    "sha256": "6fc405c5efd1e400bc5bd4e0b7689377c94739590ce3997b8137c618a924bc0b"
+  },
+  "release1-offline-warning/evidence/banner-final/initial-unit-setup-failure.json": {
+    "bytes": 126412,
+    "sha256": "02d74fea52610e7257e38d3f9b863bbe0f18efe293ad12372836f23f9f5b520d"
+  },
+  "release1-offline-warning/evidence/banner-final/normal-artifacts.json": {
+    "bytes": 1560,
+    "sha256": "5861377f89f0f9ef5bd33ce2c039a05557b5e2133fc8274c7e79533b926fb5a2"
+  },
+  "release1-offline-warning/evidence/banner-final/normal-build-contract.json": {
+    "bytes": 924,
+    "sha256": "aa16b5738cd79f57f534fab5880a468671c5493e0fd0ca314c05838706156233"
+  },
+  "release1-offline-warning/evidence/banner-final/regression.json": {
+    "bytes": 115353,
+    "sha256": "591f07542a591c5e215583ead61a4772c71f50a0fff1ef8e3ed2b0a9cfe25d2c"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/chromium-offline-reconnect.synthetic.zip": {
+    "bytes": 1164680,
+    "sha256": "77e1f0eb1922bb4466094194a4433c0889cb150caa7a39cbd5613ca9b5f18dbf"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/CI-REVIEW.json": {
+    "bytes": 1190,
+    "sha256": "2654c6fe3ba012d6fb7b1c909c440fa846c60743632bc9b3546a7891520c0d6f"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/governance.json": {
+    "bytes": 67807,
+    "sha256": "ba11832f134806f079726923d559f06e27816489ff27b0e12d44e41f0c8c8237"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/recovery.json": {
+    "bytes": 398977,
+    "sha256": "ab6f4ea48deabad137bab2a505e5ed67c732a55ca9376f5d19feb77dd81caa9f"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/reporting.json": {
+    "bytes": 956097,
+    "sha256": "2a62f2ce90615eecd69f6dc7f1472fd910bee17415c9ba6940c7f82452f3ab6e"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/warning.json": {
+    "bytes": 400479,
+    "sha256": "1d38c7ed80c2b54fb6f8f6373e4621daf490a2f8d633947ed91c3c19ba93cb67"
+  },
+  "release1-offline-warning/evidence/ci-a2cde7c/webkit-N08.synthetic.zip": {
+    "bytes": 2909965,
+    "sha256": "60665b1b0b607ad4bb8cb14e4810d436c30fb54847afb5cf25e9171c7090f106"
+  },
   "release1-offline-warning/evidence/final-048f9b9/acceptance.json": {
     "bytes": 15521,
     "sha256": "e3434e699834404dc148cec59b2ff845517b80a6f2d5507346934867d7941ca8"

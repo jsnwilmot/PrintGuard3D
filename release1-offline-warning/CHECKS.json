@@ -1,25 +1,40 @@
 {
-  "runtimeCommit": "8d51f7fb31379858297690bad0843f3e2b721c7b",
-  "regressions": {
-    "pass": 352,
-    "fail": 0
+  "runtimeCommit": "fe607c8ff52dc21dbdd7e7e1cefd215255ec1516",
+  "latestLocal": {
+    "regressions": {
+      "pass": 353,
+      "fail": 0
+    },
+    "acceptance": {
+      "pass": 45,
+      "fail": 0
+    },
+    "typeScript": "PASS",
+    "normalNondeployableBuild": "PASS"
   },
-  "acceptance": {
-    "pass": 45,
-    "fail": 0
-  },
-  "newNative": {
+  "previousNativeSample": {
+    "commit": "8d51f7fb31379858297690bad0843f3e2b721c7b",
     "pass": 23,
     "fail": 1,
     "failed": "firefox-offline-before-first-install"
   },
-  "typeScript": "PASS",
-  "nondeployableBuild": "PASS",
-  "protectedDiff": "PASS: DB, engine, profiles, writer/update review, styles, App/Reports, original N09/config, original workflow,86-row matrix,lockfile unchanged",
-  "archiveTargetedCredentialScan": {
-    "textEntries": 16,
-    "findings": 0,
-    "exhaustive": false
+  "intermediateCI": {
+    "commit": "a2cde7c0deae026014d172233a00ac600af2bb61",
+    "standardRun": 41340748385,
+    "jobsSuccess": 5,
+    "jobsFail": 1,
+    "warningRun": 41340748501,
+    "nativePass": 23,
+    "nativeFail": 1
   },
-  "releaseApproved": false
+  "protectedDiff": "DB,engine,profiles,writer/update review,styles,Reports,original N09/config,original workflow,86-row matrix,lockfile unchanged. App.tsx changes one offline status sentence only.",
+  "finalCI": "See exact-head PR body",
+  "releaseApproved": false,
+  "archiveValidation": {
+    "CRC": "PASS",
+    "paths": "PASS",
+    "recursiveTextEntries": 293,
+    "targetedCredentialFindings": 0,
+    "exhaustive": false
+  }
 }
