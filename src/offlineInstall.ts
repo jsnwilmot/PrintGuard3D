@@ -1,11 +1,11 @@
 // Public startup status only: no database, workshop records or persisted status.
 export type OfflinePhase='idle'|'preparing'|'ready'|'unconfirmed'|'failed'|'offline'|'unsupported';
-export type OfflineMilestones={registered:boolean;registrationReady:boolean;activated:boolean;controlled:boolean;completeCache:boolean};
+export type OfflineMilestones={registered:boolean;registrationReady:boolean;installed:boolean;activated:boolean;controlled:boolean;completeCache:boolean};
 export type OfflineState={phase:OfflinePhase;reason:string;revision:number;milestones:OfflineMilestones};
 export type OfflineInspection={cache:string;assets:string[];hashes:Record<string,string>};
 export const offlineWarning='Offline access is not ready. Your workshop remains available while online. Stay online, keep a backup and reconnect/recheck before relying on offline use.';
 export const offlineUnknown='Offline preparation has not been confirmed. This page may remain usable, but reopening offline is not verified. Keep a backup and reconnect to recheck.';
-const empty=():OfflineMilestones=>({registered:false,registrationReady:false,activated:false,controlled:false,completeCache:false});
+const empty=():OfflineMilestones=>({registered:false,registrationReady:false,installed:false,activated:false,controlled:false,completeCache:false});
 export interface OfflineEnvironment{
  secure:boolean;sw:ServiceWorkerContainer|null;cache:Pick<CacheStorage,'match'>|null;events:EventTarget;
  online:()=>boolean;inspect:(worker:ServiceWorker,signal?:AbortSignal)=>Promise<unknown>;digest:(bytes:ArrayBuffer)=>Promise<string>;
@@ -78,7 +78,7 @@ export class OfflineInstallObserver{
    try{
     const registration=await this.bounded(environment.sw!.getRegistration(),2000);if(!this.alive||epoch!==this.epoch)continue;
     if(registration)this.watch(registration);const controller=environment.sw!.controller;
-    milestones={...milestones,registered:!!registration,registrationReady:this.registrationReady,activated:registration?.active?.state==='activated',controlled:!!controller&&controller.state==='activated'};
+    milestones={...milestones,registered:!!registration,registrationReady:this.registrationReady,installed:[registration?.installing,registration?.waiting,registration?.active].some(worker=>!!worker&&['installed','activating','activated'].includes(worker.state)),activated:registration?.active?.state==='activated',controlled:!!controller&&controller.state==='activated'};
     if(controller&&controller.state==='activated'&&registration?.active===controller&&environment.cache){
      const packet=await this.bounded(environment.inspect(controller,this.lifetime.signal),2000),inspection=parseOfflineInspection(packet,this.build);
      if(!this.alive||epoch!==this.epoch)continue;
