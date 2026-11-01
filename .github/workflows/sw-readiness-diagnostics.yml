@@ -1,0 +1,49 @@
+name: Pinned service-worker readiness investigation
+on:
+  pull_request:
+    branches: [main]
+    paths: ['release1-sw-readiness/*.mjs', 'release1-sw-readiness/*.py', '.github/workflows/sw-readiness-diagnostics.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: node release1-sw-readiness/prepare.mjs ci
+      - name: Ten original N09 cases per browser, original assertions/deadlines and zero retries
+        id: original
+        working-directory: .verification-local/sw-readiness/ci/approved
+        run: npx playwright test --config release1-reporting/playwright.config.mjs --grep 'N09 zero/one/twelve printers' --repeat-each=10
+      - name: Independent lifecycle and injected-negative diagnostics
+        if: always() && steps.original.outcome != 'skipped'
+        run: node release1-sw-readiness/run.mjs .verification-local/sw-readiness/ci/approved/.verification-local/clean-origin/approved 10
+      - name: Summarize preserved outcomes and verify frozen bytes
+        if: always() && steps.original.outcome != 'skipped'
+        run: python release1-sw-readiness/analyse.py .verification-local/sw-readiness/ci/approved/.verification-local/clean-origin/approved/readiness-*/RESULTS.json --out .verification-local/sw-readiness/ci/summary
+      - name: Preserve every result and failure; never upload browser profiles
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: pinned-readiness-investigation
+          path: |
+            .verification-local/sw-readiness/ci/SOURCE.json
+            .verification-local/sw-readiness/ci/summary/
+            .verification-local/sw-readiness/ci/approved/test-results/reporting-native.json
+            .verification-local/sw-readiness/ci/approved/test-results/reporting/
+            .verification-local/sw-readiness/ci/approved/.verification-local/clean-origin/approved/manifest.json
+            .verification-local/sw-readiness/ci/approved/.verification-local/clean-origin/approved/readiness-*/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

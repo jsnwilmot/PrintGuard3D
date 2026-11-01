@@ -1,0 +1,111 @@
+{
+  "approvedBase": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "diagnosticRuntimeChanges": false,
+  "files": [
+    {
+      "status": "A",
+      "path": ".github/workflows/sw-readiness-diagnostics.yml"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/ARTIFACTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/BASELINE.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/CI-EVIDENCE.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/CI-EXCERPTS.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/ENCODING-REPRO.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/ENCODING-RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/EVIDENCE-INDEX.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/FILES.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/HISTORICAL-TRACE.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/NEW-REPRODUCTIONS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/REPORT.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/REPRODUCTION.md"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/SELECTED-EVENTS.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/SETUP-FAILURES.json"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/analyse.py"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/encoding-no-charset.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/firefox-import-snapshot-failure.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/historical-chromium-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/new-pinned-chromium-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/new-pinned-firefox-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/evidence/new-standard-chromium-n09.zip"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/prepare.mjs"
+    },
+    {
+      "status": "A",
+      "path": "release1-sw-readiness/run.mjs"
+    }
+  ],
+  "count": 26
+}

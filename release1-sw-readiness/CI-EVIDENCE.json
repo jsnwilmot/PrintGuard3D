@@ -1,0 +1,119 @@
+{
+  "pinnedRuntime": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "diagnosticSource": "8f90fb5e631f7e68df5d7ba66a9145c263538f53",
+  "sourceValidation": {
+    "run": 41316238655,
+    "url": "https://github.com/jsnwilmot/PrintGuard3D/actions/runs/41316238655",
+    "jobs": [
+      {
+        "id": 124876777509,
+        "name": "Reporting, immutable history and offline exports",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777681,
+        "name": "Clean origin, cooperative updates and independent recovery",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777686,
+        "name": "TypeScript, regression tests and build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777711,
+        "name": "Native Chromium backup and restoration",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777713,
+        "name": "Full Release 1 acceptance",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124876777734,
+        "name": "Chromium, Firefox, WebKit and print compatibility",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "conclusion": "success"
+  },
+  "initialSupplemental": {
+    "run": 41316238711,
+    "job": 124876777704,
+    "conclusion": "failure",
+    "originalN09": {
+      "PASS": 30,
+      "FAIL": 0
+    },
+    "observerCases": {
+      "PASS": 144,
+      "FAIL": 0
+    },
+    "failure": "Postprocessing KeyError milliseconds on optional held-tab observation duration; not a browser-oracle failure. Preserved as FAIL.",
+    "artifact": {
+      "id": 13087618803,
+      "digest": "a51322df85cb94e53e5f17401f793e1b483aaa16c15dac92521843b0a5c5e9e7",
+      "expires": "2026-11-15"
+    }
+  },
+  "localFinal": {
+    "PASS": 143,
+    "FAIL": 1,
+    "remainingFailure": "Firefox native snapshot query throws {} during injected App503. Not reclassified by CI greens."
+  },
+  "finalHead": "Subsequent submitted commit is evidence-only; exact SHA/source equivalence and automatic check status recorded in PR44. No manual rerun to obtain green.",
+  "releaseApproved": false,
+  "completedReproductionHead": "66963a17951ea2fdad9518e262f0a76f91e7efa7",
+  "completedStandardReproduction": {
+    "run": 41317785405,
+    "conclusion": "failure",
+    "jobsPassed": 5,
+    "jobsFailed": 1,
+    "reporting": {
+      "PASS": 74,
+      "FAIL": 1,
+      "case": "Chromium N09 timedOut120175ms at combined ready/controller wait"
+    },
+    "artifact": {
+      "id": 13087943756,
+      "digest": "9563479c82768e8cb0a80527694756810103c94d215717cbfdb73713119c608c"
+    }
+  },
+  "completedSupplementalReproduction": {
+    "run": 41317785445,
+    "conclusion": "failure",
+    "originalN09": {
+      "PASS": 28,
+      "FAIL": 2,
+      "chromium": {
+        "PASS": 9,
+        "FAIL": 1
+      },
+      "firefox": {
+        "PASS": 9,
+        "FAIL": 1
+      },
+      "webkit": {
+        "PASS": 10,
+        "FAIL": 0
+      }
+    },
+    "observerCases": {
+      "PASS": 144,
+      "FAIL": 0
+    },
+    "analysis": "PASS; corrected optional duration handling, all51 frozen files verified",
+    "artifact": {
+      "id": 13087913475,
+      "digest": "db5350f5f9d1012a30de8b6b27e9e42b1cb7b2e25fba89f57d8c762bcf7015a7"
+    }
+  },
+  "artifactComparison": "All17 ordinary app file SHA256 values match between the two pinned CI samples; no runtime fix occurred. Samples30/0 then28/2. See NEW-REPRODUCTIONS.json."
+}

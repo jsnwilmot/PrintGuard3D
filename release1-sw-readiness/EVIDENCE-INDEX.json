@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "pinnedRuntime": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "note": "JSON pinned to LF; selected historical and current negative ZIPs copied byte-for-byte. Failed outcomes remain FAIL; no runtime fix or green retry.",
+  "files": {
+    "ARTIFACTS.json": {
+      "sha256": "7532b3204f842e7f325588146d5541d66cbd530b50b9025e02e87d3ea890ca46",
+      "bytes": 8287
+    },
+    "BASELINE.json": {
+      "sha256": "d385ab7f1d58bb510d9e69f952087544a68634ae4e8654c3db01e0811d30fbf5",
+      "bytes": 15914
+    },
+    "CI-EVIDENCE.json": {
+      "sha256": "38ffe9674f3184689e36d7f5bcb6f1704917f0905be10314bb7f54c3a478a1f6",
+      "bytes": 3571
+    },
+    "ENCODING-RESULTS.json": {
+      "sha256": "6015f66b0d26447fb87c099cc10eb21c6b50a56db5593ccae7cd562746135d94",
+      "bytes": 4749
+    },
+    "evidence/encoding-no-charset.zip": {
+      "sha256": "5979e3d7a7d8f912fec51bf44198985d3af1507342ce52092a313f2e7cd399af",
+      "bytes": 4379
+    },
+    "evidence/firefox-import-snapshot-failure.zip": {
+      "sha256": "4761eff29d2e9cf4b7fa8d64e899bdeb1c5098dbcfbf21463e8c11ee8a27e9cc",
+      "bytes": 55731
+    },
+    "evidence/historical-chromium-n09.zip": {
+      "sha256": "a4d1be04f23bbede1f1573a98e1093bf7de4cb1809dc096faa20f343960011c9",
+      "bytes": 1894756
+    },
+    "evidence/new-pinned-chromium-n09.zip": {
+      "sha256": "3ec419deb7db1608f78855bbfb7e1767e4ed4036861d567c13d8fdfd89ac55b8",
+      "bytes": 1902277
+    },
+    "evidence/new-pinned-firefox-n09.zip": {
+      "sha256": "51a9efd83a5a1b541128799954cbc89fb24b8578e50025deea59ee949c934db4",
+      "bytes": 32137083
+    },
+    "evidence/new-standard-chromium-n09.zip": {
+      "sha256": "1780c2e181125a26f52030e511b123f0c27c5ba75882f2203b064e9d303382e5",
+      "bytes": 1895319
+    },
+    "FILES.json": {
+      "sha256": "32747db929de3ffe8686aad74c22c94d10517de27153cff8e2c948df7c8a8c2d",
+      "bytes": 2561
+    },
+    "HISTORICAL-TRACE.json": {
+      "sha256": "5fa7e84b392234ef68ed4751b013b527f2ef1a103961ebc82058bb32e6ce1b04",
+      "bytes": 15763
+    },
+    "NEW-REPRODUCTIONS.json": {
+      "sha256": "680c63b2d759b331c8712d2d47987352ba55707694e80427f9ccdfd0485f6601",
+      "bytes": 28735
+    },
+    "RESULTS.json": {
+      "sha256": "7f7a42c0b6b0813d30f125c4163ae3469b96cb384b5593ba7315ec4356c233c5",
+      "bytes": 270035
+    },
+    "SELECTED-EVENTS.json": {
+      "sha256": "3b33aed021318471ca711d8db6c8cf912bb8356762b3f7a9a4a3b0ca1880e060",
+      "bytes": 523789
+    },
+    "SETUP-FAILURES.json": {
+      "sha256": "f3e2a3f6059adae0d8b9d78db774ec2ebd9c561b13699f488db9f630481540a5",
+      "bytes": 1937
+    }
+  }
+}

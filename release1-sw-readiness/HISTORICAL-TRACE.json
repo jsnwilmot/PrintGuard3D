@@ -1,0 +1,457 @@
+{
+  "sourceCommit": "5c0feb2ec374bc62439cb7cd7b85d7f370644653",
+  "run": 41246412988,
+  "attempt": 1,
+  "job": 124670740077,
+  "status": "FAIL",
+  "archiveSHA256": "a4d1be04f23bbede1f1573a98e1093bf7de4cb1809dc096faa20f343960011c9",
+  "retainedArchive": "Prior CI artifact, unchanged local copy; CI run/job linked in report",
+  "pendingEvaluation": "atxt@5933 contains TWO waits; trace cannot determine whether ready or controllerchange was pending",
+  "missingEvidence": [
+    "Registration states",
+    "Worker install/activate completion",
+    "Actual computed precache hashes versus expected hashes",
+    "Claim completion",
+    "Cache put/install marker result"
+  ],
+  "calls": [
+    {
+      "type": "before",
+      "callId": "atxt@5824",
+      "startTime": 71164.451,
+      "class": "BrowserContext",
+      "method": "clockSetFixedTime",
+      "params": {
+        "timeNumber": 1793188800000
+      }
+    },
+    {
+      "type": "before",
+      "callId": "atxt@5836",
+      "startTime": 71207.961,
+      "class": "BrowserContext",
+      "method": "clockSetFixedTime",
+      "params": {
+        "timeNumber": 13574647800000
+      }
+    },
+    {
+      "type": "before",
+      "callId": "atxt@5903",
+      "startTime": 71630.922,
+      "class": "BrowserContext",
+      "method": "clockSetFixedTime",
+      "params": {
+        "timeNumber": 16725225600000
+      }
+    },
+    {
+      "type": "before",
+      "callId": "atxt@5905",
+      "startTime": 71635.183,
+      "class": "Page",
+      "method": "reload",
+      "params": {
+        "waitUntil": "load"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "atxt@5933",
+      "startTime": 71825.209,
+      "class": "Frame",
+      "method": "evaluateExpression",
+      "params": {
+        "expression": "async () => {\n        await navigator.serviceWorker.ready;\n        if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {\n          once: true\n        }));\n      }",
+        "isFunction": true,
+        "arg": {
+          "value": {
+            "v": "undefined"
+          },
+          "handles": []
+        }
+      }
+    }
+  ],
+  "network": [
+    {
+      "time": 71173.099,
+      "url": "http://127.0.0.1:4359/review.html",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/5990707c130561677485f85c3b663c68558e877f.html",
+      "recordedBytesSHA256": "c403c88e825d4fb16c2cb32cce4661e59c4949931ec82879cc32881fc1998c9d"
+    },
+    {
+      "time": 71184.073,
+      "url": "http://127.0.0.1:4359/review-harness.css",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/e64d00a56d60f0ca92afc0d8a01703b3e90556a9.css",
+      "recordedBytesSHA256": "15f18e328a717ebe2313cf0de378363ab2a6806958aed743ef625f78e41c1b21"
+    },
+    {
+      "time": 71184.207,
+      "url": "http://127.0.0.1:4359/review-harness.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71212.783,
+      "url": "http://127.0.0.1:4359/",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/0fef4978c06781102656754d138be0364ee72927.html",
+      "recordedBytesSHA256": "55a6d457f732788575dfbceb78824b75cb9ec3c6c5bd6517d8008301643f32c0"
+    },
+    {
+      "time": 71222.657,
+      "url": "http://127.0.0.1:4359/assets/index-BUzmlEWf.css",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/d544b10724fc19bb7b58163c8efcea01cc2e316e.css",
+      "recordedBytesSHA256": "a0e79bfe709400094ec7a3b51e881be894fdd555ed3776888fc0b2416b29c16b"
+    },
+    {
+      "time": 71222.266,
+      "url": "http://127.0.0.1:4359/assets/index-Dhe4ipNI.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71222.485,
+      "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71222.583,
+      "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71283.5,
+      "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71324.95,
+      "url": "http://127.0.0.1:4359/sw.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71281.827,
+      "url": "http://127.0.0.1:4359/assets/App-BjnBRy4M.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71342.301,
+      "url": "http://127.0.0.1:4359/assets/App-BjnBRy4M.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/19a2a156057e936bc0deb94f6d149f25c5a4dbf7.js",
+      "recordedBytesSHA256": "b33daa6dac46e7ff53232370d0ee00cdff87170603cb9589c09b3d952e88aeef"
+    },
+    {
+      "time": 71351.054,
+      "url": "http://127.0.0.1:4359/logo.png",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/9fcd82d54e42f0a6428d437401f3b2c0a11b2a49.png",
+      "recordedBytesSHA256": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c"
+    },
+    {
+      "time": 71400.658,
+      "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/0aa9b16077a4187ed6490754448c95a606d54c17.js",
+      "recordedBytesSHA256": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d"
+    },
+    {
+      "time": 71446.343,
+      "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/d012719b1c55ddf0234160e2bb6cded8d223c87e.js",
+      "recordedBytesSHA256": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402"
+    },
+    {
+      "time": 71459.076,
+      "url": "http://127.0.0.1:4359/assets/index-BUzmlEWf.css",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/29a761a631e6360352c05a1f9c7bcdca9fd2cde9.css",
+      "recordedBytesSHA256": "92bcd3f9bcadf4bdf85c477cce08ab0726884027e32e86a7d13b73fdbbff67a2"
+    },
+    {
+      "time": 71465.769,
+      "url": "http://127.0.0.1:4359/assets/index-Dhe4ipNI.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/f3d06a72b6898a1dd8ea2d4dc825c9be59e528d2.js",
+      "recordedBytesSHA256": "783369888e2c6efc0dc74557fc8904f70338efe5d2c0aaa4d70b324baba7314e"
+    },
+    {
+      "time": 71475.139,
+      "url": "http://127.0.0.1:4359/assets/react-l0sNRNKZ.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/adc83b19e793491b1c6ea0fd8b46cd9f32e592fc.js",
+      "recordedBytesSHA256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "time": 71448.458,
+      "url": "http://127.0.0.1:4359/workshop.svg",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/97f975ca33ba1ad6e14a410be9e9133f327a3eec.svg",
+      "recordedBytesSHA256": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143"
+    },
+    {
+      "time": 71449.283,
+      "url": "http://127.0.0.1:4359/printer.svg",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/a3844c80503527fb6afc6da43495eb500902cdea.svg",
+      "recordedBytesSHA256": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb"
+    },
+    {
+      "time": 71486.375,
+      "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/840fb8bd540ffd78f2afa48db3a7c849404b93e5.js",
+      "recordedBytesSHA256": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39"
+    },
+    {
+      "time": 71494.38,
+      "url": "http://127.0.0.1:4359/build-contract.json",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/d289bb41b60ef7dcafa3cd241962fec8eb3c5641.json",
+      "recordedBytesSHA256": "e0de8fdd06b30f9db695dda6d725d5e428a5a0550aa132d37561d22a90c30980"
+    },
+    {
+      "time": 71505.213,
+      "url": "http://127.0.0.1:4359/icon-192.png",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/0355e636a3160720b9ed41f50652781f6502e786.png",
+      "recordedBytesSHA256": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d"
+    },
+    {
+      "time": 71511.706,
+      "url": "http://127.0.0.1:4359/icon-512.png",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/5126444a79d4430e6c1dafb431a0ef32d0a298e0.png",
+      "recordedBytesSHA256": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2"
+    },
+    {
+      "time": 71521.807,
+      "url": "http://127.0.0.1:4359/index.html",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/0fef4978c06781102656754d138be0364ee72927.html",
+      "recordedBytesSHA256": "55a6d457f732788575dfbceb78824b75cb9ec3c6c5bd6517d8008301643f32c0"
+    },
+    {
+      "time": 71530.889,
+      "url": "http://127.0.0.1:4359/logo.png",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/9fcd82d54e42f0a6428d437401f3b2c0a11b2a49.png",
+      "recordedBytesSHA256": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c"
+    },
+    {
+      "time": 71549.772,
+      "url": "http://127.0.0.1:4359/manifest.webmanifest",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/4469d6123795217097b559c61f4d56ee7e066156.webmanifest",
+      "recordedBytesSHA256": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1"
+    },
+    {
+      "time": 71563.008,
+      "url": "http://127.0.0.1:4359/printer.svg",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/a3844c80503527fb6afc6da43495eb500902cdea.svg",
+      "recordedBytesSHA256": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb"
+    },
+    {
+      "time": 71569.687,
+      "url": "http://127.0.0.1:4359/workshop.svg",
+      "status": 200,
+      "serviceWorker": "worker@9d00aafb45e780a154686f93f31b7423",
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/97f975ca33ba1ad6e14a410be9e9133f327a3eec.svg",
+      "recordedBytesSHA256": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143"
+    },
+    {
+      "time": 71642.031,
+      "url": "http://127.0.0.1:4359/",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/0fef4978c06781102656754d138be0364ee72927.html",
+      "recordedBytesSHA256": "55a6d457f732788575dfbceb78824b75cb9ec3c6c5bd6517d8008301643f32c0"
+    },
+    {
+      "time": 71670.421,
+      "url": "http://127.0.0.1:4359/assets/index-BUzmlEWf.css",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/d544b10724fc19bb7b58163c8efcea01cc2e316e.css",
+      "recordedBytesSHA256": "a0e79bfe709400094ec7a3b51e881be894fdd555ed3776888fc0b2416b29c16b"
+    },
+    {
+      "time": 71669.153,
+      "url": "http://127.0.0.1:4359/assets/index-Dhe4ipNI.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71670.281,
+      "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71670.359,
+      "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71706.585,
+      "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71706.468,
+      "url": "http://127.0.0.1:4359/assets/App-BjnBRy4M.js",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": null
+    },
+    {
+      "time": 71760.097,
+      "url": "http://127.0.0.1:4359/logo.png",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/9fcd82d54e42f0a6428d437401f3b2c0a11b2a49.png",
+      "recordedBytesSHA256": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c"
+    },
+    {
+      "time": 71775.455,
+      "url": "http://127.0.0.1:4359/workshop.svg",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/97f975ca33ba1ad6e14a410be9e9133f327a3eec.svg",
+      "recordedBytesSHA256": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143"
+    },
+    {
+      "time": 71775.619,
+      "url": "http://127.0.0.1:4359/printer.svg",
+      "status": 200,
+      "serviceWorker": null,
+      "continued": true,
+      "failure": null,
+      "recordedResource": "resources/a3844c80503527fb6afc6da43495eb500902cdea.svg",
+      "recordedBytesSHA256": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb"
+    }
+  ],
+  "recordedCSSBodyDifference": "Page CSS and worker CSS trace resources differ in UTF-8 representation. Trace capture/decoding versus actual delivery is NOT DETERMINED. No causal inference from this discrepancy."
+}

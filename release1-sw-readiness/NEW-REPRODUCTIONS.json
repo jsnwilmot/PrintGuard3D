@@ -1,0 +1,912 @@
+{
+  "testedHead": "66963a17951ea2fdad9518e262f0a76f91e7efa7",
+  "pinnedRuntime": "0d388b42afff7f57db01028a64deac85e293d2ba",
+  "runtimeFix": false,
+  "initialRun": 41316238711,
+  "finalRun": 41317785445,
+  "identicalOrdinaryArtifact": true,
+  "ordinaryFilesInitial": {
+    "_headers": "588227f7e1ecef7ce074bb69f10a3e6fdde29cb617cc6af020b1db1c1c60346b",
+    "assets/App-Cd4hYzJn.js": "00044c900c539f59521725aad1b7a8b9be54049cde96037150b0ae944fe4c83a",
+    "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+    "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+    "assets/index-D6sY9d4M.css": "75aaf1c226f7220f04f0930b86179cea6754c93c0173cd33fc1a58f31698da3c",
+    "assets/index-DOoQqUt9.js": "a0c02eaa75b3a315d997e0972353f941a2cf18b1772b92364ef0cc1523181ffa",
+    "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+    "build-contract.json": "f22c2253607544fe0964ab1d3898276f30334bf40c16e1bf26fff3dd4dc7ccf1",
+    "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+    "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+    "index.html": "658359559592c204badeccf9ed4f1a46d5d51ee38409163ba3642320a55b4df7",
+    "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+    "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+    "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+    "sw.js": "7f88dd9716641f8a80f22c48a85bae8a9a5e0b72087e01b2b5fc63808083386b",
+    "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143"
+  },
+  "ordinaryFilesFinal": {
+    "_headers": "588227f7e1ecef7ce074bb69f10a3e6fdde29cb617cc6af020b1db1c1c60346b",
+    "assets/App-Cd4hYzJn.js": "00044c900c539f59521725aad1b7a8b9be54049cde96037150b0ae944fe4c83a",
+    "assets/charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+    "assets/database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+    "assets/index-D6sY9d4M.css": "75aaf1c226f7220f04f0930b86179cea6754c93c0173cd33fc1a58f31698da3c",
+    "assets/index-DOoQqUt9.js": "a0c02eaa75b3a315d997e0972353f941a2cf18b1772b92364ef0cc1523181ffa",
+    "assets/react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "assets/validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39",
+    "build-contract.json": "f22c2253607544fe0964ab1d3898276f30334bf40c16e1bf26fff3dd4dc7ccf1",
+    "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+    "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+    "index.html": "658359559592c204badeccf9ed4f1a46d5d51ee38409163ba3642320a55b4df7",
+    "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+    "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+    "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+    "sw.js": "7f88dd9716641f8a80f22c48a85bae8a9a5e0b72087e01b2b5fc63808083386b",
+    "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143"
+  },
+  "samples": {
+    "initial": {
+      "stats": {
+        "startTime": "2026-11-01T14:29:05.727Z",
+        "duration": 226048.707,
+        "expected": 30,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "byEngine": {
+        "chromium": {
+          "PASS": 10
+        },
+        "firefox": {
+          "PASS": 10
+        },
+        "webkit": {
+          "PASS": 10
+        }
+      },
+      "rawReportSHA256": "6b3e354c92f69832fd60aa68597b99ffeafcb642e0f82f8a5f9f64a280ce7928"
+    },
+    "final": {
+      "stats": {
+        "startTime": "2026-11-01T14:48:06.101Z",
+        "duration": 484020.099,
+        "expected": 28,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "byEngine": {
+        "chromium": {
+          "PASS": 9,
+          "FAIL": 1
+        },
+        "firefox": {
+          "PASS": 9,
+          "FAIL": 1
+        },
+        "webkit": {
+          "PASS": 10
+        }
+      },
+      "rawReportSHA256": "b5020c2d09aa773112448c3b01ecb48d4c5fecad2b9ba978ac0b2e30705550d2"
+    }
+  },
+  "failures": [
+    {
+      "scope": "pinned",
+      "engine": "chromium",
+      "status": "FAIL",
+      "archive": "new-pinned-chromium-n09.zip",
+      "sha256": "3ec419deb7db1608f78855bbfb7e1767e4ed4036861d567c13d8fdfd89ac55b8",
+      "pendingCalls": [
+        {
+          "type": "before",
+          "callId": "hlgk@159",
+          "startTime": 29231.166,
+          "class": "Frame",
+          "method": "evaluateExpression",
+          "params": {
+            "expression": "async () => {\n        await navigator.serviceWorker.ready;\n        if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {\n          once: true\n        }));\n      }",
+            "isFunction": true,
+            "arg": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            }
+          }
+        }
+      ],
+      "network": [
+        {
+          "time": 28363.551,
+          "url": "http://127.0.0.1:4359/review.html",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28388.486,
+          "url": "http://127.0.0.1:4359/review-harness.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28388.87,
+          "url": "http://127.0.0.1:4359/review-harness.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28460.946,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28480.158,
+          "url": "http://127.0.0.1:4359/assets/index-D6sY9d4M.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28477.242,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28476.796,
+          "url": "http://127.0.0.1:4359/assets/index-DOoQqUt9.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28479.954,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28565.263,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28564.679,
+          "url": "http://127.0.0.1:4359/assets/App-Cd4hYzJn.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28623.622,
+          "url": "http://127.0.0.1:4359/sw.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28647.945,
+          "url": "http://127.0.0.1:4359/assets/App-Cd4hYzJn.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28655.42,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28707.263,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28755.317,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28772.219,
+          "url": "http://127.0.0.1:4359/assets/index-D6sY9d4M.css",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28781.868,
+          "url": "http://127.0.0.1:4359/assets/index-DOoQqUt9.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28794.468,
+          "url": "http://127.0.0.1:4359/assets/react-l0sNRNKZ.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28801.512,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28754.805,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28755.118,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 28813.587,
+          "url": "http://127.0.0.1:4359/build-contract.json",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28822.392,
+          "url": "http://127.0.0.1:4359/icon-192.png",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28834.243,
+          "url": "http://127.0.0.1:4359/icon-512.png",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28844.67,
+          "url": "http://127.0.0.1:4359/index.html",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28857.869,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28877.811,
+          "url": "http://127.0.0.1:4359/manifest.webmanifest",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28893.303,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 28908.099,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": "worker@1cc1ba8de5f0cf3a7efe82a067014558",
+          "failure": null
+        },
+        {
+          "time": 29006.416,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29033.532,
+          "url": "http://127.0.0.1:4359/assets/index-DOoQqUt9.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29037.184,
+          "url": "http://127.0.0.1:4359/assets/index-D6sY9d4M.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29036.751,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29036.984,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29085.026,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29082.13,
+          "url": "http://127.0.0.1:4359/assets/App-Cd4hYzJn.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29143.212,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29153.535,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 29155.009,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        }
+      ],
+      "workerNetworkCapture": "15 worker precache resource requests recorded HTTP200",
+      "firstPrinterCount": 0,
+      "offlineProof": "NOT REACHED"
+    },
+    {
+      "scope": "pinned",
+      "engine": "firefox",
+      "status": "FAIL",
+      "archive": "new-pinned-firefox-n09.zip",
+      "sha256": "51a9efd83a5a1b541128799954cbc89fb24b8578e50025deea59ee949c934db4",
+      "pendingCalls": [
+        {
+          "type": "before",
+          "callId": "sgbx@131",
+          "startTime": 191439.063,
+          "class": "Frame",
+          "method": "evaluateExpression",
+          "params": {
+            "expression": "async () => {\n        await navigator.serviceWorker.ready;\n        if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {\n          once: true\n        }));\n      }",
+            "isFunction": true,
+            "arg": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            }
+          }
+        }
+      ],
+      "network": [
+        {
+          "time": 190118.575,
+          "url": "http://127.0.0.1:4359/review.html",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190315.351,
+          "url": "http://127.0.0.1:4359/review-harness.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190317.976,
+          "url": "http://127.0.0.1:4359/review-harness.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190437.643,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190472.636,
+          "url": "http://127.0.0.1:4359/assets/index-DOoQqUt9.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190474.207,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190474.408,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190478.289,
+          "url": "http://127.0.0.1:4359/assets/index-D6sY9d4M.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190584.764,
+          "url": "http://127.0.0.1:4359/assets/App-Cd4hYzJn.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190585.438,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190600.792,
+          "url": "http://127.0.0.1:4359/icon-192.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190710.345,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190798.431,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 190801.3,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191114.372,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191140.744,
+          "url": "http://127.0.0.1:4359/assets/index-DOoQqUt9.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191141.103,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191143.773,
+          "url": "http://127.0.0.1:4359/assets/index-D6sY9d4M.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191143.624,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191225.929,
+          "url": "http://127.0.0.1:4359/assets/App-Cd4hYzJn.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191230.404,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191232.841,
+          "url": "http://127.0.0.1:4359/icon-192.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191317.623,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191358.662,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 191362.355,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        }
+      ],
+      "workerNetworkCapture": "Dedicated worker requests not captured by this Playwright Firefox trace; absence is NOT evidence of no installation",
+      "firstPrinterCount": 0,
+      "offlineProof": "NOT REACHED"
+    },
+    {
+      "scope": "standard",
+      "engine": "chromium",
+      "status": "FAIL",
+      "archive": "new-standard-chromium-n09.zip",
+      "sha256": "1780c2e181125a26f52030e511b123f0c27c5ba75882f2203b064e9d303382e5",
+      "pendingCalls": [
+        {
+          "type": "before",
+          "callId": "fzcc@5933",
+          "startTime": 78892.71,
+          "class": "Frame",
+          "method": "evaluateExpression",
+          "params": {
+            "expression": "async () => {\n        await navigator.serviceWorker.ready;\n        if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {\n          once: true\n        }));\n      }",
+            "isFunction": true,
+            "arg": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            }
+          }
+        }
+      ],
+      "network": [
+        {
+          "time": 78162.073,
+          "url": "http://127.0.0.1:4359/review.html",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78175.429,
+          "url": "http://127.0.0.1:4359/review-harness.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78175.68,
+          "url": "http://127.0.0.1:4359/review-harness.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78211.462,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78224.183,
+          "url": "http://127.0.0.1:4359/assets/index-DR8QkDRh.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78223.932,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78223.691,
+          "url": "http://127.0.0.1:4359/assets/index-DbTE_evS.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78224.063,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78290.195,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78290.025,
+          "url": "http://127.0.0.1:4359/assets/App-DotIETGB.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78343.171,
+          "url": "http://127.0.0.1:4359/sw.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78370.404,
+          "url": "http://127.0.0.1:4359/assets/App-DotIETGB.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78384.925,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78410.458,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78453.005,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78464.087,
+          "url": "http://127.0.0.1:4359/assets/index-DR8QkDRh.css",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78477.278,
+          "url": "http://127.0.0.1:4359/assets/index-DbTE_evS.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78489.999,
+          "url": "http://127.0.0.1:4359/assets/react-l0sNRNKZ.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78494.596,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78499.977,
+          "url": "http://127.0.0.1:4359/build-contract.json",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78507.769,
+          "url": "http://127.0.0.1:4359/icon-192.png",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78461.54,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78461.736,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78514.985,
+          "url": "http://127.0.0.1:4359/icon-512.png",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78526.92,
+          "url": "http://127.0.0.1:4359/index.html",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78538.523,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78558.794,
+          "url": "http://127.0.0.1:4359/manifest.webmanifest",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78576.684,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78587.212,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": "worker@8c543f4eb8bb0501cd19577db9296317",
+          "failure": null
+        },
+        {
+          "time": 78680.894,
+          "url": "http://127.0.0.1:4359/",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78699.221,
+          "url": "http://127.0.0.1:4359/assets/database-D0Lgzj1V.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78699.474,
+          "url": "http://127.0.0.1:4359/assets/index-DR8QkDRh.css",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78697.956,
+          "url": "http://127.0.0.1:4359/assets/index-DbTE_evS.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78699.359,
+          "url": "http://127.0.0.1:4359/assets/charts-ClTOde-4.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78739.127,
+          "url": "http://127.0.0.1:4359/assets/App-DotIETGB.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78740.11,
+          "url": "http://127.0.0.1:4359/assets/validation-Ca3q0Eq2.js",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78804.467,
+          "url": "http://127.0.0.1:4359/logo.png",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78836.737,
+          "url": "http://127.0.0.1:4359/workshop.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        },
+        {
+          "time": 78836.941,
+          "url": "http://127.0.0.1:4359/printer.svg",
+          "status": 200,
+          "worker": null,
+          "failure": null
+        }
+      ],
+      "workerNetworkCapture": "15 worker precache resource requests recorded HTTP200",
+      "firstPrinterCount": 0,
+      "offlineProof": "NOT REACHED"
+    }
+  ],
+  "rootCause": "NOT DETERMINED; combined wait cannot distinguish ready vs controllerchange",
+  "interpretation": "Reproduced in original cases with original120s ceiling and0 retries. Independent observed-matrix greens do not diagnose or resolve failure."
+}
