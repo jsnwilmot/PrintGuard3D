@@ -1,0 +1,174 @@
+{
+  "chromium-503-dark.png": {
+    "bytes": 473990,
+    "sha256": "5e69011d8b942757063601775e66a6b67a244f891afc855b293cc8f8fa231fec"
+  },
+  "chromium-503-light.png": {
+    "bytes": 468691,
+    "sha256": "4d32afd4a214c64e4f16d248240dd8631bfa7efdbdfe72b79545ea81a83d8ac0"
+  },
+  "chromium-cache-entry-loss-0.zip": {
+    "bytes": 1165466,
+    "sha256": "552ed3b2b6a9f62997df545cf4f055fc7c5b3df668560c83076e406489508ef5"
+  },
+  "chromium-delayed-then-complete-0.zip": {
+    "bytes": 1160734,
+    "sha256": "d533088f2a827e4d71d97996f8dc74f22a41fa264d277ae759cd086a9079beb1"
+  },
+  "chromium-first-install-503-0.zip": {
+    "bytes": 2757485,
+    "sha256": "c406a2adf515adc8db3eb63f2ae5f19d8e6fce4ef36e4d38e3894cb19ab37209"
+  },
+  "chromium-first-install-503-1.zip": {
+    "bytes": 1152927,
+    "sha256": "10c9b2a644fb9866008e714a1235ec4eca5252be9149ffc7c6d91b78a81f8fb2"
+  },
+  "chromium-first-install-hash-0.zip": {
+    "bytes": 2763692,
+    "sha256": "0c227e9df3492b204115fe1a225b9db9adf722501271ed555bb11445cfe87af2"
+  },
+  "chromium-first-install-hash-1.zip": {
+    "bytes": 1152967,
+    "sha256": "9d615be67590d742df436c00fb6de0167987fc9f27842600cc28d414b9706af5"
+  },
+  "chromium-hash-dark.png": {
+    "bytes": 471586,
+    "sha256": "62190b151347ee9d91aa43e8df2651e9b708d673d1207c055866c8fb28bacdd3"
+  },
+  "chromium-hash-light.png": {
+    "bytes": 466216,
+    "sha256": "fe6640b40d63fd40f3d63ce9372d28f34cc8d714e286d1e12f405280bfb513f5"
+  },
+  "chromium-healthy-first.zip": {
+    "bytes": 1149792,
+    "sha256": "5aa69027848cad65f770abe3ceba3b12206788d01adc5ed64a24c3ed4d93e1ea"
+  },
+  "chromium-offline-before-first-install-0.zip": {
+    "bytes": 1172729,
+    "sha256": "a9f41c5668625fe880362759fc5fc30e4c5c02975c2cfd3a0540e95554f952af"
+  },
+  "chromium-verified-offline-cold-reopen-0.zip": {
+    "bytes": 654917,
+    "sha256": "15253507059e42cd75204fa671000e3673306100e4fb05a82a6e802492f81680"
+  },
+  "chromium-worker-policy-blocked-0.zip": {
+    "bytes": 672270,
+    "sha256": "c59d69f399f48835cc524cd7049a5b5c41437f3be8133a406868be577f1d8e75"
+  },
+  "firefox-503-dark.png": {
+    "bytes": 447601,
+    "sha256": "ace243650d868bae19d19b9fe6d7184f39f6144ff2dfe1ce1f7c14f2946d532c"
+  },
+  "firefox-503-light.png": {
+    "bytes": 447614,
+    "sha256": "602f8bb5a0728404182ac288ba5388088b208fe881114fecacabc0a967f4c5ae"
+  },
+  "firefox-cache-entry-loss-0.zip": {
+    "bytes": 689638,
+    "sha256": "80523e14fa015e701d51d984083e27b9986005b7df1425c2822e3c6e8402fefa"
+  },
+  "firefox-delayed-then-complete-0.zip": {
+    "bytes": 692697,
+    "sha256": "5259e6dd4a78efaab9869e1220a40fe2dcb8522ca0176baa541115dde02da4e1"
+  },
+  "firefox-first-install-503-0.zip": {
+    "bytes": 2284147,
+    "sha256": "a163780db56529a0457ccfcf57e8cfa2af783480d7756beb029fafb2c7dc9f6b"
+  },
+  "firefox-first-install-503-1.zip": {
+    "bytes": 685556,
+    "sha256": "0046f34ce77641fb1786d82d21dc809f7ff1fe4f689f24113a0eb14e4f7d8d8d"
+  },
+  "firefox-first-install-hash-0.zip": {
+    "bytes": 2291897,
+    "sha256": "45c61de703b3ef3a383bb972aa299f44a9eb7fcf442ae79051d0a171ba0e75e0"
+  },
+  "firefox-first-install-hash-1.zip": {
+    "bytes": 684441,
+    "sha256": "ebc286a560921605b900a2b267c9a6c2d77a67c5e0e4340e9bed2d83ed15c470"
+  },
+  "firefox-hash-dark.png": {
+    "bytes": 445804,
+    "sha256": "d48f08edc1c918cd7a4b55565bbaec6a0ca0e1ae199f82ddd65b903eeb05c73b"
+  },
+  "firefox-hash-light.png": {
+    "bytes": 446136,
+    "sha256": "3c19e334985f403c1a57f8352abd7b22526366fe815c5822afd1180290738b60"
+  },
+  "firefox-healthy-first.zip": {
+    "bytes": 677844,
+    "sha256": "39c0e35224683174e13e091004b428eb44ba29354efc3460298e87ed3dff0acf"
+  },
+  "firefox-offline-before-first-install-0.zip": {
+    "bytes": 708213,
+    "sha256": "f5b9c5015e5aa673e9ed1a6dd1d46b76650092a3dfda96047d1c8d3346f7e9bd"
+  },
+  "firefox-verified-offline-cold-reopen-0.zip": {
+    "bytes": 670774,
+    "sha256": "7c5c69fd910961934884f2d02a907c321ff47cb1d1796fdd117f73e1ca76e2f5"
+  },
+  "firefox-worker-policy-blocked-0.zip": {
+    "bytes": 694412,
+    "sha256": "560cae4f733b8d5a93d36a98595f27f5166116beef7a9acb3115b5c4584921a7"
+  },
+  "RESULTS.json": {
+    "bytes": 354443,
+    "sha256": "6acc7adb60a60346b645cffcbcfbee9c208eb71fb31529f6102a2f6b139541e5"
+  },
+  "webkit-503-dark.png": {
+    "bytes": 418881,
+    "sha256": "e54fc534bab3fe6d6b98d780838dc998f5e1962853d44ca6c46dd227e8975028"
+  },
+  "webkit-503-light.png": {
+    "bytes": 420188,
+    "sha256": "7d450504e1c7926034a1a082f5e86a4bba92b5f2d587c9a1374d75763b0da472"
+  },
+  "webkit-cache-entry-loss-0.zip": {
+    "bytes": 670595,
+    "sha256": "3ef0f7932d27353619d4dc028cb3d3a30b944fdd054f2373c95f3cdb0c8b9022"
+  },
+  "webkit-delayed-then-complete-0.zip": {
+    "bytes": 673109,
+    "sha256": "ebc4a758492cd7d76c02d19bc8fa86ded922bac58a92678ec5140303974eae32"
+  },
+  "webkit-first-install-503-0.zip": {
+    "bytes": 2261952,
+    "sha256": "bc280016d0a80426091a24f8c85d698156dea18bee99c74a55f426054acf27bf"
+  },
+  "webkit-first-install-503-1.zip": {
+    "bytes": 666274,
+    "sha256": "2e4b7c0e0981dc6ccd1037f5f9070ec41a1bbf333dbbca5f7a7b781258d0bb5e"
+  },
+  "webkit-first-install-hash-0.zip": {
+    "bytes": 2264006,
+    "sha256": "66c4fca8216af3c5d794474df7427a888d86a6430bef6ad96bed492a0efdabab"
+  },
+  "webkit-first-install-hash-1.zip": {
+    "bytes": 666231,
+    "sha256": "d80ef6d863891c644ea431ec71b9b0d8cc7f9158b2b5beae9cadfdf822940de9"
+  },
+  "webkit-hash-dark.png": {
+    "bytes": 418211,
+    "sha256": "46a2b52abe05868da77195bde412b57475074f124a5894ba4c4969bf9d997056"
+  },
+  "webkit-hash-light.png": {
+    "bytes": 419380,
+    "sha256": "a39accc4707f74298e71c5f7a19064e101556cfeb818fac23ee072572f0cabfe"
+  },
+  "webkit-healthy-first.zip": {
+    "bytes": 658826,
+    "sha256": "d055aed136383f5ef0e997f9890b3c2a6772f058c0259b7082dc84c391fedea8"
+  },
+  "webkit-offline-before-first-install-0.zip": {
+    "bytes": 687729,
+    "sha256": "3a3fc6bf71db9ae819443ffb81c51b53362be68ef5c190814aec002767da86e6"
+  },
+  "webkit-verified-offline-cold-reopen-0.zip": {
+    "bytes": 648721,
+    "sha256": "f117c650473e26b6fe44d63fbe93662fb8c844098346a958185aeb7daa4131b7"
+  },
+  "webkit-worker-policy-blocked-0.zip": {
+    "bytes": 665714,
+    "sha256": "bbc066df39c1f9089ea65c92dcbc83432639c8cd2d1ced566f9d1e31c1fc7ba2"
+  }
+}

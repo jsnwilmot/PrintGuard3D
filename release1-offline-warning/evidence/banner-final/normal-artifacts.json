@@ -1,0 +1,19 @@
+{
+  "build-contract.json": "aa16b5738cd79f57f534fab5880a468671c5493e0fd0ca314c05838706156233",
+  "icon-192.png": "34dc229eacbf537b922f1e4a42a6acc858025a727211b40ee1371fe037f0766d",
+  "icon-512.png": "a8ceb5b42f3b4fa615bfcca5f3c0dc1b082587fd2fd36cbe44a3107e0c29b7e2",
+  "index.html": "b3214f36c65bf0c5b4ba798fdd796ec6eb85ebdf7544643be5539b2b16662a21",
+  "logo.png": "a6b701c911ec15bf873433e1110750af9616955f468b89742cf2f38a0ce1fb0c",
+  "manifest.webmanifest": "6f644035a3fefcdfbb80b4d23e628635fbe3f326c33058ac78a79df367b690e1",
+  "printer.svg": "4a02516491fe274bbf63a2c1e8cb4c45731eeb8ff58797b09e4a339d372f35fb",
+  "sw.js": "7bf4f65aa1c6dc14c7b79e34b5b9233daa24c47f5dfc94ca57869a484a275af1",
+  "workshop.svg": "767e05276c65db2d7907c931f6cb7559c01f1b5ff8b73fb351f50d0ee1bf4143",
+  "_headers": "b08183e502bbbd67f2acb876342ed3e93fa70f146354332128a43d97845a3f4e",
+  "assets\\App-BksfdRYy.js": "891e902f4d315fae42330812c35a23a32900100359ff309e6fb155b9428cb3eb",
+  "assets\\charts-ClTOde-4.js": "2762454109b042d5443d78af7149c0bc52e32594aebb0645c1d502598ad6ea9d",
+  "assets\\database-D0Lgzj1V.js": "705fb59e950ddb04a1419548b63433dfd7d6df491bfa48aa5c6cec1727ce6402",
+  "assets\\index-CI_hM8D2.js": "413e9619fb8282bb9ce4a451088fbf987fe115805ee4fccd5e18104422134f43",
+  "assets\\index-D6sY9d4M.css": "75aaf1c226f7220f04f0930b86179cea6754c93c0173cd33fc1a58f31698da3c",
+  "assets\\react-l0sNRNKZ.js": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "assets\\validation-Ca3q0Eq2.js": "cbd9d4aa6a089bff06e620844ea83afb39ce799ea8e5e664157d470a69606e39"
+}

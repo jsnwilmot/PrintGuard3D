@@ -1,0 +1,43 @@
+{
+  "head": "a2cde7c0deae026014d172233a00ac600af2bb61",
+  "standardRun": 41340748385,
+  "warningRun": 41340748501,
+  "artifacts": {
+    "ci45-reporting": {
+      "bytes": 8038172,
+      "sha256": "5afe4f9719b3a2e872ac31a0c3d6306d23af6413d2d1716cccd716b9e294fd59"
+    },
+    "ci45-recovery": {
+      "bytes": 14982985,
+      "sha256": "da929967a44a4267238b50316c77c9d921d381d6a49a5481b7146b053019a6df"
+    },
+    "ci45-warning": {
+      "bytes": 44912091,
+      "sha256": "5fd8ca59e45816d8051267c27789af669cf0f40e7ee0625f55f04eeec73593f0"
+    }
+  },
+  "reportingStats": {
+    "startTime": "2026-11-01T19:15:56.531Z",
+    "duration": 280129.63899999997,
+    "expected": 74,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "recovery": {
+    "PASS": 171,
+    "FAIL": 0
+  },
+  "governance": {
+    "PASS": 27,
+    "FAIL": 0
+  },
+  "warning": {
+    "PASS": 23,
+    "FAIL": 1
+  },
+  "knownFailureDetails": {
+    "warning": "Chromium reconnect/reload remained uncontrolled at20s; visible truthful warning retained; no causal #41 attribution",
+    "reporting": "WebKit N08 color-contrast2.45 vsrequired4.5 on chart filter labels; unrelated cause NOT DETERMINED; no CSS/test change"
+  }
+}

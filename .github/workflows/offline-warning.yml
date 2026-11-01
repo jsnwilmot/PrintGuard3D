@@ -1,0 +1,35 @@
+name: Offline-install warning verification
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  warning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: node release1-clean-origin/prepare.mjs warning-ci
+      - run: node release1-offline-warning/run.mjs .verification-local/clean-origin/warning-ci
+      - name: Preserve synthetic warning evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: offline-warning-evidence
+          path: |
+            .verification-local/clean-origin/warning-ci/manifest.json
+            .verification-local/clean-origin/warning-ci/warning-*/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

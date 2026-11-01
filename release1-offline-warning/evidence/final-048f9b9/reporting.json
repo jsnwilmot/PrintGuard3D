@@ -1,0 +1,3038 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "release1-reporting/playwright.config.mjs"
+    ],
+    "configFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\playwright.config.mjs",
+    "rootDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-reporting/native",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/test-results/reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/test-results/reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/test-results/reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Jason/OneDrive/DEVELOPMENT/APP_PrintGuard3D/sites/printguard-3d/release1-reporting/native",
+        "testIgnore": [],
+        "testMatch": [
+          "reporting.mjs"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\test-results\\reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\test-results\\reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\test-results\\reporting",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "snapshotDir": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\release1-reporting\\native",
+        "testIgnore": [],
+        "testMatch": "reporting.mjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4359",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\test-results/reporting-native.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\playwright-report/reporting",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node remediation-phase1/server.mjs 4359 --source-headers --offline-control",
+      "cwd": "C:\\Users\\Jason\\OneDrive\\DEVELOPMENT\\APP_PrintGuard3D\\sites\\printguard-3d\\",
+      "url": "http://127.0.0.1:4359/review.html",
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "reporting.mjs",
+      "file": "reporting.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PB01 pre-consent public Help and data handling are readable without disclosing or changing protected workshop data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2388,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:25.536Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-a082642d521f1ec98192",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "PB02 bundled information works after offline reload with keyboard focus, mobile reflow and both-theme accessibility",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:28.109Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "privacy-axe-Light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    },
+                    {
+                      "name": "privacy-axe-Dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-4661032416fd5f9213da",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "PB03 actual backup and report downloads retain sensitive local content, source/safety warnings and unchanged history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:32.530Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-a0b369331ebf30de4a89",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "PB04 bounded synthetic network trace distinguishes source design from unknown live hosting behavior",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:36.623Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "source-only-network-evidence",
+                      "contentType": "application/json",
+                      "body": "eyJzY29wZSI6Iklzb2xhdGVkIGxvb3BiYWNrIGJ1aWxkIG9ubHk7IG5vIGxpdmUgaG9zdC9DRE4vbWFpbGJveC9wcm92aWRlciBmYWN0IHZlcmlmaWVkIiwicmVxdWVzdHMiOlt7InBhdGgiOiIvcmV2aWV3Lmh0bWwiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiZG9jdW1lbnQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuY3NzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InN0eWxlc2hlZXQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiLyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJkb2N1bWVudCJ9LHsicGF0aCI6Ii9hc3NldHMvaW5kZXgtREtJaGd0SkEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy9kYXRhYmFzZS1EMExnemoxVi5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2NoYXJ0cy1DbFRPZGUtNC5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2luZGV4LUQ2c1k5ZDRNLmNzcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzdHlsZXNoZWV0In0seyJwYXRoIjoiL2Fzc2V0cy9BcHAtQnlOOFF6ZVEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy92YWxpZGF0aW9uLUNhM3EwRXEyLmpzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InNjcmlwdCJ9LHsicGF0aCI6Ii9zdy5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL0FwcC1CeU44UXplUS5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJmZXRjaCJ9LHsicGF0aCI6Ii9sb2dvLnBuZyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJpbWFnZSJ9LHsicGF0aCI6Ii9hc3NldHMvY2hhcnRzLUNsVE9kZS00LmpzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL2Fzc2V0cy9kYXRhYmFzZS1EMExnemoxVi5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJmZXRjaCJ9LHsicGF0aCI6Ii9hc3NldHMvaW5kZXgtRDZzWTlkNE0uY3NzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL2Fzc2V0cy9pbmRleC1ES0loZ3RKQS5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJmZXRjaCJ9LHsicGF0aCI6Ii9hc3NldHMvcmVhY3QtbDBzTlJOS1ouanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiZmV0Y2gifSx7InBhdGgiOiIvd29ya3Nob3Auc3ZnIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImltYWdlIn0seyJwYXRoIjoiL2Fzc2V0cy92YWxpZGF0aW9uLUNhM3EwRXEyLmpzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL2J1aWxkLWNvbnRyYWN0Lmpzb24iLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiZmV0Y2gifSx7InBhdGgiOiIvaWNvbi0xOTIucG5nIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL2ljb24tNTEyLnBuZyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJmZXRjaCJ9LHsicGF0aCI6Ii9pbmRleC5odG1sIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL2xvZ28ucG5nIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL21hbmlmZXN0LndlYm1hbmlmZXN0IiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL3ByaW50ZXIuc3ZnIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImZldGNoIn0seyJwYXRoIjoiL3dvcmtzaG9wLnN2ZyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJmZXRjaCJ9LHsicGF0aCI6Ii9sb2dvLnBuZyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJpbWFnZSJ9XX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-64fa65be8398c14e0b46",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "SA01 exact thermal and multi-hazard references, accessible focus, cancel preservation and explicit completion gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:37.920Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-cbf9c2e9c6d25b94a070",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "SA02 retrospective review is present-tense; skipped work never claims hazardous work or pre-service acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2381,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:41.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-239cce10c72703cb96f1",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "SA03 custom work is unassessed, not guessed from words or priority; contextual review remains possible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1881,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:44.057Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d3834d4b04bdde56641e",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "SA04 current CSV, HTML, JSON, print and ICS carry source warnings without changing old history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:45.956Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-329b2d1d71e46c7c8d96",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "SA05 old backups restore unchanged; imported safety certification metadata fails before mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1212,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:49.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-ef49ad55dcffceafd3db",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "SA06 offline flagged retrospective recording, mobile reflow and manufacturer independence stay explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:50.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-record-only",
+                      "contentType": "application/json",
+                      "body": "eyJpZCI6ImZiMTFkYzQ3LTAyZmMtNGY5Zi04ODUxLTczYmU1OTQ0ODFlYSIsInByaW50ZXJJZCI6InAxIiwidGFza0lkIjoidDEiLCJ0aXRsZSI6IlNlcnZpY2UgcG9zaXRpb25pbmcgYmFsbHMgJiBuZWVkbGUgcm9sbGVycyIsImRhdGUiOiIyMDI2LTAyLTAxIiwiaG91cnMiOjYwMCwicHJpbnRzIjoyMCwibm90ZXMiOiJSZXZpZXdlZCBpc29sYXRlZCBjb21wbGV0aW9uIiwiY29zdCI6MTIuNSwibWludXRlcyI6MTUsIm1hdGVyaWFscyI6IkdyZWFzZSIsImltYWdlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBRUFBQUFCQ0FRQUFBQzFIQXdDQUFBQUMwbEVRVlI0Mm1QOC94OEFBd01DQU8rYVJaa0FBQUFBU1VWT1JLNUNZSUk9IiwiaW52ZW50b3J5SWQiOiJjb21tb24iLCJxdWFudGl0eSI6Miwib3V0Y29tZSI6IkNvbXBsZXRlZCIsIm9uVGltZSI6dHJ1ZSwiZHVlRGF0ZSI6IiIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2V4dHJ1ZGVyLW1vdW50LXBvc2l0aW9uaW5nLWJhbGxzIiwic291cmNlIjoiTWFudWZhY3R1cmVyIFZlcmlmaWVkIiwic2tpcHBlZEN5Y2xlcyI6MCwiY2F0ZWdvcnkiOiJMdWJyaWNhdGlvbiIsInByaW9yaXR5IjoiSGlnaCIsImN1cnJlbmN5IjoiQ0FEIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-063805f2216203ba20a5",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "B01 four exact-boundary reminders are opt-in; rejection/defer writes nothing and existing schedules stay byte-identical",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4057,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:52.082Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "controlled-decisions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiIyYzMxNDM3Mi04MTFmLTRjZTUtYjExMS1lMWEzZWZhYmQ1YzgiLCJwcmludGVySWQiOiJwMSIsInRpdGxlIjoiUmV2aWV3IHgveSBndWlkYW5jZSDigJQgUHJpbnRHdWFyZCBTdWdnZXN0ZWQiLCJkZXNjcmlwdGlvbiI6IkNyZWF0b3IgNTsgUHJpbnRHdWFyZCBTdWdnZXN0ZWQgaW5pdGlhbCBkZWNpc2lvbjsgcG9saWN5IDEuMC4wLCBzb3VyY2VzIHJldmlld2VkIDIwMjYtMTAtMjk7IGFja25vd2xlZGdlZCAyMDI2LTEwLTI5OyBiYXNpcyBtYW51YWw7IGRhaWx5IGhvdXJzIDU7IG9yaWdpbmFsIG93bmVyIGludGVydmFsIDEgbW9udGhzLiBTb3VyY2U6IGh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2NsZWFuLWFuZC1sdWJyaWNhdGUtdGhlLXgtYXhpcy1saW5lYXItc2hhZnQuIFB1Ymxpc2hlZDogRGFpbHkgcHJpbnRpbmcgVDwxOiAzIG1vbnRoczsgMeKAkzU6IDIgbW9udGhzOyBUPj01OiAxIG1vbnRoLiBUaGUgd3JpdHRlbiByYW5nZXMgb3ZlcmxhcCBhdCA1LiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6MX0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjoxfSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jbGVhbi1hbmQtbHVicmljYXRlLXRoZS14LWF4aXMtbGluZWFyLXNoYWZ0Iiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoieHkiLCJkZWNpc2lvbiI6ImFjY2VwdGVkIiwiYmFzaXMiOiJtYW51YWwiLCJhY2tub3dsZWRnZWQiOnRydWUsImFjY2VwdGVkT24iOiIyMDI2LTEwLTI5IiwiZGFpbHlIb3VycyI6NSwic3VnZ2VzdGVkTW9udGhzIjoxLCJjaG9zZW5Nb250aHMiOjF9fSx7ImlkIjoiMzM0Njk0NWMtMzE1Yi00MjVkLWFjZjItNDgxNTM2NDBhNTA0IiwicHJpbnRlcklkIjoicDEiLCJ0aXRsZSI6IlJldmlldyBmYW4gZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyA1OyBvcmlnaW5hbCBvd25lciBpbnRlcnZhbCA2IG1vbnRocy4gU291cmNlOiBodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nLiBQdWJsaXNoZWQ6IFdvcmtpbmcgaG91cnMgVDw1OiA5IG1vbnRoczsgNTxUPDEwOiA2IG1vbnRoczsgVD4xMDogMyBtb250aHMuIEV4YWN0bHkgNSBhbmQgMTAgYXJlIHVuYXNzaWduZWQuIEluc3BlY3Rpb24vcmV2aWV3IHJlbWluZGVyIG9ubHkuIE5vdCBhIGRpcmVjdGlvbiB0byBjbGVhbiwgbHVicmljYXRlLCBhZGp1c3QsIGhlYXQgb3IgcmVwbGFjZSBlcXVpcG1lbnQuIE1vcmUgZnJlcXVlbnQgcGh5c2ljYWwgbWFpbnRlbmFuY2UgaXMgbm90IHByb3ZlbiBzYWZlci4gRmxhc2hGb3JnZSBoYXMgbm90IGNvbmZpcm1lZCB0aGlzIGludGVycHJldGF0aW9uLiBGYW4gc291cmNlIHNheXMgd29ya2luZyBob3VyczsgcHJpbnRpbmctaG91ciBpbnRlcnByZXRhdGlvbiBpcyBhbiB1bnJlc29sdmVkIG1ldHJpYyBtaXNtYXRjaC4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6Nn0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjo2fSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nIiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoiZmFuIiwiZGVjaXNpb24iOiJhY2NlcHRlZCIsImJhc2lzIjoibWFudWFsIiwiYWNrbm93bGVkZ2VkIjp0cnVlLCJhY2NlcHRlZE9uIjoiMjAyNi0xMC0yOSIsImRhaWx5SG91cnMiOjUsInN1Z2dlc3RlZE1vbnRocyI6NiwiY2hvc2VuTW9udGhzIjo2fX0seyJpZCI6IjhjODFkYzkzLTIyMjItNGRkYy1iYWIyLTA3MmMxZmJkOGZmMiIsInByaW50ZXJJZCI6InAxIiwidGl0bGUiOiJSZXZpZXcgeiBndWlkYW5jZSDigJQgUHJpbnRHdWFyZCBTdWdnZXN0ZWQiLCJkZXNjcmlwdGlvbiI6IkNyZWF0b3IgNTsgUHJpbnRHdWFyZCBTdWdnZXN0ZWQgaW5pdGlhbCBkZWNpc2lvbjsgcG9saWN5IDEuMC4wLCBzb3VyY2VzIHJldmlld2VkIDIwMjYtMTAtMjk7IGFja25vd2xlZGdlZCAyMDI2LTEwLTI5OyBiYXNpcyBtYW51YWw7IGRhaWx5IGhvdXJzIDU7IG9yaWdpbmFsIG93bmVyIGludGVydmFsIDMgbW9udGhzLiBTb3VyY2U6IGh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL3otYXhpcy1sZWFkLXNjcmV3LWNsZWFuaW5nLWFuZC1sdWJyaWNhdGlvbi4gUHVibGlzaGVkOiBEYWlseSBwcmludGluZyBUPDE6IDUgbW9udGhzOyAx4oCTNTogNCBtb250aHM7IFQ+PTU6IDMgbW9udGhzLiBUaGUgd3JpdHRlbiByYW5nZXMgb3ZlcmxhcCBhdCA1LiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6M30sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjozfSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS96LWF4aXMtbGVhZC1zY3Jldy1jbGVhbmluZy1hbmQtbHVicmljYXRpb24iLCJzb3VyY2VUaXRsZSI6IkFtYmlndW91cyBtYW51ZmFjdHVyZXIgcmVmZXJlbmNlOyBpbmRlcGVuZGVudCBvd25lci1hcHByb3ZlZCByZXZpZXcgcmVtaW5kZXIiLCJ2ZXJpZmllZCI6IiIsIm1hdGVyaWFscyI6IiIsInNhZmV0eSI6Ikluc3BlY3Rpb24vcmV2aWV3IHJlbWluZGVyIG9ubHkuIE5vdCBhIGRpcmVjdGlvbiB0byBjbGVhbiwgbHVicmljYXRlLCBhZGp1c3QsIGhlYXQgb3IgcmVwbGFjZSBlcXVpcG1lbnQuIE1vcmUgZnJlcXVlbnQgcGh5c2ljYWwgbWFpbnRlbmFuY2UgaXMgbm90IHByb3ZlbiBzYWZlci4gRmxhc2hGb3JnZSBoYXMgbm90IGNvbmZpcm1lZCB0aGlzIGludGVycHJldGF0aW9uLiIsIm1pbnV0ZXMiOjAsIm5vdGVzIjoiIiwiZW5hYmxlZCI6dHJ1ZSwicG9zdHBvbmVkVW50aWwiOiIiLCJjb25kaXRpb24iOmZhbHNlLCJwcm9maWxlVmVyc2lvbiI6IiIsInJlY29tbWVuZGF0aW9uIjp7InZlcnNpb24iOjEsInBvbGljeVZlcnNpb24iOiIxLjAuMCIsIm1vZGVsIjoiQ3JlYXRvciA1IiwiZ3JvdXAiOiJ6IiwiZGVjaXNpb24iOiJhY2NlcHRlZCIsImJhc2lzIjoibWFudWFsIiwiYWNrbm93bGVkZ2VkIjp0cnVlLCJhY2NlcHRlZE9uIjoiMjAyNi0xMC0yOSIsImRhaWx5SG91cnMiOjUsInN1Z2dlc3RlZE1vbnRocyI6MywiY2hvc2VuTW9udGhzIjozfX0seyJpZCI6ImEyY2IxNGZiLTI2NmYtNGI2OS1iMThlLTNhNGM5ZTBkNGJjYyIsInByaW50ZXJJZCI6InAxIiwidGl0bGUiOiJSZXZpZXcgZmFuIGd1aWRhbmNlIOKAlCBQcmludEd1YXJkIFN1Z2dlc3RlZCIsImRlc2NyaXB0aW9uIjoiQ3JlYXRvciA1OyBQcmludEd1YXJkIFN1Z2dlc3RlZCBpbml0aWFsIGRlY2lzaW9uOyBwb2xpY3kgMS4wLjAsIHNvdXJjZXMgcmV2aWV3ZWQgMjAyNi0xMC0yOTsgYWNrbm93bGVkZ2VkIDIwMjYtMTAtMjk7IGJhc2lzIG1hbnVhbDsgZGFpbHkgaG91cnMgMTA7IG9yaWdpbmFsIG93bmVyIGludGVydmFsIDMgbW9udGhzLiBTb3VyY2U6IGh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2Nvb2xpbmctZmFuLWR1c3QtY2xlYW5pbmcuIFB1Ymxpc2hlZDogV29ya2luZyBob3VycyBUPDU6IDkgbW9udGhzOyA1PFQ8MTA6IDYgbW9udGhzOyBUPjEwOiAzIG1vbnRocy4gRXhhY3RseSA1IGFuZCAxMCBhcmUgdW5hc3NpZ25lZC4gSW5zcGVjdGlvbi9yZXZpZXcgcmVtaW5kZXIgb25seS4gTm90IGEgZGlyZWN0aW9uIHRvIGNsZWFuLCBsdWJyaWNhdGUsIGFkanVzdCwgaGVhdCBvciByZXBsYWNlIGVxdWlwbWVudC4gTW9yZSBmcmVxdWVudCBwaHlzaWNhbCBtYWludGVuYW5jZSBpcyBub3QgcHJvdmVuIHNhZmVyLiBGbGFzaEZvcmdlIGhhcyBub3QgY29uZmlybWVkIHRoaXMgaW50ZXJwcmV0YXRpb24uIEZhbiBzb3VyY2Ugc2F5cyB3b3JraW5nIGhvdXJzOyBwcmludGluZy1ob3VyIGludGVycHJldGF0aW9uIGlzIGFuIHVucmVzb2x2ZWQgbWV0cmljIG1pc21hdGNoLiIsImNhdGVnb3J5IjoiSW5zcGVjdGlvbiIsInByaW9yaXR5IjoiTm9ybWFsIiwiaW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjozfSwib3JpZ2luYWxJbnRlcnZhbCI6eyJtb2RlIjoiY2FsZW5kYXIiLCJtb250aHMiOjN9LCJhbmNob3JEYXRlIjoiMjAyNi0xMC0yOSIsImFuY2hvckhvdXJzIjo2MDAsImFuY2hvclByaW50cyI6MjAsImJhc2UiOiJjb21wbGV0aW9uIiwic291cmNlIjoiR2VuZXJhbCBSZWNvbW1lbmRhdGlvbiIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2Nvb2xpbmctZmFuLWR1c3QtY2xlYW5pbmciLCJzb3VyY2VUaXRsZSI6IkFtYmlndW91cyBtYW51ZmFjdHVyZXIgcmVmZXJlbmNlOyBpbmRlcGVuZGVudCBvd25lci1hcHByb3ZlZCByZXZpZXcgcmVtaW5kZXIiLCJ2ZXJpZmllZCI6IiIsIm1hdGVyaWFscyI6IiIsInNhZmV0eSI6Ikluc3BlY3Rpb24vcmV2aWV3IHJlbWluZGVyIG9ubHkuIE5vdCBhIGRpcmVjdGlvbiB0byBjbGVhbiwgbHVicmljYXRlLCBhZGp1c3QsIGhlYXQgb3IgcmVwbGFjZSBlcXVpcG1lbnQuIE1vcmUgZnJlcXVlbnQgcGh5c2ljYWwgbWFpbnRlbmFuY2UgaXMgbm90IHByb3ZlbiBzYWZlci4gRmxhc2hGb3JnZSBoYXMgbm90IGNvbmZpcm1lZCB0aGlzIGludGVycHJldGF0aW9uLiIsIm1pbnV0ZXMiOjAsIm5vdGVzIjoiIiwiZW5hYmxlZCI6dHJ1ZSwicG9zdHBvbmVkVW50aWwiOiIiLCJjb25kaXRpb24iOmZhbHNlLCJwcm9maWxlVmVyc2lvbiI6IiIsInJlY29tbWVuZGF0aW9uIjp7InZlcnNpb24iOjEsInBvbGljeVZlcnNpb24iOiIxLjAuMCIsIm1vZGVsIjoiQ3JlYXRvciA1IiwiZ3JvdXAiOiJmYW4iLCJkZWNpc2lvbiI6ImFjY2VwdGVkIiwiYmFzaXMiOiJtYW51YWwiLCJhY2tub3dsZWRnZWQiOnRydWUsImFjY2VwdGVkT24iOiIyMDI2LTEwLTI5IiwiZGFpbHlIb3VycyI6MTAsInN1Z2dlc3RlZE1vbnRocyI6MywiY2hvc2VuTW9udGhzIjozfX1d"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-dec2774415dd2179231a",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "B02 custom intervals are User Defined; switching to Pro clears series state and offers condition-only filter tracking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2318,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:56.156Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-bb1d0b5c867c81d62c04",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "B03 offline review works with keyboard, accessible disclosures and unavailable measured coverage; no guessed average",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2710,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:00:58.490Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "suggestion-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-1aaf88463e5f3334bc1c",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "B04 new decisions, completed review history and immutable observations roundtrip through actual full backup UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:01.216Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-e2d8cc2f7ecaf5c0fe65",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "B05 CSV, JSON, offline HTML, print and calendar ICS retain reminder purpose and source ambiguity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3338,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:05.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-961f05fcb70542cc15ed",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "B06 forged manufacturer claims and unsupported decision formats fail before writes; history is never reclassified",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2246,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:08.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-1b0cd4ef4eae3321aa81",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "N01 real native v10 upgrade preserves original stores, no startup backfill; abort and explicit downgrade fail safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1051,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:11.175Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "native-upgrade-boundaries",
+                      "contentType": "application/json",
+                      "body": "eyJmYWlsZWQiOiJWZXJzaW9uRXJyb3IiLCJzdGF0ZSI6eyJ2ZXJzaW9uIjoxMCwic3RvcmVzIjpbIm9yaWdpbmFsIl0sInJlY29yZCI6eyJpZCI6InByZXNlcnZlZCIsImltYWdlIjoiZXhhY3QgYnl0ZXMifX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-859892eb5c1cd36a35fd",
+          "file": "reporting.mjs",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "N02 prospective recording is consent gated, deduplicated on reload, automatic on real usage, immutable and gap truthful",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:12.246Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-observation-times",
+                      "contentType": "application/json",
+                      "body": "W3sicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMzowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoyfSx7InByaW50ZXJJZCI6InAxIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTEtMDhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6Mn0seyJwcmludGVySWQiOiJwMiIsIm9ic2VydmVkQXQiOiIyMDI2LTExLTA4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDMiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMS0wOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjowfSx7InByaW50ZXJJZCI6InAxIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTAtMjhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6MX0seyJwcmludGVySWQiOiJwMiIsIm9ic2VydmVkQXQiOiIyMDI2LTEwLTI4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDMiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjowfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-3b8a9a85c57c9077c2c8",
+          "file": "reporting.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "N03 every dashboard KPI opens the matching underlying records using keyboard interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2884,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:15.382Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-81592400310901701778",
+          "file": "reporting.mjs",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "N04 all seven chart subjects have exact mouse/keyboard drilldowns and preserved filter intersections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:18.277Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-ddfec6bf92f83b79940a",
+          "file": "reporting.mjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "N05 all tabular JSON and standalone HTML downloads match the selected onscreen row ids and exclude other data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33924,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:21.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-f5f837d8467a1ef6bd49",
+          "file": "reporting.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "N06 downloaded hostile-content HTML opens as an actual offline local file without scripts or network resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1844,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:55.864Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "offline-html-safety",
+                      "contentType": "application/json",
+                      "body": "eyJzaGEyNTYiOiIxNzZmZGM2MWY4OTA5ZjZhZGU5OGNmYzg3ZGY0MThhYTY0ZjU4NTJjNGZjNzA4NWUwMzk2ZWFjMWU5OTAxNzc5IiwiZXh0ZXJuYWxSZXF1ZXN0cyI6W10sImRpYWxvZyI6ZmFsc2UsInNjcmlwdE5vZGVzIjowfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-69e905dd856ed94f5938",
+          "file": "reporting.mjs",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "N07 native backup file roundtrip, legacy replacement retention, immutable conflicts and future-version rejection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:01:57.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-4b9e1c2c759eb65b12e3",
+          "file": "reporting.mjs",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "N08 new chart controls are accessible in both themes/mobile and schedules remain perpetual after observations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3651,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:06.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "reporting-axe-light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    },
+                    {
+                      "name": "reporting-axe-dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-cd39f8f9d08057b1874e",
+          "file": "reporting.mjs",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6225,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:09.847Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2a2569e078b76d1c9ff3",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "PB01 pre-consent public Help and data handling are readable without disclosing or changing protected workshop data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:17.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-90203913631f170d01fb",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "PB02 bundled information works after offline reload with keyboard focus, mobile reflow and both-theme accessibility",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:23.355Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "privacy-axe-Light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    },
+                    {
+                      "name": "privacy-axe-Dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-acb5ba6858495b270880",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "PB03 actual backup and report downloads retain sensitive local content, source/safety warnings and unchanged history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:29.424Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-bdf1147e54d40f587e77",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "PB04 bounded synthetic network trace distinguishes source design from unknown live hosting behavior",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2419,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:33.188Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "source-only-network-evidence",
+                      "contentType": "application/json",
+                      "body": "eyJzY29wZSI6Iklzb2xhdGVkIGxvb3BiYWNrIGJ1aWxkIG9ubHk7IG5vIGxpdmUgaG9zdC9DRE4vbWFpbGJveC9wcm92aWRlciBmYWN0IHZlcmlmaWVkIiwicmVxdWVzdHMiOlt7InBhdGgiOiIvcmV2aWV3Lmh0bWwiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiZG9jdW1lbnQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuY3NzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InN0eWxlc2hlZXQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiLyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJkb2N1bWVudCJ9LHsicGF0aCI6Ii9hc3NldHMvaW5kZXgtREtJaGd0SkEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy9kYXRhYmFzZS1EMExnemoxVi5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2NoYXJ0cy1DbFRPZGUtNC5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2luZGV4LUQ2c1k5ZDRNLmNzcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzdHlsZXNoZWV0In0seyJwYXRoIjoiL2Fzc2V0cy9BcHAtQnlOOFF6ZVEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy92YWxpZGF0aW9uLUNhM3EwRXEyLmpzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InNjcmlwdCJ9LHsicGF0aCI6Ii9pY29uLTE5Mi5wbmciLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiaW1hZ2UifSx7InBhdGgiOiIvbG9nby5wbmciLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiaW1hZ2UifSx7InBhdGgiOiIvd29ya3Nob3Auc3ZnIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImltYWdlIn1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-8793bacdfc666909e4f5",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "SA01 exact thermal and multi-hazard references, accessible focus, cancel preservation and explicit completion gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5838,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:35.629Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-c72d6dfdae1da089895a",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "SA02 retrospective review is present-tense; skipped work never claims hazardous work or pre-service acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:41.489Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-db35b4430663f73c6876",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "SA03 custom work is unassessed, not guessed from words or priority; contextual review remains possible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:44.952Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2d93dbf099c95d6e8929",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "SA04 current CSV, HTML, JSON, print and ICS carry source warnings without changing old history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3733,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:48.024Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-f3c6e48ccf1a2bccf9d9",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "SA05 old backups restore unchanged; imported safety certification metadata fails before mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2004,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:51.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2b6bbeb607690fcd2faa",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "SA06 offline flagged retrospective recording, mobile reflow and manufacturer independence stay explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3872,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:53.806Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-record-only",
+                      "contentType": "application/json",
+                      "body": "eyJpZCI6ImZiMTFkYzQ3LTAyZmMtNGY5Zi04ODUxLTczYmU1OTQ0ODFlYSIsInByaW50ZXJJZCI6InAxIiwidGFza0lkIjoidDEiLCJ0aXRsZSI6IlNlcnZpY2UgcG9zaXRpb25pbmcgYmFsbHMgJiBuZWVkbGUgcm9sbGVycyIsImRhdGUiOiIyMDI2LTAyLTAxIiwiaG91cnMiOjYwMCwicHJpbnRzIjoyMCwibm90ZXMiOiJSZXZpZXdlZCBpc29sYXRlZCBjb21wbGV0aW9uIiwiY29zdCI6MTIuNSwibWludXRlcyI6MTUsIm1hdGVyaWFscyI6IkdyZWFzZSIsImltYWdlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBRUFBQUFCQ0FRQUFBQzFIQXdDQUFBQUMwbEVRVlI0Mm1QOC94OEFBd01DQU8rYVJaa0FBQUFBU1VWT1JLNUNZSUk9IiwiaW52ZW50b3J5SWQiOiJjb21tb24iLCJxdWFudGl0eSI6Miwib3V0Y29tZSI6IkNvbXBsZXRlZCIsIm9uVGltZSI6dHJ1ZSwiZHVlRGF0ZSI6IiIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2V4dHJ1ZGVyLW1vdW50LXBvc2l0aW9uaW5nLWJhbGxzIiwic291cmNlIjoiTWFudWZhY3R1cmVyIFZlcmlmaWVkIiwic2tpcHBlZEN5Y2xlcyI6MCwiY2F0ZWdvcnkiOiJMdWJyaWNhdGlvbiIsInByaW9yaXR5IjoiSGlnaCIsImN1cnJlbmN5IjoiQ0FEIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2299ac3cc7eaa9b0968c",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "B01 four exact-boundary reminders are opt-in; rejection/defer writes nothing and existing schedules stay byte-identical",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:02:57.697Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "controlled-decisions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiI5ZjI1YTRmYy0wNTUzLTQyM2EtOGE4MC01Y2ZiOGRhMDkxNjgiLCJwcmludGVySWQiOiJwMSIsInRpdGxlIjoiUmV2aWV3IHogZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyA1OyBvcmlnaW5hbCBvd25lciBpbnRlcnZhbCAzIG1vbnRocy4gU291cmNlOiBodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS96LWF4aXMtbGVhZC1zY3Jldy1jbGVhbmluZy1hbmQtbHVicmljYXRpb24uIFB1Ymxpc2hlZDogRGFpbHkgcHJpbnRpbmcgVDwxOiA1IG1vbnRoczsgMeKAkzU6IDQgbW9udGhzOyBUPj01OiAzIG1vbnRocy4gVGhlIHdyaXR0ZW4gcmFuZ2VzIG92ZXJsYXAgYXQgNS4gSW5zcGVjdGlvbi9yZXZpZXcgcmVtaW5kZXIgb25seS4gTm90IGEgZGlyZWN0aW9uIHRvIGNsZWFuLCBsdWJyaWNhdGUsIGFkanVzdCwgaGVhdCBvciByZXBsYWNlIGVxdWlwbWVudC4gTW9yZSBmcmVxdWVudCBwaHlzaWNhbCBtYWludGVuYW5jZSBpcyBub3QgcHJvdmVuIHNhZmVyLiBGbGFzaEZvcmdlIGhhcyBub3QgY29uZmlybWVkIHRoaXMgaW50ZXJwcmV0YXRpb24uIiwiY2F0ZWdvcnkiOiJJbnNwZWN0aW9uIiwicHJpb3JpdHkiOiJOb3JtYWwiLCJpbnRlcnZhbCI6eyJtb2RlIjoiY2FsZW5kYXIiLCJtb250aHMiOjN9LCJvcmlnaW5hbEludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6M30sImFuY2hvckRhdGUiOiIyMDI2LTEwLTI5IiwiYW5jaG9ySG91cnMiOjYwMCwiYW5jaG9yUHJpbnRzIjoyMCwiYmFzZSI6ImNvbXBsZXRpb24iLCJzb3VyY2UiOiJHZW5lcmFsIFJlY29tbWVuZGF0aW9uIiwic291cmNlVXJsIjoiaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2Uvei1heGlzLWxlYWQtc2NyZXctY2xlYW5pbmctYW5kLWx1YnJpY2F0aW9uIiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoieiIsImRlY2lzaW9uIjoiYWNjZXB0ZWQiLCJiYXNpcyI6Im1hbnVhbCIsImFja25vd2xlZGdlZCI6dHJ1ZSwiYWNjZXB0ZWRPbiI6IjIwMjYtMTAtMjkiLCJkYWlseUhvdXJzIjo1LCJzdWdnZXN0ZWRNb250aHMiOjMsImNob3Nlbk1vbnRocyI6M319LHsiaWQiOiJhNzljYzhkMS03MjQ2LTQ0ZTQtYTZlMy1hZDU1ZmIzNGUwMjEiLCJwcmludGVySWQiOiJwMSIsInRpdGxlIjoiUmV2aWV3IHgveSBndWlkYW5jZSDigJQgUHJpbnRHdWFyZCBTdWdnZXN0ZWQiLCJkZXNjcmlwdGlvbiI6IkNyZWF0b3IgNTsgUHJpbnRHdWFyZCBTdWdnZXN0ZWQgaW5pdGlhbCBkZWNpc2lvbjsgcG9saWN5IDEuMC4wLCBzb3VyY2VzIHJldmlld2VkIDIwMjYtMTAtMjk7IGFja25vd2xlZGdlZCAyMDI2LTEwLTI5OyBiYXNpcyBtYW51YWw7IGRhaWx5IGhvdXJzIDU7IG9yaWdpbmFsIG93bmVyIGludGVydmFsIDEgbW9udGhzLiBTb3VyY2U6IGh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2NsZWFuLWFuZC1sdWJyaWNhdGUtdGhlLXgtYXhpcy1saW5lYXItc2hhZnQuIFB1Ymxpc2hlZDogRGFpbHkgcHJpbnRpbmcgVDwxOiAzIG1vbnRoczsgMeKAkzU6IDIgbW9udGhzOyBUPj01OiAxIG1vbnRoLiBUaGUgd3JpdHRlbiByYW5nZXMgb3ZlcmxhcCBhdCA1LiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6MX0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjoxfSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jbGVhbi1hbmQtbHVicmljYXRlLXRoZS14LWF4aXMtbGluZWFyLXNoYWZ0Iiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoieHkiLCJkZWNpc2lvbiI6ImFjY2VwdGVkIiwiYmFzaXMiOiJtYW51YWwiLCJhY2tub3dsZWRnZWQiOnRydWUsImFjY2VwdGVkT24iOiIyMDI2LTEwLTI5IiwiZGFpbHlIb3VycyI6NSwic3VnZ2VzdGVkTW9udGhzIjoxLCJjaG9zZW5Nb250aHMiOjF9fSx7ImlkIjoiZTUyZGM4MTItMWUwYi00YjUyLTg0NTMtODZhMDY3Mjc2NDQ2IiwicHJpbnRlcklkIjoicDEiLCJ0aXRsZSI6IlJldmlldyBmYW4gZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyAxMDsgb3JpZ2luYWwgb3duZXIgaW50ZXJ2YWwgMyBtb250aHMuIFNvdXJjZTogaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2UvY29vbGluZy1mYW4tZHVzdC1jbGVhbmluZy4gUHVibGlzaGVkOiBXb3JraW5nIGhvdXJzIFQ8NTogOSBtb250aHM7IDU8VDwxMDogNiBtb250aHM7IFQ+MTA6IDMgbW9udGhzLiBFeGFjdGx5IDUgYW5kIDEwIGFyZSB1bmFzc2lnbmVkLiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4gRmFuIHNvdXJjZSBzYXlzIHdvcmtpbmcgaG91cnM7IHByaW50aW5nLWhvdXIgaW50ZXJwcmV0YXRpb24gaXMgYW4gdW5yZXNvbHZlZCBtZXRyaWMgbWlzbWF0Y2guIiwiY2F0ZWdvcnkiOiJJbnNwZWN0aW9uIiwicHJpb3JpdHkiOiJOb3JtYWwiLCJpbnRlcnZhbCI6eyJtb2RlIjoiY2FsZW5kYXIiLCJtb250aHMiOjN9LCJvcmlnaW5hbEludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6M30sImFuY2hvckRhdGUiOiIyMDI2LTEwLTI5IiwiYW5jaG9ySG91cnMiOjYwMCwiYW5jaG9yUHJpbnRzIjoyMCwiYmFzZSI6ImNvbXBsZXRpb24iLCJzb3VyY2UiOiJHZW5lcmFsIFJlY29tbWVuZGF0aW9uIiwic291cmNlVXJsIjoiaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2UvY29vbGluZy1mYW4tZHVzdC1jbGVhbmluZyIsInNvdXJjZVRpdGxlIjoiQW1iaWd1b3VzIG1hbnVmYWN0dXJlciByZWZlcmVuY2U7IGluZGVwZW5kZW50IG93bmVyLWFwcHJvdmVkIHJldmlldyByZW1pbmRlciIsInZlcmlmaWVkIjoiIiwibWF0ZXJpYWxzIjoiIiwic2FmZXR5IjoiSW5zcGVjdGlvbi9yZXZpZXcgcmVtaW5kZXIgb25seS4gTm90IGEgZGlyZWN0aW9uIHRvIGNsZWFuLCBsdWJyaWNhdGUsIGFkanVzdCwgaGVhdCBvciByZXBsYWNlIGVxdWlwbWVudC4gTW9yZSBmcmVxdWVudCBwaHlzaWNhbCBtYWludGVuYW5jZSBpcyBub3QgcHJvdmVuIHNhZmVyLiBGbGFzaEZvcmdlIGhhcyBub3QgY29uZmlybWVkIHRoaXMgaW50ZXJwcmV0YXRpb24uIiwibWludXRlcyI6MCwibm90ZXMiOiIiLCJlbmFibGVkIjp0cnVlLCJwb3N0cG9uZWRVbnRpbCI6IiIsImNvbmRpdGlvbiI6ZmFsc2UsInByb2ZpbGVWZXJzaW9uIjoiIiwicmVjb21tZW5kYXRpb24iOnsidmVyc2lvbiI6MSwicG9saWN5VmVyc2lvbiI6IjEuMC4wIiwibW9kZWwiOiJDcmVhdG9yIDUiLCJncm91cCI6ImZhbiIsImRlY2lzaW9uIjoiYWNjZXB0ZWQiLCJiYXNpcyI6Im1hbnVhbCIsImFja25vd2xlZGdlZCI6dHJ1ZSwiYWNjZXB0ZWRPbiI6IjIwMjYtMTAtMjkiLCJkYWlseUhvdXJzIjoxMCwic3VnZ2VzdGVkTW9udGhzIjozLCJjaG9zZW5Nb250aHMiOjN9fSx7ImlkIjoiZTZkMTkyNTMtNDgwNC00NDEzLWIwMzMtMjhkYTIzZmFkMDc3IiwicHJpbnRlcklkIjoicDEiLCJ0aXRsZSI6IlJldmlldyBmYW4gZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyA1OyBvcmlnaW5hbCBvd25lciBpbnRlcnZhbCA2IG1vbnRocy4gU291cmNlOiBodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nLiBQdWJsaXNoZWQ6IFdvcmtpbmcgaG91cnMgVDw1OiA5IG1vbnRoczsgNTxUPDEwOiA2IG1vbnRoczsgVD4xMDogMyBtb250aHMuIEV4YWN0bHkgNSBhbmQgMTAgYXJlIHVuYXNzaWduZWQuIEluc3BlY3Rpb24vcmV2aWV3IHJlbWluZGVyIG9ubHkuIE5vdCBhIGRpcmVjdGlvbiB0byBjbGVhbiwgbHVicmljYXRlLCBhZGp1c3QsIGhlYXQgb3IgcmVwbGFjZSBlcXVpcG1lbnQuIE1vcmUgZnJlcXVlbnQgcGh5c2ljYWwgbWFpbnRlbmFuY2UgaXMgbm90IHByb3ZlbiBzYWZlci4gRmxhc2hGb3JnZSBoYXMgbm90IGNvbmZpcm1lZCB0aGlzIGludGVycHJldGF0aW9uLiBGYW4gc291cmNlIHNheXMgd29ya2luZyBob3VyczsgcHJpbnRpbmctaG91ciBpbnRlcnByZXRhdGlvbiBpcyBhbiB1bnJlc29sdmVkIG1ldHJpYyBtaXNtYXRjaC4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6Nn0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjo2fSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nIiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoiZmFuIiwiZGVjaXNpb24iOiJhY2NlcHRlZCIsImJhc2lzIjoibWFudWFsIiwiYWNrbm93bGVkZ2VkIjp0cnVlLCJhY2NlcHRlZE9uIjoiMjAyNi0xMC0yOSIsImRhaWx5SG91cnMiOjUsInN1Z2dlc3RlZE1vbnRocyI6NiwiY2hvc2VuTW9udGhzIjo2fX1d"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-46b6af74967068a229c7",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "B02 custom intervals are User Defined; switching to Pro clears series state and offers condition-only filter tracking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:04.045Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-68370c9e019d8941e02a",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "B03 offline review works with keyboard, accessible disclosures and unavailable measured coverage; no guessed average",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3911,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:07.329Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "suggestion-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d5a3d026ee9105d4fe52",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "B04 new decisions, completed review history and immutable observations roundtrip through actual full backup UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:11.258Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d290d90ed6161bce07b9",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "B05 CSV, JSON, offline HTML, print and calendar ICS retain reminder purpose and source ambiguity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6163,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:18.255Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-edcba674921e816a62b7",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "B06 forged manufacturer claims and unsupported decision formats fail before writes; history is never reclassified",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:24.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-7c446d8abd205c10cdcd",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "N01 real native v10 upgrade preserves original stores, no startup backfill; abort and explicit downgrade fail safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:28.771Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "native-upgrade-boundaries",
+                      "contentType": "application/json",
+                      "body": "eyJmYWlsZWQiOiJWZXJzaW9uRXJyb3IiLCJzdGF0ZSI6eyJ2ZXJzaW9uIjoxMCwic3RvcmVzIjpbIm9yaWdpbmFsIl0sInJlY29yZCI6eyJpZCI6InByZXNlcnZlZCIsImltYWdlIjoiZXhhY3QgYnl0ZXMifX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-3e40899cbb867e1a9674",
+          "file": "reporting.mjs",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "N02 prospective recording is consent gated, deduplicated on reload, automatic on real usage, immutable and gap truthful",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9662,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:31.081Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-observation-times",
+                      "contentType": "application/json",
+                      "body": "W3sicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMS0wOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoyfSx7InByaW50ZXJJZCI6InAyIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTEtMDhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6MH0seyJwcmludGVySWQiOiJwMyIsIm9ic2VydmVkQXQiOiIyMDI2LTExLTA4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMzowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoyfSx7InByaW50ZXJJZCI6InAxIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTAtMjhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6MX0seyJwcmludGVySWQiOiJwMiIsIm9ic2VydmVkQXQiOiIyMDI2LTEwLTI4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDMiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjowfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-228ea30d796bc3dbe8f2",
+          "file": "reporting.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "N03 every dashboard KPI opens the matching underlying records using keyboard interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8897,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:40.769Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-39870f3936123e217888",
+          "file": "reporting.mjs",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "N04 all seven chart subjects have exact mouse/keyboard drilldowns and preserved filter intersections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10888,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:03:49.690Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-6c6ff12a350de133fa15",
+          "file": "reporting.mjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "N05 all tabular JSON and standalone HTML downloads match the selected onscreen row ids and exclude other data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:04:00.602Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-0b3eab4dd20184131bca",
+          "file": "reporting.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "N06 downloaded hostile-content HTML opens as an actual offline local file without scripts or network resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2988,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:04:28.781Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "offline-html-safety",
+                      "contentType": "application/json",
+                      "body": "eyJzaGEyNTYiOiIxNzZmZGM2MWY4OTA5ZjZhZGU5OGNmYzg3ZGY0MThhYTY0ZjU4NTJjNGZjNzA4NWUwMzk2ZWFjMWU5OTAxNzc5IiwiZXh0ZXJuYWxSZXF1ZXN0cyI6W10sImRpYWxvZyI6ZmFsc2UsInNjcmlwdE5vZGVzIjowfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-46e88840f076e02c3fbc",
+          "file": "reporting.mjs",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "N07 native backup file roundtrip, legacy replacement retention, immutable conflicts and future-version rejection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:04:31.801Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-09afa13bf3643e830b6d",
+          "file": "reporting.mjs",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "N08 new chart controls are accessible in both themes/mobile and schedules remain perpetual after observations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:04:45.310Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "reporting-axe-light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    },
+                    {
+                      "name": "reporting-axe-dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-05ec5c9846ae3ec88c2b",
+          "file": "reporting.mjs",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11575,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:04:54.250Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-b5d23d18a22e6114be80",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "PB01 pre-consent public Help and data handling are readable without disclosing or changing protected workshop data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:08.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-4e89a37b2cdc20a3a811",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "PB02 bundled information works after offline reload with keyboard focus, mobile reflow and both-theme accessibility",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:13.088Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "privacy-axe-Light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    },
+                    {
+                      "name": "privacy-axe-Dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-63782c60997ba704f827",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "PB03 actual backup and report downloads retain sensitive local content, source/safety warnings and unchanged history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:20.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-1ab4947c15069c3f90fe",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "PB04 bounded synthetic network trace distinguishes source design from unknown live hosting behavior",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2135,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:25.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "source-only-network-evidence",
+                      "contentType": "application/json",
+                      "body": "eyJzY29wZSI6Iklzb2xhdGVkIGxvb3BiYWNrIGJ1aWxkIG9ubHk7IG5vIGxpdmUgaG9zdC9DRE4vbWFpbGJveC9wcm92aWRlciBmYWN0IHZlcmlmaWVkIiwicmVxdWVzdHMiOlt7InBhdGgiOiIvcmV2aWV3Lmh0bWwiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiZG9jdW1lbnQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuY3NzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InN0eWxlc2hlZXQifSx7InBhdGgiOiIvcmV2aWV3LWhhcm5lc3MuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiLyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJkb2N1bWVudCJ9LHsicGF0aCI6Ii9tYW5pZmVzdC53ZWJtYW5pZmVzdCIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJvdGhlciJ9LHsicGF0aCI6Ii9hc3NldHMvaW5kZXgtREtJaGd0SkEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy9kYXRhYmFzZS1EMExnemoxVi5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2NoYXJ0cy1DbFRPZGUtNC5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzY3JpcHQifSx7InBhdGgiOiIvYXNzZXRzL2luZGV4LUQ2c1k5ZDRNLmNzcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJzdHlsZXNoZWV0In0seyJwYXRoIjoiL2Fzc2V0cy9BcHAtQnlOOFF6ZVEuanMiLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoic2NyaXB0In0seyJwYXRoIjoiL2Fzc2V0cy92YWxpZGF0aW9uLUNhM3EwRXEyLmpzIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6InNjcmlwdCJ9LHsicGF0aCI6Ii9zdy5qcyIsIm1ldGhvZCI6IkdFVCIsInR5cGUiOiJ4aHIifSx7InBhdGgiOiIvbG9nby5wbmciLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiaW1hZ2UifSx7InBhdGgiOiIvbG9nby5wbmciLCJtZXRob2QiOiJHRVQiLCJ0eXBlIjoiaW1hZ2UifSx7InBhdGgiOiIvd29ya3Nob3Auc3ZnIiwibWV0aG9kIjoiR0VUIiwidHlwZSI6ImltYWdlIn1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-4a3089dd6cf03f7ad6bf",
+          "file": "../../release1-consumer-transparency/native/privacy.mjs",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "SA01 exact thermal and multi-hazard references, accessible focus, cancel preservation and explicit completion gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6359,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:27.443Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-3a26fff28178d708733d",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "SA02 retrospective review is present-tense; skipped work never claims hazardous work or pre-service acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3620,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:33.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-3a0e1ee3f9bf2e25e048",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "SA03 custom work is unassessed, not guessed from words or priority; contextual review remains possible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2775,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:37.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-9ef4453f8080cd92b7c1",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "SA04 current CSV, HTML, JSON, print and ICS carry source warnings without changing old history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:40.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d19d21c20fefd52f6256",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "SA05 old backups restore unchanged; imported safety certification metadata fails before mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2459,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:43.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2cf16a90108412185420",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "SA06 offline flagged retrospective recording, mobile reflow and manufacturer independence stay explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:45.876Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "phase-a-record-only",
+                      "contentType": "application/json",
+                      "body": "eyJpZCI6ImZiMTFkYzQ3LTAyZmMtNGY5Zi04ODUxLTczYmU1OTQ0ODFlYSIsInByaW50ZXJJZCI6InAxIiwidGFza0lkIjoidDEiLCJ0aXRsZSI6IlNlcnZpY2UgcG9zaXRpb25pbmcgYmFsbHMgJiBuZWVkbGUgcm9sbGVycyIsImRhdGUiOiIyMDI2LTAyLTAxIiwiaG91cnMiOjYwMCwicHJpbnRzIjoyMCwibm90ZXMiOiJSZXZpZXdlZCBpc29sYXRlZCBjb21wbGV0aW9uIiwiY29zdCI6MTIuNSwibWludXRlcyI6MTUsIm1hdGVyaWFscyI6IkdyZWFzZSIsImltYWdlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBRUFBQUFCQ0FRQUFBQzFIQXdDQUFBQUMwbEVRVlI0Mm1QOC94OEFBd01DQU8rYVJaa0FBQUFBU1VWT1JLNUNZSUk9IiwiaW52ZW50b3J5SWQiOiJjb21tb24iLCJxdWFudGl0eSI6Miwib3V0Y29tZSI6IkNvbXBsZXRlZCIsIm9uVGltZSI6dHJ1ZSwiZHVlRGF0ZSI6IiIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2V4dHJ1ZGVyLW1vdW50LXBvc2l0aW9uaW5nLWJhbGxzIiwic291cmNlIjoiTWFudWZhY3R1cmVyIFZlcmlmaWVkIiwic2tpcHBlZEN5Y2xlcyI6MCwiY2F0ZWdvcnkiOiJMdWJyaWNhdGlvbiIsInByaW9yaXR5IjoiSGlnaCIsImN1cnJlbmN5IjoiQ0FEIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-804b3d8107ab7bcbb751",
+          "file": "../../release1-safety/native/safety.mjs",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "B01 four exact-boundary reminders are opt-in; rejection/defer writes nothing and existing schedules stay byte-identical",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:49.288Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "controlled-decisions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiI0N2NjZDA3Ni0wNTMwLTQxNGQtOWYwYy02ZjVjMjkxODVhOWYiLCJwcmludGVySWQiOiJwMSIsInRpdGxlIjoiUmV2aWV3IHogZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyA1OyBvcmlnaW5hbCBvd25lciBpbnRlcnZhbCAzIG1vbnRocy4gU291cmNlOiBodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS96LWF4aXMtbGVhZC1zY3Jldy1jbGVhbmluZy1hbmQtbHVicmljYXRpb24uIFB1Ymxpc2hlZDogRGFpbHkgcHJpbnRpbmcgVDwxOiA1IG1vbnRoczsgMeKAkzU6IDQgbW9udGhzOyBUPj01OiAzIG1vbnRocy4gVGhlIHdyaXR0ZW4gcmFuZ2VzIG92ZXJsYXAgYXQgNS4gSW5zcGVjdGlvbi9yZXZpZXcgcmVtaW5kZXIgb25seS4gTm90IGEgZGlyZWN0aW9uIHRvIGNsZWFuLCBsdWJyaWNhdGUsIGFkanVzdCwgaGVhdCBvciByZXBsYWNlIGVxdWlwbWVudC4gTW9yZSBmcmVxdWVudCBwaHlzaWNhbCBtYWludGVuYW5jZSBpcyBub3QgcHJvdmVuIHNhZmVyLiBGbGFzaEZvcmdlIGhhcyBub3QgY29uZmlybWVkIHRoaXMgaW50ZXJwcmV0YXRpb24uIiwiY2F0ZWdvcnkiOiJJbnNwZWN0aW9uIiwicHJpb3JpdHkiOiJOb3JtYWwiLCJpbnRlcnZhbCI6eyJtb2RlIjoiY2FsZW5kYXIiLCJtb250aHMiOjN9LCJvcmlnaW5hbEludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6M30sImFuY2hvckRhdGUiOiIyMDI2LTEwLTI5IiwiYW5jaG9ySG91cnMiOjYwMCwiYW5jaG9yUHJpbnRzIjoyMCwiYmFzZSI6ImNvbXBsZXRpb24iLCJzb3VyY2UiOiJHZW5lcmFsIFJlY29tbWVuZGF0aW9uIiwic291cmNlVXJsIjoiaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2Uvei1heGlzLWxlYWQtc2NyZXctY2xlYW5pbmctYW5kLWx1YnJpY2F0aW9uIiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoieiIsImRlY2lzaW9uIjoiYWNjZXB0ZWQiLCJiYXNpcyI6Im1hbnVhbCIsImFja25vd2xlZGdlZCI6dHJ1ZSwiYWNjZXB0ZWRPbiI6IjIwMjYtMTAtMjkiLCJkYWlseUhvdXJzIjo1LCJzdWdnZXN0ZWRNb250aHMiOjMsImNob3Nlbk1vbnRocyI6M319LHsiaWQiOiI2OWNiNjcwYi02NDUyLTQwMTMtYjlmNy0wZTU4MmYwNzg2NjMiLCJwcmludGVySWQiOiJwMSIsInRpdGxlIjoiUmV2aWV3IHgveSBndWlkYW5jZSDigJQgUHJpbnRHdWFyZCBTdWdnZXN0ZWQiLCJkZXNjcmlwdGlvbiI6IkNyZWF0b3IgNTsgUHJpbnRHdWFyZCBTdWdnZXN0ZWQgaW5pdGlhbCBkZWNpc2lvbjsgcG9saWN5IDEuMC4wLCBzb3VyY2VzIHJldmlld2VkIDIwMjYtMTAtMjk7IGFja25vd2xlZGdlZCAyMDI2LTEwLTI5OyBiYXNpcyBtYW51YWw7IGRhaWx5IGhvdXJzIDU7IG9yaWdpbmFsIG93bmVyIGludGVydmFsIDEgbW9udGhzLiBTb3VyY2U6IGh0dHBzOi8vd2lraS5mbGFzaGZvcmdlLmNvbS9lbi9jcmVhdG9yLXNlcmllcy9jcmVhdG9yLTUtc2VyaWVzL21haW50ZW5hbmNlL2NsZWFuLWFuZC1sdWJyaWNhdGUtdGhlLXgtYXhpcy1saW5lYXItc2hhZnQuIFB1Ymxpc2hlZDogRGFpbHkgcHJpbnRpbmcgVDwxOiAzIG1vbnRoczsgMeKAkzU6IDIgbW9udGhzOyBUPj01OiAxIG1vbnRoLiBUaGUgd3JpdHRlbiByYW5nZXMgb3ZlcmxhcCBhdCA1LiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6MX0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjoxfSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jbGVhbi1hbmQtbHVicmljYXRlLXRoZS14LWF4aXMtbGluZWFyLXNoYWZ0Iiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoieHkiLCJkZWNpc2lvbiI6ImFjY2VwdGVkIiwiYmFzaXMiOiJtYW51YWwiLCJhY2tub3dsZWRnZWQiOnRydWUsImFjY2VwdGVkT24iOiIyMDI2LTEwLTI5IiwiZGFpbHlIb3VycyI6NSwic3VnZ2VzdGVkTW9udGhzIjoxLCJjaG9zZW5Nb250aHMiOjF9fSx7ImlkIjoiN2QyNGJkYTctODg0OS00MTZmLTk5ZWUtMTkwMTNjYzgxN2Y5IiwicHJpbnRlcklkIjoicDEiLCJ0aXRsZSI6IlJldmlldyBmYW4gZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyAxMDsgb3JpZ2luYWwgb3duZXIgaW50ZXJ2YWwgMyBtb250aHMuIFNvdXJjZTogaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2UvY29vbGluZy1mYW4tZHVzdC1jbGVhbmluZy4gUHVibGlzaGVkOiBXb3JraW5nIGhvdXJzIFQ8NTogOSBtb250aHM7IDU8VDwxMDogNiBtb250aHM7IFQ+MTA6IDMgbW9udGhzLiBFeGFjdGx5IDUgYW5kIDEwIGFyZSB1bmFzc2lnbmVkLiBJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4gRmFuIHNvdXJjZSBzYXlzIHdvcmtpbmcgaG91cnM7IHByaW50aW5nLWhvdXIgaW50ZXJwcmV0YXRpb24gaXMgYW4gdW5yZXNvbHZlZCBtZXRyaWMgbWlzbWF0Y2guIiwiY2F0ZWdvcnkiOiJJbnNwZWN0aW9uIiwicHJpb3JpdHkiOiJOb3JtYWwiLCJpbnRlcnZhbCI6eyJtb2RlIjoiY2FsZW5kYXIiLCJtb250aHMiOjN9LCJvcmlnaW5hbEludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6M30sImFuY2hvckRhdGUiOiIyMDI2LTEwLTI5IiwiYW5jaG9ySG91cnMiOjYwMCwiYW5jaG9yUHJpbnRzIjoyMCwiYmFzZSI6ImNvbXBsZXRpb24iLCJzb3VyY2UiOiJHZW5lcmFsIFJlY29tbWVuZGF0aW9uIiwic291cmNlVXJsIjoiaHR0cHM6Ly93aWtpLmZsYXNoZm9yZ2UuY29tL2VuL2NyZWF0b3Itc2VyaWVzL2NyZWF0b3ItNS1zZXJpZXMvbWFpbnRlbmFuY2UvY29vbGluZy1mYW4tZHVzdC1jbGVhbmluZyIsInNvdXJjZVRpdGxlIjoiQW1iaWd1b3VzIG1hbnVmYWN0dXJlciByZWZlcmVuY2U7IGluZGVwZW5kZW50IG93bmVyLWFwcHJvdmVkIHJldmlldyByZW1pbmRlciIsInZlcmlmaWVkIjoiIiwibWF0ZXJpYWxzIjoiIiwic2FmZXR5IjoiSW5zcGVjdGlvbi9yZXZpZXcgcmVtaW5kZXIgb25seS4gTm90IGEgZGlyZWN0aW9uIHRvIGNsZWFuLCBsdWJyaWNhdGUsIGFkanVzdCwgaGVhdCBvciByZXBsYWNlIGVxdWlwbWVudC4gTW9yZSBmcmVxdWVudCBwaHlzaWNhbCBtYWludGVuYW5jZSBpcyBub3QgcHJvdmVuIHNhZmVyLiBGbGFzaEZvcmdlIGhhcyBub3QgY29uZmlybWVkIHRoaXMgaW50ZXJwcmV0YXRpb24uIiwibWludXRlcyI6MCwibm90ZXMiOiIiLCJlbmFibGVkIjp0cnVlLCJwb3N0cG9uZWRVbnRpbCI6IiIsImNvbmRpdGlvbiI6ZmFsc2UsInByb2ZpbGVWZXJzaW9uIjoiIiwicmVjb21tZW5kYXRpb24iOnsidmVyc2lvbiI6MSwicG9saWN5VmVyc2lvbiI6IjEuMC4wIiwibW9kZWwiOiJDcmVhdG9yIDUiLCJncm91cCI6ImZhbiIsImRlY2lzaW9uIjoiYWNjZXB0ZWQiLCJiYXNpcyI6Im1hbnVhbCIsImFja25vd2xlZGdlZCI6dHJ1ZSwiYWNjZXB0ZWRPbiI6IjIwMjYtMTAtMjkiLCJkYWlseUhvdXJzIjoxMCwic3VnZ2VzdGVkTW9udGhzIjozLCJjaG9zZW5Nb250aHMiOjN9fSx7ImlkIjoiYjZiMDg3ZGUtODAzNi00ZTYzLWIxNTEtMjhkZTRiMWI2NDNkIiwicHJpbnRlcklkIjoicDEiLCJ0aXRsZSI6IlJldmlldyBmYW4gZ3VpZGFuY2Ug4oCUIFByaW50R3VhcmQgU3VnZ2VzdGVkIiwiZGVzY3JpcHRpb24iOiJDcmVhdG9yIDU7IFByaW50R3VhcmQgU3VnZ2VzdGVkIGluaXRpYWwgZGVjaXNpb247IHBvbGljeSAxLjAuMCwgc291cmNlcyByZXZpZXdlZCAyMDI2LTEwLTI5OyBhY2tub3dsZWRnZWQgMjAyNi0xMC0yOTsgYmFzaXMgbWFudWFsOyBkYWlseSBob3VycyA1OyBvcmlnaW5hbCBvd25lciBpbnRlcnZhbCA2IG1vbnRocy4gU291cmNlOiBodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nLiBQdWJsaXNoZWQ6IFdvcmtpbmcgaG91cnMgVDw1OiA5IG1vbnRoczsgNTxUPDEwOiA2IG1vbnRoczsgVD4xMDogMyBtb250aHMuIEV4YWN0bHkgNSBhbmQgMTAgYXJlIHVuYXNzaWduZWQuIEluc3BlY3Rpb24vcmV2aWV3IHJlbWluZGVyIG9ubHkuIE5vdCBhIGRpcmVjdGlvbiB0byBjbGVhbiwgbHVicmljYXRlLCBhZGp1c3QsIGhlYXQgb3IgcmVwbGFjZSBlcXVpcG1lbnQuIE1vcmUgZnJlcXVlbnQgcGh5c2ljYWwgbWFpbnRlbmFuY2UgaXMgbm90IHByb3ZlbiBzYWZlci4gRmxhc2hGb3JnZSBoYXMgbm90IGNvbmZpcm1lZCB0aGlzIGludGVycHJldGF0aW9uLiBGYW4gc291cmNlIHNheXMgd29ya2luZyBob3VyczsgcHJpbnRpbmctaG91ciBpbnRlcnByZXRhdGlvbiBpcyBhbiB1bnJlc29sdmVkIG1ldHJpYyBtaXNtYXRjaC4iLCJjYXRlZ29yeSI6Ikluc3BlY3Rpb24iLCJwcmlvcml0eSI6Ik5vcm1hbCIsImludGVydmFsIjp7Im1vZGUiOiJjYWxlbmRhciIsIm1vbnRocyI6Nn0sIm9yaWdpbmFsSW50ZXJ2YWwiOnsibW9kZSI6ImNhbGVuZGFyIiwibW9udGhzIjo2fSwiYW5jaG9yRGF0ZSI6IjIwMjYtMTAtMjkiLCJhbmNob3JIb3VycyI6NjAwLCJhbmNob3JQcmludHMiOjIwLCJiYXNlIjoiY29tcGxldGlvbiIsInNvdXJjZSI6IkdlbmVyYWwgUmVjb21tZW5kYXRpb24iLCJzb3VyY2VVcmwiOiJodHRwczovL3dpa2kuZmxhc2hmb3JnZS5jb20vZW4vY3JlYXRvci1zZXJpZXMvY3JlYXRvci01LXNlcmllcy9tYWludGVuYW5jZS9jb29saW5nLWZhbi1kdXN0LWNsZWFuaW5nIiwic291cmNlVGl0bGUiOiJBbWJpZ3VvdXMgbWFudWZhY3R1cmVyIHJlZmVyZW5jZTsgaW5kZXBlbmRlbnQgb3duZXItYXBwcm92ZWQgcmV2aWV3IHJlbWluZGVyIiwidmVyaWZpZWQiOiIiLCJtYXRlcmlhbHMiOiIiLCJzYWZldHkiOiJJbnNwZWN0aW9uL3JldmlldyByZW1pbmRlciBvbmx5LiBOb3QgYSBkaXJlY3Rpb24gdG8gY2xlYW4sIGx1YnJpY2F0ZSwgYWRqdXN0LCBoZWF0IG9yIHJlcGxhY2UgZXF1aXBtZW50LiBNb3JlIGZyZXF1ZW50IHBoeXNpY2FsIG1haW50ZW5hbmNlIGlzIG5vdCBwcm92ZW4gc2FmZXIuIEZsYXNoRm9yZ2UgaGFzIG5vdCBjb25maXJtZWQgdGhpcyBpbnRlcnByZXRhdGlvbi4iLCJtaW51dGVzIjowLCJub3RlcyI6IiIsImVuYWJsZWQiOnRydWUsInBvc3Rwb25lZFVudGlsIjoiIiwiY29uZGl0aW9uIjpmYWxzZSwicHJvZmlsZVZlcnNpb24iOiIiLCJyZWNvbW1lbmRhdGlvbiI6eyJ2ZXJzaW9uIjoxLCJwb2xpY3lWZXJzaW9uIjoiMS4wLjAiLCJtb2RlbCI6IkNyZWF0b3IgNSIsImdyb3VwIjoiZmFuIiwiZGVjaXNpb24iOiJhY2NlcHRlZCIsImJhc2lzIjoibWFudWFsIiwiYWNrbm93bGVkZ2VkIjp0cnVlLCJhY2NlcHRlZE9uIjoiMjAyNi0xMC0yOSIsImRhaWx5SG91cnMiOjUsInN1Z2dlc3RlZE1vbnRocyI6NiwiY2hvc2VuTW9udGhzIjo2fX1d"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-8aa7c0a3c4b55367b6a5",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "B02 custom intervals are User Defined; switching to Pro clears series state and offers condition-only filter tracking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:05:58.826Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d4ffcdbc47fcfe651898",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "B03 offline review works with keyboard, accessible disclosures and unavailable measured coverage; no guessed average",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:03.324Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "suggestion-axe",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-8b442dcdeede96c2781e",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "B04 new decisions, completed review history and immutable observations roundtrip through actual full backup UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7212,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:07.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-fd8d140f1062f5db67fc",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "B05 CSV, JSON, offline HTML, print and calendar ICS retain reminder purpose and source ambiguity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3667,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:14.947Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d0e1aee2ef30bbdbcc51",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "B06 forged manufacturer claims and unsupported decision formats fail before writes; history is never reclassified",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3780,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:18.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d9be0744b62076c98e37",
+          "file": "../../release1-suggestions/native/suggestions.mjs",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "N01 real native v10 upgrade preserves original stores, no startup backfill; abort and explicit downgrade fail safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2236,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:22.415Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "native-upgrade-boundaries",
+                      "contentType": "application/json",
+                      "body": "eyJmYWlsZWQiOiJWZXJzaW9uRXJyb3IiLCJzdGF0ZSI6eyJ2ZXJzaW9uIjoxMCwic3RvcmVzIjpbIm9yaWdpbmFsIl0sInJlY29yZCI6eyJpZCI6InByZXNlcnZlZCIsImltYWdlIjoiZXhhY3QgYnl0ZXMifX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-2acedfc034f8b78a0342",
+          "file": "reporting.mjs",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "N02 prospective recording is consent gated, deduplicated on reload, automatic on real usage, immutable and gap truthful",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6492,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:24.661Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-observation-times",
+                      "contentType": "application/json",
+                      "body": "W3sicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoxfSx7InByaW50ZXJJZCI6InAyIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTAtMjhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6MH0seyJwcmludGVySWQiOiJwMyIsIm9ic2VydmVkQXQiOiIyMDI2LTEwLTI4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMS0wOFQxMjowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoyfSx7InByaW50ZXJJZCI6InAyIiwib2JzZXJ2ZWRBdCI6IjIwMjYtMTEtMDhUMTI6MDA6MDAuMDAwWiIsIm92ZXJkdWVDb3VudCI6MH0seyJwcmludGVySWQiOiJwMyIsIm9ic2VydmVkQXQiOiIyMDI2LTExLTA4VDEyOjAwOjAwLjAwMFoiLCJvdmVyZHVlQ291bnQiOjB9LHsicHJpbnRlcklkIjoicDEiLCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0yOFQxMzowMDowMC4wMDBaIiwib3ZlcmR1ZUNvdW50IjoyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-fd91216dd3a3c4ea881c",
+          "file": "reporting.mjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "N03 every dashboard KPI opens the matching underlying records using keyboard interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:31.165Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-05991eb61b0500be7f7c",
+          "file": "reporting.mjs",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "N04 all seven chart subjects have exact mouse/keyboard drilldowns and preserved filter intersections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:36.436Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-de6277eba0ae0acd7372",
+          "file": "reporting.mjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "N05 all tabular JSON and standalone HTML downloads match the selected onscreen row ids and exclude other data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:06:45.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-d12af5310d2f1ceeab98",
+          "file": "reporting.mjs",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "N06 downloaded hostile-content HTML opens as an actual offline local file without scripts or network resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:07:14.778Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "offline-html-safety",
+                      "contentType": "application/json",
+                      "body": "eyJzaGEyNTYiOiIxNzZmZGM2MWY4OTA5ZjZhZGU5OGNmYzg3ZGY0MThhYTY0ZjU4NTJjNGZjNzA4NWUwMzk2ZWFjMWU5OTAxNzc5IiwiZXh0ZXJuYWxSZXF1ZXN0cyI6W10sImRpYWxvZyI6ZmFsc2UsInNjcmlwdE5vZGVzIjowfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-1a9081d81f913c047613",
+          "file": "reporting.mjs",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "N07 native backup file roundtrip, legacy replacement retention, immutable conflicts and future-version rejection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17300,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:07:17.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-27eba8205bce270725b0",
+          "file": "reporting.mjs",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "N08 new chart controls are accessible in both themes/mobile and schedules remain perpetual after observations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:07:35.225Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "reporting-axe-light",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    },
+                    {
+                      "name": "reporting-axe-dark",
+                      "contentType": "application/json",
+                      "body": "eyJ2aW9sYXRpb25zIjpbXSwiaW5jb21wbGV0ZSI6W3siaWQiOiJjb2xvci1jb250cmFzdCIsImltcGFjdCI6InNlcmlvdXMifV19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-212c92aa4bb2dd6ace96",
+          "file": "reporting.mjs",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "N09 zero/one/twelve printers, leap timezone boundaries, post-2400 and offline reopen preserve real samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T19:07:42.429Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "printer-count-0",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MCwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W119"
+                    },
+                    {
+                      "name": "printer-count-1",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MSwidGltZXpvbmUiOiJBc2lhL0thdGhtYW5kdSIsIm9ic2VydmF0aW9ucyI6W3sicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9XX0="
+                    },
+                    {
+                      "name": "printer-count-12",
+                      "contentType": "application/json",
+                      "body": "eyJjb3VudCI6MTIsInRpbWV6b25lIjoiQXNpYS9LYXRobWFuZHUiLCJvYnNlcnZhdGlvbnMiOlt7InByaW50ZXJJZCI6Im1hbnktMCIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMSIsIm9ic2VydmVkQXQiOiIyNTAwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNTAwLTAxLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTAiLCJvYnNlcnZlZEF0IjoiMjUwMC0wMS0wMVQwMDowMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjUwMC0wMS0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTExIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0yIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0zIiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS00Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS01Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS02Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS03Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS04Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS05Iiwib2JzZXJ2ZWRBdCI6IjI1MDAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI1MDAtMDEtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0wIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xIiwib2JzZXJ2ZWRBdCI6IjI0MDAtMDItMjlUMjM6MzA6MDAuMDAwWiIsImxvY2FsRGF0ZSI6IjI0MDAtMDMtMDEiLCJ1dGNPZmZzZXRNaW51dGVzIjozNDV9LHsicHJpbnRlcklkIjoibWFueS0xMCIsIm9ic2VydmVkQXQiOiIyNDAwLTAyLTI5VDIzOjMwOjAwLjAwMFoiLCJsb2NhbERhdGUiOiIyNDAwLTAzLTAxIiwidXRjT2Zmc2V0TWludXRlcyI6MzQ1fSx7InByaW50ZXJJZCI6Im1hbnktMTEiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTIiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTMiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTQiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTUiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTYiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTciLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTgiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX0seyJwcmludGVySWQiOiJtYW55LTkiLCJvYnNlcnZlZEF0IjoiMjQwMC0wMi0yOVQyMzozMDowMC4wMDBaIiwibG9jYWxEYXRlIjoiMjQwMC0wMy0wMSIsInV0Y09mZnNldE1pbnV0ZXMiOjM0NX1dfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c754f69e7aa3ea5f75f-64440e3591a91104f072",
+          "file": "reporting.mjs",
+          "line": 57,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-01T19:00:24.027Z",
+    "duration": 453843.957,
+    "expected": 75,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

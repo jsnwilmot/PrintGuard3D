@@ -23,6 +23,7 @@ async function checkControl(expected){
 self.addEventListener('message',e=>{
  const reply=value=>e.ports[0]?.postMessage(value);
  if(e.data?.type==='PRINTGUARD_DESCRIBE'){reply({ok:true,identity:IDENTITY});return;}
+ if(e.data?.type==='PRINTGUARD_OFFLINE_INSPECT'){reply({ok:true,identity:IDENTITY,offline:{cache:CACHE,assets:ASSETS,hashes:HASHES}});return;}
  if(e.data?.type==='PRINTGUARD_ACTIVATE')e.waitUntil((async()=>{
   try{if(!e.ports[0]||e.data.build!==IDENTITY.build)throw Error('Update confirmation does not match this build');await checkControl(e.data.control);await self.skipWaiting();reply({ok:true,identity:IDENTITY});}
   catch(error){reply({ok:false,error:error.message});}
